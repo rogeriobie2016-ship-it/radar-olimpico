@@ -39,3 +39,16 @@ Relatório da extração em `data/RELATORIO-EXTRACAO.md`. Decisões:
 - **Catálogo x Radar:** OBG, TBC e OBMF aparecem pagas no Catálogo e gratuitas no Radar.
 - **Textos possivelmente copiados no Catálogo:** objetivo da OBG fala do Ceará, objetivo da ONC fala só de Física.
 - **Catálogo com dados antigos:** MCEM aponta regulamento 2025, ONDA cita tema de 2023, OCI e ONFIL citam 2025, OBF aponta site de 2025.
+
+## Funcionalidades (Fases 3 e 4)
+
+- **Sem prefetch automático de links:** o padrão do Next baixaria dados de cada cartão visível, ruim em 3G. Trocado por `src/components/L.tsx`.
+- **Status recalculado no aparelho:** o HTML estático nasce com a data do build e o navegador recalcula ao abrir. `?hoje=AAAA-MM-DD` na URL simula outra data, para a equipe conferir.
+- **Filtros na URL:** copiar o link leva a busca junto.
+- **Filtro de modalidade e custo esconde itens sem dado; filtro de série não:** se a série não está informada, o item continua visível, para não tirar oportunidade de ninguém.
+- **Animações:** entradas importantes usam CSS, para o conteúdo aparecer antes do JavaScript chegar em 3G. Framer Motion cuida de filtros, contadores, expansão da escada, quiz e moléculas. Sem animação de saída que trave a tela.
+- **Quiz:** a resposta on-line ou presencial só pesa onde há dado. Eventos que dependem de convite ou classificação (exemplo: OBM) perdem pontos, porque o quiz é para quem está começando.
+- **Escada:** o Ceará Científico aparece como três etapas ligadas. Os demais caminhos são só os escritos nos documentos.
+- **Ceará Científico:** sem dados de ganhadores, projetos e revista. A galeria funciona e mostra um aviso até a COPES preencher `data/ceara-cientifico.json`. Os passos de "Como meu projeto chega lá" foram escritos a partir do briefing e do Regulamento, e devem ser revisados pela equipe.
+- **Checklist JOC em PDF:** gerado por `scripts/gerar_checklist_pdf.py`, a partir de `data/joc.json`.
+- **PDFs pesados:** Regulamento, Catálogo e Radar são links para o Drive da COPES, não ficam no site. Se a pasta mudar, atualizar `data/meta.json`.

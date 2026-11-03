@@ -221,6 +221,19 @@ p { text-wrap: pretty; }
   .cv-auto { content-visibility: auto; contain-intrinsic-size: auto 13rem; }
 }
 
+/* Entradas em CSS: o conteúdo aparece mesmo antes do JavaScript chegar. */
+@keyframes entrada { from { opacity: 0; transform: translateY(10px); } }
+@keyframes entrada-lateral { from { opacity: 0; transform: translateX(-20px); } }
+.entrada { animation: entrada 320ms ease-out both; }
+.entrada-lateral { animation: entrada-lateral 340ms ease-out both; }
+
+/* Aba Ceará Científico: tipografia larga como a do logo. */
+.tema-cc h1, .tema-cc h2, .tema-cc h3, .font-cc {
+  font-family: var(--fonte-cc), "Arial Black", var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+
 :root[data-theme="dark"] .logo-seduc { filter: brightness(0) invert(1); }
 
 @media (prefers-reduced-motion: reduce) {

@@ -16,7 +16,15 @@ export function Contador({ valor }: { valor: number }) {
       return;
     }
     const c = animate(0, valor, { duration: 0.8, ease: "easeOut", onUpdate: (v) => setAtual(Math.round(v)) });
-    return () => c.stop();
+    // Garante o número certo mesmo se o navegador pausar a animação.
+    const garantia = setTimeout(() => {
+      c.stop();
+      setAtual(valor);
+    }, 1200);
+    return () => {
+      c.stop();
+      clearTimeout(garantia);
+    };
   }, [visivel, valor, reduzir]);
 
   return <span ref={ref}>{atual}</span>;

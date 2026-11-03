@@ -1,7 +1,7 @@
 "use client";
 
 import { m } from "framer-motion";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { CartaoOportunidade } from "@/components/CartaoOportunidade";
 import { PainelFiltros } from "@/components/PainelFiltros";
 import { aplicarFiltros, useFiltros } from "@/lib/filtros";
@@ -15,6 +15,8 @@ export function RadarCliente({ itens }: { itens: Resumo[] }) {
   const hoje = useHoje();
   const [ordem, setOrdem] = useState<"prazo" | "nome">("prazo");
   const [limite, setLimite] = useState(POR_PAGINA);
+  const [montado, setMontado] = useState(false);
+  useEffect(() => setMontado(true), []);
 
   const resultado = useMemo(() => {
     const f = aplicarFiltros(itens, filtros, (i) => estaAberto(calcularStatus(i, hoje)));
@@ -51,10 +53,12 @@ export function RadarCliente({ itens }: { itens: Resumo[] }) {
           {resultado.slice(0, limite).map((item, i) => (
             <m.li
               key={item.id}
-              className="cv-auto grid"
-              initial={i < 9 ? { opacity: 0, y: 10 } : false}
+              className={`cv-auto grid ${i < 9 ? "entrada" : ""}`}
+              style={i < 9 ? { animationDelay: `${i * 30}ms` } : undefined}
+              // Na primeira pintura quem anima é o CSS. Depois, cartões novos de um filtro entram com Framer Motion.
+              initial={montado ? { opacity: 0, y: 10 } : false}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.25, delay: Math.min(i, 8) * 0.03 }}
+              transition={{ duration: 0.22 }}
             >
               <CartaoOportunidade item={item} />
             </m.li>
