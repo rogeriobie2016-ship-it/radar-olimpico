@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "next dev -p 3210",
     "validar": "tsx scripts/validar-dados.ts",
-    "prebuild": "npm run validar",
+    "prebuild": "npm run validar && npm run og",
     "build": "next build",
     "preview": "node scripts/servir-out.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "og": "tsx scripts/gerar-og.tsx"
   },
   "dependencies": {
     "framer-motion": "^14.9.0",
@@ -19,10 +20,13 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@fontsource/montserrat": "^5.3.0",
+    "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/postcss": "^4.3.4",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "satori": "^0.63.2",
     "tailwindcss": "^4.3.4",
     "tsx": "^4",
     "typescript": "^5.9"

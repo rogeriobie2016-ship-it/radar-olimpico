@@ -30,7 +30,7 @@ export function BuscaInicio() {
         type="search"
         value={q}
         onChange={(e) => setQ(e.target.value)}
-        placeholder="Qual olimpíada você procura?"
+        placeholder="Buscar olimpíada..."
         enterKeyHint="search"
         className="min-h-14 w-full rounded-2xl border-2 border-[#24170e] bg-white py-3 pl-12 pr-24 text-base text-[#24170e] placeholder:text-[#65564a]"
       />
@@ -41,13 +41,12 @@ export function BuscaInicio() {
   );
 }
 
-export function ContadoresInicio({ itens }: { itens: Resumo[] }) {
+export function ContadoresInicio({ itens, total, vagas }: { itens: Resumo[]; total: number; vagas: number }) {
   const hoje = useHoje();
   const abertas = itens.filter((i) => estaAberto(calcularStatus(i, hoje))).length;
-  const vagas = itens.filter((i) => i.vagaOlimpica).length;
   const tiles = [
     { n: abertas, t: abertas === 1 ? "oportunidade aberta agora" : "oportunidades abertas agora", cor: "bg-[#fff] text-[#24170e]", href: "/radar/?abertas=1" },
-    { n: itens.length, t: "no catálogo", cor: "bg-turquesa text-[#06312f]", href: "/radar/" },
+    { n: total, t: "no catálogo", cor: "bg-turquesa text-[#06312f]", href: "/radar/" },
     { n: vagas, t: "valem vaga na UFC", cor: "bg-amarelo text-[#24170e]", href: "/radar/?vaga=1" },
   ];
   return (

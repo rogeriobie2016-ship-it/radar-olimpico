@@ -49,7 +49,7 @@ export function RadarCliente({ itens }: { itens: Resumo[] }) {
           </button>
         </div>
       ) : (
-        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <ul aria-label="Resultados" className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {resultado.slice(0, limite).map((item, i) => (
             <m.li
               key={item.id}

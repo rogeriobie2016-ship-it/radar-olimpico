@@ -16,6 +16,7 @@ export default function RadarPagina() {
         <p className="mt-1 text-tinta-2">Olimpíadas, feiras e programas para estudantes da rede estadual do Ceará.</p>
       </div>
       <AvisoRadar itens={resumos} edicao={meta.ultimaEdicaoRadar} />
+      <h2 className="sr-only">Oportunidades</h2>
       <RadarCliente itens={resumos} />
     </div>
   );

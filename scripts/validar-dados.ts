@@ -1,12 +1,11 @@
 // Confere todos os JSON de /data antes de publicar. Roda sozinho no deploy.
 // Em caso de erro, explica em português qual item e qual campo corrigir.
 import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 import type { ZodType } from "zod";
 import { cearaCientificoSchema, jocSchema, metaSchema, oportunidadesSchema } from "../src/lib/schema";
 
-const pasta = join(dirname(fileURLToPath(import.meta.url)), "..", "data");
+const pasta = join(process.cwd(), "data");
 const arquivos: [string, ZodType][] = [
   ["oportunidades.json", oportunidadesSchema],
   ["ceara-cientifico.json", cearaCientificoSchema],

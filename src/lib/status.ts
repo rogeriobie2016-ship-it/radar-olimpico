@@ -50,10 +50,12 @@ export const estaAberto = (s: Status) => s.tipo === "aberto" || s.tipo === "fech
 const PESO = { fecha: 0, aberto: 1, breve: 2, confirmar: 3, encerrado: 4 } as const;
 
 /** Ordem por prazo: o que fecha primeiro, depois abertos, em breve, sem data e encerrados. */
-export function compararPrazo<T extends { inicio: string | null; fim: string | null; nome: string }>(a: T, b: T, hoje: string) {
+export function compararPrazo<T extends { inicio: string | null; fim: string | null; nome: string; temFicha?: boolean }>(a: T, b: T, hoje: string) {
   const sa = calcularStatus(a, hoje);
   const sb = calcularStatus(b, hoje);
   if (PESO[sa.tipo] !== PESO[sb.tipo]) return PESO[sa.tipo] - PESO[sb.tipo];
   if (sa.tipo === "encerrado") return (b.fim ?? "").localeCompare(a.fim ?? "");
+  // Sem data: quem tem ficha completa vem antes dos itens só listados.
+  if (sa.tipo === "confirmar" && !!a.temFicha !== !!b.temFicha) return a.temFicha ? -1 : 1;
   return (a.fim ?? "9").localeCompare(b.fim ?? "9") || a.nome.localeCompare(b.nome, "pt-BR");
 }

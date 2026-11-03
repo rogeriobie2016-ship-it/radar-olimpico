@@ -52,3 +52,16 @@ Relatório da extração em `data/RELATORIO-EXTRACAO.md`. Decisões:
 - **Ceará Científico:** sem dados de ganhadores, projetos e revista. A galeria funciona e mostra um aviso até a COPES preencher `data/ceara-cientifico.json`. Os passos de "Como meu projeto chega lá" foram escritos a partir do briefing e do Regulamento, e devem ser revisados pela equipe.
 - **Checklist JOC em PDF:** gerado por `scripts/gerar_checklist_pdf.py`, a partir de `data/joc.json`.
 - **PDFs pesados:** Regulamento, Catálogo e Radar são links para o Drive da COPES, não ficam no site. Se a pasta mudar, atualizar `data/meta.json`.
+
+## PWA, desempenho e acessibilidade (Fase 5)
+
+- **Lighthouse no celular, servido com gzip local:** desempenho 100, acessibilidade 100, boas práticas 96 a 100, SEO 100 em Início, Radar, Oportunidade, Ceará Científico, JOC e Calendário. Vale repetir no site publicado.
+- **PWA:** manifesto, ícones a partir da grade do logo JOC e service worker. Páginas usam rede primeiro, para os prazos estarem sempre frescos, com a última cópia como reserva sem internet. Testado: Radar abre sem internet; página nunca visitada cai na Início.
+- **Open Graph:** uma imagem por oportunidade, gerada no build (`scripts/gerar-og.tsx`), fora do Git. São cerca de 12 MB no site, baixados só por quem compartilha.
+- **Verde do Ceará Científico em áreas com texto branco:** `#257C48`, levemente mais escuro que o logo (`#2E8F54`), para passar AA.
+- **Ordem padrão do Radar:** prazo; sem data, fichas completas vêm antes dos itens só listados.
+
+## Publicação (Fase 6)
+
+- **Repositório público** na conta `rogeriobie2016-ship-it`: o GitHub Pages gratuito exige isso em conta pessoal. Sem dados pessoais de estudantes. Para ficar sob conta institucional, é só transferir o repositório e ajustar `NEXT_PUBLIC_SITE_URL`.
+- **Identidade visual oficial em site de teste:** o site usa logos da SEDUC e do JOC e está em conta pessoal. Antes de divulgar à rede, vale validar com a COPES e a comunicação, e avaliar um endereço oficial.

@@ -19,12 +19,12 @@ function Secao({ id, titulo, children }: { id?: string; titulo: string; children
   );
 }
 
-function ListaCheck({ itens }: { itens: string[] }) {
+function ListaCheck({ itens, nao }: { itens: string[]; nao?: boolean }) {
   return (
     <ul className="flex flex-col gap-2">
       {itens.map((d) => (
         <li key={d} className="flex gap-2.5 text-sm">
-          <Icone nome="check" tamanho={18} className="mt-0.5 shrink-0 text-turquesa-forte" />
+          <Icone nome={nao ? "fechar" : "check"} tamanho={18} className={`mt-0.5 shrink-0 ${nao ? "text-laranja-forte" : "text-turquesa-forte"}`} />
           {d}
         </li>
       ))}
@@ -37,7 +37,7 @@ export default function PaginaJoc() {
     <div className="mx-auto flex max-w-3xl flex-col gap-4 px-4 pt-5">
       <header className="flex flex-col items-start gap-3">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={asset("/logos/joc-laranja.webp")} alt="Juventude Olímpica do Conhecimento" width={720} height={447} className="h-auto w-56 rounded-2xl bg-white p-2" />
+        <img src={asset("/logos/joc-laranja.webp")} alt="Juventude Olímpica do Conhecimento" width={480} height={298} className="h-auto w-56 rounded-2xl bg-white p-2" />
         <h1 className="text-3xl font-black sm:text-4xl">Financiamento para a sua equipe viajar</h1>
         <p>{joc.resumo}</p>
         <div className="grid w-full grid-cols-3 gap-2">
@@ -134,7 +134,7 @@ export default function PaginaJoc() {
       </Secao>
 
       <Secao titulo="O que não é financiado">
-        <ListaCheck itens={joc.naoFinancia} />
+        <ListaCheck itens={joc.naoFinancia} nao />
       </Secao>
 
       <Secao titulo="Depois do evento">

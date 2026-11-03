@@ -32,6 +32,8 @@ const ATALHOS = [
 ];
 
 export default function Inicio() {
+  // Só os itens com data vão para o navegador: a home fica bem mais leve em 3G.
+  const comData = resumos.filter((r) => r.fim || r.inicio);
   return (
     <>
       <section className="relative overflow-hidden bg-laranja text-[#24170e]">
@@ -49,11 +51,11 @@ export default function Inicio() {
             <BuscaInicio />
             <h1 className="text-[2.1rem] font-black sm:text-5xl">Sua próxima medalha está no radar.</h1>
             <p className="max-w-xl font-medium">Olimpíadas, feiras e eventos científicos para estudantes da rede pública estadual do Ceará, sempre à mão.</p>
-            <ContadoresInicio itens={resumos} />
+            <ContadoresInicio itens={comData} total={resumos.length} vagas={resumos.filter((r) => r.vagaOlimpica).length} />
           </div>
           <div className="flex items-center gap-4 rounded-3xl bg-white p-3 lg:flex-col lg:p-6">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={asset("/logos/joc-laranja.webp")} alt="Juventude Olímpica do Conhecimento" width={720} height={447} fetchPriority="high" className="h-auto w-[52%] min-w-0 lg:w-full" />
+            <img src={asset("/logos/joc-laranja.webp")} alt="Juventude Olímpica do Conhecimento" width={480} height={298} fetchPriority="high" className="h-auto w-[52%] min-w-0 lg:w-full" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={asset("/logos/seduc.webp")} alt="Governo do Estado do Ceará, Secretaria da Educação" width={400} height={132} className="h-auto w-[42%] min-w-0 lg:w-2/3" />
           </div>
@@ -61,7 +63,7 @@ export default function Inicio() {
       </section>
 
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 pt-6">
-        <FechamSemana itens={resumos} edicao={meta.ultimaEdicaoRadar} />
+        <FechamSemana itens={comData} edicao={meta.ultimaEdicaoRadar} />
 
         <section aria-labelledby="titulo-atalhos" className="flex flex-col gap-3">
           <h2 id="titulo-atalhos" className="text-2xl font-black">Por onde começar</h2>

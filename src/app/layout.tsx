@@ -5,6 +5,7 @@ import "./globals.css";
 import { Cabecalho } from "@/components/Cabecalho";
 import { MotionProvider } from "@/components/MotionProvider";
 import { NavInferior } from "@/components/NavInferior";
+import { RegistrarSW } from "@/components/RegistrarSW";
 import { Rodape } from "@/components/Rodape";
 import { BASE_PATH, SITE_URL, asset } from "@/lib/base";
 
@@ -21,7 +22,6 @@ export const metadata: Metadata = {
   description:
     "Olimpíadas do conhecimento, feiras científicas e oportunidades para estudantes da rede pública estadual do Ceará, em um só lugar.",
   applicationName: "Radar Olímpico",
-  manifest: asset("/manifest.webmanifest"),
   icons: {
     icon: asset("/icons/favicon-48.png"),
     apple: asset("/icons/apple-touch-icon.png"),
@@ -62,6 +62,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <main id="conteudo">{children}</main>
           <Rodape />
           <NavInferior />
+          <RegistrarSW />
         </MotionProvider>
       </body>
     </html>

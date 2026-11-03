@@ -14,7 +14,7 @@ export function Cabecalho() {
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4">
         <Link href="/" className="flex min-h-11 items-center gap-2.5 font-display text-lg font-black no-underline">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={asset("/icons/favicon-48.png")} alt="" width={36} height={36} className="rounded-lg" />
+          <img src={asset("/icons/favicon-96.png")} alt="" width={36} height={36} className="rounded-lg" />
           <span>Radar Olímpico</span>
         </Link>
         <nav aria-label="Principal" className="ml-auto hidden items-center gap-1 lg:flex">
