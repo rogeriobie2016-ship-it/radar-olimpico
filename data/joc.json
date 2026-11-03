@@ -1,0 +1,74 @@
+{
+  "resumo": "A Juventude Olímpica do Conhecimento é o programa da SEDUC que apoia financeiramente escolas estaduais que precisam viajar para etapas finais de eventos científicos e olimpíadas, dentro e fora do país.",
+  "temaNorteador": "Cidadania e Convivência Democrática",
+  "beneficios": [
+    { "titulo": "Passagens e transporte", "texto": "Dentro do estado: passagem terrestre ou transporte da CREDE/SEFOR ou SEDUC. Fora do estado: passagem aérea providenciada pela SEDUC." },
+    { "titulo": "Taxa de inscrição", "texto": "Com boleto no processo, em nome do participante, e pelo menos 30 dias entre a chegada do processo à COPES e o vencimento." },
+    { "titulo": "Auxílio financeiro e diárias", "texto": "Por dia de afastamento, para hospedagem e alimentação." },
+    { "titulo": "Ajuda de custo", "texto": "Em viagens para fora do estado ou do país, para cobrir o translado." }
+  ],
+  "equipe": {
+    "professores": 1,
+    "estudantes": 3,
+    "financiamentosPorAno": 3,
+    "texto": "Por projeto ou equipe: 1 professor orientador ou coorientador e até 3 estudantes. Cada escola pode pedir até 3 financiamentos no ano. Equipes maiores são analisadas pela COPES."
+  },
+  "prazosDias": { "regional": 30, "estadual": 30, "nacional": 40, "internacional": 70 },
+  "prazoBoletoDias": 30,
+  "matriz": [
+    { "id": "cadastro", "texto": "Escola está na lista de cadastro SEDUC/COPES 2026", "pontos": 30 },
+    { "id": "final", "texto": "Equipe classificada para a etapa final do evento ou olimpíada", "pontos": 20 },
+    { "id": "tema", "texto": "Projeto ligado ao tema norteador 2026: Cidadania e Convivência Democrática", "pontos": 10 },
+    { "id": "pcd", "texto": "Equipe formada, em sua maioria, por estudantes PcD", "pontos": 10 },
+    { "id": "novo", "texto": "Escola ainda não financiada pelo JOC em 2026", "pontos": 20 },
+    { "id": "evento", "texto": "Escola participou do Ceará Científico ou do Festival Alunos que Inspiram no ano anterior", "pontos": 10 }
+  ],
+  "faixas": [
+    { "faixa": "A", "minimo": 65, "maximo": 95 },
+    { "faixa": "B", "minimo": 40, "maximo": 64 },
+    { "faixa": "C", "minimo": 0, "maximo": 39 }
+  ],
+  "desempate": [
+    "Maior pontuação nas etapas do evento, quando ele divulga pontuação",
+    "Média de desempenho acadêmico dos estudantes no ano",
+    "Escola com o Selo Escola Sustentável",
+    "Maior frequência dos estudantes da equipe nas aulas"
+  ],
+  "documentosEscola": [
+    "Ofício do(a) diretor(a) escolar descrevendo o pedido",
+    "Carta de aceite ou convite do evento",
+    "Programação do evento",
+    "Documento oficial do evento com as despesas discriminadas: o que é do participante e o que o evento custeia"
+  ],
+  "documentosParticipante": [
+    "Conta corrente própria, de preferência no Bradesco, Banco do Brasil ou Caixa",
+    "Boleto de inscrição, se houver",
+    "Formulário de solicitação de viagem digitado, sem rasuras (Anexo I)",
+    "Cópia do RG",
+    "Cópia do CPF",
+    "Cópia do passaporte, em viagem internacional",
+    "Autorização do responsável legal, para menores de 18 anos (Anexo II)",
+    "Autorização de uso de imagem e voz (Anexo III)"
+  ],
+  "fluxo": [
+    { "quem": "Escola", "oQue": "Reúne e confere os documentos e envia à CREDE/SEFOR." },
+    { "quem": "CREDE/SEFOR", "oQue": "Registra os participantes no CREDOR e cria a Comunicação Interna." },
+    { "quem": "SUITE", "oQue": "Processo aberto com documentos e formulários anexados e assinaturas das chefias." },
+    { "quem": "COPES", "oQue": "Comissão analisa a prioridade, dentro do limite orçamentário." }
+  ],
+  "naoFinancia": [
+    "Eventos por carta-convite sem relevância científica (sem instituição renomada em produção científica)",
+    "Eventos intermediados, com taxas ou seleção, por agência especializada",
+    "Escola com pendência de prestação de contas de 2025"
+  ],
+  "posEvento": [
+    "Relatório da viagem, focado na experiência científica de cada integrante",
+    "Bilhetes de passagem de ida e volta de cada participante",
+    "Certificados de participação de cada participante",
+    "A CREDE/SEFOR devolve o processo à COPES em até 5 dias úteis"
+  ],
+  "regrasConta": [
+    "O depósito é feito só em conta corrente de titularidade do participante, informada no CREDOR."
+  ],
+  "fonte": "Regulamento Anual de Participação em Eventos Científicos e Culturais e Olimpíadas do Conhecimento 2026 (SEDUC/COPES)"
+}
