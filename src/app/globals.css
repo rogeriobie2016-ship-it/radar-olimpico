@@ -137,87 +137,89 @@ p { text-wrap: pretty; }
 }
 .pular-link:focus { top: 0.5rem; }
 
-/* Botões: alvo mínimo de 48px para toque. */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  min-height: 3rem;
-  padding: 0.65rem 1.1rem;
-  border-radius: 0.875rem;
-  font-weight: 700;
-  text-decoration: none;
-  border: 2px solid transparent;
-  transition: transform 120ms ease, background-color 120ms ease;
-  cursor: pointer;
-  text-align: center;
-}
-.btn:active { transform: scale(0.98); }
-.btn-primario { background: var(--laranja); color: #24170e; }
-.btn-secundario { background: var(--superficie); color: var(--tinta); border-color: var(--linha); }
-.btn-turquesa { background: var(--turquesa); color: #06312f; }
-.btn[disabled] { opacity: 0.55; cursor: not-allowed; }
+@layer components {
+  /* Botões: alvo mínimo de 48px para toque. */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 3rem;
+    padding: 0.65rem 1.1rem;
+    border-radius: 0.875rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: transform 120ms ease, background-color 120ms ease;
+    cursor: pointer;
+    text-align: center;
+  }
+  .btn:active { transform: scale(0.98); }
+  .btn-primario { background: var(--laranja); color: #24170e; }
+  .btn-secundario { background: var(--superficie); color: var(--tinta); border-color: var(--linha); }
+  .btn-turquesa { background: var(--turquesa); color: #06312f; }
+  .btn[disabled] { opacity: 0.55; cursor: not-allowed; }
 
-.cartao {
-  background: var(--superficie);
-  border: 1px solid var(--linha);
-  border-radius: 1.25rem;
-  box-shadow: var(--sombra);
-}
+  .cartao {
+    background: var(--superficie);
+    border: 1px solid var(--linha);
+    border-radius: 1.25rem;
+    box-shadow: var(--sombra);
+  }
 
-.chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  border-radius: 999px;
-  padding: 0.2rem 0.65rem;
-  font-size: 0.8125rem;
-  font-weight: 700;
-  line-height: 1.35;
-}
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    border-radius: 999px;
+    padding: 0.2rem 0.65rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
 
-.selo-confirmar {
-  display: inline-flex;
-  align-items: center;
-  border: 1px dashed var(--tinta-2);
-  color: var(--tinta-2);
-  border-radius: 999px;
-  padding: 0.05rem 0.5rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  white-space: nowrap;
-}
+  .selo-confirmar {
+    display: inline-flex;
+    align-items: center;
+    border: 1px dashed var(--tinta-2);
+    color: var(--tinta-2);
+    border-radius: 999px;
+    padding: 0.05rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
 
-.campo {
-  width: 100%;
-  min-height: 3rem;
-  padding: 0.65rem 0.9rem;
-  background: var(--superficie);
-  color: var(--tinta);
-  border: 2px solid var(--linha);
-  border-radius: 0.875rem;
-}
-.campo:focus { border-color: var(--foco); outline: none; box-shadow: 0 0 0 2px var(--foco); }
+  .campo {
+    width: 100%;
+    min-height: 3rem;
+    padding: 0.65rem 0.9rem;
+    background: var(--superficie);
+    color: var(--tinta);
+    border: 2px solid var(--linha);
+    border-radius: 0.875rem;
+  }
+  .campo:focus { border-color: var(--foco); outline: none; box-shadow: 0 0 0 2px var(--foco); }
 
-/* Quadradinhos inspirados na grade do logo JOC. */
-.azulejo {
-  border-radius: 1rem;
-  box-shadow: inset 0 0 0 4px rgb(0 0 0 / 7%);
-}
+  /* Quadradinhos inspirados na grade do logo JOC. */
+  .azulejo {
+    border-radius: 1rem;
+    box-shadow: inset 0 0 0 4px rgb(0 0 0 / 7%);
+  }
 
-.rolagem-x {
-  display: flex;
-  gap: 0.75rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 0.25rem 1rem 0.75rem;
-  margin-inline: -1rem;
-  scrollbar-width: none;
-}
-.rolagem-x > * { scroll-snap-align: center; flex: 0 0 auto; }
+  .rolagem-x {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0.25rem 1rem 0.75rem;
+    margin-inline: -1rem;
+    scrollbar-width: none;
+  }
+  .rolagem-x > * { scroll-snap-align: center; flex: 0 0 auto; }
 
-.cv-auto { content-visibility: auto; contain-intrinsic-size: auto 13rem; }
+  .cv-auto { content-visibility: auto; contain-intrinsic-size: auto 13rem; }
+}
 
 :root[data-theme="dark"] .logo-seduc { filter: brightness(0) invert(1); }
 

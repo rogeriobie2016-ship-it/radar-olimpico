@@ -8,7 +8,10 @@ const nextConfig = {
   assetPrefix: basePath,
   trailingSlash: true,
   images: { unoptimized: true },
-  env: { NEXT_PUBLIC_BASE_PATH: basePath },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+    NEXT_PUBLIC_DATA_BUILD: new Date().toLocaleDateString("en-CA", { timeZone: "America/Fortaleza" }),
+  },
   reactStrictMode: true,
 };
 

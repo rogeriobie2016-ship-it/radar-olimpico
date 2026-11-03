@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/L";
 import { asset } from "@/lib/base";
 
 export function Rodape() {

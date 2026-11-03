@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/L";
 import { usePathname } from "next/navigation";
 import { AlternarTema } from "./AlternarTema";
 import { Icone } from "./Icone";

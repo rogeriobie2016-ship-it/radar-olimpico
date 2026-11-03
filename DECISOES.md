@@ -31,8 +31,8 @@ Relatório da extração em `data/RELATORIO-EXTRACAO.md`. Decisões:
 
 - **Regulamento 5.4:** o PDF escreve "Prioridade Alta" nas três faixas. O site mostra só A, B e C.
 - **Regulamento 5.4:** a faixa A vai de 65 a 95, mas a pontuação máxima é 100 e somar todos os critérios dá 100. O simulador trata 100 como faixa A, com aviso.
-- **Regulamento 5.3 e 6.5:** o item 6.2 diz "preferencialmente" Bradesco, Banco do Brasil e Caixa, e o 6.5 diz que não aceita contas de outros bancos. O site usa "de preferência" e avisa para confirmar com a CREDE.
-- **Prazos curtos de 2026:** o cadastro de escolas (item 3.4) foi de 03/02 a 23/03/2026. O simulador pergunta se a escola está na lista, sem assumir nada.
+- **Regulamento 6.2 e 6.5:** o item 6.2 diz "preferencialmente" Bradesco, Banco do Brasil e Caixa, e o 6.5 diz que não aceita contas de outros bancos. O site usa "de preferência" e avisa para confirmar com a CREDE.
+- **Cadastro de 2026:** o cadastro de escolas (item 3.4) foi de 03/02 a 23/03/2026. O simulador pergunta se a escola está na lista, sem assumir nada.
 - **Formulários:** a pasta do Drive tem "FORMULÁRIOS 2025". O Regulamento 2026 traz os anexos dentro do próprio PDF. O site aponta para o Regulamento 2026.
 - **Radar de Setembro, p. 2:** OSCEAR com prazo 19/08, anterior à edição. Possível repetição do Radar de Julho.
 - **Radar de Setembro, p. 8 e 9:** o QR da OBLI e o da ONE levam ao mesmo regulamento da ONE. O QR da OBLI parece errado.
