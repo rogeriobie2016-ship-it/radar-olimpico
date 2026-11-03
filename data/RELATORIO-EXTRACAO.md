@@ -1,6 +1,6 @@
-# Relatório da extração (carga inicial, 03/11/2026)
+# Relatório da extração (situação em 03/11/2026)
 
-**109 oportunidades** em `oportunidades.json`, validadas com Zod (`npm run validar`).
+**110 oportunidades** em `oportunidades.json`, validadas com Zod (`npm run validar`).
 
 | Origem | Itens |
 | --- | --- |
@@ -8,23 +8,20 @@
 | Só na lista da UFC do Catálogo (dados mínimos) | 41 |
 | Só nos Radars de Julho e Setembro | 6 |
 | Eventos da SEDUC (Ceará Científico, Festival Alunos que Inspiram) | 2 |
+| Encontrada em pesquisa na web (Olimpíada da Coruja) | 1 |
 
-## O que ficou "a confirmar" (itens afetados)
+## O que está a confirmar (itens afetados)
 
-| Campo | Itens | Motivo |
-| --- | --- | --- |
-| Data de prova | 109 | Nenhum documento traz datas de prova |
-| Modalidade (online, presencial) | 104 | Os documentos quase nunca informam |
-| Prazo de inscrição | 93 | Só os 16 itens dos Radars têm data. O Catálogo não traz datas |
-| Público | 51 | Lista da UFC e itens só do Radar não trazem público |
-| Custo | 45 | Lista da UFC não traz custo. Inclui 3 divergências Catálogo x Radar |
-| Financiável pelo JOC | 41 | Lista da UFC: sem informação |
-| Link oficial | 5 | Sem site identificado (inclui Festival Alunos que Inspiram) |
+| Campo | Itens |
+| --- | --- |
+| Data de prova | 104 |
+| Modalidade | 103 |
+| Prazo de inscrição | 88 |
+| Público | 51 |
+| Custo | 45 |
+| Financiável pelo JOC | 42 |
+| Link oficial | 5 |
 
 ## Ceará Científico
 
-Só existem os dados da edição 2025 passados no briefing. **Sem ganhadores, sem projetos e sem revista**: não há esses dados nos documentos nem no Drive consultado. A galeria já funciona e aguarda os dados.
-
-## Atenção: hoje (03/11/2026) não há inscrição aberta confirmada
-
-O último prazo conhecido é 15/10/2026 (ONE). O site mostra isso com honestidade: contador em zero e convite para explorar o Catálogo. O Radar de Outubro ou Novembro resolve.
+Categorias e áreas 2026 vieram do resumo do regulamento da SEDUC. **Sem ganhadores, projetos e revista:** esses dados não estão nos documentos nem no Drive consultado. A galeria funciona e aguarda os dados.
