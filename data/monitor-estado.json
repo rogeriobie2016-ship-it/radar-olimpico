@@ -1,19 +1,19 @@
 {
  "apmo": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "apho": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "egoi": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -29,19 +29,19 @@
    "0ae536c29882",
    "5fecde1e85f2"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "egmo": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "ceara-cientifico": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -49,7 +49,7 @@
   "frases": [
    "229375aff47f"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -57,67 +57,67 @@
   "frases": [
    "d65276294354"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "geoinformacao": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "eupho": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "febrace": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "futuras-cientistas": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "imo": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "icho": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "ibpho": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "ioi": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "ipho": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "ibo": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -138,13 +138,13 @@
    "46372555a261",
    "106ac3cd4b61"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "imcho": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -158,7 +158,7 @@
   "frases": [],
   "visitas": 1,
   "verificadoEm": "2026-11-03",
-  "situacao": "ok"
+  "situacao": "http 403"
  },
  "milset-brasil": {
   "frases": [
@@ -169,7 +169,7 @@
    "9442ed93e4f9",
    "e1877fc56655"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -179,7 +179,7 @@
    "920b5b0f6bf2",
    "9fddc013d81b"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -198,7 +198,7 @@
    "7fd9c075e674",
    "2ddc612292d5"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -214,15 +214,19 @@
    "64804eb1dd3a",
    "f0b49eba9862"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "obb": {
-  "frases": [],
-  "visitas": 0,
+  "frases": [
+   "0e3844af5dcd",
+   "8a0551183d9d",
+   "201ad2dc085d"
+  ],
+  "visitas": 1,
   "verificadoEm": "2026-11-03",
-  "situacao": "http 403"
+  "situacao": "ok"
  },
  "obapo": {
   "frases": [
@@ -234,7 +238,7 @@
    "7d3ef75e68f1",
    "0cad629ed504"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -258,7 +262,7 @@
    "65c1d7417cb1",
    "65cf25911151"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -270,7 +274,7 @@
    "15843e853c44",
    "c137386d985c"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -291,7 +295,7 @@
    "5006100fd13a",
    "d2d46472c29c"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -303,13 +307,13 @@
  },
  "obap": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "obrac": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -366,7 +370,7 @@
    "af9daa748603",
    "f6911e14f8be"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -380,7 +384,7 @@
    "1864e50514c4",
    "4d3214ba3323"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -397,7 +401,7 @@
    "7213f9eb46d4",
    "a74ab2650ccb"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -422,7 +426,7 @@
    "8b4caba494d9",
    "561d04ab4613"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -431,7 +435,7 @@
    "60c24d1cb38b",
    "a915c9d0d81a"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -483,7 +487,7 @@
    "af9daa748603",
    "f6911e14f8be"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -570,7 +574,7 @@
    "e1a054de93f8",
    "24896096352a"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -581,7 +585,7 @@
    "fb21ec2b3c52",
    "6045c01a7b8a"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -608,7 +612,7 @@
    "38b4e920cccc",
    "46b5ba9eff4c"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -617,7 +621,7 @@
    "4bed11a6a568",
    "e8040dd504d0"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -630,7 +634,7 @@
    "03fa366f84a7",
    "cb16484bb990"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -660,7 +664,7 @@
    "2de2359739ad",
    "cd0cd78e0dab"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -669,7 +673,7 @@
    "7d44d0c08cc9",
    "47683028e078"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -698,7 +702,7 @@
    "676fa0ebaace",
    "05b7ea0432c0"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -741,7 +745,7 @@
    "ab70f302b613",
    "529043a184a5"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -754,7 +758,7 @@
    "4363f557c6fa",
    "9948c33a7346"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -771,7 +775,7 @@
    "c486f330ea5b",
    "dc56bc0509be"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -784,7 +788,7 @@
    "fa5b5120fa5d",
    "8c13c1fc49c6"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -801,13 +805,13 @@
    "f4c3414a5b53",
    "705d7bb58a22"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "ocm": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -817,7 +821,7 @@
    "19570d618da9",
    "e2d33f5e272c"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -831,7 +835,7 @@
    "875c222fca5e",
    "eba3370ee7d4"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -844,19 +848,19 @@
    "7f13fa5eb7c2",
    "e1bfce87c347"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "obsma": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "oiab": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -872,25 +876,25 @@
    "b5e4c0049748",
    "cc412ef4a3ed"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "oiaf": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "oimc": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "oii": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -898,13 +902,13 @@
   "frases": [],
   "visitas": 1,
   "verificadoEm": "2026-11-03",
-  "situacao": "ok"
+  "situacao": "http 429"
  },
  "oimsf": {
   "frases": [
    "22a5533d7f0f"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -915,13 +919,13 @@
    "54c43d6763a1",
    "f4c65b3e8ad4"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "mandacaru": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -943,7 +947,7 @@
    "60e03a80fa6f",
    "0f9f07415810"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -951,7 +955,7 @@
   "frases": [
    "7fd317e2edfa"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -963,7 +967,7 @@
    "fa80e6d97595",
    "b90f2dd5fee8"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1031,7 +1035,7 @@
    "94a86187ea07",
    "2c27078b4327"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1044,7 +1048,7 @@
    "0f720b34112c",
    "bfe991a6114d"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1074,13 +1078,13 @@
    "d9e07aca516c",
    "9cc780957ffc"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "onsc": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1145,7 +1149,7 @@
    "01d87018e206",
    "b12ecba0a45c"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1177,13 +1181,13 @@
    "327ee5ce7b20",
    "7a0207366edb"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "ia-aplicada": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1205,7 +1209,7 @@
    "0336e90dcbcd",
    "eaafc383b9e3"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1214,7 +1218,7 @@
    "fc4b6ade4d79",
    "6617fbdf917a"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1232,7 +1236,7 @@
   ],
   "visitas": 1,
   "verificadoEm": "2026-11-03",
-  "situacao": "ok"
+  "situacao": "falhou"
  },
  "olimpiada-de-literatura": {
   "frases": [
@@ -1243,7 +1247,7 @@
    "49923b0b1fdb",
    "fcf91a06f227"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1251,7 +1255,7 @@
   "frases": [
    "806169ca3831"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1260,7 +1264,7 @@
    "fc4b6ade4d79",
    "6617fbdf917a"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1272,7 +1276,7 @@
    "70cc4e95e569",
    "b46964201b6f"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1296,7 +1300,7 @@
    "c7f76601ab60",
    "0128b156975a"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1308,7 +1312,7 @@
  },
  "oscear": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1320,13 +1324,13 @@
    "93c1c586d458",
    "1baaee949e72"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
  "premio-criativos": {
   "frases": [],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1339,7 +1343,7 @@
    "1621b004309c",
    "6c8b9ce8e35b"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1390,7 +1394,7 @@
    "af9daa748603",
    "f6911e14f8be"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1439,7 +1443,7 @@
    "af9daa748603",
    "f6911e14f8be"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1453,7 +1457,7 @@
   "frases": [
    "471e2dae0bd8"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1468,7 +1472,7 @@
    "f4fd4c416321",
    "4bb705ae3d8a"
   ],
-  "visitas": 1,
+  "visitas": 2,
   "verificadoEm": "2026-11-03",
   "situacao": "ok"
  },
@@ -1483,5 +1487,66 @@
   "visitas": 0,
   "verificadoEm": "2026-11-03",
   "situacao": "falhou"
+ },
+ "olimpiada-da-coruja": {
+  "frases": [
+   "8971bb9fb1b7",
+   "a36ad97f0341",
+   "5dd0e632d018",
+   "b5c394cfb8ff",
+   "ede2ac8ca9c7",
+   "b4dcc42c322d",
+   "d87d4b90f75b",
+   "873749d8007d",
+   "420295a2ad0a",
+   "549353f2f579",
+   "9455f89621c8",
+   "9baff6256fe0",
+   "b00ee209599d",
+   "86d6476428a6",
+   "5ee8ed798084",
+   "2cc7b9922434",
+   "b6d178e3ec51",
+   "7ed657c3e12e",
+   "3fe39858a2c0",
+   "86810feacdef",
+   "323127eee8a3",
+   "0b1c7ab456ee",
+   "6a82caeec08b",
+   "97f6ca1b266a",
+   "9d2761e2642d",
+   "f8157c81ab70",
+   "717f77f422eb",
+   "e753b1e32aff",
+   "3dbd4a9dcd95",
+   "728000b28277",
+   "9597b6cb71db",
+   "93cf47e6d8e1",
+   "0857fe894c4d",
+   "ca8873a254da",
+   "82173f13fd1f",
+   "a534a7cfcb37",
+   "513fe410dd0b",
+   "7aeca8c9a663",
+   "4e9423a9c109",
+   "e5fd05678ae6",
+   "5742620fbc85",
+   "a41ff2ef805d",
+   "c07eb121a486",
+   "b908b8510be2",
+   "f2e7f6e96703",
+   "895ba59bc7c6",
+   "8819948248a3",
+   "7b6c270b7efb",
+   "36e1c6840d08",
+   "7057faf89199",
+   "2eafc4388766",
+   "ea9a96da2e3e",
+   "c8d83dfb134c",
+   "60b60447a335"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
  }
 }

@@ -2,6 +2,18 @@
   "verificadoEm": "2026-11-03",
   "itens": [
     {
+      "id": "obmf-site-223c7e741c76",
+      "oportunidadeId": "obmf",
+      "tipo": "atualizacao",
+      "titulo": "OBMF: site oficial atualizado",
+      "trecho": "Professores e responsáveis pedagógicos vinculados às inscrições também podem receber certificados, que são gerados dentro do portal Seleta, na área do representante da...",
+      "url": "https://www.seletaeducacao.com.br/obmf",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-03",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
       "id": "coruja-2026",
       "oportunidadeId": "olimpiada-da-coruja",
       "tipo": "nova",
