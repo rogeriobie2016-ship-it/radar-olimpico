@@ -1,31 +1,23 @@
 import type { Metadata, Viewport } from "next";
-import { Montserrat } from "next/font/google";
+import { Archivo } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
-import { Cabecalho } from "@/components/Cabecalho";
 import { MotionProvider } from "@/components/MotionProvider";
-import { NavInferior } from "@/components/NavInferior";
+import { Navegacao } from "@/components/Navegacao";
 import { RegistrarSW } from "@/components/RegistrarSW";
 import { Rodape } from "@/components/Rodape";
 import { BASE_PATH, SITE_URL, asset } from "@/lib/base";
+import { novidades } from "@/lib/dados";
 
-const display = Montserrat({
-  subsets: ["latin"],
-  weight: ["800", "900"],
-  variable: "--fonte-display",
-  display: "swap",
-});
+// Uma só família, com eixo de largura: condensada nos títulos, normal no texto.
+const fonte = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--fonte", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${SITE_URL}${BASE_PATH}/`),
   title: { default: "Radar Olímpico | SEDUC Ceará", template: "%s | Radar Olímpico" },
-  description:
-    "Olimpíadas do conhecimento, feiras científicas e oportunidades para estudantes da rede pública estadual do Ceará, em um só lugar.",
+  description: "Olimpíadas do conhecimento, feiras e eventos científicos para estudantes da rede pública estadual do Ceará. Publicação da COPES/SEDUC.",
   applicationName: "Radar Olímpico",
-  icons: {
-    icon: asset("/icons/favicon-48.png"),
-    apple: asset("/icons/apple-touch-icon.png"),
-  },
+  icons: { icon: asset("/icons/favicon-48.png"), apple: asset("/icons/apple-touch-icon.png") },
   openGraph: {
     type: "website",
     locale: "pt_BR",
@@ -37,19 +29,18 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#fffaf3" },
-    { media: "(prefers-color-scheme: dark)", color: "#16100b" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0f100e" },
   ],
   width: "device-width",
   initialScale: 1,
 };
 
-// Aplica o tema antes da primeira pintura para não piscar.
 const scriptTema = `try{var t=localStorage.getItem('radar-tema');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme='light'}`;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt-BR" className={display.variable} suppressHydrationWarning>
+    <html lang="pt-BR" className={fonte.variable} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: scriptTema }} />
       </head>
@@ -58,10 +49,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           Pular para o conteúdo
         </a>
         <MotionProvider>
-          <Cabecalho />
+          <Navegacao ultimaNovidade={novidades.itens[0]?.detectadoEm ?? null} />
           <main id="conteudo">{children}</main>
           <Rodape />
-          <NavInferior />
           <RegistrarSW />
         </MotionProvider>
       </body>

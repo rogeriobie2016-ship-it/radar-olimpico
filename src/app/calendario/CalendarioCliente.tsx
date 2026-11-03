@@ -1,28 +1,25 @@
 "use client";
 
-import Link from "@/components/L";
 import { useMemo, useState } from "react";
-import { Icone } from "@/components/Icone";
+import Link from "@/components/L";
 import { PainelFiltros } from "@/components/PainelFiltros";
+import { Seta } from "@/components/Seta";
 import { aplicarFiltros, useFiltros } from "@/lib/filtros";
 import { baixarIcs, eventosDe, type Evento } from "@/lib/ics";
 import { dataCurta, dataExtenso, nomeMes } from "@/lib/rotulos";
 import { calcularStatus, estaAberto, useHoje } from "@/lib/status";
 import type { Resumo } from "@/lib/tipos";
 
-const SEMANA = ["D", "S", "T", "Q", "Q", "S", "S"];
-const SEMANA_LONGA = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"];
+const SEMANA = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"];
 
 function LinhaEvento({ evento, hoje }: { evento: Evento; hoje: string }) {
   const passou = evento.data < hoje;
   return (
     <li>
-      <Link href={`/oportunidade/${evento.item.slug}/`} className={`cartao flex min-h-14 items-center gap-3 p-3 no-underline ${passou ? "opacity-75" : ""}`}>
-        <span className={`azulejo grid size-12 shrink-0 place-items-center font-display text-sm font-black !rounded-xl ${passou ? "bg-[var(--fim-fundo)] text-[var(--fim-tinta)]" : "bg-laranja text-[#24170e]"}`}>
-          {dataCurta(evento.data)}
-        </span>
+      <Link href={`/oportunidade/${evento.item.slug}/`} className="linha-lista grid grid-cols-[4.25rem_1fr] items-baseline gap-3 py-3">
+        <span className={`estreito num text-[1.75rem] font-bold leading-none ${passou ? "text-tinta-2" : ""}`}>{dataCurta(evento.data)}</span>
         <span>
-          <span className="block font-bold leading-tight">{evento.titulo}</span>
+          <span className="block font-semibold leading-snug">{evento.titulo}</span>
           <span className="text-sm text-tinta-2">{passou ? "Prazo encerrado" : evento.item.nome}</span>
         </span>
       </Link>
@@ -57,51 +54,39 @@ export function CalendarioCliente({ itens }: { itens: Resumo[] }) {
   const mostrados = dia ? eventos.filter((e) => e.data === dia) : doMes;
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-5">
       <PainelFiltros itens={itens} filtros={filtros} setFiltros={setFiltros} alternar={alternar} limpar={limpar} total={filtrados.length} />
 
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <div role="group" aria-label="Forma de ver" className="flex rounded-xl border-2 border-linha p-0.5">
-          {(["mes", "lista"] as const).map((v) => (
-            <button
-              key={v}
-              type="button"
-              aria-pressed={vista === v}
-              onClick={() => setVista(v)}
-              className={`min-h-10 rounded-lg px-4 text-sm font-bold ${vista === v ? "bg-laranja text-[#24170e]" : ""}`}
-            >
-              {v === "mes" ? "Mês" : "Lista"}
-            </button>
-          ))}
+        <div role="group" aria-label="Forma de ver" className="flex gap-1">
+          <button type="button" className="opcao" aria-pressed={vista === "mes"} onClick={() => setVista("mes")}>Mês</button>
+          <button type="button" className="opcao" aria-pressed={vista === "lista"} onClick={() => setVista("lista")}>Lista</button>
         </div>
-        <button type="button" className="btn btn-secundario !min-h-11 !py-1.5 text-sm" disabled={!eventos.length} onClick={() => baixarIcs("radar-olimpico.ics", eventos)}>
-          <Icone nome="download" tamanho={18} />
-          Exportar tudo (.ics)
+        <button type="button" className="link min-h-11 text-[0.9375rem] disabled:opacity-40" disabled={!eventos.length} onClick={() => baixarIcs("radar-olimpico.ics", eventos)}>
+          Exportar tudo para a agenda
         </button>
       </div>
 
       {vista === "mes" ? (
         <>
-          <section className="cartao p-3" aria-label={`Calendário de ${nomeMes(mes)} de ${ano}`}>
-            <div className="mb-2 flex items-center justify-between">
-              <button type="button" className="grid size-11 place-items-center rounded-xl hover:bg-superficie-2" aria-label="Mês anterior" onClick={() => mudarMes(-1)}>
-                <Icone nome="seta" className="rotate-180" />
+          <section aria-label={`Calendário de ${nomeMes(mes)} de ${ano}`}>
+            <div className="regua flex items-center justify-between py-2">
+              <button type="button" className="grid size-11 place-items-center" aria-label="Mês anterior" onClick={() => mudarMes(-1)}>
+                <Seta direcao="esquerda" />
               </button>
-              <h2 className="text-lg font-extrabold capitalize" aria-live="polite">
+              <h2 className="titulo-3 !text-[1.75rem] capitalize" aria-live="polite">
                 {nomeMes(mes)} {ano}
               </h2>
-              <button type="button" className="grid size-11 place-items-center rounded-xl hover:bg-superficie-2" aria-label="Próximo mês" onClick={() => mudarMes(1)}>
-                <Icone nome="seta" />
+              <button type="button" className="grid size-11 place-items-center" aria-label="Próximo mês" onClick={() => mudarMes(1)}>
+                <Seta />
               </button>
             </div>
-            <div className="grid grid-cols-7 gap-1 text-center">
-              {SEMANA.map((s, i) => (
-                <div key={i} className="py-1 text-xs font-bold text-tinta-2">
-                  <abbr title={SEMANA_LONGA[i]} className="no-underline">{s}</abbr>
-                </div>
+            <div className="grid grid-cols-7 border-l border-t border-linha">
+              {SEMANA.map((s) => (
+                <div key={s} className="border-b border-r border-linha py-1.5 text-center text-xs text-tinta-2">{s}</div>
               ))}
               {Array.from({ length: inicioSemana }).map((_, i) => (
-                <div key={`vazio-${i}`} />
+                <div key={`v-${i}`} className="border-b border-r border-linha" />
               ))}
               {Array.from({ length: totalDias }).map((_, i) => {
                 const d = `${prefixo}-${String(i + 1).padStart(2, "0")}`;
@@ -115,12 +100,18 @@ export function CalendarioCliente({ itens }: { itens: Resumo[] }) {
                     aria-pressed={dia === d}
                     aria-label={`${i + 1} de ${nomeMes(mes)}${n ? `, ${n} ${n === 1 ? "prazo" : "prazos"}` : ""}`}
                     onClick={() => setDia(dia === d ? null : d)}
-                    className={`relative grid aspect-square min-h-10 place-items-center rounded-lg text-sm ${
-                      n ? "bg-laranja-suave font-extrabold" : "text-tinta-2"
-                    } ${dia === d ? "!bg-laranja text-[#24170e]" : ""} ${ehHoje ? "ring-2 ring-[var(--turquesa-forte)]" : ""}`}
+                    className={`num relative flex aspect-square min-h-11 flex-col items-start justify-between border-b border-r border-linha p-1.5 text-left text-sm transition-colors ${
+                      dia === d ? "bg-tinta text-fundo" : n ? "font-bold hover:bg-fundo-2" : "text-tinta-2"
+                    } ${ehHoje ? "underline decoration-2 underline-offset-2" : ""}`}
                   >
                     {i + 1}
-                    {n > 1 && <span className="absolute right-0.5 top-0 text-[0.65rem] font-black">{n}</span>}
+                    {n > 0 && (
+                      <span aria-hidden="true" className="flex gap-0.5">
+                        {Array.from({ length: Math.min(n, 3) }).map((_, k) => (
+                          <span key={k} className="size-1.5 bg-marca" />
+                        ))}
+                      </span>
+                    )}
                   </button>
                 );
               })}
@@ -128,37 +119,37 @@ export function CalendarioCliente({ itens }: { itens: Resumo[] }) {
           </section>
 
           {mostrados.length ? (
-            <ul className="flex flex-col gap-2">
+            <ul className="border-t border-linha">
               {mostrados.map((e) => (
                 <LinhaEvento key={`${e.item.id}-${e.data}-${e.titulo}`} evento={e} hoje={hoje} />
               ))}
             </ul>
           ) : (
-            <div className="cartao p-5 text-center">
-              <p className="font-bold">Sem prazos conhecidos neste mês.</p>
+            <div className="flex flex-col items-start gap-3">
+              <p className="text-tinta-2">Sem prazos conhecidos neste mês.</p>
               {ultimo && (
                 <button
                   type="button"
-                  className="btn btn-secundario mt-3"
+                  className="btn btn-secundario"
                   onClick={() => {
                     setEscolhido({ ano: Number(ultimo.data.slice(0, 4)), mes: Number(ultimo.data.slice(5, 7)) - 1 });
                     setDia(null);
                   }}
                 >
-                  Ir para o último prazo ({dataExtenso(ultimo.data)})
+                  Ver o último prazo, {dataExtenso(ultimo.data)}
                 </button>
               )}
             </div>
           )}
         </>
       ) : eventos.length ? (
-        <ul className="flex flex-col gap-2">
+        <ul className="regua">
           {eventos.map((e) => (
             <LinhaEvento key={`${e.item.id}-${e.data}-${e.titulo}`} evento={e} hoje={hoje} />
           ))}
         </ul>
       ) : (
-        <p className="cartao p-5 text-center font-bold">Nenhum prazo com esses filtros.</p>
+        <p className="text-tinta-2">Nenhum prazo com esses filtros.</p>
       )}
     </div>
   );

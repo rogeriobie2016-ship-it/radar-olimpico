@@ -3,7 +3,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { ZodType } from "zod";
-import { cearaCientificoSchema, jocSchema, metaSchema, oportunidadesSchema } from "../src/lib/schema";
+import { cearaCientificoSchema, jocSchema, metaSchema, novidadesSchema, oportunidadesSchema } from "../src/lib/schema";
 
 const pasta = join(process.cwd(), "data");
 const arquivos: [string, ZodType][] = [
@@ -11,6 +11,7 @@ const arquivos: [string, ZodType][] = [
   ["ceara-cientifico.json", cearaCientificoSchema],
   ["joc.json", jocSchema],
   ["meta.json", metaSchema],
+  ["novidades.json", novidadesSchema],
 ];
 
 let erros = 0;

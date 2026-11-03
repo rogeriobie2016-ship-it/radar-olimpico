@@ -56,6 +56,21 @@ export const oportunidadesSchema = z.array(oportunidadeSchema).superRefine((list
   });
 });
 
+export const novidadeSchema = z.object({
+  id: z.string().min(1),
+  oportunidadeId: z.string().nullable(),
+  tipo: z.enum(["prazo", "atualizacao", "nova"]),
+  titulo: z.string().min(3),
+  trecho: z.string().nullable(),
+  url: z.url().nullable(),
+  prazoFim: data.nullable(),
+  detectadoEm: data,
+  origem: z.enum(["monitor", "pesquisa", "copes"]),
+  verificado: z.boolean(),
+});
+
+export const novidadesSchema = z.object({ verificadoEm: data.nullable(), itens: z.array(novidadeSchema) });
+
 export const metaSchema = z.object({
   ultimaEdicaoRadar: z.string(),
   ultimaEdicaoRadarData: data,
@@ -87,6 +102,8 @@ export const cearaCientificoSchema = z.object({
   portal: z.url(),
   etapas: z.array(z.object({ nivel: z.enum(NIVEIS), nome: z.string(), texto: z.string() })),
   categorias: z.object({ lista: z.array(z.string()), aConfirmar: z.boolean(), nota: z.string() }),
+  areas: z.array(z.string()),
+  regulamento: z.url(),
   edicoes: z.array(
     z.object({
       ano: z.number(),
@@ -128,5 +145,6 @@ export const jocSchema = z.object({
 
 export type Oportunidade = z.infer<typeof oportunidadeSchema>;
 export type Meta = z.infer<typeof metaSchema>;
+export type Novidade = z.infer<typeof novidadeSchema>;
 export type CearaCientifico = z.infer<typeof cearaCientificoSchema>;
 export type Joc = z.infer<typeof jocSchema>;

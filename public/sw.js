@@ -1,7 +1,7 @@
 // Service worker do Radar Olímpico: abre rápido em 3G e continua útil sem internet.
-const VERSAO = "radar-v1";
+const VERSAO = "radar-v2";
 const BASE = self.location.pathname.replace(/sw\.js$/, "");
-const ESSENCIAIS = [BASE, `${BASE}radar/`, `${BASE}minha-lista/`, `${BASE}descubra/`, `${BASE}calendario/`, `${BASE}icons/icon-192.png`, `${BASE}logos/joc-laranja.webp`];
+const ESSENCIAIS = [BASE, `${BASE}radar/`, `${BASE}minha-lista/`, `${BASE}escada/`, `${BASE}calendario/`, `${BASE}icons/icon-192.png`, `${BASE}logos/joc-laranja.webp`];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(

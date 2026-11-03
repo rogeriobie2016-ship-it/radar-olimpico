@@ -1,17 +1,18 @@
-export const NAV_PRINCIPAL = [
-  { href: "/", rotulo: "Início", icone: "inicio" },
-  { href: "/radar/", rotulo: "Radar", icone: "radar" },
-  { href: "/descubra/", rotulo: "Descubra", icone: "descubra" },
-  { href: "/minha-lista/", rotulo: "Minha lista", icone: "lista" },
+export const NAV_INFERIOR = [
+  { href: "/", rotulo: "Início" },
+  { href: "/radar/", rotulo: "Radar" },
+  { href: "/escada/", rotulo: "Escada" },
+  { href: "/jogos/", rotulo: "Jogos" },
 ] as const;
 
 export const NAV_COMPLETA = [
-  { href: "/radar/", rotulo: "Radar", icone: "radar", resumo: "Todas as oportunidades" },
-  { href: "/calendario/", rotulo: "Calendário", icone: "calendario", resumo: "Prazos por mês" },
-  { href: "/descubra/", rotulo: "Descubra sua olimpíada", icone: "descubra", resumo: "Quiz rápido" },
-  { href: "/escada/", rotulo: "Escada", icone: "escada", resumo: "Da escola ao mundo" },
-  { href: "/ceara-cientifico/", rotulo: "Ceará Científico", icone: "ciencia", resumo: "A feira da rede" },
-  { href: "/joc/", rotulo: "JOC: financiamento", icone: "joc", resumo: "Para escolas e professores" },
-  { href: "/professores/", rotulo: "Para professores", icone: "professor", resumo: "Orientar e inscrever" },
-  { href: "/minha-lista/", rotulo: "Minha lista", icone: "lista", resumo: "Seus favoritos" },
+  { href: "/novidades/", rotulo: "Novidades", resumo: "O que mudou nos sites oficiais" },
+  { href: "/radar/", rotulo: "Radar", resumo: "Todas as oportunidades" },
+  { href: "/escada/", rotulo: "Escada Olímpica", resumo: "Quiz para você e a sua escola" },
+  { href: "/calendario/", rotulo: "Calendário", resumo: "Prazos por mês" },
+  { href: "/jogos/", rotulo: "Jogos", resumo: "Treine para as olimpíadas" },
+  { href: "/ceara-cientifico/", rotulo: "Ceará Científico", resumo: "Feira de ciências da rede" },
+  { href: "/joc/", rotulo: "JOC", resumo: "Financiamento para escolas" },
+  { href: "/professores/", rotulo: "Professores", resumo: "Orientar e registrar" },
+  { href: "/minha-lista/", rotulo: "Minha lista", resumo: "Itens salvos neste aparelho" },
 ] as const;

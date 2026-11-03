@@ -1,0 +1,1487 @@
+{
+ "apmo": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "apho": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "egoi": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "cf-obi": {
+  "frases": [
+   "24886c248d23",
+   "24a10ea29bda",
+   "b68aafe07f1f",
+   "65070f319ef1",
+   "a0d52ac67fdc",
+   "2a4c7985e46b",
+   "3c87939e67ca",
+   "0ae536c29882",
+   "5fecde1e85f2"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "egmo": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "ceara-cientifico": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "fenecit": {
+  "frases": [
+   "229375aff47f"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "ciic": {
+  "frases": [
+   "d65276294354"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "geoinformacao": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "eupho": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "febrace": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "futuras-cientistas": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "imo": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "icho": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "ibpho": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "ioi": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "ipho": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "ibo": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "febic": {
+  "frases": [
+   "91d9899432d0",
+   "cd7a0732be00",
+   "e6e37b36ee48",
+   "2bb704720bd4",
+   "f7901ef9ec6f",
+   "b0d7dcc973ed",
+   "b6d1f0065619",
+   "6c622839d369",
+   "16de27b35dca",
+   "81ba2ee72fe6",
+   "a23c9ff925e2",
+   "3500d1f60436",
+   "46372555a261",
+   "106ac3cd4b61"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "imcho": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "mcem": {
+  "frases": [],
+  "visitas": 0,
+  "verificadoEm": "2026-11-03",
+  "situacao": "falhou"
+ },
+ "ioaa": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "milset-brasil": {
+  "frases": [
+   "87a36f4c6cef",
+   "c9e8c1d3a8a8",
+   "b4d368a0fd1c",
+   "0469eeaa7513",
+   "9442ed93e4f9",
+   "e1877fc56655"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "mocica": {
+  "frases": [
+   "7f4eb80bc2fc",
+   "920b5b0f6bf2",
+   "9fddc013d81b"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "vanda": {
+  "frases": [
+   "13987762d85a",
+   "b60a8fca8318",
+   "fdf34417be19",
+   "f9cfbddde610",
+   "8077d950ead4",
+   "e62b37d9f175",
+   "1552fec29350",
+   "f1dfed6b67eb",
+   "7705c7aeca29",
+   "c0e45377e722",
+   "7fd9c075e674",
+   "2ddc612292d5"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "oba": {
+  "frases": [],
+  "visitas": 0,
+  "verificadoEm": "2026-11-03",
+  "situacao": "http 404"
+ },
+ "obofe": {
+  "frases": [
+   "13d1ab76a251",
+   "64804eb1dd3a",
+   "f0b49eba9862"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obb": {
+  "frases": [],
+  "visitas": 0,
+  "verificadoEm": "2026-11-03",
+  "situacao": "http 403"
+ },
+ "obapo": {
+  "frases": [
+   "ba113e530132",
+   "82ef61cd3f45",
+   "19d71d01f066",
+   "969ab8e308c3",
+   "c300cc41f48b",
+   "7d3ef75e68f1",
+   "0cad629ed504"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "o2-oceano": {
+  "frases": [
+   "b908762480ac",
+   "4cd9dc48c85e",
+   "5ca7c17c2899",
+   "0cfb88849a40",
+   "75fcf2fe449e",
+   "8ddd12a4ee1c",
+   "f73e6abb7b03",
+   "e21ff952e587",
+   "50a1fcb54318",
+   "68ae3c537415",
+   "fb9ab44aa221",
+   "f67971baa3ac",
+   "006e481cf678",
+   "a16417058fc7",
+   "4dd13f6b8e34",
+   "65c1d7417cb1",
+   "65cf25911151"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obadm": {
+  "frases": [
+   "d8d93f6b1405",
+   "15d507ee65cc",
+   "abf99aa15ca5",
+   "15843e853c44",
+   "c137386d985c"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obbs": {
+  "frases": [
+   "b9eb40aae333",
+   "24eea471bbc6",
+   "f0adc7e2a063",
+   "11d9e1afe695",
+   "844f357d92e9",
+   "1c74cb873966",
+   "7b2abd333fc8",
+   "43d941234387",
+   "7d2e84fcb2ef",
+   "11c4f2a4d500",
+   "f4d6653e4a43",
+   "68fbb788670e",
+   "5006100fd13a",
+   "d2d46472c29c"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obafog": {
+  "frases": [],
+  "visitas": 0,
+  "verificadoEm": "2026-11-03",
+  "situacao": "http 404"
+ },
+ "obap": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obrac": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obe": {
+  "frases": [],
+  "visitas": 0,
+  "verificadoEm": "2026-11-03",
+  "situacao": "falhou"
+ },
+ "obgp": {
+  "frases": [
+   "b1100b20a4e7",
+   "8e496b5c19aa",
+   "55f117894e8c",
+   "92f58979e020",
+   "e4e052851b50",
+   "4bd36aecb79a",
+   "aeab58c6e3e5",
+   "6e0fd139bd0d",
+   "efe743d628a3",
+   "521b6eece9a2",
+   "d346bb6ebee5",
+   "135f4fad6694",
+   "01471c438102",
+   "846ba5296a33",
+   "850170556172",
+   "6f561c49ec54",
+   "4fd7c98af96e",
+   "f5b142a69ea0",
+   "e8c15a7752ae",
+   "21bd532c0ab9",
+   "ccddc066000b",
+   "bcd5bea16b17",
+   "af7b73b7de57",
+   "76598361bade",
+   "a1ca8a9bf518",
+   "5aebf5447a68",
+   "562560a42c77",
+   "93d9d7f17ace",
+   "70b027ad2e60",
+   "6478f5df8aaf",
+   "3c744e2848f5",
+   "ba32551e6a89",
+   "8772650f385f",
+   "af5833956de3",
+   "6456a414e73d",
+   "121f78cc6082",
+   "e1a054de93f8",
+   "cdaaebd28f12",
+   "dd7ec8831348",
+   "40144c7b3cc5",
+   "223c7e741c76",
+   "938ba45d17a0",
+   "af9daa748603",
+   "f6911e14f8be"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obi": {
+  "frases": [
+   "d91bd2afaf66",
+   "42caf9e31284",
+   "865b83d24545",
+   "411a0eec2037",
+   "258cdc46e5eb",
+   "1864e50514c4",
+   "4d3214ba3323"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obecon": {
+  "frases": [
+   "fbb3ef29d71d",
+   "eefddabc18a2",
+   "59ee462bccea",
+   "f8b2315a0706",
+   "7dba482fcdc1",
+   "0fbfbb065e4d",
+   "fc3944b9f785",
+   "b348b66ea1c6",
+   "7213f9eb46d4",
+   "a74ab2650ccb"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obf": {
+  "frases": [
+   "3e9a421b8939",
+   "fbb99380cdde",
+   "ed1c847a374c",
+   "d092fbe32b0d",
+   "16dd2772a83d",
+   "33051ffcdd38",
+   "e34efe6a61f8",
+   "94af6fc8cf3c",
+   "3dab503e9d0c",
+   "4fb229d75e5f",
+   "e8d80c936f23",
+   "c713dcae5aaf",
+   "021356e7bee9",
+   "fb2fdd221c20",
+   "b928218ad8f4",
+   "879099a5c842",
+   "8b4caba494d9",
+   "561d04ab4613"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obfep": {
+  "frases": [
+   "60c24d1cb38b",
+   "a915c9d0d81a"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obli": {
+  "frases": [
+   "c89652363f57",
+   "8e496b5c19aa",
+   "55f117894e8c",
+   "92f58979e020",
+   "e4e052851b50",
+   "4bd36aecb79a",
+   "aeab58c6e3e5",
+   "6e0fd139bd0d",
+   "efe743d628a3",
+   "7c67532896f5",
+   "6e9cb742a76d",
+   "fad48ef5bd24",
+   "135f4fad6694",
+   "cfb74c965de3",
+   "846ba5296a33",
+   "d808dcdf09cd",
+   "6f561c49ec54",
+   "4fd7c98af96e",
+   "f5b142a69ea0",
+   "d1b7cb7dd463",
+   "ccddc066000b",
+   "bcd5bea16b17",
+   "af7b73b7de57",
+   "76598361bade",
+   "a1ca8a9bf518",
+   "5aebf5447a68",
+   "f7d30507f90a",
+   "93d9d7f17ace",
+   "70b027ad2e60",
+   "6478f5df8aaf",
+   "3c744e2848f5",
+   "ba32551e6a89",
+   "bd1047a037bd",
+   "23bfd55489ea",
+   "af5833956de3",
+   "6456a414e73d",
+   "121f78cc6082",
+   "e1a054de93f8",
+   "3f1692f26dc8",
+   "dd7ec8831348",
+   "775ad1b57b23",
+   "223c7e741c76",
+   "938ba45d17a0",
+   "af9daa748603",
+   "f6911e14f8be"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obmf": {
+  "frases": [
+   "d69c805816a5",
+   "8e496b5c19aa",
+   "3fefe59af12a",
+   "dbb65ea8826d",
+   "0fddabd88e01",
+   "8d691fc2a2ef",
+   "ed7f9a63aa07",
+   "6acf83dbbac1",
+   "bdce3e5039eb",
+   "3e5cd59464ad",
+   "62fe80119f8d",
+   "3d9e2f555be0",
+   "c1889450d81c",
+   "2dcc02ad5c06",
+   "fb4c97ab8333",
+   "138ca8ad9fd0",
+   "e257faea29f0",
+   "c09c2294643c",
+   "c5b7c06e8f85",
+   "84e1ab8279c9",
+   "9282ff9c447e",
+   "7f64466e799c",
+   "ffb2eb58a853",
+   "f6c49405a224",
+   "44981c28dc1d",
+   "a4003837ba76",
+   "1aa037bf8d75",
+   "5dab5a64b790",
+   "0216243f98f8",
+   "a3b2a9ea05f7",
+   "2a6d5f91757d",
+   "3d96ea158eae",
+   "31cfcb7c116f",
+   "07a7c451290d",
+   "3794f6297632",
+   "415dea9b701c",
+   "7fd15f0e66ef",
+   "ab9379a6eb2d",
+   "b8fa49ee61ca",
+   "e36711effe1e",
+   "8541094bf36b",
+   "214a3a1cf600",
+   "fa15cae2ba3e",
+   "14863cfe26a2",
+   "55f117894e8c",
+   "92f58979e020",
+   "e4e052851b50",
+   "4bd36aecb79a",
+   "6e0fd139bd0d",
+   "efe743d628a3",
+   "a83b09bb0dc5",
+   "0d145b54d5d1",
+   "135f4fad6694",
+   "01471c438102",
+   "846ba5296a33",
+   "850170556172",
+   "6f561c49ec54",
+   "4fd7c98af96e",
+   "f5b142a69ea0",
+   "9e7a2971f7f9",
+   "140a3fb6dcfb",
+   "296650394a51",
+   "ccddc066000b",
+   "bcd5bea16b17",
+   "af7b73b7de57",
+   "76598361bade",
+   "a1ca8a9bf518",
+   "5aebf5447a68",
+   "10a468ef6d91",
+   "93d9d7f17ace",
+   "70b027ad2e60",
+   "6478f5df8aaf",
+   "3c744e2848f5",
+   "ba32551e6a89",
+   "ecd48092861f",
+   "af5833956de3",
+   "6456a414e73d",
+   "121f78cc6082",
+   "e1a054de93f8",
+   "24896096352a"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obl": {
+  "frases": [
+   "690a1b86b599",
+   "f2741ddff971",
+   "fb21ec2b3c52",
+   "6045c01a7b8a"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obg": {
+  "frases": [
+   "d134025f491d",
+   "7adb4200e293",
+   "cafc3045d951",
+   "50f71db1d606",
+   "4b7e4a5ce6ae",
+   "1cbdc21ab593",
+   "2400cda5421a",
+   "9444761e1f05",
+   "775bc872ca59",
+   "b64646f13438",
+   "d40fbf64bb05",
+   "8bd6754c2deb",
+   "1b5f581dce6f",
+   "7ab5a10146f6",
+   "2c357861002c",
+   "0b615caf95b5",
+   "bdb32fe238e3",
+   "e73c096d66e0",
+   "38b4e920cccc",
+   "46b5ba9eff4c"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obm": {
+  "frases": [
+   "4bed11a6a568",
+   "e8040dd504d0"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obinvest": {
+  "frases": [
+   "b1fcdada2127",
+   "548c9c7a7ba9",
+   "e8e81b6073c8",
+   "d236641c6dbe",
+   "03fa366f84a7",
+   "cb16484bb990"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obef": {
+  "frases": [
+   "61ca10ab450d",
+   "5294cbf69d4d",
+   "5dfd864534c4",
+   "9fc82c083e87",
+   "37901777bc2f",
+   "6ae35d2ac6ed",
+   "b5494a262f6b",
+   "ac515dc0c857",
+   "4e8856c02458",
+   "73762c17e048",
+   "776de074ec73",
+   "c728862691a5",
+   "2cdb322ca9f5",
+   "7b8aac05e2b3",
+   "6f707969f19e",
+   "f01bcc1b0049",
+   "011936278bcc",
+   "1ec908f26943",
+   "729688ca2a57",
+   "0c0e17f10bfa",
+   "d7afaa788993",
+   "2de2359739ad",
+   "cd0cd78e0dab"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obr": {
+  "frases": [
+   "7d44d0c08cc9",
+   "47683028e078"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obrl": {
+  "frases": [
+   "4b9623e5be5b",
+   "a4227db8f70a",
+   "a130926a8fee",
+   "7b9bfc005a73",
+   "f47e5d991828",
+   "87584a4edce7",
+   "27976ae62e22",
+   "e0bcb8a72824",
+   "bc151dbf49b0",
+   "774d40e0a109",
+   "fbe43231a3c5",
+   "9a9e09528eaa",
+   "33039ee61de3",
+   "6bde65d94dee",
+   "7d885ec278b7",
+   "16b6f9debf73",
+   "e5f0f634c89e",
+   "dd106f12fbbc",
+   "aa853ad4ed80",
+   "4a0a260fa6b8",
+   "676fa0ebaace",
+   "05b7ea0432c0"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obq": {
+  "frases": [
+   "4c38be95a800",
+   "b0b5da230ea3",
+   "a5a27a9e135c",
+   "8070e5a47947",
+   "73d340fb3b44",
+   "3514d34e42b6",
+   "494470b8b563",
+   "c909bcf16c26",
+   "05d0f7f93c7b",
+   "6867e3dca3fd",
+   "835b89f3991c",
+   "f2c5c52bb804",
+   "cb75b8404cd1",
+   "22edfd2a2a03",
+   "e23cc330484a",
+   "e7fa1e08f7d0",
+   "2c7737e7efe6",
+   "5a7844e4e9c9",
+   "d317abc9d0a9",
+   "e797241ec5ca",
+   "73fd0607189d",
+   "81376ffb38d1",
+   "50db8df5f0f8",
+   "03546929d889",
+   "64d1cde9cef9",
+   "836ae33216aa",
+   "e6ef3ed1638c",
+   "52df38e0d6f4",
+   "b2ce9d3b07f2",
+   "baefeaaacf2a",
+   "ce7ac1ac36e7",
+   "f84b90d8ef0e",
+   "800f971bddd4",
+   "d6cc46427b72",
+   "ab70f302b613",
+   "529043a184a5"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "canguru": {
+  "frases": [
+   "2b456e842643",
+   "35094078aa66",
+   "7d5c30e834aa",
+   "187e9623fa63",
+   "4363f557c6fa",
+   "9948c33a7346"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obt": {
+  "frases": [
+   "f68c31327a15",
+   "fbea51c83a53",
+   "620e61b9a0fd",
+   "6f5d61566221",
+   "8e6a9f92142b",
+   "5fbfbc78e528",
+   "2a3f19dc9d62",
+   "7ae741c51907",
+   "c486f330ea5b",
+   "dc56bc0509be"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obmep-jr": {
+  "frases": [
+   "6629179a7ad8",
+   "1b1b234e19b0",
+   "3198673e180e",
+   "6cf9eac98adb",
+   "fa5b5120fa5d",
+   "8c13c1fc49c6"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "oci": {
+  "frases": [],
+  "visitas": 0,
+  "verificadoEm": "2026-11-03",
+  "situacao": "falhou"
+ },
+ "obmep": {
+  "frases": [
+   "6629179a7ad8",
+   "8ac3f5be9abf",
+   "f4c3414a5b53",
+   "705d7bb58a22"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "ocm": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "ocf": {
+  "frases": [
+   "9782573dcefb",
+   "19570d618da9",
+   "e2d33f5e272c"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "ocef": {
+  "frases": [
+   "c44a98958078",
+   "d620d31886a1",
+   "70309c992f59",
+   "26e7de44a433",
+   "77789380bc48",
+   "875c222fca5e",
+   "eba3370ee7d4"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "ocq": {
+  "frases": [
+   "c466b651bfe8",
+   "7c462f82e6ca",
+   "954a79e2b8ef",
+   "6e7854c59e32",
+   "7f13fa5eb7c2",
+   "e1bfce87c347"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "obsma": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "oiab": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "oiaq": {
+  "frases": [
+   "4c38be95a800",
+   "355ab53ef10c",
+   "bd30c571d64f",
+   "7f2ad4d7519f",
+   "ed7074d7b781",
+   "9f3d257b56f4",
+   "644df4180d9b",
+   "b5e4c0049748",
+   "cc412ef4a3ed"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "oiaf": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "oimc": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "oii": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "olaa": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "oimsf": {
+  "frases": [
+   "22a5533d7f0f"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "onda": {
+  "frases": [
+   "9cfc62c38195",
+   "41f7a8f726ed",
+   "54c43d6763a1",
+   "f4c65b3e8ad4"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "mandacaru": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "one": {
+  "frases": [],
+  "visitas": 0,
+  "verificadoEm": "2026-11-03",
+  "situacao": "nao-html"
+ },
+ "onee": {
+  "frases": [
+   "d41298b0f9a2",
+   "f253374de6a1",
+   "4980807369bc",
+   "cebbfa442a67",
+   "ca3221c4700b",
+   "d9f4994e730b",
+   "3c8d5c1ef31a",
+   "60e03a80fa6f",
+   "0f9f07415810"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "onc": {
+  "frases": [
+   "7fd317e2edfa"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "onfil": {
+  "frases": [
+   "6c1d0e6c4d8f",
+   "a382583fa056",
+   "8170fcaa9c00",
+   "fa80e6d97595",
+   "b90f2dd5fee8"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "onad": {
+  "frases": [
+   "5d86b0db2c03",
+   "5f14983dc829",
+   "abd7840fbbe2",
+   "7a55d03311b7",
+   "a7f9a0ee1cd8",
+   "562baf39858c",
+   "77fe4274c861",
+   "b90264ec3e8e",
+   "36cd323f77f7",
+   "5ef98776a786",
+   "3a58e67fc01c",
+   "04968b9af7a6",
+   "18832fe0b0c1",
+   "6b64d8e370d2",
+   "4aae4f505cf0",
+   "4aeb2cedad9e",
+   "a339b7ebac6b",
+   "f459d6049199",
+   "34cf79234920",
+   "f71f23b38938",
+   "1922c3946248",
+   "187e7e76daf8",
+   "7e0fde653ed9",
+   "07917c54ebf4",
+   "70a31526fff1",
+   "db89942a8e70",
+   "81313f93a99b",
+   "3b935d7e7b38",
+   "68311fcca618",
+   "67ae9d80a4b8",
+   "9e7956ebfba1",
+   "10e9fa10029a",
+   "cd0ebf1e0668",
+   "e3a7694b2219",
+   "4a33423cf35f",
+   "add1e5b9797b",
+   "bea2d86a41e1",
+   "166d1b3f1ca9",
+   "5c9e584093f7",
+   "a5013b2945d1",
+   "07a741f4362f",
+   "743e3a7e768e",
+   "ebfd0807c820",
+   "5fb1231d366a",
+   "576d1e91cf4c",
+   "7c92247a28c9",
+   "9f4f55d93902",
+   "3d39470b60f3",
+   "99da3a37ec0b",
+   "57560ef1caa9",
+   "1b76bab5f0ec",
+   "f64d519eadf7",
+   "c25c9b241e3e",
+   "ad946d5e427e",
+   "ed21f8ed3537",
+   "af2515258a8a",
+   "4eeb154262b3",
+   "dafe4c4e1ae4",
+   "bff545df2452",
+   "94a86187ea07",
+   "2c27078b4327"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "onano": {
+  "frases": [
+   "5fb88ded5d72",
+   "204fd4b3bd81",
+   "3d8b8acdfcdb",
+   "e9ea3cb1c138",
+   "0f720b34112c",
+   "bfe991a6114d"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "onia": {
+  "frases": [
+   "73b23b30d138",
+   "94ff472f3ff0",
+   "94c87458330e",
+   "fb8647d439ab",
+   "a2a99fded8ec",
+   "6a22551d21fd",
+   "340902f58c61",
+   "51782b017f17",
+   "f8e153055ca5",
+   "afc90cd2936f",
+   "511226f3e019",
+   "2f349a0d5974",
+   "808e8b47dc82",
+   "b5dafadf316b",
+   "2e7b80b26dd0",
+   "ea05888eda71",
+   "8dde0cdb6327",
+   "4579717b2abd",
+   "6ff9d3b72b0d",
+   "294caffb7b96",
+   "bc3bca699844",
+   "d9e07aca516c",
+   "9cc780957ffc"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "onsc": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "onhb-a": {
+  "frases": [],
+  "visitas": 0,
+  "verificadoEm": "2026-11-03",
+  "situacao": "http 503"
+ },
+ "quimeninas": {
+  "frases": [
+   "4c38be95a800",
+   "28938df26892",
+   "1bb604dbdef0",
+   "dad7454b3b74",
+   "5d744a29c53b",
+   "a88398670aa4",
+   "b6d49df2ae93",
+   "e68facfc3714",
+   "ed958c223acf",
+   "df49c3e74344",
+   "74d2d3f61755",
+   "80d4694c20e3",
+   "35ebe08b9430",
+   "f7890646931d",
+   "c7697e7f97c8",
+   "8356ba49c795",
+   "e1450480e2a6",
+   "901e150bb758",
+   "009208163ba4",
+   "769e5b025957",
+   "3b66d6180e27",
+   "8d266b49b024",
+   "58eabc1536be",
+   "44c9eb2aede7",
+   "67857fc4e2ef",
+   "aa493f86fdbb",
+   "89ae57a62850",
+   "fe8a70f6c872",
+   "3aefc908fb54",
+   "3bbbcc1d7c2f",
+   "18f90ca94148",
+   "97a1b7e79b1e",
+   "aec2dfdcf72a",
+   "97f502a2cc7e",
+   "c806aac8bda0",
+   "120da4e2ab47",
+   "7b6518eb5a24",
+   "5175bdcd7f3b",
+   "ada113cd0225",
+   "9f63f0d7335c",
+   "fa5c8254cc4d",
+   "b7a2a9034e77",
+   "8ed67ac93c4f",
+   "38d337266742",
+   "650c605516f7",
+   "d6092fac22a1",
+   "3305ed4e8609",
+   "e9eccaf63b29",
+   "adde93515308",
+   "61ac262bc1e7",
+   "01d87018e206",
+   "b12ecba0a45c"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "onhb": {
+  "frases": [],
+  "visitas": 0,
+  "verificadoEm": "2026-11-03",
+  "situacao": "http 503"
+ },
+ "oche": {
+  "frases": [
+   "872d2f4a4a09",
+   "84b862085f3f",
+   "350fe591b4be",
+   "d6ef30274c5a",
+   "16b9bd6ac02c",
+   "5873a0a364c1",
+   "65ca10460af3",
+   "93a346ce6c14",
+   "abb46dc9460e",
+   "7c6c8843c65b",
+   "898e6469bc0f",
+   "07b31d2108ea",
+   "ebca9f525a4d",
+   "b6be001b9106",
+   "1a860175c7f9",
+   "a551da61762c",
+   "1e4a06afeb71",
+   "327ee5ce7b20",
+   "7a0207366edb"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "ia-aplicada": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "opm": {
+  "frases": [],
+  "visitas": 0,
+  "verificadoEm": "2026-11-03",
+  "situacao": "falhou"
+ },
+ "omaio": {
+  "frases": [],
+  "visitas": 0,
+  "verificadoEm": "2026-11-03",
+  "situacao": "http 404"
+ },
+ "gepemac": {
+  "frases": [
+   "d29d6ed328f2",
+   "0336e90dcbcd",
+   "eaafc383b9e3"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "olp": {
+  "frases": [
+   "fc4b6ade4d79",
+   "6617fbdf917a"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "controle-social": {
+  "frases": [
+   "7b4f378fed18",
+   "9ab8181d7b66",
+   "1661f6477931",
+   "2d0c1a9cb5a8",
+   "1785dec0eb8e",
+   "e4c24b12eeae",
+   "88b02c11dd64",
+   "50428a1fe8e0",
+   "236342eb67fd"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "olimpiada-de-literatura": {
+  "frases": [
+   "1b237bd2e463",
+   "c7aea8d308a4",
+   "57b9f0066b1f",
+   "ad5e0ca2f2e1",
+   "49923b0b1fdb",
+   "fcf91a06f227"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "omerj": {
+  "frases": [
+   "806169ca3831"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "olimpiada-de-portugues": {
+  "frases": [
+   "fc4b6ade4d79",
+   "6617fbdf917a"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "omu": {
+  "frases": [
+   "38b5b0c17160",
+   "7bdd95e2c9bf",
+   "6cb72a33e2f2",
+   "70cc4e95e569",
+   "b46964201b6f"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "omifce": {
+  "frases": [
+   "ba663523db26",
+   "57be27173c58",
+   "8d2ba4253abc",
+   "1363884900e1",
+   "a95fce4d153e",
+   "5b0febed83e9",
+   "5902850206b4",
+   "2db780911006",
+   "00139843f141",
+   "6111e239e7d2",
+   "454ddac9217d",
+   "cd88e016f1d5",
+   "b2d4fa7db485",
+   "355bfd02fd44",
+   "f580aa066f3f",
+   "c7f76601ab60",
+   "0128b156975a"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "omrn": {
+  "frases": [],
+  "visitas": 0,
+  "verificadoEm": "2026-11-03",
+  "situacao": "falhou"
+ },
+ "oscear": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "olitef": {
+  "frases": [
+   "1cd51c62d3e3",
+   "de8fd7c2c873",
+   "63173682f2b2",
+   "93c1c586d458",
+   "1baaee949e72"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "premio-criativos": {
+  "frases": [],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "oqep": {
+  "frases": [
+   "ecc95d1e74b7",
+   "cdc868aa65b0",
+   "92daafd0ddd5",
+   "0ba512f67cef",
+   "1621b004309c",
+   "6c8b9ce8e35b"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "tnbio": {
+  "frases": [
+   "03fee578d4ae",
+   "8e496b5c19aa",
+   "855de502c68f",
+   "55f117894e8c",
+   "92f58979e020",
+   "e4e052851b50",
+   "4bd36aecb79a",
+   "aeab58c6e3e5",
+   "d0a9dd5c460c",
+   "3eeef4018b21",
+   "3e96edadffcb",
+   "ff478ea1f341",
+   "3b8698943a14",
+   "01471c438102",
+   "846ba5296a33",
+   "850170556172",
+   "6f561c49ec54",
+   "4fd7c98af96e",
+   "f5b142a69ea0",
+   "06c49b55cdeb",
+   "45cbfa5ad2f9",
+   "bcd5bea16b17",
+   "af7b73b7de57",
+   "76598361bade",
+   "a1ca8a9bf518",
+   "5aebf5447a68",
+   "bdccefa19b3f",
+   "93d9d7f17ace",
+   "70b027ad2e60",
+   "6478f5df8aaf",
+   "3c744e2848f5",
+   "ba32551e6a89",
+   "502be6231a30",
+   "af5833956de3",
+   "6456a414e73d",
+   "121f78cc6082",
+   "e1a054de93f8",
+   "58fc6250973d",
+   "dd7ec8831348",
+   "434fddcecfb7",
+   "223c7e741c76",
+   "938ba45d17a0",
+   "af9daa748603",
+   "f6911e14f8be"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "tbc": {
+  "frases": [
+   "e0d90e793f45",
+   "8e496b5c19aa",
+   "55f117894e8c",
+   "92f58979e020",
+   "e4e052851b50",
+   "4bd36aecb79a",
+   "aeab58c6e3e5",
+   "d0a9dd5c460c",
+   "3eeef4018b21",
+   "418732fc8b81",
+   "0aeb443931ef",
+   "135f4fad6694",
+   "01471c438102",
+   "846ba5296a33",
+   "850170556172",
+   "6f561c49ec54",
+   "4fd7c98af96e",
+   "f5b142a69ea0",
+   "824195f2ddcf",
+   "bcd5bea16b17",
+   "af7b73b7de57",
+   "76598361bade",
+   "a1ca8a9bf518",
+   "5aebf5447a68",
+   "704993f24546",
+   "93d9d7f17ace",
+   "70b027ad2e60",
+   "6478f5df8aaf",
+   "3c744e2848f5",
+   "ba32551e6a89",
+   "1b7ba0123fa0",
+   "af5833956de3",
+   "6456a414e73d",
+   "121f78cc6082",
+   "e1a054de93f8",
+   "3ed315eb6ae4",
+   "dd7ec8831348",
+   "4b49cd7fe44a",
+   "223c7e741c76",
+   "938ba45d17a0",
+   "af9daa748603",
+   "f6911e14f8be"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "restaura-natureza": {
+  "frases": [],
+  "visitas": 0,
+  "verificadoEm": "2026-11-03",
+  "situacao": "falhou"
+ },
+ "tm2": {
+  "frases": [
+   "471e2dae0bd8"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "tfm": {
+  "frases": [
+   "a24770a63096",
+   "524b4b02c472",
+   "6608ea0917c2",
+   "ff4644d36477",
+   "329aad270774",
+   "4d61f3b43a53",
+   "f4fd4c416321",
+   "4bb705ae3d8a"
+  ],
+  "visitas": 1,
+  "verificadoEm": "2026-11-03",
+  "situacao": "ok"
+ },
+ "ocerq": {
+  "frases": [],
+  "visitas": 0,
+  "verificadoEm": "2026-11-03",
+  "situacao": "falhou"
+ },
+ "oim": {
+  "frases": [],
+  "visitas": 0,
+  "verificadoEm": "2026-11-03",
+  "situacao": "falhou"
+ }
+}

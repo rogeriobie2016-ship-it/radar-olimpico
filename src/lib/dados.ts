@@ -2,8 +2,9 @@
 import ccJson from "@data/ceara-cientifico.json";
 import jocJson from "@data/joc.json";
 import metaJson from "@data/meta.json";
+import novidadesJson from "@data/novidades.json";
 import oportunidadesJson from "@data/oportunidades.json";
-import { cearaCientificoSchema, jocSchema, metaSchema, oportunidadesSchema } from "./schema";
+import { cearaCientificoSchema, jocSchema, metaSchema, novidadesSchema, oportunidadesSchema } from "./schema";
 import type { Oportunidade } from "./schema";
 import type { Resumo } from "./tipos";
 
@@ -11,6 +12,15 @@ export const oportunidades = oportunidadesSchema.parse(oportunidadesJson);
 export const meta = metaSchema.parse(metaJson);
 export const cearaCientifico = cearaCientificoSchema.parse(ccJson);
 export const joc = jocSchema.parse(jocJson);
+export const novidades = novidadesSchema.parse(novidadesJson);
+
+const novidadeDe = (id: string) => novidades.itens.find((n) => n.oportunidadeId === id);
+
+/** Prazo detectado no site oficial só entra se a COPES não tiver registrado um prazo mais novo. */
+const prazoAutomatico = (o: Oportunidade) => {
+  const n = novidades.itens.find((x) => x.oportunidadeId === o.id && x.prazoFim);
+  return n?.prazoFim && (!o.inscricoes.fim || n.prazoFim > o.inscricoes.fim) ? n.prazoFim : null;
+};
 
 /** Versão leve de cada item, para listas no navegador (sem textos longos). */
 export const resumir = (o: Oportunidade): Resumo => ({
@@ -27,7 +37,8 @@ export const resumir = (o: Oportunidade): Resumo => ({
   formato: o.formato,
   custo: o.custo.tipo,
   inicio: o.inscricoes.inicio,
-  fim: o.inscricoes.fim,
+  fim: prazoAutomatico(o) ?? o.inscricoes.fim,
+  novidade: novidadeDe(o.id)?.detectadoEm ?? null,
   provas: o.provas,
   financiavelJOC: o.financiavelJOC,
   vagaOlimpica: o.desbloqueia.some((d) => d.tipo === "vaga-olimpica"),

@@ -1,0 +1,39 @@
+name: Monitorar sites oficiais
+
+on:
+  schedule:
+    - cron: "30 9 * * *" # todo dia, 6h30 em Fortaleza
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  monitorar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Abrir os sites oficiais e procurar novidades
+        run: node scripts/monitorar-sites.mjs
+      - name: Conferir os dados
+        run: npm run validar
+      - name: Salvar e publicar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "radar-olimpico-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/novidades.json data/monitor-estado.json
+          if git diff --cached --quiet; then
+            echo "Nada mudou."
+            exit 0
+          fi
+          git commit -m "Monitor: verificação de $(date +%d/%m/%Y)"
+          git push
+          gh workflow run deploy.yml

@@ -10,11 +10,8 @@ export const metadata: Metadata = {
 
 export default function RadarPagina() {
   return (
-    <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 pt-5">
-      <div>
-        <h1 className="text-3xl font-black">Radar</h1>
-        <p className="mt-1 text-tinta-2">Olimpíadas, feiras e programas para estudantes da rede estadual do Ceará.</p>
-      </div>
+    <div className="mx-auto flex max-w-6xl flex-col gap-5 px-4 pt-6">
+      <h1>Radar</h1>
       <AvisoRadar itens={resumos} edicao={meta.ultimaEdicaoRadar} />
       <h2 className="sr-only">Oportunidades</h2>
       <RadarCliente itens={resumos} />

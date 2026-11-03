@@ -1,9 +1,8 @@
 "use client";
 
-import Link from "@/components/L";
 import { useEffect, useState } from "react";
-import { CartaoOportunidade } from "@/components/CartaoOportunidade";
-import { Icone } from "@/components/Icone";
+import Link from "@/components/L";
+import { LinhaOportunidade } from "@/components/LinhaOportunidade";
 import { urlAbsoluta } from "@/lib/base";
 import { useFavoritos } from "@/lib/favoritos";
 import { baixarIcs, eventosDe, linkWhatsApp } from "@/lib/ics";
@@ -16,46 +15,44 @@ export function ListaCliente({ itens }: { itens: Resumo[] }) {
   const [montado, setMontado] = useState(false);
   useEffect(() => setMontado(true), []);
 
+  if (!montado) return null;
+
   const salvos = itens.filter((i) => lista.includes(i.id)).sort((a, b) => compararPrazo(a, b, hoje));
   const eventos = eventosDe(salvos);
 
-  if (!montado) return <p className="text-tinta-2">Carregando sua lista...</p>;
-
   if (!salvos.length)
     return (
-      <div className="cartao flex flex-col items-center gap-3 p-8 text-center">
-        <Icone nome="lista" tamanho={40} className="text-laranja-forte" />
-        <p className="text-lg font-bold">Sua lista está vazia</p>
-        <p className="max-w-sm text-sm text-tinta-2">Toque no marcador de qualquer oportunidade para guardar aqui. Ela fica salva neste aparelho, sem precisar de login.</p>
-        <div className="flex flex-wrap justify-center gap-2">
-          <Link href="/radar/" className="btn btn-primario">Ver o Radar</Link>
-          <Link href="/descubra/" className="btn btn-secundario">Fazer o quiz</Link>
+      <div className="flex flex-col items-start gap-4">
+        <p className="max-w-md text-tinta-2">Nada salvo ainda. Use o marcador de qualquer oportunidade para guardá-la neste aparelho, sem precisar de login.</p>
+        <div className="flex flex-wrap gap-2">
+          <Link href="/radar/" className="btn btn-primario">Abrir o Radar</Link>
+          <Link href="/descubra/" className="btn btn-secundario">Descobrir a minha</Link>
         </div>
       </div>
     );
 
-  const texto = `Minha lista no Radar Olímpico:\n${salvos.map((s) => `- ${s.nome}: ${urlAbsoluta(`/oportunidade/${s.slug}/`)}`).join("\n")}`;
+  const texto = `Minha lista no Radar Olímpico:\n${salvos.map((s) => `${s.nome}: ${urlAbsoluta(`/oportunidade/${s.slug}/`)}`).join("\n")}`;
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="grid gap-2 sm:flex">
-        <a href={linkWhatsApp(texto)} target="_blank" rel="noopener noreferrer" className="btn btn-secundario">
-          <Icone nome="whatsapp" />
+      <div className="flex flex-wrap gap-x-5">
+        <a href={linkWhatsApp(texto)} target="_blank" rel="noopener noreferrer" className="link inline-flex min-h-11 items-center text-[0.9375rem]">
           Enviar pelo WhatsApp
         </a>
-        <button type="button" className="btn btn-secundario" disabled={!eventos.length} onClick={() => baixarIcs("minha-lista-radar.ics", eventos)}>
-          <Icone nome="calendario" />
-          {eventos.length ? "Levar prazos para a agenda" : "Nenhum item tem data ainda"}
-        </button>
+        {eventos.length > 0 && (
+          <button type="button" className="link min-h-11 text-[0.9375rem]" onClick={() => baixarIcs("minha-lista-radar.ics", eventos)}>
+            Levar prazos para a agenda
+          </button>
+        )}
       </div>
-      <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      <ul className="regua grid lg:grid-cols-2 lg:gap-x-10">
         {salvos.map((item) => (
-          <li key={item.id} className="grid">
-            <CartaoOportunidade item={item} />
+          <li key={item.id}>
+            <LinhaOportunidade item={item} />
           </li>
         ))}
       </ul>
-      <p className="text-xs text-tinta-2">Sua lista fica guardada só neste navegador. Se limpar os dados do navegador, ela some.</p>
+      <p className="text-sm text-tinta-2">A lista fica guardada só neste navegador.</p>
     </div>
   );
 }

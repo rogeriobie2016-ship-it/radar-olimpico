@@ -24,6 +24,8 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - name: Testar a Escada Olímpica e os jogos
+        run: npm run testar
       - name: Validar e gerar o site
         run: npm run build
       - uses: actions/upload-pages-artifact@v3

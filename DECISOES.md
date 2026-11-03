@@ -65,3 +65,40 @@ Relatório da extração em `data/RELATORIO-EXTRACAO.md`. Decisões:
 
 - **Repositório público** na conta `rogeriobie2016-ship-it`: o GitHub Pages gratuito exige isso em conta pessoal. Sem dados pessoais de estudantes. Para ficar sob conta institucional, é só transferir o repositório e ajustar `NEXT_PUBLIC_SITE_URL`.
 - **Identidade visual oficial em site de teste:** o site usa logos da SEDUC e do JOC e está em conta pessoal. Antes de divulgar à rede, vale validar com a COPES e a comunicação, e avaliar um endereço oficial.
+
+## Revisão de interface e novos recursos (03/11/2026)
+
+Pedido: "tá com muito cara de IA", site premium, jogos por olimpíada, atualização automática, abertura em estilo streaming e a Escada Olímpica.
+
+- **Interface refeita do zero.** Saíram papel creme, cartões com sombra, pílulas, faixa colorida na lateral, quadrados coloridos com número, ícones de linha, passos em círculos e slogans. Entraram branco, tinta, réguas finas, listas em vez de cartões, tipografia condensada (Archivo com eixo de largura) e texto direto.
+- **Abertura em duas partes.** Primeiro uma sala escura com destaque em tela cheia e fileiras de cartazes, com prévia que sobe sem sair da página. Depois o radar interativo e as seções institucionais.
+- **Cartazes sem fotos.** O site não tem banco de imagens. Cada cartaz é um desenho gerado do nome da olimpíada: cor pela área, forma pelo nome. Fotos reais podem substituir no futuro.
+- **Radar interativo.** Cada oportunidade é um ponto: o anel é o nível, o setor é a área. Prazo aberto pisca em laranja.
+- **Busca em tela cheia** em qualquer página (botão, Ctrl+K ou /). O índice só é baixado ao abrir a busca.
+
+### Escada Olímpica
+
+- **Referência:** o pedido cita a "Porta de Entrada da Brazil Conference". Não encontrei registro público nem material local descrevendo esse formato (só um vídeo). Interpretei como diagnóstico guiado que termina em recomendação pessoal. Vale ajustar se o original tiver outra lógica.
+- **Duas camadas:** regras eliminatórias vêm primeiro (série, rede, convite, exclusivo para meninas, taxa) e nunca são compensadas por pontos. Depois vem a afinidade (interesse, formato, objetivo, experiência, tempo, escola).
+- **Explicável:** cada recomendação diz por quê, traz alertas e mostra o que ficou de fora e o motivo.
+- **Testada:** `npm run testar:escada` percorre 13.440 combinações de respostas e casos conferidos à mão. O deploy para se uma regra falhar.
+- **Dificuldade (1, 2 ou 3) foi classificada por mim** em `src/lib/escada.ts`, a partir do texto das fichas. A COPES deve revisar, porque isso define em qual degrau cada olimpíada aparece.
+- **Sem envio de dados:** tudo roda no aparelho. O link de compartilhar guarda só as respostas codificadas.
+
+### Atualização automática
+
+- **Monitor diário** (`.github/workflows/monitor.yml`, sem custo): abre os sites oficiais, compara com a visita anterior e registra novidades em `data/novidades.json`, com trecho e link. Publica sozinho.
+- **Regra conservadora de prazo:** só vira prazo a frase com a palavra inscrição seguida de data futura com ano escrito. Sem ano, pode ser de edição antiga, e por isso é descartada. O primeiro teste pegou um falso positivo na FENECIT, e a regra foi corrigida.
+- **O que a COPES preenche nunca é alterado.** Prazo detectado só aparece se for mais novo que o cadastrado, e a ficha mostra que foi detecção automática.
+- **Limite conhecido:** na primeira varredura, 59 de 101 sites deram texto útil. Em 31 o conteúdo depende de JavaScript, e 15 falharam (bloqueio, 404, fora do ar). Para esses, vale a pesquisa semanal.
+- **Pesquisa semanal na web:** rotina agendada do Claude que procura olimpíadas novas, abre as fontes e registra com `origem: "pesquisa"`. Depende da conta Claude de quem agendou. Para ficar institucional, a COPES precisaria de conta própria.
+- **Selo NOVIDADE** nas fileiras, no Radar, na ficha e no cabeçalho, até a pessoa visitar a página de Novidades.
+- **Olimpíada da Coruja:** entrou por pesquisa e não consta do Catálogo. É de uma empresa privada de cursos (Estratégia). A COPES deve decidir se ela fica no Radar.
+- **Dados atualizados pela pesquisa de 03/11:** FEBRACE, ONIA, Quimeninas, OBAdm, MOCICA, TNBio, OBMF, OBG, TFM, OBLI, OBGP e OBBS, com a fonte registrada. Categorias e áreas do Ceará Científico vieram do resumo do regulamento 2026 da SEDUC, porque o PDF bloqueou a leitura direta (erro 403). Conferir com o documento.
+
+### Jogos
+
+- **Sete jogos:** Jornada Científica (Ceará Científico), Escada (catálogo), Alvo (OBMEP), Lançamento (OBA e OBAFOG), Algoritmo (OBI e OBR), Linha do Tempo (ONHB e OCHE) e Balanço (Química). Mecânicas de gênero, com conteúdo original.
+- **Testados:** `npm run testar:jogos` confirma que toda fase do Algoritmo tem solução e que o limite anunciado é o mínimo real, que as equações equilibram e que os alvos são válidos.
+- **Conteúdo escrito por mim precisa de revisão pedagógica:** decisões da Jornada Científica e fatos da Linha do Tempo.
+- **Acessibilidade:** Alvo, Algoritmo, Linha do Tempo, Balanço e Jornada usam botões e funcionam por teclado. Escada aceita setas e botões, mas o desenho é visual. Lançamento tem controles deslizantes e o desenho também é visual.

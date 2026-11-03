@@ -1,15 +1,32 @@
 {
-  "resumo": "Política da SEDUC de popularização da ciência. Projetos de estudantes da rede estadual percorrem três etapas (escolar, regional e estadual), com inscrição no Portal Educação Científica.",
+  "resumo": "Política da SEDUC de popularização da ciência. Projetos de estudantes da rede estadual percorrem as etapas escolar, regional e estadual, com inscrição no Portal Educação Científica.",
   "portal": "https://educientifica.seduc.ce.gov.br/feiradeciencias/login.jsf",
   "etapas": [
-    { "nivel": "escolar", "nome": "Etapa escolar", "texto": "A escola apresenta os projetos dos estudantes." },
-    { "nivel": "regional", "nome": "Etapa regional", "texto": "Projetos seguem para a etapa da sua regional (CREDE/SEFOR)." },
-    { "nivel": "estadual", "nome": "Etapa estadual", "texto": "Projetos de todo o Ceará se encontram na etapa final." }
+    {
+      "nivel": "escolar",
+      "nome": "Etapa escolar",
+      "texto": "A escola apresenta os projetos dos estudantes."
+    },
+    {
+      "nivel": "regional",
+      "nome": "Etapa regional",
+      "texto": "Projetos seguem para a etapa da sua regional (CREDE/SEFOR)."
+    },
+    {
+      "nivel": "estadual",
+      "nome": "Etapa estadual",
+      "texto": "Projetos de todo o Ceará se encontram na etapa final."
+    }
   ],
   "categorias": {
-    "lista": ["Ciências e Engenharias", "Ciências Humanas e Sociais Aplicadas", "Linguagens"],
-    "aConfirmar": true,
-    "nota": "Lista parcial. Confira todas as categorias no edital vigente."
+    "lista": [
+      "Categoria I: Ensino Médio regular, em tempo integral e profissional",
+      "Categoria II: Ensino Médio de ações afirmativas e CEJA, incluindo escolas indígenas, quilombolas, do campo e família agrícola",
+      "Categoria III: Pesquisa Júnior",
+      "Categoria IV: Pessoas com Deficiência, no Ensino Fundamental e no Ensino Médio"
+    ],
+    "aConfirmar": false,
+    "nota": "Regulamento Ceará Científico 2026, SEDUC."
   },
   "edicoes": [
     {
@@ -27,13 +44,44 @@
   ],
   "ganhadores": [],
   "projetosDestaque": [],
-  "revista": { "titulo": "Revista Ceará Científico", "capa": null, "link": null, "aConfirmar": true },
+  "revista": {
+    "titulo": "Revista Ceará Científico",
+    "capa": null,
+    "link": null,
+    "aConfirmar": true
+  },
   "comoChegar": [
-    { "titulo": "Comece com uma pergunta", "texto": "Escolha um problema real da sua escola ou comunidade e convide um professor para orientar." },
-    { "titulo": "Fale com a escola", "texto": "A inscrição é feita pela escola no Portal Educação Científica, com o mesmo login usado no JOC." },
-    { "titulo": "Apresente na etapa escolar", "texto": "É o primeiro passo. A escola define os projetos que seguem adiante." },
-    { "titulo": "Siga para a regional", "texto": "Os projetos selecionados representam a escola na etapa da CREDE/SEFOR." },
-    { "titulo": "Chegue à estadual", "texto": "A etapa final reúne projetos de todo o Ceará." },
-    { "titulo": "Vá além", "texto": "Escola que participa do Ceará Científico soma 10 pontos na prioridade do JOC no ano seguinte, para viajar a outras feiras." }
-  ]
+    {
+      "titulo": "Defina uma pergunta de pesquisa",
+      "texto": "Parta de um problema real da escola ou da comunidade e convide um professor para orientar."
+    },
+    {
+      "titulo": "Escolha categoria e área",
+      "texto": "O regulamento 2026 tem quatro categorias e cinco áreas de pesquisa."
+    },
+    {
+      "titulo": "Inscreva pela escola",
+      "texto": "A inscrição é feita no Portal Educação Científica, com o login da escola."
+    },
+    {
+      "titulo": "Apresente na etapa escolar",
+      "texto": "A escola define os projetos que seguem adiante."
+    },
+    {
+      "titulo": "Siga para a regional",
+      "texto": "A CREDE/SEFOR seleciona os projetos da etapa estadual. Os critérios estão no regulamento da sua regional."
+    },
+    {
+      "titulo": "Chegue à estadual",
+      "texto": "A etapa final reúne projetos de todo o Ceará. Participar soma 10 pontos na prioridade do JOC no ano seguinte."
+    }
+  ],
+  "areas": [
+    "Linguagens, Códigos e suas Tecnologias",
+    "Matemática e suas Tecnologias",
+    "Ciências da Natureza, Educação Ambiental e Engenharias",
+    "Ciências Humanas e Sociais Aplicadas",
+    "Robótica, Automação e Aplicação das TIC"
+  ],
+  "regulamento": "https://www.seduc.ce.gov.br/wp-content/uploads/sites/37/2026/02/Regulamento-Ceara-Cientifico-2026.pdf"
 }

@@ -21,4 +21,5 @@ export type Resumo = {
   link: string | null;
   credenciaPara: string[];
   temFicha: boolean;
+  novidade: string | null;
 };

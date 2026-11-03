@@ -525,9 +525,18 @@
     "observacoes": null,
     "inscricoes": {
       "inicio": null,
-      "fim": null
+      "fim": "2026-10-20"
     },
-    "provas": [],
+    "provas": [
+      {
+        "fase": "Divulgação dos finalistas",
+        "data": "2026-12-18"
+      },
+      {
+        "fase": "Feira, abertura",
+        "data": "2027-03-15"
+      }
+    ],
     "linkOficial": "https://febrace.org.br/participe/",
     "comoParticipar": [
       "Confira se sua série e sua escola estão no público da olimpíada.",
@@ -537,12 +546,10 @@
     "desbloqueia": [],
     "credenciaPara": [],
     "financiavelJOC": true,
-    "fonte": "Catálogo 2026, p. 69",
+    "fonte": "Folder FEBRACE 2027, consultado em 03/11/2026; Catálogo 2026, p. 69",
     "aConfirmar": true,
     "camposAConfirmar": [
-      "inscricoes",
-      "modalidade",
-      "provas"
+      "modalidade"
     ],
     "atualizadoEm": "2026-11-03"
   },
@@ -1466,8 +1473,8 @@
     "objetivo": "Desenvolver a produção científica como forma sustentável de promoção do desenvolvimento ambiental, econômico, empreendedor, tecnológico, científico e social; estimular no indivíduo o interesse pelas ciências, mediante a observação do mundo; experimentar o uso das novas tecnologias por intermédio do desenvolvimento dos projetos envolvidos.",
     "observacoes": null,
     "inscricoes": {
-      "inicio": null,
-      "fim": null
+      "inicio": "2026-08-07",
+      "fim": "2026-09-01"
     },
     "provas": [],
     "linkOficial": "https://mocica.com.br/",
@@ -1479,10 +1486,9 @@
     "desbloqueia": [],
     "credenciaPara": [],
     "financiavelJOC": true,
-    "fonte": "Catálogo 2026, p. 70",
+    "fonte": "Site oficial, consultado em 03/11/2026; Catálogo 2026, p. 70",
     "aConfirmar": true,
     "camposAConfirmar": [
-      "inscricoes",
       "modalidade",
       "provas"
     ],
@@ -1634,8 +1640,8 @@
     "objetivo": "Fortalecer a formação de professores, estimular estudantes e profissionais quanto à inclusão e à conscientização dos ODS na administração, e promover o conhecimento científico como ferramenta transformadora para soluções sociais e sustentáveis.",
     "observacoes": null,
     "inscricoes": {
-      "inicio": null,
-      "fim": null
+      "inicio": "2026-03-11",
+      "fim": "2026-06-07"
     },
     "provas": [],
     "linkOficial": "https://www.obadm.org.br/",
@@ -1647,10 +1653,9 @@
     "desbloqueia": [],
     "credenciaPara": [],
     "financiavelJOC": true,
-    "fonte": "Catálogo 2026, p. 58",
+    "fonte": "Site oficial, consultado em 03/11/2026; Catálogo 2026, p. 58",
     "aConfirmar": true,
     "camposAConfirmar": [
-      "inscricoes",
       "modalidade",
       "provas"
     ],
@@ -1923,7 +1928,7 @@
     "observacoes": null,
     "inscricoes": {
       "inicio": null,
-      "fim": "2026-07-31"
+      "fim": "2026-08-14"
     },
     "provas": [],
     "linkOficial": "https://synbiobr.org/atividades-eventos/olimpiada/",
@@ -1934,7 +1939,7 @@
     "desbloqueia": [],
     "credenciaPara": [],
     "financiavelJOC": true,
-    "fonte": "Radar Julho 2026, p. 5",
+    "fonte": "Site oficial, consultado em 03/11/2026; Radar Julho 2026, p. 5",
     "aConfirmar": true,
     "camposAConfirmar": [
       "modalidade",
@@ -2417,7 +2422,7 @@
     "objetivo": "Criar um espaço de colaboração e possibilitar o crescimento e a difusão de boas práticas de ensino! Tem o foco de estímulo ao desenvolvimento sociocultural e educacional do estado do Ceará, através do incentivo à pesquisa, conhecimento e apropriação de elementos da cultura e realidade cearenses.",
     "observacoes": "O Catálogo 2026 indica inscrição paga, o Radar de Julho indica gratuita. Confirme no site oficial.",
     "inscricoes": {
-      "inicio": null,
+      "inicio": "2026-04-09",
       "fim": "2026-07-20"
     },
     "provas": [],
@@ -2439,7 +2444,7 @@
     ],
     "credenciaPara": [],
     "financiavelJOC": true,
-    "fonte": "Radar Julho 2026, p. 3; Catálogo 2026, p. 42",
+    "fonte": "Site oficial, consultado em 03/11/2026; Radar Julho 2026, p. 3; Catálogo 2026, p. 42",
     "aConfirmar": true,
     "camposAConfirmar": [
       "custo",
@@ -2485,7 +2490,7 @@
     "objetivo": "Estimular o pensamento crítico e a compreensão global entre os jovens, preparando-os para serem cidadãos mais informados e conscientes do mundo ao seu redor.",
     "observacoes": "A inscrição de alunos de escolas públicas é gratuita. Para garantir a gratuidade, a inscrição deve ser obrigatoriamente realizada por um professor ou gestor da escola, que deverá cadastrar a instituição e seus alunos no portal. Alunos de escolas públicas não podem se inscrever individualmente de modo gratuito, pois as inscrições individuais são pagas.",
     "inscricoes": {
-      "inicio": null,
+      "inicio": "2025-06-01",
       "fim": "2026-09-09"
     },
     "provas": [],
@@ -2499,7 +2504,7 @@
     "desbloqueia": [],
     "credenciaPara": [],
     "financiavelJOC": true,
-    "fonte": "Radar Setembro 2026, p. 5; Catálogo 2026, p. 43",
+    "fonte": "Site oficial, consultado em 03/11/2026; Radar Setembro 2026, p. 5; Catálogo 2026, p. 43",
     "aConfirmar": true,
     "camposAConfirmar": [
       "modalidade",
@@ -2719,7 +2724,7 @@
     "objetivo": "A OBLI busca incentivar o aprendizado do inglês, promover a competência intercultural e preparar os alunos para um mundo globalizado.",
     "observacoes": "Estudantes de escolas públicas não pagam taxa de inscrição, desde que a inscrição seja feita pelo professor ou representante da escola, utilizando o cadastro institucional e incluindo os alunos como parte da escola. O QR Code da OBLI no Radar de Setembro leva ao regulamento da ONE. Foi usado o link do Catálogo 2026.",
     "inscricoes": {
-      "inicio": null,
+      "inicio": "2026-06-01",
       "fim": "2026-10-14"
     },
     "provas": [],
@@ -2733,7 +2738,7 @@
     "desbloqueia": [],
     "credenciaPara": [],
     "financiavelJOC": true,
-    "fonte": "Radar Setembro 2026, p. 8; Catálogo 2026, p. 10",
+    "fonte": "Site oficial, consultado em 03/11/2026; Radar Setembro 2026, p. 8; Catálogo 2026, p. 10",
     "aConfirmar": true,
     "camposAConfirmar": [
       "linkOficial",
@@ -2843,10 +2848,15 @@
     "objetivo": "Disseminar, desmistificar e democratizar o conhecimento sobre o uso inteligente do dinheiro, despertando o interesse dos estudantes pela educação financeira e conscientizando-os sobre sua importância na realização de sonhos e na construção de um futuro mais estável e próspero.",
     "observacoes": "Também há o “Nível Livre” para os estudantes que já concluíram o Ensino Médio. O Catálogo 2026 indica inscrição paga, o Radar de Setembro indica gratuita. Confirme no site oficial.",
     "inscricoes": {
-      "inicio": null,
+      "inicio": "2026-06-01",
       "fim": "2026-09-23"
     },
-    "provas": [],
+    "provas": [
+      {
+        "fase": "Prova",
+        "data": "2026-09-30"
+      }
+    ],
     "linkOficial": "https://www.seletaeducacao.com.br/obmf",
     "comoParticipar": [
       "Confira se sua série e sua escola estão no público da olimpíada.",
@@ -2856,12 +2866,11 @@
     "desbloqueia": [],
     "credenciaPara": [],
     "financiavelJOC": true,
-    "fonte": "Radar Setembro 2026, p. 7; Catálogo 2026, p. 22",
+    "fonte": "Site oficial, consultado em 03/11/2026; Radar Setembro 2026, p. 7; Catálogo 2026, p. 22",
     "aConfirmar": true,
     "camposAConfirmar": [
       "custo",
-      "modalidade",
-      "provas"
+      "modalidade"
     ],
     "atualizadoEm": "2026-11-03"
   },
@@ -4606,12 +4615,21 @@
     },
     "descricao": "A ONIA é a Olimpíada Nacional de Inteligência Artificial, uma competição científica de abrangência nacional realizada anualmente, com foco na difusão, ensino e letramento em Inteligência Artificial para o ensino básico.",
     "objetivo": "Promover o letramento digital e o ensino da Inteligência Artificial, desenvolvendo habilidades analíticas e críticas, disseminando conhecimento sobre IA, suas aplicações, ética e impactos, e selecionar talentos para representar o Brasil na Olimpíada Internacional de Inteligência Artificial (IOAI).",
-    "observacoes": null,
+    "observacoes": "O prazo se refere à inscrição individual.",
     "inscricoes": {
       "inicio": null,
-      "fim": null
+      "fim": "2026-09-30"
     },
-    "provas": [],
+    "provas": [
+      {
+        "fase": "Prova da 1ª etapa da 2ª fase, até 31/10",
+        "data": "2026-10-19"
+      },
+      {
+        "fase": "Prova da 2ª etapa da 2ª fase, até 13/12",
+        "data": "2026-12-07"
+      }
+    ],
     "linkOficial": "https://www.oniabrasil.com.br/",
     "comoParticipar": [
       "Confira se sua série e sua escola estão no público da olimpíada.",
@@ -4630,12 +4648,10 @@
     ],
     "credenciaPara": [],
     "financiavelJOC": true,
-    "fonte": "Catálogo 2026, p. 57",
+    "fonte": "Site oficial, consultado em 03/11/2026; Catálogo 2026, p. 57",
     "aConfirmar": true,
     "camposAConfirmar": [
-      "inscricoes",
-      "modalidade",
-      "provas"
+      "modalidade"
     ],
     "atualizadoEm": "2026-11-03"
   },
@@ -4934,7 +4950,7 @@
         "2EM"
       ]
     },
-    "modalidade": null,
+    "modalidade": "online",
     "participacao": "individual",
     "nivel": "nacional",
     "formato": "prova",
@@ -4946,10 +4962,15 @@
     "objetivo": "Estimular talentos, reduzir desigualdades de gênero na ciência e abrir caminhos para que mais jovens descubram seu potencial no universo da Química.",
     "observacoes": null,
     "inscricoes": {
-      "inicio": null,
-      "fim": null
+      "inicio": "2026-07-01",
+      "fim": "2026-09-12"
     },
-    "provas": [],
+    "provas": [
+      {
+        "fase": "Prova on-line",
+        "data": "2026-09-18"
+      }
+    ],
     "linkOficial": "https://obquimica.org/olimpiada/olimpiada-quimeninas",
     "comoParticipar": [
       "Confira se sua série e sua escola estão no público da olimpíada.",
@@ -4959,12 +4980,68 @@
     "desbloqueia": [],
     "credenciaPara": [],
     "financiavelJOC": true,
-    "fonte": "Catálogo 2026, p. 35",
+    "fonte": "Site oficial, consultado em 03/11/2026; Catálogo 2026, p. 35",
+    "aConfirmar": false,
+    "camposAConfirmar": [],
+    "atualizadoEm": "2026-11-03"
+  },
+  {
+    "id": "olimpiada-da-coruja",
+    "slug": "olimpiada-da-coruja",
+    "nome": "Olimpíada da Coruja",
+    "sigla": null,
+    "tipo": "olimpiada",
+    "organizador": "Estratégia Educacional",
+    "areas": [
+      "Matemática",
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Estudantes de escolas públicas e particulares matriculados em 2026. Nível 1: 6º e 7º anos. Nível 2: 8º e 9º anos. Nível 3: 1ª e 2ª séries do Ensino Médio.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM"
+      ]
+    },
+    "modalidade": "presencial",
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": "Gratuita. A família arca com o deslocamento até o local da prova."
+    },
+    "descricao": "Primeira edição da olimpíada de Matemática, Física e Química das Turmas Olímpicas do Estratégia, em fase única e aplicada em 23 cidades.",
+    "objetivo": null,
+    "observacoes": "Confira no site oficial se há local de prova perto de você. Encontrada em pesquisa na web: não consta no Catálogo 2026.",
+    "inscricoes": {
+      "inicio": "2026-10-20",
+      "fim": "2026-11-16"
+    },
+    "provas": [
+      {
+        "fase": "Prova",
+        "data": "2026-11-21"
+      }
+    ],
+    "linkOficial": "https://mkt.estrategia.com/militares/olimpiada-da-coruja/",
+    "comoParticipar": [
+      "Confira se há local de prova na sua cidade.",
+      "Faça a inscrição no site oficial até 16/11.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "Portal Estratégia Vestibulares, consultado em 03/11/2026",
     "aConfirmar": true,
     "camposAConfirmar": [
-      "inscricoes",
-      "modalidade",
-      "provas"
+      "financiavelJOC",
+      "locais de prova"
     ],
     "atualizadoEm": "2026-11-03"
   },
@@ -6039,8 +6116,8 @@
     "objetivo": "Despertar o interesse e aprofundar o conhecimento dos participantes na área da biologia. Desenvolver habilidades analíticas e promover o pensamento crítico, desafiando os participantes a enfrentar questões complexas e estimular a pesquisa científica.",
     "observacoes": null,
     "inscricoes": {
-      "inicio": null,
-      "fim": null
+      "inicio": "2025-11-25",
+      "fim": "2026-05-13"
     },
     "provas": [],
     "linkOficial": "https://www.seletaeducacao.com.br/tnbio",
@@ -6052,10 +6129,9 @@
     "desbloqueia": [],
     "credenciaPara": [],
     "financiavelJOC": true,
-    "fonte": "Catálogo 2026, p. 66",
+    "fonte": "Site oficial, consultado em 03/11/2026; Catálogo 2026, p. 66",
     "aConfirmar": true,
     "camposAConfirmar": [
-      "inscricoes",
       "modalidade",
       "provas"
     ],
@@ -6093,10 +6169,15 @@
     "objetivo": "Incentivar a participação feminina em olimpíadas científicas, com foco na Física, aumentar a representatividade feminina em competições nacionais e internacionais. Criar um espaço de olimpíada em que as estudantes brasileiras possam competir e ser premiadas de forma igualitária, desenvolvendo a confiança em seus potenciais para as demais olimpíadas, testes de seleção e desafios estudantis. Descobrir jovens meninas com talento em física e apresentá-las ao ambiente de ensino e pesquisa de alto nível de modo a incentivá-las no âmbito da formação acadêmica.",
     "observacoes": null,
     "inscricoes": {
-      "inicio": null,
+      "inicio": "2026-05-04",
       "fim": "2026-08-14"
     },
-    "provas": [],
+    "provas": [
+      {
+        "fase": "Prova da 1ª fase",
+        "data": "2026-08-19"
+      }
+    ],
     "linkOficial": "https://tfcbr.inf.ufsm.br/olimpiadas/fisica",
     "comoParticipar": [
       "Confira se sua série e sua escola estão no público da olimpíada.",
@@ -6106,11 +6187,10 @@
     "desbloqueia": [],
     "credenciaPara": [],
     "financiavelJOC": true,
-    "fonte": "Radar Julho 2026, p. 7; Catálogo 2026, p. 64",
+    "fonte": "Site oficial, consultado em 03/11/2026; Radar Julho 2026, p. 7; Catálogo 2026, p. 64",
     "aConfirmar": true,
     "camposAConfirmar": [
-      "modalidade",
-      "provas"
+      "modalidade"
     ],
     "atualizadoEm": "2026-11-03"
   }

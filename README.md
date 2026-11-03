@@ -114,6 +114,17 @@ O `id` e o `slug` devem ser iguais, únicos, com letras minúsculas sem acento e
 
 Corrija o arquivo e salve de novo. Para desfazer de vez: abra o arquivo, clique em **History**, escolha a versão anterior.
 
+### Novidades automáticas
+
+Todo dia, um robô abre os sites oficiais e registra o que mudou em [`data/novidades.json`](data/novidades.json). Toda semana, uma pesquisa na web procura olimpíadas novas. O site mostra o selo NOVIDADE, com trecho e link da fonte.
+
+- **Você não precisa fazer nada.** O que o robô encontra é sempre marcado como detecção automática.
+- **Confirmou um prazo?** Passe a data para `oportunidades.json`, como no passo a passo acima.
+- **Novidade errada?** Apague o bloco dela em `novidades.json`.
+- **Quer publicar um aviso seu?** Copie um bloco, use `"origem": "copes"` e `"verificado": true`.
+
+Acompanhe em [**Actions**](../../actions), no item **Monitorar sites oficiais**.
+
 ### Testar como o site fica em outra data
 
 Acrescente `?hoje=2026-12-10` ao endereço (exemplo: `.../radar/?hoje=2026-12-10`). Só muda na sua tela, e serve para conferir os status antes de divulgar.
@@ -128,10 +139,12 @@ Next.js (App Router, exportação estática), TypeScript, Tailwind CSS, Framer M
 npm install
 npm run dev       # http://localhost:3210/radar-olimpico/
 npm run validar   # confere os JSON de /data
+npm run testar    # regras da Escada Olímpica e conteúdo dos jogos
 npm run build     # valida, gera imagens de compartilhamento e exporta para out/
 npm run preview   # serve out/ como no GitHub Pages, em http://localhost:3211/radar-olimpico/
 ```
 
+- **Monitor:** `scripts/monitorar-sites.mjs` roda todo dia via `.github/workflows/monitor.yml`.
 - **Deploy:** todo push na `main` publica via `.github/workflows/deploy.yml`. Para outro repositório ou domínio, defina `BASE_PATH` e `NEXT_PUBLIC_SITE_URL`.
 - **`materiais/`** (PDFs originais, 430 MB) fica fora do Git. `scripts/extrair_dados.py` fez a carga inicial e não deve rodar de novo: ele sobrescreveria as edições feitas à mão.
 - **Decisões e dúvidas sobre os documentos:** [`DECISOES.md`](DECISOES.md). **Relatório da extração:** [`data/RELATORIO-EXTRACAO.md`](data/RELATORIO-EXTRACAO.md).

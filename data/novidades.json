@@ -1,0 +1,65 @@
+{
+  "verificadoEm": "2026-11-03",
+  "itens": [
+    {
+      "id": "coruja-2026",
+      "oportunidadeId": "olimpiada-da-coruja",
+      "tipo": "nova",
+      "titulo": "Olimpíada da Coruja: inscrições até 16/11",
+      "trecho": "Olimpíada nova e gratuita, de Matemática, Física e Química. Prova presencial em 21/11, em 23 cidades.",
+      "url": "https://mkt.estrategia.com/militares/olimpiada-da-coruja/",
+      "prazoFim": "2026-11-16",
+      "detectadoEm": "2026-11-03",
+      "origem": "pesquisa",
+      "verificado": true
+    },
+    {
+      "id": "febrace-2027-calendario",
+      "oportunidadeId": "febrace",
+      "tipo": "atualizacao",
+      "titulo": "FEBRACE 2027: finalistas saem em 18/12",
+      "trecho": "As submissões terminaram em 20/10. A feira está marcada para 15 a 19 de março de 2027.",
+      "url": "https://febrace.org.br/wp-content/uploads/2025/06/Folder-FEBRACE-2027.pdf",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-03",
+      "origem": "pesquisa",
+      "verificado": true
+    },
+    {
+      "id": "onia-2-fase-2026",
+      "oportunidadeId": "onia",
+      "tipo": "atualizacao",
+      "titulo": "ONIA: 2ª etapa da 2ª fase em dezembro",
+      "trecho": "A prova vai de 7 a 13 de dezembro de 2026, segundo o site oficial.",
+      "url": "https://www.oniabrasil.com.br/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-03",
+      "origem": "pesquisa",
+      "verificado": true
+    },
+    {
+      "id": "cc-regulamento-2026",
+      "oportunidadeId": "ceara-cientifico",
+      "tipo": "atualizacao",
+      "titulo": "Ceará Científico 2026: categorias e áreas",
+      "trecho": "O regulamento tem quatro categorias e cinco áreas de pesquisa, com categorias próprias para ações afirmativas e para PcD.",
+      "url": "https://www.seduc.ce.gov.br/wp-content/uploads/sites/37/2026/02/Regulamento-Ceara-Cientifico-2026.pdf",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-03",
+      "origem": "pesquisa",
+      "verificado": true
+    },
+    {
+      "id": "ufc-vagas-olimpicas",
+      "oportunidadeId": null,
+      "tipo": "atualizacao",
+      "titulo": "UFC: 104 vagas para premiados em olimpíadas",
+      "trecho": "Primeira seleção por premiações, com 41 cursos. As inscrições foram em janeiro de 2026: acompanhe a próxima edição.",
+      "url": "https://prograd.ufc.br/pt/edital-no-23-2025-selecao-de-candidatos-via-olimpiadas-do-conhecimento/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-03",
+      "origem": "pesquisa",
+      "verificado": true
+    }
+  ]
+}
