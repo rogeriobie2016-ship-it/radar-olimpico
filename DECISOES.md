@@ -102,3 +102,7 @@ Pedido: "tá com muito cara de IA", site premium, jogos por olimpíada, atualiza
 - **Testados:** `npm run testar:jogos` confirma que toda fase do Algoritmo tem solução e que o limite anunciado é o mínimo real, que as equações equilibram e que os alvos são válidos.
 - **Conteúdo escrito por mim precisa de revisão pedagógica:** decisões da Jornada Científica e fatos da Linha do Tempo.
 - **Acessibilidade:** Alvo, Algoritmo, Linha do Tempo, Balanço e Jornada usam botões e funcionam por teclado. Escada aceita setas e botões, mas o desenho é visual. Lançamento tem controles deslizantes e o desenho também é visual.
+
+### Pesquisa semanal (pendente)
+
+As instruções estão em `scripts/rotina-pesquisa.md`, para a equipe poder ajustar sem recriar a rotina. O usuário escolheu rodar na nuvem. Para agendar, faltam a conexão do GitHub com a conta Claude e um ambiente de nuvem. Horário previsto: segundas, 7h em Fortaleza (10:00 UTC).
