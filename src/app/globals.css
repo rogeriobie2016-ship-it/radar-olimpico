@@ -529,3 +529,43 @@ p { text-wrap: pretty; }
 h1, h2 { overflow-wrap: break-word; hyphens: auto; }
 main { overflow-x: clip; }
 .lab-capa-secao { border-block: 4px solid var(--turquesa); background: radial-gradient(90% 90% at 75% 20%, #14407a, #0a2350 60%, #071a3a); color: #f4fbff; }
+
+/* Órbita Numérica. Cores fixas: a tela de jogo é sempre escura, em qualquer tema. */
+.orbita-jogo { position: fixed; inset: 0; z-index: 60; display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto; padding-top: env(safe-area-inset-top); background: #050b1a; color: #f4fbff; overscroll-behavior: none; touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.orbita-lateral { display: contents; }
+.orbita-pergunta { display: flex; align-items: center; height: 6.25rem; overflow: hidden; padding: 0.4rem 1rem; border-bottom: 2px solid #1f4a68; font-size: clamp(0.9375rem, 4.2vw, 1.0625rem); font-weight: 800; line-height: 1.25; }
+.orbita-pergunta[data-tom="certo"] { color: #4bd68c; }
+.orbita-pergunta[data-tom="perigo"] { color: #ff9a8a; }
+.orbita-tela { position: relative; order: 3; display: grid; place-items: center; min-height: 0; overflow: hidden; background: #050b1a; touch-action: none; }
+.orbita-tela canvas { display: block; image-rendering: pixelated; touch-action: none; cursor: grab; }
+.orbita-tela canvas:active { cursor: grabbing; }
+.orbita-opcoes { order: 4; display: grid; grid-template-columns: repeat(var(--n, 3), minmax(0, 1fr)); gap: 0.4rem; min-height: 4rem; padding: 0.45rem; padding-bottom: max(0.45rem, env(safe-area-inset-bottom)); border-top: 2px solid #1f4a68; background: #050b1a; }
+.orbita-opcao { display: flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: 2.85rem; min-width: 0; border-radius: 10px; background: #0b1d3a; box-shadow: inset 0 0 0 2px #0f8f96; color: #fff; font-family: var(--fonte-titulo), system-ui, sans-serif; font-size: 1.125rem; font-weight: 800; font-variant-numeric: tabular-nums; cursor: pointer; touch-action: manipulation; }
+.orbita-opcao:active { background: #0f8f96; }
+@media (hover: hover) { .orbita-opcao:hover { background: #12305c; } }
+.orbita-opcao kbd { display: none; font: inherit; font-size: 0.75rem; color: #7fd8d8; }
+@media (pointer: fine) { .orbita-opcao kbd { display: inline; } }
+.orbita-pausa { position: absolute; top: 0.3rem; right: 0.3rem; display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 10px; background: rgb(5 11 26 / 55%); color: #f4fbff; cursor: pointer; touch-action: manipulation; }
+.orbita-painel { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; gap: 1.5rem; overflow-y: auto; padding: 1rem; background: rgb(5 11 26 / 93%); touch-action: pan-y; overscroll-behavior: contain; }
+.orbita-painel h2 { margin: 0; font-family: var(--fonte-titulo), system-ui, sans-serif; font-size: 1.5rem; font-weight: 800; line-height: 1.15; color: #f4fbff; }
+.orbita-painel-acoes { display: grid; gap: 0.5rem; }
+.orbita-painel .orbita-erro { color: #ff9a8a; }
+.orbita-painel .orbita-certa { color: #4bd68c; }
+html.orbita-aberta { overflow: hidden; }
+@media (min-width: 1024px) {
+  html.orbita-aberta { overflow: auto; }
+  .orbita-jogo { position: relative; inset: auto; z-index: auto; height: clamp(34rem, calc(100dvh - 5rem), 44rem); padding-top: 0; grid-template-columns: 15rem minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); }
+  .orbita-lateral { display: flex; flex-direction: column; min-height: 0; border-right: 2px solid #1f4a68; }
+  .orbita-lateral > div:first-child { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+  .orbita-pergunta { flex: 1; align-items: flex-start; height: auto; padding: 1.1rem 1rem; border-bottom: 0; font-size: 1.25rem; }
+  .orbita-opcoes { grid-template-columns: repeat(var(--c, 2), minmax(0, 1fr)); }
+  .orbita-opcao { min-height: 3.25rem; }
+}
+@media (max-width: 1023px) and (orientation: landscape) and (max-height: 520px) {
+  .orbita-jogo { grid-template-columns: minmax(14rem, 38%) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); }
+  .orbita-lateral { display: flex; flex-direction: column; min-height: 0; border-right: 2px solid #1f4a68; }
+  .orbita-lateral > div:first-child { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+  .orbita-pergunta { flex: 1; height: auto; border-bottom: 0; }
+  .orbita-opcoes { grid-template-columns: repeat(var(--c, 2), minmax(0, 1fr)); min-height: 0; }
+  .orbita-opcao { min-height: 2.5rem; }
+}

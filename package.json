@@ -14,7 +14,8 @@
     "testar:escada": "tsx scripts/testar-escada.ts",
     "testar:jogos": "tsx scripts/testar-jogos.ts",
     "testar:lab": "tsx scripts/testar-lab.ts",
-    "testar": "npm run testar:escada && npm run testar:jogos && npm run testar:lab"
+    "testar:orbita": "tsx scripts/testar-orbita.ts",
+    "testar": "npm run testar:escada && npm run testar:jogos && npm run testar:lab && npm run testar:orbita"
   },
   "dependencies": {
     "framer-motion": "^14.9.0",

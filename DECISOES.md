@@ -115,6 +115,17 @@ Os itens sem logo nos PDFs tiveram o logo buscado no site oficial e no perfil of
 
 Laboratório em 3D no navegador (`src/lab/`), sem headset: anda com joystick, teclado ou tocando no chão, e cada equipamento abre um experimento real que leva às olimpíadas daquele campo. Fica logo abaixo da landing, na página inicial, e também tem endereço próprio. Three.js só é baixado quando a pessoa entra, então o resto do site continua leve. Os estudantes em 3D foram modelados no próprio código, com as cores e proporções do logo e contorno branco de adesivo; no painel, o narrador continua sendo a ilustração oficial. Todos os experimentos existem também na versão sem 3D, para aparelho sem WebGL. As contas e dados dos experimentos ficam em `src/lab/estacoes.ts`, cobertos por `npm run testar:lab`.
 
+## Órbita Numérica (04/11/2026)
+
+Oitavo jogo: arcade de Matemática em pixel art, para treinar OBMEP e Canguru. A nave atravessa cinco fases (frações; porcentagem e razão; potências e sequências; geometria; raciocínio lógico com revisão) e cada uma termina num chefe.
+
+- **Questões geradas:** ficam em `src/lib/estudo/orbita.ts`. Os números são sorteados e a resposta é calculada. Não há banco de perguntas escrito à mão.
+- **Teste:** `npm run testar:orbita` confere cerca de 470 mil questões. Ele lê o enunciado mostrado na tela, recalcula a resposta por outro caminho (força bruta quando dá) e também barra opção repetida, opção de mesmo valor (2/4 e 1/2) e letra que a fonte em pixels não desenha. O conteúdo foi escrito por mim e precisa de revisão pedagógica da COPES, como os demais jogos.
+- **Errar ensina:** errar ou deixar as cápsulas passarem para o jogo e abre a conta explicada, sem tempo correndo. Errar tira um escudo. Deixar passar não tira, para quem ainda está calculando não ser punido duas vezes.
+- **Celular:** durante a partida o jogo cobre a tela inteira, para a barra de baixo e a rolagem da página não atrapalharem o arrasto. No computador, fica dentro da página. A tela de jogo usa cores fixas e continua escura em qualquer tema.
+- **Acessibilidade:** além de arrastar e das setas, os botões de resposta e as teclas de 1 a 4 levam a nave sozinha até a cápsula escolhida. Com movimento reduzido, o céu fica parado, sem tremor, clarão e faíscas, e há 25% mais tempo.
+- **`?semente=123` na URL** repete a mesma sequência de contas. Serve para testar e para a equipe conferir uma partida, como o `?hoje=` nas páginas do Radar.
+
 ## Sons (04/11/2026)
 
 Sons sintetizados com Web Audio (`src/lib/som.ts`), sem arquivos de áudio. Ficam ligados por padrão, mas o navegador só libera depois do primeiro toque ou tecla. O botão no topo desliga e a escolha fica salva no aparelho. Som é reforço: nenhuma informação depende dele.

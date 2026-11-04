@@ -17,6 +17,7 @@ const ARTE: Record<string, string> = {
   algoritmo: "Tecnologia e Computação",
   "linha-do-tempo": "Ciências Humanas e Sociais Aplicadas",
   balanco: "Meio Ambiente",
+  "orbita-numerica": "Matemática",
 };
 
 export default function JogosPagina() {

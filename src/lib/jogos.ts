@@ -51,6 +51,12 @@ export const JOGOS: Jogo[] = [
     como: "Use mais e menos em cada substância. As barras mostram quantos átomos há de cada lado. Equilibre com o menor número de toques.",
     oportunidades: ["ocq", "oqep", "quimeninas", "obq", "olimpiada-da-coruja", "tbc"], principal: "ocq",
   },
+  {
+    slug: "orbita-numerica", titulo: "Órbita Numérica", olimpiada: "OBMEP, Canguru e raciocínio lógico",
+    resumo: "Pilote uma nave em pixels, colete as respostas certas e enfrente um chefe no fim de cada fase.",
+    como: "Arraste a nave ou use as setas e pegue a cápsula com a resposta certa. Desvie das erradas e dos asteroides. Errou? A conta aparece explicada, passo a passo.",
+    oportunidades: ["obmep", "obmep-jr", "canguru", "mandacaru", "obrl", "ocm", "mcem", "omifce", "gepemac", "omu", "jacob-palis-jr", "tm2", "obom", "titas-da-matematica"], principal: "obmep",
+  },
 ];
 
 export const jogosDe = (id: string) => JOGOS.filter((j) => j.oportunidades.includes(id));
