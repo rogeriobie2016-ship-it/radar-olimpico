@@ -6,11 +6,7 @@ import { JOGOS } from "@/lib/jogos";
 
 export const metadata: Metadata = {
   title: "Jogos",
-<<<<<<< HEAD
   description: "Jogos para treinar para o Ceará Científico, OBMEP, OBA, OBI, ONHB, Olimpíada de Língua Portuguesa e olimpíadas de Química.",
-=======
-  description: "Jogos para treinar para o Ceará Científico, OBMEP, OBA, OBI, ONHB, olimpíadas de Química e de línguas.",
->>>>>>> worktree-agent-acafd4897ab3fc2df
 };
 
 const ARTE: Record<string, string> = {
@@ -21,12 +17,9 @@ const ARTE: Record<string, string> = {
   algoritmo: "Tecnologia e Computação",
   "linha-do-tempo": "Ciências Humanas e Sociais Aplicadas",
   balanco: "Meio Ambiente",
-<<<<<<< HEAD
   "arquivo-perdido": "Linguagens e Códigos",
   crononauta: "Ciências Humanas e Sociais Aplicadas",
-=======
   "lingua-galactica": "Linguagens e Códigos",
->>>>>>> worktree-agent-acafd4897ab3fc2df
 };
 
 export default function JogosPagina() {

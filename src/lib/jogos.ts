@@ -52,7 +52,6 @@ export const JOGOS: Jogo[] = [
     oportunidades: ["ocq", "oqep", "quimeninas", "obq", "olimpiada-da-coruja", "tbc"], principal: "ocq",
   },
   {
-<<<<<<< HEAD
     slug: "arquivo-perdido", titulo: "Arquivo Perdido", olimpiada: "OLP, Olimpíada de Português e OBL",
     resumo: "Restaure as mensagens de uma estação em Titã. Só avança quem interpreta, e suas escolhas mudam o final.",
     como: "Leia cada mensagem danificada e descubra o que ela quer dizer. Quando errar, eu explico o motivo e você tenta de novo. Suas escolhas abrem caminhos e finais diferentes.",
@@ -63,12 +62,12 @@ export const JOGOS: Jogo[] = [
     resumo: "Viaje no tempo e investigue documentos recriados: compare versões, cace anacronismos e monte a conclusão.",
     como: "Escolha uma viagem no cronógrafo. Em cada uma, analise a fonte, marque onde duas versões discordam, encontre o trecho impossível para a data e monte a conclusão. Todos os documentos são recriações, e no fim eu mostro os fatos.",
     oportunidades: ["onhb", "onhb-a", "oche", "obapo"], principal: "onhb",
-=======
+  },
+  {
     slug: "lingua-galactica", titulo: "Língua Galáctica", olimpiada: "OBLI, The Big Challenge e Olimpíada de Inglês",
     resumo: "Viaje de astro em astro com lições curtas de inglês e espanhol, do iniciante ao intermediário.",
     como: "Escolha o idioma e toque no astro que está brilhando. Traduza, monte frases, ligue pares, complete e escreva o que ouvir. Cada lição concluída destrava a próxima, e o que você errar volta no final.",
     oportunidades: ["obli", "olimpiada-de-ingles", "the-big-challenge", "prep-estudar-fora", "estudar-fora-ceara"], principal: "obli",
->>>>>>> worktree-agent-acafd4897ab3fc2df
   },
 ];
 
