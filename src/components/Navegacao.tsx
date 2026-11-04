@@ -61,13 +61,13 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
               Radar <span className="text-amarelo">Olímpico</span>
             </span>
           </Link>
-          <nav aria-label="Principal" className="hidden items-center gap-5 lg:flex">
+          <nav aria-label="Principal" className="hidden items-center gap-0.5 xl:gap-2 lg:flex">
             {NAV_COMPLETA.slice(0, 7).map((n) => (
               <Link
                 key={n.href}
                 href={n.href}
                 aria-current={ativo(n.href) ? "page" : undefined}
-                className={`rounded-full px-3 py-1.5 text-[0.9375rem] font-bold no-underline transition-colors hover:bg-fundo-2 ${ativo(n.href) ? "bg-turquesa !text-[#05272a]" : ""}`}
+                className={`whitespace-nowrap rounded-full px-3 py-1.5 text-[0.9375rem] font-bold no-underline transition-colors hover:bg-fundo-2 ${ativo(n.href) ? "bg-turquesa !text-[#05272a]" : ""}`}
               >
                 {n.rotulo}
               </Link>

@@ -2,6 +2,7 @@
 
 /* Sistema visual: papel branco, tinta preta, réguas finas. A cor da marca JOC aparece pouco, e por isso pesa. */
 :root {
+  --ruido: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='r'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.1 -.42'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23r)'/%3E%3C/svg%3E");
   --fundo: #071a2e;
   --fundo-2: #0e2a44;
   --tinta: #f4fbff;
@@ -88,6 +89,16 @@ body {
 }
 
 /* Céu de estrelas e malha de laboratório, leves, feitos só com gradientes. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: var(--ruido);
+  opacity: 0.1;
+}
+
 body::before {
   content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
   background-image:
@@ -249,11 +260,12 @@ p { text-wrap: pretty; }
   .azulejo { border-radius: 20px; box-shadow: inset 0 0 0 5px rgb(0 0 0 / 9%); }
 
   /* Mascotes */
-  .m-sticker { overflow: visible; filter: drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff); }
   .m-respira { animation: respira 3.2s ease-in-out infinite; }
   .m-pula { animation: pula 620ms var(--curva) infinite alternate; }
-  .m-olhos { animation: piscar 4.6s infinite; }
-  .m-boca { animation: falar 240ms ease-in-out infinite alternate; }
+  .m-palpebra { opacity: 0; animation: piscar 4.6s infinite; }
+  .m-brilho { transform-box: fill-box; transform-origin: center; animation: brilho 900ms ease-in-out infinite; }
+  .m-duvida { animation: duvida 1.5s ease-in-out infinite; }
+  .m-boca { transform-box: fill-box; transform-origin: center top; animation: falar 240ms ease-in-out infinite alternate; }
   .m-aceno { animation: aceno 620ms ease-in-out infinite alternate; }
   .m-cabeca { animation: cabeca 5s ease-in-out infinite; }
   .m-chama { transform-box: fill-box; transform-origin: top; animation: chama 160ms infinite alternate; }
@@ -264,9 +276,10 @@ p { text-wrap: pretty; }
   }
   .balao-claro { background: #fdc13f; }
   .balao-guia { border-radius: 16px 16px 4px 16px; }
-  .guia-botao { display: block; transition: transform 220ms var(--mola); filter: drop-shadow(0 6px 10px rgb(0 0 0 / 45%)); }
+  .guia-botao { display: block; transition: transform 220ms var(--mola), translate 320ms var(--mola); filter: drop-shadow(0 6px 10px rgb(0 0 0 / 45%)); }
   @media (hover: hover) { .guia-botao:hover { transform: translateY(-5px) rotate(-3deg); } }
   .guia-botao:active { transform: scale(0.92); }
+  @media (max-width: 63.99rem) { .guia-espia { translate: 0 2.9rem; } }
 
   .carimbo-toast {
     position: fixed; z-index: 70; left: 50%; top: 4.4rem; display: flex; align-items: center; gap: 0.7rem; width: min(22rem, calc(100vw - 1.5rem));
@@ -315,7 +328,7 @@ p { text-wrap: pretty; }
 
   /* Abertura com lupa */
   .cena-lupa { position: relative; overflow: hidden; touch-action: pan-y; background: #05142a; cursor: none; }
-  .camada-raiox { position: absolute; inset: 0; background: #0b5560; clip-path: circle(var(--r, 92px) at var(--x, 50%) var(--y, 50%)); }
+  .camada-raiox { position: absolute; inset: 0; z-index: 2; background: #0b5560; clip-path: circle(var(--r, 92px) at var(--x, 50%) var(--y, 50%)); }
   .lupa-aro { position: absolute; left: 0; top: 0; width: 0; height: 0; pointer-events: none; will-change: transform; }
   .lupa-pega { position: absolute; left: -66px; top: -66px; width: 132px; height: 132px; border-radius: 50%; pointer-events: auto; touch-action: none; cursor: grab; }
   .flutua { animation: flutua 6s ease-in-out infinite; }
@@ -328,7 +341,8 @@ p { text-wrap: pretty; }
   .fita:hover { animation-play-state: paused; }
 
   /* Mundo do conhecimento */
-  .mundo { position: relative; overflow: hidden; }
+  .mundo { position: relative; overflow: hidden; isolation: isolate; }
+  .mundo::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background-image: var(--ruido); opacity: 0.2; }
   .mundo-arte { position: absolute; inset: -6%; width: 112%; height: 112%; opacity: 0.32; animation: deriva 26s ease-in-out infinite alternate; }
 
   .subir-degrau { animation: degrau 620ms var(--mola) both; transform-origin: bottom; }
@@ -337,7 +351,7 @@ p { text-wrap: pretty; }
   .barra-tempo { animation: barra linear both; }
 }
 
-@keyframes pagina { from { opacity: 0; } }
+@keyframes pagina { from { translate: 0 10px; } }
 @keyframes fade { from { opacity: 0; } }
 @keyframes subir { from { opacity: 0; transform: translateY(14px); } }
 @keyframes folha { from { transform: translateY(24px); opacity: 0; } }
@@ -371,7 +385,9 @@ p { text-wrap: pretty; }
 @keyframes selo { 0%, 86%, 100% { transform: rotate(-3deg); } 90% { transform: rotate(4deg) scale(1.1); } 95% { transform: rotate(-5deg); } }
 @keyframes respira { 50% { transform: translateY(-3px) scaleY(1.012); } }
 @keyframes pula { from { transform: translateY(0) rotate(-2deg); } to { transform: translateY(-16px) rotate(2deg); } }
-@keyframes piscar { 0%, 94%, 100% { transform: scaleY(1); } 97% { transform: scaleY(0.08); } }
+@keyframes piscar { 0%, 94%, 100% { opacity: 0; } 95%, 98% { opacity: 1; } }
+@keyframes brilho { 0%, 100% { opacity: 0.25; scale: 0.6; } 50% { opacity: 1; scale: 1.15; } }
+@keyframes duvida { 50% { translate: 0 -24px; } }
 @keyframes falar { from { transform: scaleY(0.55); } to { transform: scaleY(1.15); } }
 @keyframes aceno { from { transform: rotate(-11deg); } to { transform: rotate(13deg); } }
 @keyframes cabeca { 0%, 100% { transform: rotate(-1.6deg); } 50% { transform: rotate(2.2deg); } }
@@ -383,3 +399,34 @@ p { text-wrap: pretty; }
 @keyframes achado { from { opacity: 0; transform: scale(0.3) rotate(-14deg); } }
 @keyframes fita { to { transform: translateX(-50%); } }
 @keyframes deriva { to { transform: translate(-2%, 2%) scale(1.05); } }
+
+/* Elementos surgem conforme a rolagem. Usa translate, scale e rotate separados para não brigar com o transform de cada componente. */
+.surge-oculto:not(.mundo) { opacity: 0; }
+.surge-ver:not(.mundo) { animation: surgir 620ms var(--curva) both; }
+.mundo.surge-oculto h2, .mundo.surge-oculto p, .mundo.surge-oculto .carta { opacity: 0; }
+.mundo.surge-oculto .m-boneco { opacity: 0; }
+.mundo.surge-ver h2, .mundo.surge-ver p { animation: surgir 560ms var(--curva) both; }
+.mundo.surge-ver .m-boneco { animation: surgir-boneco 760ms var(--mola) both; }
+.mundo.surge-ver .carta { animation: surgir-carta 560ms var(--mola) both; }
+.mundo.surge-ver .carta:nth-child(2) { animation-delay: 80ms; }
+.mundo.surge-ver .carta:nth-child(3) { animation-delay: 160ms; }
+.mundo.surge-ver .carta:nth-child(4) { animation-delay: 240ms; }
+.mundo.surge-ver .carta:nth-child(5) { animation-delay: 320ms; }
+@keyframes surgir { from { opacity: 0; translate: 0 42px; scale: 0.96; } }
+@keyframes surgir-boneco { from { opacity: 0; translate: 0 70px; rotate: -7deg; scale: 0.7; } }
+@keyframes surgir-carta { from { opacity: 0; translate: 46px 18px; rotate: 5deg; scale: 0.86; } }
+@media print { .surge-oculto, .surge-oculto * { opacity: 1 !important; } }
+
+/* Foguete que acompanha a rolagem da página. Quem não tem suporte simplesmente não vê. */
+.trilha-rolagem { display: none; }
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .trilha-rolagem { display: block; position: fixed; inset: 3.5rem 0 auto 0; z-index: 41; height: 3px; pointer-events: none; }
+    .trilha-barra { position: absolute; inset: 0; transform-origin: left; background: linear-gradient(90deg, var(--turquesa), var(--amarelo), var(--marca)); animation: trilha-barra linear both; animation-timeline: scroll(root); }
+    .trilha-foguete { position: absolute; left: 0; top: -8px; overflow: visible; animation: trilha-foguete linear both; animation-timeline: scroll(root); }
+    .mundo-arte { animation: deriva 26s ease-in-out infinite alternate, paralaxe linear both; animation-timeline: auto, view(); }
+  }
+}
+@keyframes trilha-barra { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes trilha-foguete { from { translate: 0 0; } to { translate: calc(100vw - 2rem) 0; } }
+@keyframes paralaxe { from { translate: 0 -7%; } to { translate: 0 7%; } }

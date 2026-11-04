@@ -128,7 +128,7 @@ Acompanhe em [**Actions**](../../actions), no item **Monitorar sites oficiais**.
 ### Logos e mascotes
 
 - **Logos das olimpíadas:** ficam em `public/olimpiadas/<id>.webp`, com o mesmo `id` de `oportunidades.json`. Para acrescentar um logo que falta, envie o arquivo com esse nome e inclua o `id` em `src/lib/logos.ts`.
-- **Mascotes:** os dois cientistas do logo JOC, redesenhados em vetor, estão em `src/components/Mascote.tsx`. As falas do guia ficam em `src/components/GuiaFlutuante.tsx` e `src/app/escada/EscadaCliente.tsx`.
+- **Mascotes:** os dois estudantes do logo JOC, recortados da ilustração oficial por `scripts/recortar_mascotes.py`, são animados em `src/components/Mascote.tsx`. As falas do guia ficam em `src/components/GuiaFlutuante.tsx` e `src/app/escada/EscadaCliente.tsx`.
 
 ### Testar como o site fica em outra data
 

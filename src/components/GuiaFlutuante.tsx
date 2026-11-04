@@ -90,9 +90,9 @@ export function GuiaFlutuante() {
       )}
 
       {!nosJogos && !naAbertura && (
-        <div className="sem-print fixed bottom-[4.1rem] right-2 z-30 flex flex-col items-end lg:bottom-3 lg:right-5">
+        <div className="sem-print fixed bottom-[calc(4.1rem+env(safe-area-inset-bottom))] right-2 z-30 lg:bottom-3 lg:right-5">
           {aberto && (
-            <div className="balao balao-guia mb-1 max-w-[17rem]">
+            <div className="balao balao-guia absolute bottom-full right-0 mb-1 w-[17rem]">
               <p>{dica.fala}</p>
               <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1">
                 {dica.href && (
@@ -106,8 +106,8 @@ export function GuiaFlutuante() {
               </div>
             </div>
           )}
-          <button type="button" onClick={() => setAberto((a) => !a)} aria-expanded={aberto} aria-label={aberto ? "Fechar a dica do guia" : "Abrir a dica do guia"} className="guia-botao">
-            <Mascote quem={quem} pose={aberto ? dica.pose : "parado"} falando={aberto} className="w-[4.25rem] lg:w-24" />
+          <button type="button" onClick={() => setAberto((a) => !a)} aria-expanded={aberto} aria-label={aberto ? "Fechar a dica do guia" : "Abrir a dica do guia"} className={`guia-botao ${aberto ? "" : "guia-espia"}`}>
+            <Mascote quem={quem} pose={aberto ? dica.pose : "parado"} falando={aberto} prioridade className="w-[3.75rem] lg:w-24" />
           </button>
         </div>
       )}

@@ -41,12 +41,12 @@ function CenaUniverso() {
         <circle key={i} cx={e.x} cy={e.y} r={e.r} fill={e.c} opacity={0.5 + pr(i + 900) * 0.5} />
       ))}
       {/* Constelação */}
-      <path d="M36 150L78 112L122 138L150 96M122 138L104 188" stroke="#3ee8e6" strokeWidth="1" opacity=".55" fill="none" />
+      <path className="lg:hidden" d="M36 340L78 302L122 328L150 286M122 328L104 378" stroke="#3ee8e6" strokeWidth="1" opacity=".55" fill="none" />
       {/* Planeta com anéis */}
-      <g className="flutua" style={{ transformOrigin: "310px 170px" }}>
-        <circle cx="310" cy="170" r="52" fill="url(#sol)" />
-        <path d="M268 150q40 16 86 6M262 176q46 20 96 6" stroke="#c9641a" strokeWidth="5" fill="none" opacity=".5" />
-        <ellipse cx="310" cy="172" rx="86" ry="18" fill="none" stroke="#fdc13f" strokeWidth="5" transform="rotate(-16 310 172)" />
+      <g className="flutua" style={{ transformOrigin: "318px 330px" }}>
+        <circle cx="318" cy="330" r="44" fill="url(#sol)" />
+        <path d="M282 313q34 14 73 5M277 335q39 17 81 5" stroke="#c9641a" strokeWidth="4" fill="none" opacity=".5" />
+        <ellipse cx="318" cy="332" rx="72" ry="15" fill="none" stroke="#fdc13f" strokeWidth="4" transform="rotate(-16 318 332)" />
       </g>
       {/* Planeta azul e lua */}
       <g className="flutua" style={{ animationDelay: "-3s", transformOrigin: "62px 470px" }}>
@@ -67,11 +67,11 @@ function CenaUniverso() {
         <circle r="6" fill="#f8a8c8" stroke="none" />
       </g>
       {/* Folhas e DNA: a natureza também é céu */}
-      <g transform="translate(40 610)" fill="#0fa85a">
+      <g transform="translate(120 410) scale(.8)" fill="#0fa85a">
         <path d="M0 40C-8 10 12-14 40-18C42 12 26 38 0 40Z" />
         <path d="M0 40C14 22 22 8 40 -18" stroke="#05472a" strokeWidth="2" fill="none" />
       </g>
-      <g transform="translate(345 560)" fill="none" strokeWidth="3">
+      <g transform="translate(190 470)" fill="none" strokeWidth="3">
         {[0, 1, 2, 3, 4].map((i) => (
           <path key={i} d={`M-16 ${i * 24}Q0 ${i * 24 + 12} 16 ${i * 24 + 24}`} stroke="#fdc13f" />
         ))}
@@ -94,7 +94,7 @@ function CenaRaioX() {
     ["1822", 300, 470],
     ["if (x) { }", 40, 410],
     ["Σ", 210, 400],
-    ["DNA", 330, 590],
+    ["DNA", 215, 480],
     ["1888", 40, 560],
     ["∫ f(x) dx", 160, 640],
     ["O que é ciência?", 120, 520],
@@ -109,9 +109,9 @@ function CenaRaioX() {
       <rect width="400" height="700" fill="#0b5560" />
       <rect width="400" height="700" fill="url(#malha)" />
       <g fill="none" stroke="#c7fffb" strokeWidth="1.5" opacity=".9">
-        <circle cx="310" cy="170" r="52" />
-        <path d="M258 170H362M310 118V222M272 134Q310 170 348 134M272 206Q310 170 348 206" />
-        <ellipse cx="310" cy="172" rx="86" ry="18" transform="rotate(-16 310 172)" />
+        <circle cx="318" cy="330" r="44" />
+        <path d="M274 330H362M318 286V374M286 300Q318 330 350 300M286 360Q318 330 350 360" />
+        <ellipse cx="318" cy="332" rx="72" ry="15" transform="rotate(-16 318 332)" />
         <circle cx="62" cy="470" r="44" />
         <path d="M18 470H106M62 426V514" />
         <path d="M330 366v68M296 400h68" />
@@ -130,8 +130,8 @@ export function Expedicao({ escondidas, abertas }: { escondidas: Escondida[]; ab
   const palco = useRef<HTMLDivElement>(null);
   const aro = useRef<HTMLDivElement>(null);
   const raio = useRef<HTMLDivElement>(null);
-  const alvo = useRef({ x: 0.55, y: 0.6, mexeu: false, arrastando: false });
-  const pos = useRef({ x: 0.55, y: 0.6 });
+  const alvo = useRef({ x: 0.3, y: 0.53, mexeu: false, arrastando: false });
+  const pos = useRef({ x: 0.3, y: 0.53 });
   const [achadas, setAchadas] = useState<string[]>([]);
   const [ultima, setUltima] = useState<Escondida | null>(null);
   const achadasRef = useRef<string[]>([]);
@@ -163,8 +163,8 @@ export function Expedicao({ escondidas, abertas }: { escondidas: Escondida[]; ab
       if (!visivel || !palco.current) return;
       const a = alvo.current;
       if (!a.mexeu && !reduzir) {
-        a.x = 0.5 + Math.sin(t / 2600) * 0.24;
-        a.y = 0.57 + Math.cos(t / 1900) * 0.08;
+        a.x = 0.3 + Math.sin(t / 2600) * 0.12;
+        a.y = 0.53 + Math.cos(t / 1900) * 0.05;
       }
       pos.current.x += (a.x - pos.current.x) * 0.12;
       pos.current.y += (a.y - pos.current.y) * 0.12;
@@ -216,6 +216,14 @@ export function Expedicao({ escondidas, abertas }: { escondidas: Escondida[]; ab
         onPointerDown={(e) => mover(e.clientX, e.clientY)}
       >
         <CenaUniverso />
+        {/* Ruído em SVG próprio: é desenhado uma vez e não refaz junto com os planetas. */}
+        <svg className="pointer-events-none absolute inset-0 z-[1] size-full opacity-[0.11]" aria-hidden="true">
+          <filter id="ruido-cena">
+            <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch" />
+            <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.1 -.42" />
+          </filter>
+          <rect width="100%" height="100%" filter="url(#ruido-cena)" />
+        </svg>
 
         <div ref={raio} className="camada-raiox" style={{ "--r": `${RAIO}px` } as React.CSSProperties}>
           <CenaRaioX />
@@ -227,11 +235,11 @@ export function Expedicao({ escondidas, abertas }: { escondidas: Escondida[]; ab
         </div>
 
         {/* Mascotes: tocar troca quem guia */}
-        <button type="button" onClick={() => escolher(outro)} aria-label="Trocar de guia" className="absolute bottom-[5.6rem] right-0 z-10 w-[6.5rem] transition-transform duration-300 hover:-translate-y-2 sm:w-44 lg:bottom-6 lg:right-10 lg:w-64">
-          <Mascote quem={quem} pose={achadas.length ? "comemora" : "lupa"} falando />
+        <button type="button" onClick={() => escolher(outro)} aria-label="Trocar de guia" className="absolute bottom-[6.6rem] right-1 z-10 w-[7.25rem] transition-transform duration-300 hover:-translate-y-2 sm:w-44 lg:bottom-6 lg:right-10 lg:w-64">
+          <Mascote quem={quem} pose={achadas.length ? "comemora" : "lupa"} falando prioridade />
         </button>
-        <div className="flutua pointer-events-none absolute bottom-[8.2rem] left-[-1.2rem] z-[5] w-20 opacity-95 sm:w-32 lg:bottom-16 lg:left-auto lg:right-[22rem] lg:w-44" style={{ animationDelay: "-2s" }}>
-          <Mascote quem={outro} pose={outro === "menino" ? "foguete" : "tubo"} />
+        <div className="flutua pointer-events-none absolute bottom-[8.6rem] left-1 z-[5] w-[5.5rem] sm:w-32 lg:bottom-16 lg:left-auto lg:right-[22rem] lg:w-44" style={{ animationDelay: "-2s" }}>
+          <Mascote quem={outro} pose={outro === "menino" ? "foguete" : "tubo"} prioridade />
         </div>
 
         {/* Texto da abertura */}
@@ -273,12 +281,12 @@ export function Expedicao({ escondidas, abertas }: { escondidas: Escondida[]; ab
           <p role="status" className="balao max-w-[15rem] self-start !text-[0.875rem] lg:max-w-[18rem]">
             {fala}
           </p>
-          <div className="grid grid-cols-[1fr_auto] gap-2 sm:flex">
+          <div className="grid grid-cols-[1fr_auto] gap-2 sm:flex [&_.btn]:whitespace-nowrap max-sm:[&_.btn]:px-3.5">
             <Link href="/escada/" className="btn btn-primario">
               Descobrir a minha
             </Link>
             <Link href="/radar/?abertas=1" className="btn btn-secundario">
-              {abertas} {abertas === 1 ? "aberta" : "abertas"}
+              {abertas} {abertas === 1 ? "aberta" : "abertas"} agora
             </Link>
           </div>
         </div>

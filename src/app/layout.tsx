@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import "./globals.css";
 import { MotionProvider } from "@/components/MotionProvider";
 import { GuiaFlutuante } from "@/components/GuiaFlutuante";
+import { RevelarRolagem } from "@/components/RevelarRolagem";
 import { Navegacao } from "@/components/Navegacao";
 import { RegistrarSW } from "@/components/RegistrarSW";
 import { Rodape } from "@/components/Rodape";
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <main id="conteudo">{children}</main>
           <Rodape />
           <GuiaFlutuante />
+          <RevelarRolagem />
           <RegistrarSW />
         </MotionProvider>
       </body>

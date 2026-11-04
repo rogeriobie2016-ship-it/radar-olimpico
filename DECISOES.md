@@ -107,14 +107,18 @@ Pedido: "tá com muito cara de IA", site premium, jogos por olimpíada, atualiza
 
 As instruções estão em `scripts/rotina-pesquisa.md`, para a equipe poder ajustar sem recriar a rotina. O usuário escolheu rodar na nuvem. Para agendar, faltam a conexão do GitHub com a conta Claude e um ambiente de nuvem. Horário previsto: segundas, 7h em Fortaleza (10:00 UTC).
 
-## Identidade JOC (04/11/2026)
+## Bonecos fiéis ao logo (03/11/2026)
+
+Os mascotes não são mais redesenhados. `scripts/recortar_mascotes.py` recorta a ilustração oficial do logo em camadas (corpo, cabeça, mão) e o site as anima por rotação. Rosto, cabelo, óculos, jaleco e objetos são os do logo. Como o quadro central do logo esconde uma lateral de cada um, só esse pedaço do jaleco foi completado, em branco. Lupa, foguete e folha são objetos acrescentados, para variar as cenas; a pele do piscar e da boca vem da própria cor do desenho.
+
+## Identidade JOC (03/11/2026)
 
 Pedido: "muito sério", cara bem mais jovem, identidade e cores da JOC, logos reais das olimpíadas, vibe científica de várias áreas, mascotes como guias e narradores.
 
 - **Universo azul profundo com as cores do logo** (laranja, turquesa, amarelo, rosa). Modo claro continua disponível, mas o padrão é o universo.
 - **Fontes:** Exo 2 nos títulos, pelo clima de ficção científica. Nunito no texto, redonda e amigável.
 - **Logos das olimpíadas não foram redesenhados.** `scripts/extrair_logos.py` tira do Catálogo e dos Radars, só apara a margem vazia. Sempre sobre placa, para qualquer cor funcionar. Dos 111 itens, 68 têm logo. Sem logo nos documentos, o site mostra a sigla ou a palavra-chave num azulejo, sem imitar marca. A COPES pode enviar os que faltam.
-- **Mascotes:** redesenhei os dois cientistas do logo em vetor, para poderem acenar, piscar, falar e comemorar. O logo oficial segue intacto. É uma adaptação da ilustração, e a COPES deve aprovar. Não dei nomes: aparecem como "Cientista da folha" e "Cientista do microscópio". Se a equipe quiser nomeá-los, é só trocar o texto.
+- **Mascotes:** são a própria ilustração do logo, recortada em camadas (ver "Bonecos fiéis ao logo"). Ainda sem nomes: "Cientista da folha" e "Cientista do microscópio" são rótulos provisórios.
 - **Abertura com lupa:** a pessoa arrasta a lupa pelo universo e encontra oito olimpíadas escondidas. Ao achar todas, ganha carimbo.
 - **Mundos do conhecimento:** uma seção por área, com mascote e cartas que viram ao toque.
 - **Passaporte Científico:** carimbos por jogar, salvar e terminar a Escada. Fica só no aparelho.

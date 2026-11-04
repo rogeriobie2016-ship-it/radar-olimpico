@@ -434,8 +434,8 @@ export function EscadaCliente({ itens }: { itens: Resumo[] }) {
           <div className="mt-2 grid grid-cols-2 gap-2">
             {(["menina", "menino"] as Quem[]).map((q) => (
               <button key={q} type="button" onClick={() => escolher_(q)} aria-pressed={guia === q} className="azulejo relative flex flex-col items-center overflow-hidden pt-3 transition-transform duration-200 active:scale-95" style={{ background: guia === q ? (q === "menina" ? "#f58a33" : "#00c9c8") : "var(--fundo-2)", color: guia === q ? "#10201f" : "var(--tinta)" }}>
-                <Mascote quem={q} pose={guia === q ? "comemora" : "acena"} className="w-28 sm:w-36" />
-                <span className="estreito w-full bg-black/10 py-2 text-[0.9375rem]">{q === "menina" ? "Cientista da folha" : "Cientista do microscópio"}</span>
+                <Mascote quem={q} pose={guia === q ? "comemora" : "acena"} prioridade className="mt-3 w-24 sm:w-32" />
+                <span className="estreito mt-auto grid min-h-[3.75rem] w-full place-items-center bg-black/10 px-1 py-2 text-[0.9375rem]">{q === "menina" ? "Cientista da folha" : "Cientista do microscópio"}</span>
               </button>
             ))}
           </div>
