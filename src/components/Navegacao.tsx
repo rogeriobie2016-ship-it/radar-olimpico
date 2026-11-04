@@ -64,12 +64,12 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
             </span>
           </Link>
           <nav aria-label="Principal" className="hidden items-center gap-0.5 xl:gap-2 lg:flex">
-            {NAV_COMPLETA.filter((n) => n.href !== "/novidades/").slice(0, 7).map((n) => (
+            {NAV_COMPLETA.filter((n) => n.href !== "/novidades/").slice(0, 8).map((n) => (
               <Link
                 key={n.href}
                 href={n.href}
                 aria-current={ativo(n.href) ? "page" : undefined}
-                className={`${n.href === "/ceara-cientifico/" || n.href === "/joc/" ? "max-xl:hidden " : ""}whitespace-nowrap rounded-full px-3 py-1.5 text-[0.9375rem] font-bold no-underline transition-colors hover:bg-fundo-2 ${ativo(n.href) ? "bg-turquesa !text-[#05272a]" : ""}`}
+                className={`${n.href === "/ceara-cientifico/" || n.href === "/joc/" || n.href === "/calendario/" ? "max-xl:hidden " : ""}whitespace-nowrap rounded-full px-3 py-1.5 text-[0.9375rem] font-bold no-underline transition-colors hover:bg-fundo-2 ${ativo(n.href) ? "bg-turquesa !text-[#05272a]" : ""}`}
               >
                 {n.rotulo}
               </Link>

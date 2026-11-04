@@ -1,0 +1,126 @@
+{
+  "comentario": "Fontes abertas e resumos conferidos em 2026-11-04 (Crossref e OpenAlex). Cada afirmação aponta para o id de uma fonte da lista abaixo.",
+  "introducao": "Não é sobre estudar mais horas. É sobre usar melhor as que você já tem. Estas seis técnicas têm pesquisa por trás, e cada afirmação traz a fonte.",
+  "tecnicas": [
+    {
+      "id": "recuperacao-ativa",
+      "titulo": "Recuperação ativa",
+      "gancho": "Feche o caderno e tente lembrar. O esforço de puxar da memória é o treino.",
+      "passos": [
+        "Leia um trecho e feche o material.",
+        "Escreva tudo o que lembrar, sem olhar.",
+        "Abra, confira e marque o que faltou."
+      ],
+      "pesquisa": [
+        { "texto": "Cinco minutos depois do estudo, reler ganhava. Dois dias ou uma semana depois, quem se testou lembrava bem mais. E quem só releu ficava mais confiante, mesmo lembrando menos.", "fontes": ["roediger2006"] },
+        { "texto": "Em textos de ciências, praticar a lembrança rendeu mais aprendizado do que estudar montando mapa conceitual.", "fontes": ["karpicke2011"] },
+        { "texto": "Numa revisão de 10 técnicas, testar-se ficou entre as de maior utilidade. Grifar e reler ficaram entre as de baixa utilidade.", "fontes": ["dunlosky2013"] }
+      ],
+      "cuidado": null,
+      "ferramenta": { "rotulo": "Treinar nos baralhos", "href": "/estudos/revisao/" }
+    },
+    {
+      "id": "repeticao-espacada",
+      "titulo": "Repetição espaçada",
+      "gancho": "Pouco, várias vezes. Dê um tempo para esquecer um pouco e volte ao assunto.",
+      "passos": [
+        "Revise no dia seguinte, depois em alguns dias, depois em uma semana.",
+        "Quanto mais longe a prova, mais longos podem ser os intervalos.",
+        "Errou? O assunto volta para o começo da fila."
+      ],
+      "pesquisa": [
+        { "texto": "Uma síntese de muitos experimentos mostrou que espalhar o estudo em sessões separadas melhora a lembrança, em comparação com concentrar tudo de uma vez.", "fontes": ["cepeda2006"] },
+        { "texto": "Com mais de 1.350 pessoas: quanto mais longe está a prova, maior o melhor intervalo entre as revisões. Para prova em uma semana, ele ficou perto de 20 a 40% do prazo. Para um ano, perto de 5 a 10%.", "fontes": ["cepeda2008"] },
+        { "texto": "Espaçar o estudo também ficou entre as técnicas de maior utilidade na revisão de 10 técnicas.", "fontes": ["dunlosky2013"] }
+      ],
+      "cuidado": null,
+      "ferramenta": { "rotulo": "Abrir os baralhos", "href": "/estudos/revisao/" }
+    },
+    {
+      "id": "intercalacao",
+      "titulo": "Intercalação",
+      "gancho": "Misture os tipos de questão. Em vez de 20 iguais, escolha o método a cada uma.",
+      "passos": [
+        "Junte numa lista questões de assuntos que você já viu.",
+        "Antes de resolver, pergunte: que tipo de questão é esta?",
+        "Vai parecer mais difícil. Esse é o treino."
+      ],
+      "pesquisa": [
+        { "texto": "126 estudantes do 7º ano treinaram por três meses. Quem praticou misturado tirou notas maiores em testes surpresa, um dia e 30 dias depois, do que quem praticou um tipo de cada vez.", "fontes": ["rohrer2015"] },
+        { "texto": "Em outro estudo com matemática, praticar misturado deu resultado muito melhor em teste feito uma semana depois.", "fontes": ["rohrer2007"] },
+        { "texto": "A revisão de 10 técnicas classificou a intercalação como de utilidade moderada, com a maior parte das provas vinda da matemática e de categorias.", "fontes": ["dunlosky2013"] }
+      ],
+      "cuidado": "A maior parte da evidência é de matemática. Em outras áreas, vale testar e ver como você se sai.",
+      "ferramenta": { "rotulo": "Montar plano misturado", "href": "/estudos/plano/" }
+    },
+    {
+      "id": "explicar",
+      "titulo": "Explicar para alguém",
+      "gancho": "Se você consegue explicar em palavras simples, entendeu. Se trava, achou o buraco.",
+      "passos": [
+        "Explique em voz alta, para um colega, um parente ou a parede.",
+        "Pergunte a si mesmo: por que isso funciona assim?",
+        "Volte ao material só no ponto em que travou."
+      ],
+      "pesquisa": [
+        { "texto": "Estudantes do 8º ano convidados a se explicar cada linha de um texto sobre o sistema circulatório aprenderam mais do que colegas que leram o texto duas vezes. Foi um estudo pequeno, com 24 estudantes.", "fontes": ["chi1994"] },
+        { "texto": "Quem estudou esperando ter de ensinar lembrou mais e organizou melhor o conteúdo.", "fontes": ["nestojko2014"] },
+        { "texto": "A autoexplicação ficou com utilidade moderada na revisão de 10 técnicas.", "fontes": ["dunlosky2013"] }
+      ],
+      "cuidado": null,
+      "ferramenta": null
+    },
+    {
+      "id": "prova-antiga",
+      "titulo": "Resolver prova antiga",
+      "gancho": "Treine como no dia: tempo marcado, sem consulta, gabarito só no fim.",
+      "passos": [
+        "Escolha a prova do seu nível na página da sua área.",
+        "Marque o tempo oficial e faça até o fim.",
+        "Corrija e refaça depois só as questões que você errou."
+      ],
+      "pesquisa": [
+        { "texto": "Uma metanálise concluiu que testes de treino rendem mais do que reler e do que as outras condições comparadas.", "fontes": ["adesope2017"] }
+      ],
+      "cuidado": "A pesquisa estuda testes de treino em geral. Não encontramos estudo específico sobre provas de olimpíada: esta dica aplica a ideia a elas.",
+      "ferramenta": { "rotulo": "Achar provas por área", "href": "/estudos/#areas" }
+    },
+    {
+      "id": "sono",
+      "titulo": "Sono",
+      "gancho": "Virar a noite para estudar costuma sair caro no dia seguinte.",
+      "passos": [
+        "Na véspera da prova, corte a revisão e não o sono.",
+        "Deixe o conteúdo mais pesado para mais cedo, longe da hora de dormir.",
+        "Se o tempo não dá, encurte o plano da semana."
+      ],
+      "pesquisa": [
+        { "texto": "535 adolescentes anotaram sono e estudo por 14 dias. Quem trocou sono por estudo além do normal teve mais dificuldade para entender a aula e mais chance de ir mal em tarefa ou prova no dia seguinte.", "fontes": ["gillen2013"] },
+        { "texto": "O sono ajuda a consolidar na memória o que acabou de ser aprendido.", "fontes": ["diekelmann2010"] },
+        { "texto": "A recomendação da Academia Americana de Medicina do Sono é de 9 a 12 horas em 24 horas dos 6 aos 12 anos, e de 8 a 10 horas dos 13 aos 18 anos.", "fontes": ["paruthi2016"] }
+      ],
+      "cuidado": null,
+      "ferramenta": null
+    }
+  ],
+  "pausas": {
+    "texto": "Numa pesquisa com 87 universitários, durante um dia de estudo, quem fez pausas com hora marcada (como 24 minutos de estudo e 6 de pausa) relatou menos cansaço e mais concentração do que quem decidia sozinho a hora de parar. A tarefa rendeu igual, em menos tempo. Ainda é pouca evidência: foi um dia só, com adultos.",
+    "fontes": ["biwer2023"]
+  },
+  "fontes": [
+    { "id": "dunlosky2013", "citacao": "Dunlosky et al., 2013", "referencia": "Dunlosky, Rawson, Marsh, Nathan e Willingham. Improving Students' Learning With Effective Learning Techniques. Psychological Science in the Public Interest, 14(1), 4-58.", "url": "https://doi.org/10.1177/1529100612453266", "conferidoEm": "2026-11-04" },
+    { "id": "roediger2006", "citacao": "Roediger e Karpicke, 2006", "referencia": "Roediger e Karpicke. Test-Enhanced Learning. Psychological Science, 17(3), 249-255.", "url": "https://doi.org/10.1111/j.1467-9280.2006.01693.x", "conferidoEm": "2026-11-04" },
+    { "id": "karpicke2011", "citacao": "Karpicke e Blunt, 2011", "referencia": "Karpicke e Blunt. Retrieval Practice Produces More Learning than Elaborative Studying with Concept Mapping. Science, 331(6018), 772-775.", "url": "https://doi.org/10.1126/science.1199327", "conferidoEm": "2026-11-04" },
+    { "id": "cepeda2006", "citacao": "Cepeda et al., 2006", "referencia": "Cepeda, Pashler, Vul, Wixted e Rohrer. Distributed practice in verbal recall tasks. Psychological Bulletin, 132(3), 354-380.", "url": "https://doi.org/10.1037/0033-2909.132.3.354", "conferidoEm": "2026-11-04" },
+    { "id": "cepeda2008", "citacao": "Cepeda et al., 2008", "referencia": "Cepeda, Vul, Rohrer, Wixted e Pashler. Spacing Effects in Learning. Psychological Science, 19(11), 1095-1102.", "url": "https://doi.org/10.1111/j.1467-9280.2008.02209.x", "conferidoEm": "2026-11-04" },
+    { "id": "rohrer2007", "citacao": "Rohrer e Taylor, 2007", "referencia": "Rohrer e Taylor. The shuffling of mathematics problems improves learning. Instructional Science, 35(6), 481-498.", "url": "https://doi.org/10.1007/s11251-007-9015-8", "conferidoEm": "2026-11-04" },
+    { "id": "rohrer2015", "citacao": "Rohrer, Dedrick e Stershic, 2015", "referencia": "Rohrer, Dedrick e Stershic. Interleaved practice improves mathematics learning. Journal of Educational Psychology, 107(3), 900-908.", "url": "https://doi.org/10.1037/edu0000001", "conferidoEm": "2026-11-04" },
+    { "id": "chi1994", "citacao": "Chi et al., 1994", "referencia": "Chi, De Leeuw, Chiu e LaVancher. Eliciting Self-Explanations Improves Understanding. Cognitive Science, 18(3), 439-477.", "url": "https://doi.org/10.1207/s15516709cog1803_3", "conferidoEm": "2026-11-04" },
+    { "id": "nestojko2014", "citacao": "Nestojko et al., 2014", "referencia": "Nestojko, Bui, Kornell e Bjork. Expecting to teach enhances learning and organization of knowledge in free recall of text passages. Memory and Cognition, 42(7), 1038-1048.", "url": "https://doi.org/10.3758/s13421-014-0416-z", "conferidoEm": "2026-11-04" },
+    { "id": "adesope2017", "citacao": "Adesope et al., 2017", "referencia": "Adesope, Trevisan e Sundararajan. Rethinking the Use of Tests: A Meta-Analysis of Practice Testing. Review of Educational Research, 87(3), 659-701.", "url": "https://doi.org/10.3102/0034654316689306", "conferidoEm": "2026-11-04" },
+    { "id": "gillen2013", "citacao": "Gillen-O'Neel et al., 2013", "referencia": "Gillen-O'Neel, Huynh e Fuligni. To Study or to Sleep? The Academic Costs of Extra Studying at the Expense of Sleep. Child Development, 84(1), 133-142.", "url": "https://doi.org/10.1111/j.1467-8624.2012.01834.x", "conferidoEm": "2026-11-04" },
+    { "id": "diekelmann2010", "citacao": "Diekelmann e Born, 2010", "referencia": "Diekelmann e Born. The memory function of sleep. Nature Reviews Neuroscience, 11(2), 114-126.", "url": "https://doi.org/10.1038/nrn2762", "conferidoEm": "2026-11-04" },
+    { "id": "paruthi2016", "citacao": "Paruthi et al., 2016", "referencia": "Paruthi et al. Recommended Amount of Sleep for Pediatric Populations. Journal of Clinical Sleep Medicine, 12(6), 785-786.", "url": "https://doi.org/10.5664/jcsm.5866", "conferidoEm": "2026-11-04" },
+    { "id": "biwer2023", "citacao": "Biwer et al., 2023", "referencia": "Biwer, Wiradhany, oude Egbrink e de Bruin. Understanding effort regulation: Comparing Pomodoro breaks and self-regulated breaks. British Journal of Educational Psychology, 93(S2), 353-367.", "url": "https://doi.org/10.1111/bjep.12593", "conferidoEm": "2026-11-04" }
+  ]
+}

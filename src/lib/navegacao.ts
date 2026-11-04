@@ -13,6 +13,7 @@ export const NAV_COMPLETA = [
   { href: "/escada/", rotulo: "Escada Olímpica", resumo: "Quiz para você e a sua escola" },
   { href: "/calendario/", rotulo: "Calendário", resumo: "Prazos por mês" },
   { href: "/jogos/", rotulo: "Jogos", resumo: "Treine para as olimpíadas" },
+  { href: "/estudos/", rotulo: "Estudos", resumo: "Aprenda a estudar e se preparar" },
   { href: "/ceara-cientifico/", rotulo: "Ceará Científico", resumo: "Feira de ciências da rede" },
   { href: "/joc/", rotulo: "JOC", resumo: "Financiamento para escolas" },
   { href: "/professores/", rotulo: "Professores", resumo: "Orientar e registrar" },

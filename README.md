@@ -102,6 +102,42 @@ O `id` e o `slug` devem ser iguais, únicos, com letras minúsculas sem acento e
 - **Capa da revista:** envie a imagem para `public/revista/` (Add file > Upload files), e preencha `"capa": "/revista/nome.webp"` e `"link"`.
 - **Regras do JOC, prazos, matriz de pontos:** [`data/joc.json`](data/joc.json). Mudou o Regulamento? Atualize aqui e peça para gerar de novo o checklist em PDF (`scripts/gerar_checklist_pdf.py`).
 
+### Biblioteca de Estudos
+
+Tudo o que aparece em `/estudos/` sai de quatro arquivos em [`data/estudos/`](data/estudos). Edite como os outros JSON: lápis, altera, **Commit changes**. O site confere antes de publicar e, se faltar algo, diz qual campo corrigir.
+
+| Arquivo | O que muda |
+| --- | --- |
+| [`tecnicas.json`](data/estudos/tecnicas.json) | Técnicas de estudo, afirmações da pesquisa e lista de fontes |
+| [`areas.json`](data/estudos/areas.json) | As seis áreas: por onde começar, o que costuma cair, materiais, fichas e jogos ligados |
+| [`cultura.json`](data/estudos/cultura.json) | Filmes, documentários, livros, podcasts, canais e lugares |
+| [`baralhos.json`](data/estudos/baralhos.json) | Baralhos prontos de revisão |
+
+**Acrescentar um material** (em `areas.json`, dentro de `materiais` da área):
+
+```json
+{ "grupo": null, "titulo": "Provas da Olimpíada X", "descricao": "Edições de 2020 a 2026.", "tipo": "Provas", "url": "https://exemplo.org/provas", "oficial": true, "nota": null, "conferidoEm": "2026-11-20" }
+```
+
+**Acrescentar uma dica** (em `cultura.json`, dentro de `itens`):
+
+```json
+{ "id": "meu-filme", "tipo": "filme", "titulo": "Nome do filme", "autoria": "Direção de Fulana", "ano": "2020", "descricao": "Uma ou duas frases.", "classificacao": null, "gratuito": null, "dominioPublico": false, "ceara": false, "nota": null, "link": { "rotulo": "Ver ficha", "url": "https://exemplo.org/" }, "imagem": null, "conferidoEm": "2026-11-20" }
+```
+
+Regras:
+
+- **Abra o link antes de salvar** e coloque a data em `conferidoEm`. O site não testa os links sozinho.
+- **Toda afirmação de pesquisa precisa de fonte.** Em `tecnicas.json`, `fontes` usa o `id` de um item da lista de fontes, senão o arquivo é recusado.
+- **`oportunidades` usa o `id` de `oportunidades.json` e `jogos` usa o `slug` de `src/lib/jogos.ts`.** Se um deles não existir, o arquivo é recusado.
+- **`tipo` do material:** `Provas`, `Banco de questões`, `Curso`, `Guia` ou `Prática`. **`tipo` da dica:** `filme`, `documentario`, `livro`, `podcast`, `canal` ou `lugar`.
+- **`classificacao`:** só com fonte, no formato `{ "texto": "12 anos, segundo a fonte tal.", "url": "https://..." }`. Sem fonte, use `null`.
+- **`gratuito`:** `true`, `false` ou `null` quando não foi confirmado. O site mostra "Preço a confirmar".
+- **`imagem`:** só com licença clara e fonte registrada, no formato `{ "src": "...", "alt": "...", "fonte": "https://...", "licenca": "...", "largura": 330, "altura": 247 }`. Sem isso, use `null`, e o cartão fica sem imagem. Nunca invente capa. Imagem em outro site precisa aceitar acesso anônimo (CORS); se não aparecer, copie para `public/` e use o caminho local.
+- **Baralhos:** mudar a `frente` de uma carta faz o aparelho do estudante tratá-la como carta nova.
+
+O plano, o temporizador e o progresso nos baralhos ficam só no aparelho de cada estudante (`localStorage`). Nada é enviado, e por isso a COPES não vê esses dados.
+
 ### Salvei. Como sei se deu certo?
 
 1. Abra a aba [**Actions**](../../actions). Sua alteração aparece no topo.
@@ -150,7 +186,7 @@ Next.js (App Router, exportação estática), TypeScript, Tailwind CSS, Framer M
 npm install
 npm run dev       # http://localhost:3210/radar-olimpico/
 npm run validar   # confere os JSON de /data
-npm run testar    # regras da Escada Olímpica e conteúdo dos jogos
+npm run testar    # regras da Escada Olímpica, conteúdo dos jogos e da Biblioteca de Estudos
 npm run build     # valida, gera imagens de compartilhamento e exporta para out/
 npm run preview   # serve out/ como no GitHub Pages, em http://localhost:3211/radar-olimpico/
 ```

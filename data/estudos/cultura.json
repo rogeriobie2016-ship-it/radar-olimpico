@@ -1,0 +1,196 @@
+{
+  "comentario": "Existência, autoria e ano conferidos na web em 2026-11-04. classificacao fica null quando não achamos fonte; nunca preencher de cabeça. imagem só com fonte e licença registradas; sem isso, null.",
+  "itens": [
+    {
+      "id": "estrelas-alem-do-tempo", "tipo": "filme", "titulo": "Estrelas Além do Tempo", "autoria": "Direção de Theodore Melfi", "ano": "2016",
+      "descricao": "As matemáticas negras que fizeram as contas da corrida espacial na NASA. Boa para quem acha que matemática não é para si.",
+      "classificacao": { "texto": "Livre no cinema, segundo a Omelete. Um anúncio de TV citou 10 anos.", "url": "https://www.omelete.com.br/filmes/cinema-estreias-de-filmes-de-semana-02022017" },
+      "gratuito": false, "dominioPublico": false, "ceara": false, "nota": null,
+      "link": { "rotulo": "Ver ficha", "url": "https://www.adorocinema.com/filmes/filme-219070/" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "menino-descobriu-vento", "tipo": "filme", "titulo": "O Menino que Descobriu o Vento", "autoria": "Direção de Chiwetel Ejiofor", "ano": "2019",
+      "descricao": "A história real de William Kamkwamba, que constrói uma turbina eólica para salvar a sua aldeia no Malawi.",
+      "classificacao": { "texto": "12 anos, segundo o guia São Paulo para Crianças.", "url": "https://saopauloparacriancas.com.br/?p=109310" },
+      "gratuito": false, "dominioPublico": false, "ceara": false, "nota": "Na Netflix.",
+      "link": { "rotulo": "Ver ficha", "url": "https://www.adorocinema.com/filmes/filme-259993/" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "vida-maria", "tipo": "filme", "titulo": "Vida Maria", "autoria": "Direção de Márcio Ramos", "ano": "2006",
+      "descricao": "Curta de animação feito no Ceará: uma menina é tirada da escola para trabalhar, e a história se repete. Dura menos de 9 minutos.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": false, "ceara": true, "nota": "Canal oficial do filme. Há versão com Libras.",
+      "link": { "rotulo": "Assistir no YouTube", "url": "https://www.youtube.com/watch?v=yFpoG_htum4" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "viagem-a-lua", "tipo": "filme", "titulo": "Viagem à Lua", "autoria": "Direção de Georges Méliès", "ano": "1902",
+      "descricao": "O clássico do cinema mudo em que astrônomos são disparados por um canhão até a Lua. Compare com o que você sabe de foguetes.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": true, "ceara": false, "nota": "Página em inglês, no acervo do Wikimedia Commons.",
+      "link": { "rotulo": "Assistir no Wikimedia Commons", "url": "https://commons.wikimedia.org/wiki/File:Le_Voyage_dans_la_Lune_(1902).webm" },
+      "imagem": { "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Voyage_dans_la_lune_title_card.png/330px-Voyage_dans_la_lune_title_card.png", "alt": "Cartela de abertura de Viagem à Lua, de 1902", "fonte": "https://commons.wikimedia.org/wiki/File:Voyage_dans_la_lune_title_card.png", "licenca": "Domínio público, Wikimedia Commons", "largura": 330, "altura": 247 }, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "alphago", "tipo": "documentario", "titulo": "AlphaGo", "autoria": "Direção de Greg Kohs", "ano": "2017",
+      "descricao": "A inteligência artificial que enfrentou um campeão mundial de Go. Para pensar no que uma máquina aprende e como.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": false, "ceara": false, "nota": "Publicado pela Google DeepMind. Em inglês.",
+      "link": { "rotulo": "Assistir no YouTube", "url": "https://www.youtube.com/watch?v=WXuK6gekU1Y" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "ilha-das-flores", "tipo": "documentario", "titulo": "Ilha das Flores", "autoria": "Direção de Jorge Furtado", "ano": "1989",
+      "descricao": "Em 13 minutos, a viagem de um tomate até o lixo vira uma aula sobre desigualdade. Clássico do curta brasileiro.",
+      "classificacao": { "texto": "12 anos, segundo a Rolling Stone Brasil.", "url": "https://rollingstone.com.br/?p=195525" },
+      "gratuito": null, "dominioPublico": false, "ceara": false, "nota": null,
+      "link": { "rotulo": "Ver ficha", "url": "https://www.adorocinema.com/filmes/filme-6602/" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "iracema", "tipo": "livro", "titulo": "Iracema", "autoria": "José de Alencar", "ano": "1865",
+      "descricao": "A lenda do Ceará que todo mundo cita. Leia pelo menos o começo, em voz alta, para sentir o ritmo.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": true, "ceara": true, "nota": null,
+      "link": { "rotulo": "Ler no Wikisource", "url": "https://pt.wikisource.org/wiki/Iracema" },
+      "imagem": { "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Iracema_primeira_edicao.png/330px-Iracema_primeira_edicao.png", "alt": "Capa da primeira edição de Iracema, de 1865", "fonte": "https://commons.wikimedia.org/wiki/File:Iracema_primeira_edicao.png", "licenca": "Domínio público, Wikimedia Commons", "largura": 330, "altura": 520 }, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "luzia-homem", "tipo": "livro", "titulo": "Luzia-Homem", "autoria": "Domingos Olímpio", "ano": "1903",
+      "descricao": "Romance passado em Sobral durante a seca. Uma retirante forte desafia o que esperam dela.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": true, "ceara": true, "nota": null,
+      "link": { "rotulo": "Ler no Wikisource", "url": "https://pt.wikisource.org/wiki/Luzia-Homem" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "os-sertoes", "tipo": "livro", "titulo": "Os Sertões", "autoria": "Euclides da Cunha", "ano": "1902",
+      "descricao": "A Guerra de Canudos contada por quem foi cobrir. Mistura geografia, história e reportagem.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": true, "ceara": false, "nota": null,
+      "link": { "rotulo": "Ler no Wikisource", "url": "https://pt.wikisource.org/wiki/Os_Sert%C3%B5es" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "alice", "tipo": "livro", "titulo": "Alice no País das Maravilhas", "autoria": "Lewis Carroll", "ano": "1865",
+      "descricao": "Nonsense e lógica do autor que também era matemático. Bom para treinar leitura em inglês.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": true, "ceara": false, "nota": "Em inglês.",
+      "link": { "rotulo": "Ler no Project Gutenberg", "url": "https://www.gutenberg.org/ebooks/11" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "o-quinze", "tipo": "livro", "titulo": "O Quinze", "autoria": "Rachel de Queiroz", "ano": "1930",
+      "descricao": "A seca de 1915 no Ceará, no romance de estreia de uma autora cearense muito jovem. Procure na biblioteca da escola.",
+      "classificacao": null,
+      "gratuito": false, "dominioPublico": false, "ceara": true, "nota": null,
+      "link": { "rotulo": "Ver sobre a autora", "url": "https://artsandculture.google.com/story/FwXRdPK6nEtpEw" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "quarto-de-despejo", "tipo": "livro", "titulo": "Quarto de Despejo", "autoria": "Carolina Maria de Jesus", "ano": "1960",
+      "descricao": "O diário de uma catadora de papel na favela do Canindé, em São Paulo. Uma das leituras mais fortes do Brasil.",
+      "classificacao": null,
+      "gratuito": false, "dominioPublico": false, "ceara": false, "nota": null,
+      "link": { "rotulo": "Ler sobre o livro", "url": "https://www.brasildefato.com.br/2021/03/01/livro-quarto-de-despejo-diario-de-uma-favelada-e-relancado-em-edicao-especial" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "mundo-assombrado", "tipo": "livro", "titulo": "O Mundo Assombrado pelos Demônios", "autoria": "Carl Sagan, tradução de Rosaura Eichenberg", "ano": "1995",
+      "descricao": "Como separar ciência de enganação. Um kit de ferramentas para pensar.",
+      "classificacao": null,
+      "gratuito": false, "dominioPublico": false, "ceara": false, "nota": null,
+      "link": { "rotulo": "Ver na editora", "url": "https://www.companhiadasletras.com.br/livro/9788535908343/o-mundo-assombrado-pelos-demonios" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "naruhodo", "tipo": "podcast", "titulo": "Naruhodo!", "autoria": "Ken Fujioka e Altay de Sousa, no B9", "ano": null,
+      "descricao": "Perguntas do dia a dia respondidas com ciência. Exemplo: por que mexemos os braços ao andar?",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": false, "ceara": false, "nota": null,
+      "link": { "rotulo": "Ouvir", "url": "https://www.b9.com.br/naruhodo/" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "oxigenio", "tipo": "podcast", "titulo": "Oxigênio", "autoria": "Labjor e Rádio Unicamp", "ano": null,
+      "descricao": "Jornalismo e divulgação científica, feito por estudantes e equipe da Unicamp.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": false, "ceara": false, "nota": null,
+      "link": { "rotulo": "Ouvir", "url": "https://www.oxigenio.comciencia.br/" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "37-graus", "tipo": "podcast", "titulo": "37 Graus", "autoria": "Sarah Azoubel e Bia Guimarães", "ano": null,
+      "descricao": "Histórias com um pé na ciência, contadas como reportagem.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": false, "ceara": false, "nota": null,
+      "link": { "rotulo": "Ouvir", "url": "https://www.37grauspodcast.com/" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "portal-matematica", "tipo": "canal", "titulo": "Portal da Matemática OBMEP", "autoria": "OBMEP e IMPA", "ano": "No YouTube desde 2013",
+      "descricao": "Videoaulas de matemática do 6º ano ao 3º do Médio.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": false, "ceara": false, "nota": null,
+      "link": { "rotulo": "Abrir canal", "url": "https://www.youtube.com/@portalmatematicaobmep" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "manual-do-mundo", "tipo": "canal", "titulo": "Manual do Mundo", "autoria": "Iberê Thenório e Mariana Fulfaro", "ano": "Desde 2008",
+      "descricao": "Experimentos, curiosidades e desafios. Bom para ver a ciência funcionando.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": false, "ceara": false, "nota": null,
+      "link": { "rotulo": "Abrir canal", "url": "https://www.youtube.com/@manualdomundo" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "matematica-rio", "tipo": "canal", "titulo": "Matemática Rio", "autoria": "Prof. Rafael Procopio", "ano": "No YouTube desde 2010",
+      "descricao": "Aulas de matemática voltadas ao Enem e a concursos, passo a passo.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": false, "ceara": false, "nota": null,
+      "link": { "rotulo": "Abrir canal", "url": "https://www.youtube.com/@MatematicaRio" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "canal-usp", "tipo": "canal", "titulo": "Canal USP", "autoria": "Universidade de São Paulo", "ano": "No YouTube desde 2007",
+      "descricao": "Canal oficial da USP, com entrevistas, séries e vídeos de pesquisas.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": false, "ceara": false, "nota": null,
+      "link": { "rotulo": "Abrir canal", "url": "https://www.youtube.com/@canalusp" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "kurzgesagt", "tipo": "canal", "titulo": "Kurzgesagt", "autoria": "Equipe Kurzgesagt", "ano": "No YouTube desde 2013",
+      "descricao": "Animações sobre ciência e o mundo. Serve também para treinar o inglês.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": false, "ceara": false, "nota": "Em inglês.",
+      "link": { "rotulo": "Abrir canal", "url": "https://www.youtube.com/@Kurzgesagt" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "seara-da-ciencia", "tipo": "lugar", "titulo": "Seara da Ciência", "autoria": "UFC, Rua Dr. Abdenago Rocha Lima, s/n, Pici, Fortaleza", "ano": null,
+      "descricao": "O espaço de divulgação científica da UFC. Abre de segunda a sexta, das 8h às 12h e das 13h30 às 17h30, fora de feriados e recessos.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": false, "ceara": true, "nota": "Grupos com mais de 10 pessoas reservam por e-mail para algumas exposições.",
+      "link": { "rotulo": "Ver como visitar", "url": "https://seara.ufc.br/agendamento/" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "museu-do-eclipse", "tipo": "lugar", "titulo": "Museu do Eclipse", "autoria": "Rua Coronel Rangel, s/n, Centro, Sobral", "ano": null,
+      "descricao": "Fica onde a expedição de 1919 fotografou o eclipse que ajudou a confirmar a teoria de Einstein. Horário informado: terça a sexta, das 8h às 12h e das 13h às 17h, e sábado das 8h às 12h.",
+      "classificacao": null,
+      "gratuito": true, "dominioPublico": false, "ceara": true, "nota": "O Mapa Cultural do Ceará ainda mostra aviso de reforma e os horários variam entre as fontes. Ligue antes: (88) 3611-2956.",
+      "link": { "rotulo": "Ver ficha no Ibram", "url": "https://visite.museus.gov.br/instituicoes/museu-do-eclipse/" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "planetario-rubens-de-azevedo", "tipo": "lugar", "titulo": "Planetário Rubens de Azevedo", "autoria": "Centro Dragão do Mar, Rua Dragão do Mar, 81, Fortaleza", "ano": null,
+      "descricao": "Sessões abertas ao público e visitas agendadas para grupos escolares de 20 a 60 pessoas, com cerca de 40 minutos.",
+      "classificacao": null,
+      "gratuito": false, "dominioPublico": false, "ceara": true, "nota": "As sessões são pagas, com eventos gratuitos em algumas datas. Veja a programação no site.",
+      "link": { "rotulo": "Ver programação", "url": "https://www.planetariorubensdeazevedo.com.br/" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "museu-de-paleontologia", "tipo": "lugar", "titulo": "Museu de Paleontologia Plácido Cidade Nuvens", "autoria": "URCA, Santana do Cariri", "ano": null,
+      "descricao": "O museu de fósseis da Universidade Regional do Cariri, na região do Geopark Araripe.",
+      "classificacao": null,
+      "gratuito": null, "dominioPublico": false, "ceara": true, "nota": "Não confirmamos preço nem horário atuais. Veja o atendimento no site.",
+      "link": { "rotulo": "Ver site do museu", "url": "https://museudepaleontologiaplacidocidadenuvens.urca.br/" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "mauc", "tipo": "lugar", "titulo": "Museu de Arte da UFC", "autoria": "Avenida da Universidade, 2854, Benfica, Fortaleza", "ano": null,
+      "descricao": "O Mauc, museu de arte da Universidade Federal do Ceará.",
+      "classificacao": null,
+      "gratuito": null, "dominioPublico": false, "ceara": true, "nota": "O site não traz horário nem preço. Telefone: (85) 3366-7481.",
+      "link": { "rotulo": "Ver site do museu", "url": "https://mauc.ufc.br/pt/" }, "imagem": null, "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "parna-ubajara", "tipo": "lugar", "titulo": "Parque Nacional de Ubajara", "autoria": "ICMBio, Ubajara", "ano": null,
+      "descricao": "Parque com a Gruta de Ubajara, bondinho, trilhas e cachoeiras. Geografia e biologia ao vivo.",
+      "classificacao": null,
+      "gratuito": null, "dominioPublico": false, "ceara": true, "nota": "A página não informa preço. Veja as regras de visita antes de ir.",
+      "link": { "rotulo": "Ver página do parque", "url": "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/caatinga/lista-de-ucs/parna-de-ubajara" }, "imagem": null, "conferidoEm": "2026-11-04"
+    }
+  ]
+}
