@@ -22,6 +22,15 @@ export default function EstudosPagina() {
       <div className="est-pagina">
         <Cabecalho titulo="Biblioteca de Estudos" frase="Aprenda a estudar e chegue pronto na olimpíada. Grátis, sem conta, tudo salvo só no seu aparelho." voltar={false} />
 
+        <section aria-labelledby="planeta">
+          <Link href="/estudos/planeta/" className="est-vidro est-destaque plan-porta">
+            <span className="est-rotulo" id="planeta">Jogo em 3D</span>
+            <span className="est-destaque-titulo">Planeta Estante</span>
+            <span className="est-texto">Ande por um mundinho redondo, chegue nas estantes e puxe os vídeos de cada área.</span>
+            <Seta className="mt-2" />
+          </Link>
+        </section>
+
         <section aria-labelledby="comece">
           <Link href="/estudos/como-estudar/" className="est-vidro est-destaque">
             <span className="est-rotulo" id="comece">Comece aqui</span>

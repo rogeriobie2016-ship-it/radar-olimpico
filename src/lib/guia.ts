@@ -60,6 +60,7 @@ export const CARIMBOS: Carimbo[] = [
   { id: "orbita-numerica", titulo: "Piloto de contas", como: "Jogue Órbita Numérica", cor: "#3ee8e6" },
   { id: "nave-celular", titulo: "Piloto da célula", como: "Jogue Nave Celular", cor: "#4dff8a" },
   { id: "laboratorio", titulo: "Laboratório completo", como: "Use todos os equipamentos do Laboratório Vivo", cor: "#3ee8e6" },
+  { id: "planeta", titulo: "Leitor de planeta", como: "Carimbe as sete estantes do Planeta Estante", cor: "#f4728e" },
 ];
 
 let carimbosAtuais: string[] | null = null;

@@ -5,7 +5,7 @@ import { join } from "node:path";
 import type { ZodType } from "zod";
 import { CAMPOS } from "../src/lib/campos";
 import { JOGOS } from "../src/lib/jogos";
-import { areasEstudoSchema, baralhosSchema, cearaCientificoSchema, culturaSchema, jocSchema, metaSchema, novidadesSchema, oportunidadesSchema, problemasEstudos, tecnicasSchema, type AreasEstudo, type Oportunidade } from "../src/lib/schema";
+import { areasEstudoSchema, baralhosSchema, cearaCientificoSchema, culturaSchema, jocSchema, metaSchema, novidadesSchema, oportunidadesSchema, problemasEstudos, tecnicasSchema, videosSchema, type AreasEstudo, type Oportunidade } from "../src/lib/schema";
 
 const pasta = join(process.cwd(), "data");
 const arquivos: [string, ZodType][] = [
@@ -18,6 +18,7 @@ const arquivos: [string, ZodType][] = [
   ["estudos/areas.json", areasEstudoSchema],
   ["estudos/cultura.json", culturaSchema],
   ["estudos/baralhos.json", baralhosSchema],
+  ["estudos/videos.json", videosSchema],
 ];
 
 let erros = 0;
@@ -80,6 +81,13 @@ try {
       else for (const [s] of c.jogos) if (!e.jogos.includes(s)) problemas.push(`estudos/areas.json: a área "${e.slug}" não cita o jogo "${s}"`);
     }
   }
+  // Toda estante do Planeta Estante precisa de vídeo, e todo vídeo de uma estante.
+  const vids = (lerJson("estudos/videos.json") as { videos: { id: string; campo: string }[] }).videos;
+  for (const c of CAMPOS) {
+    const n = vids.filter((x) => x.campo === c.id).length;
+    if (n < 1 || n > 5) problemas.push(`a estante "${c.id}" tem ${n} vídeos, e cabem de 1 a 5`);
+  }
+  for (const x of vids) if (!CAMPOS.some((c) => c.id === x.campo)) problemas.push(`o vídeo "${x.id}" aponta para o campo "${x.campo}", que não existe`);
   for (const p of problemas) {
     erros++;
     console.error(`\n✗ src/lib/campos.ts: ${p}`);

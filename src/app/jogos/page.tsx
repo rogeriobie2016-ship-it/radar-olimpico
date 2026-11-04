@@ -35,6 +35,11 @@ export default function JogosPagina() {
           Quer um plano de estudo? Vá para a Biblioteca de Estudos
         </Link>
       </header>
+      <Link href="/estudos/planeta/" className="cartao-vidro plan-porta flex flex-col gap-1.5 p-5 no-underline">
+        <span className="text-[0.8125rem] font-bold text-tinta-2">Aventura em 3D com vídeos de todas as áreas</span>
+        <span className="estreito text-[1.6rem] leading-tight">Planeta Estante</span>
+        <span className="text-[0.9375rem] leading-snug text-tinta-2">Explore o planeta a pé, carimbe as estantes e procure as fitas douradas.</span>
+      </Link>
       {CAMPOS.map((c) => {
         const lista = c.jogos.filter(([s]) => porSlug.has(s));
         if (!lista.length) return null;

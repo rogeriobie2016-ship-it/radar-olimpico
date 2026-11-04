@@ -40,6 +40,7 @@ export default async function AreaPagina({ params }: Props) {
         <Cabecalho titulo={area.titulo} frase={area.resumo} />
 
         {campo && <TrilhaCampo campo={campo} atual="estudos" />}
+        {campo && <Link href={`/estudos/planeta/#${campo.id}`} className="link w-fit text-[0.9375rem]">Vídeos desta área no Planeta Estante</Link>}
 
         {area.aviso && <p className="est-vidro est-nota est-aviso" role="note">{area.aviso}</p>}
 

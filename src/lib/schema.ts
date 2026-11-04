@@ -277,6 +277,23 @@ export const baralhosSchema = z.object({
 });
 
 export type Tecnicas = z.infer<typeof tecnicasSchema>;
+export const videosSchema = z.object({
+  comentario: z.string(),
+  videos: z.array(
+    z.object({
+      id: z.string().min(2),
+      campo: idSimples,
+      fonte: z.enum(["youtube", "commons"]),
+      titulo: textoCurto,
+      canal: textoCurto,
+      duracao: z.string().nullable(),
+      idioma: z.enum(["pt", "en", "de", "mudo"]),
+      pagina: z.url().optional(),
+      conferidoEm: conferido,
+    }),
+  ),
+});
+
 export type AreasEstudo = z.infer<typeof areasEstudoSchema>;
 export type AreaEstudo = AreasEstudo["areas"][number];
 export type Cultura = z.infer<typeof culturaSchema>;

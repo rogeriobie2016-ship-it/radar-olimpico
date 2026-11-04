@@ -231,3 +231,11 @@ Os seis vêm da lista da UFC no Catálogo 2026 (p. 72 a 76). Nenhum foi apagado,
 
 - O botão fica numa barra do próprio palco. Nativo onde o navegador deixa; no iPhone, que não deixa, o jogo ocupa a janela. A mesma classe vale nos dois casos.
 - A Nave Celular passou a abrir dentro do palco, não no `body`: o que está fora do elemento em tela cheia não aparece.
+
+## Planeta Estante (2026-11-04)
+
+- O usuário pediu um jogo no gênero de um planetinha para explorar a pé, com estante interativa de vídeos, e citou o Messenger (Abeto) como referência. Mundo, cores, marcos, nome e personagens são próprios do Radar; não copiamos arte, cenário nem mecânica de entrega de cartas.
+- Cada campo de `src/lib/campos.ts` é uma região com uma estante. Vídeos ficam em `data/estudos/videos.json`, com título e canal vindos do oEmbed do YouTube. A escolha ainda não passou por revisão de professores.
+- O iframe do YouTube só carrega depois de tocar em assistir e usa `youtube-nocookie`: quem só anda pelo planeta não faz nenhum pedido ao YouTube. As capas são desenhadas por nós, sem miniaturas do YouTube.
+- Viagem à Lua abre na página do Wikimedia Commons: o arquivo tem mais de 2 GB, pesado demais para tocar direto no celular de escola.
+- Todo o conteúdo fica aberto desde o início. Carimbos e fitas douradas são só diversão; a lista sem 3D, na mesma página, traz os mesmos vídeos.

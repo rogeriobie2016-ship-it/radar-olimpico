@@ -1,0 +1,296 @@
+{
+  "comentario": "Vídeos das estantes do Planeta Estante. Título e canal vêm do YouTube (oEmbed), conferidos em conferidoEm; duração vem da página de busca do YouTube. A escolha ainda não passou por revisão de professores.",
+  "videos": [
+    {
+      "id": "unSCWsz-jmc",
+      "campo": "matematica",
+      "fonte": "youtube",
+      "titulo": "Teorema de Pitágoras e Aplicações - 01",
+      "canal": "Portal da Matemática OBMEP",
+      "duracao": "4:01",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "k8uw_CWo1N8",
+      "campo": "matematica",
+      "fonte": "youtube",
+      "titulo": "Teorema de Pitágoras e Aplicações II - 01",
+      "canal": "Portal da Matemática OBMEP",
+      "duracao": "2:06",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "vdHkYzdxfmc",
+      "campo": "matematica",
+      "fonte": "youtube",
+      "titulo": "FRAÇÃO - Frações Equivalentes e Simplificação de Frações | MAB #49",
+      "canal": "Matemática Rio com Prof. Rafael Procopio",
+      "duracao": "31:37",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "tlpYjrbujG0",
+      "campo": "matematica",
+      "fonte": "youtube",
+      "titulo": "New World's Biggest Prime Number (PRINTED FULLY ON PAPER) - Numberphile",
+      "canal": "Numberphile",
+      "duracao": "6:39",
+      "idioma": "en",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "yFpoG_htum4",
+      "campo": "linguagens",
+      "fonte": "youtube",
+      "titulo": "Vida Maria",
+      "canal": "Vida Maria",
+      "duracao": "8:36",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "alAXSk8ly-o",
+      "campo": "linguagens",
+      "fonte": "youtube",
+      "titulo": "Interpretação vs Compreensão de texto [Prof. Noslen]",
+      "canal": "Professor Noslen",
+      "duracao": "5:04",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "6AvUP-IoYEo",
+      "campo": "linguagens",
+      "fonte": "youtube",
+      "titulo": "Caminhos da Reportagem | Carolina de Jesus, a escritora além do quarto",
+      "canal": "TV Brasil",
+      "duracao": "25:02",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "zzCoEwnI-Ek",
+      "campo": "linguagens",
+      "fonte": "youtube",
+      "titulo": "Roda Viva | Rachel de Queiroz | 1991",
+      "canal": "Roda Viva",
+      "duracao": "1:28:10",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "YAsDeXcYyTg",
+      "campo": "linguas-estrangeiras",
+      "fonte": "youtube",
+      "titulo": "Scared to speak English? 6 Minute English",
+      "canal": "BBC Learning English",
+      "duracao": "6:48",
+      "idioma": "en",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "pjFlVc-EDzc",
+      "campo": "linguas-estrangeiras",
+      "fonte": "youtube",
+      "titulo": "What should you eat for a better night’s sleep? 6 Minute English",
+      "canal": "BBC Learning English",
+      "duracao": "6:33",
+      "idioma": "en",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "dC6ZGLzdaTs",
+      "campo": "linguas-estrangeiras",
+      "fonte": "youtube",
+      "titulo": "Deutsch lernen (A1) | Nicos Weg | Folge 1: Hallo!",
+      "canal": "Deutsch lernen mit der DW",
+      "duracao": "1:37",
+      "idioma": "de",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "4-eDoThe6qo",
+      "campo": "linguas-estrangeiras",
+      "fonte": "youtube",
+      "titulo": "Deutsch lernen (A1): Ganzer Film auf Deutsch - \"Nicos Weg\" | Deutsch lernen mit Videos | Untertitel",
+      "canal": "Deutsch lernen mit der DW",
+      "duracao": "1:43:41",
+      "idioma": "de",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "lXfEK8G8CUI",
+      "campo": "natureza",
+      "fonte": "youtube",
+      "titulo": "How The Immune System ACTUALLY Works: IMMUNE",
+      "canal": "Kurzgesagt: In a Nutshell",
+      "duracao": "10:48",
+      "idioma": "en",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "GbJJRsS6OR4",
+      "campo": "natureza",
+      "fonte": "youtube",
+      "titulo": "Buracos Negros Explicados",
+      "canal": "Ciência Todo Dia",
+      "duracao": "10:04",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "vO50-ZRQtuY",
+      "campo": "natureza",
+      "fonte": "youtube",
+      "titulo": "Como extrair DNA humano (EXPERIÊNCIA)",
+      "canal": "Manual do Mundo",
+      "duracao": "3:53",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "Tt2dttH1NhY",
+      "campo": "natureza",
+      "fonte": "youtube",
+      "titulo": "Astronomia antes dos telescópios (Aula 1)",
+      "canal": "Canal USP",
+      "duracao": "26:39",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "BXzK0iegNQI",
+      "campo": "natureza",
+      "fonte": "youtube",
+      "titulo": "AULÃO OFICIAL OBA 2026",
+      "canal": "OBA - OBAFOG",
+      "duracao": "3:29:05",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "eg47cCMcQr0",
+      "campo": "humanas",
+      "fonte": "youtube",
+      "titulo": "A REVOLUÇÃO FRANCESA EM 5 MINUTOS! - Débora Aladim",
+      "canal": "Débora Aladim",
+      "duracao": "5:53",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "upkhZui15nk",
+      "campo": "humanas",
+      "fonte": "youtube",
+      "titulo": "Eclipse de Sobral: O dia em que o Brasil ajudou a confirmar a teoria da relatividade de Einstein",
+      "canal": "BBC News Brasil",
+      "duracao": "9:27",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "UQOdfG8rjXg",
+      "campo": "humanas",
+      "fonte": "youtube",
+      "titulo": "A Era Vargas 1930-1945 (Aula 3, parte 1)",
+      "canal": "Canal USP",
+      "duracao": "32:32",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "8mei6uVttho",
+      "campo": "tecnologia",
+      "fonte": "youtube",
+      "titulo": "Introdução a Algoritmos - Curso de Algoritmos #01 - Gustavo Guanabara",
+      "canal": "Curso em Vídeo",
+      "duracao": "14:08",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "M2Af7gkbbro",
+      "campo": "tecnologia",
+      "fonte": "youtube",
+      "titulo": "Primeiro Algoritmo - Curso de Algoritmos #02 - Gustavo Guanabara",
+      "canal": "Curso em Vídeo",
+      "duracao": "35:47",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "2WtPyqwTLKM",
+      "campo": "tecnologia",
+      "fonte": "youtube",
+      "titulo": "CS50x 2025 - Lecture 0 - Scratch",
+      "canal": "CS50",
+      "duracao": "1:58:56",
+      "idioma": "en",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "WXuK6gekU1Y",
+      "campo": "tecnologia",
+      "fonte": "youtube",
+      "titulo": "AlphaGo - The Movie | Full award-winning documentary",
+      "canal": "Google DeepMind",
+      "duracao": "1:30:28",
+      "idioma": "en",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "PqtggjVAi8M",
+      "campo": "pesquisa",
+      "fonte": "youtube",
+      "titulo": "How Are Memories Stored Inside Your Brain?",
+      "canal": "Kurzgesagt: In a Nutshell",
+      "duracao": "13:56",
+      "idioma": "en",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "0yOznKmgpxQ",
+      "campo": "pesquisa",
+      "fonte": "youtube",
+      "titulo": "Super VULCÃO para FEIRA DE CIÊNCIAS",
+      "canal": "Manual do Mundo",
+      "duracao": "6:44",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "D9HDgpvY5-Y",
+      "campo": "pesquisa",
+      "fonte": "youtube",
+      "titulo": "TÁ DUVIDANDO do poder do DETERGENTE? 10 experimentos INCRÍVEIS pra fazer em casa",
+      "canal": "Manual do Mundo",
+      "duracao": "11:19",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "tFQvjJRwI5w",
+      "campo": "pesquisa",
+      "fonte": "youtube",
+      "titulo": "Além das Aulas - Iniciação Científica, parte 1",
+      "canal": "Hub Podcast USP",
+      "duracao": "16:28",
+      "idioma": "pt",
+      "conferidoEm": "2026-11-04"
+    },
+    {
+      "id": "viagem-a-lua",
+      "campo": "humanas",
+      "fonte": "commons",
+      "titulo": "Viagem à Lua (1902), de Georges Méliès",
+      "canal": "Wikimedia Commons",
+      "duracao": null,
+      "idioma": "mudo",
+      "conferidoEm": "2026-11-04",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Le_Voyage_dans_la_Lune_(1902).webm"
+    }
+  ]
+}

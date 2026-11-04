@@ -112,6 +112,7 @@ Tudo o que aparece em `/estudos/` sai de quatro arquivos em [`data/estudos/`](da
 | [`areas.json`](data/estudos/areas.json) | As seis áreas: por onde começar, o que costuma cair, materiais, fichas e jogos ligados |
 | [`cultura.json`](data/estudos/cultura.json) | Filmes, documentários, livros, podcasts, canais e lugares |
 | [`baralhos.json`](data/estudos/baralhos.json) | Baralhos prontos de revisão |
+| [`videos.json`](data/estudos/videos.json) | Vídeos das estantes do Planeta Estante (de 1 a 5 por campo) |
 
 **Acrescentar um material** (em `areas.json`, dentro de `materiais` da área):
 
