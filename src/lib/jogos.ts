@@ -69,6 +69,12 @@ export const JOGOS: Jogo[] = [
     como: "Escolha o idioma e toque no astro que está brilhando. Traduza, monte frases, ligue pares, complete e escreva o que ouvir. Cada lição concluída destrava a próxima, e o que você errar volta no final.",
     oportunidades: ["obli", "olimpiada-de-ingles", "the-big-challenge", "prep-estudar-fora", "estudar-fora-ceara"], principal: "obli",
   },
+  {
+    slug: "orbita-numerica", titulo: "Órbita Numérica", olimpiada: "OBMEP, Canguru e raciocínio lógico",
+    resumo: "Pilote uma nave em pixels, colete as respostas certas e enfrente um chefe no fim de cada fase.",
+    como: "Arraste a nave ou use as setas e pegue a cápsula com a resposta certa. Desvie das erradas e dos asteroides. Errou? A conta aparece explicada, passo a passo.",
+    oportunidades: ["obmep", "obmep-jr", "canguru", "mandacaru", "obrl", "ocm", "mcem", "omifce", "gepemac", "omu", "jacob-palis-jr", "tm2", "obom", "titas-da-matematica"], principal: "obmep",
+  },
 ];
 
 export const jogosDe = (id: string) => JOGOS.filter((j) => j.oportunidades.includes(id));

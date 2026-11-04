@@ -127,6 +127,16 @@ Oitavo jogo: trilha de lições curtas de inglês e espanhol, do iniciante ao in
 - **Tela da lição:** usa `dialog` nativo em tela cheia, que prende o foco e não depende do tema do site. O resultado volta para o palco, para o confete e o carimbo aparecerem por cima.
 - **Revisão:** frases e explicações foram escritas por mim e relidas por um segundo revisor automático. Professores de língua da rede devem revisar antes da divulgação. O foco em leitura, conectores e falsos cognatos foi uma escolha pedagógica: a OBLI cita leitura, escrita, compreensão auditiva e expressão oral, mas não li provas nem matrizes das olimpíadas, então o jogo não afirma que algo "cai na prova". Expressão oral não é treinada.
 - **Espanhol sem olimpíada no catálogo:** não há olimpíada de espanhol em `data/oportunidades.json`. O jogo aponta para OBLI, Olimpíada de Inglês e The Big Challenge, e também para Estudar Fora do Ceará e Prep Estudar Fora, que cobram língua estrangeira. A COPES pode indicar se há olimpíada de espanhol a incluir.
+## Órbita Numérica (04/11/2026)
+
+Oitavo jogo: arcade de Matemática em pixel art, para treinar OBMEP e Canguru. A nave atravessa cinco fases (frações; porcentagem e razão; potências e sequências; geometria; raciocínio lógico com revisão) e cada uma termina num chefe.
+
+- **Questões geradas:** ficam em `src/lib/estudo/orbita.ts`. Os números são sorteados e a resposta é calculada. Não há banco de perguntas escrito à mão.
+- **Teste:** `npm run testar:orbita` confere cerca de 470 mil questões. Ele lê o enunciado mostrado na tela, recalcula a resposta por outro caminho (força bruta quando dá) e também barra opção repetida, opção de mesmo valor (2/4 e 1/2) e letra que a fonte em pixels não desenha. O conteúdo foi escrito por mim e precisa de revisão pedagógica da COPES, como os demais jogos.
+- **Errar ensina:** errar ou deixar as cápsulas passarem para o jogo e abre a conta explicada, sem tempo correndo. Errar tira um escudo. Deixar passar não tira, para quem ainda está calculando não ser punido duas vezes.
+- **Celular:** durante a partida o jogo cobre a tela inteira, para a barra de baixo e a rolagem da página não atrapalharem o arrasto. No computador, fica dentro da página. A tela de jogo usa cores fixas e continua escura em qualquer tema.
+- **Acessibilidade:** além de arrastar e das setas, os botões de resposta e as teclas de 1 a 4 levam a nave sozinha até a cápsula escolhida. Com movimento reduzido, o céu fica parado, sem tremor, clarão e faíscas, e há 25% mais tempo.
+- **`?semente=123` na URL** repete a mesma sequência de contas. Serve para testar e para a equipe conferir uma partida, como o `?hoje=` nas páginas do Radar.
 
 ## Sons (04/11/2026)
 

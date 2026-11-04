@@ -20,6 +20,7 @@ const ARTE: Record<string, string> = {
   "arquivo-perdido": "Linguagens e Códigos",
   crononauta: "Ciências Humanas e Sociais Aplicadas",
   "lingua-galactica": "Linguagens e Códigos",
+  "orbita-numerica": "Matemática",
 };
 
 export default function JogosPagina() {

@@ -17,7 +17,8 @@
     "testar:narrativos": "tsx scripts/testar-narrativos.ts",
     "testar:estudos": "tsx scripts/testar-estudos.ts",
     "testar:linguas": "tsx scripts/testar-linguas.ts",
-    "testar": "npm run testar:escada && npm run testar:jogos && npm run testar:lab && npm run testar:narrativos && npm run testar:estudos && npm run testar:linguas"
+    "testar:orbita": "tsx scripts/testar-orbita.ts",
+    "testar": "npm run testar:escada && npm run testar:jogos && npm run testar:lab && npm run testar:narrativos && npm run testar:estudos && npm run testar:linguas && npm run testar:orbita"
   },
   "dependencies": {
     "framer-motion": "^14.9.0",

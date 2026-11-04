@@ -20,6 +20,7 @@ const JOGOS_MAPA: Record<string, // eslint-disable-next-line @typescript-eslint/
   "arquivo-perdido": dynamic(() => import("@/components/jogos/ArquivoPerdido"), { ssr: false, loading: Carregando }),
   crononauta: dynamic(() => import("@/components/jogos/Crononauta"), { ssr: false, loading: Carregando }),
   "lingua-galactica": dynamic(() => import("@/components/jogos/LinguaGalactica"), { ssr: false, loading: Carregando }),
+  "orbita-numerica": dynamic(() => import("@/components/jogos/OrbitaNumerica"), { ssr: false, loading: Carregando }),
 };
 
 export function JogoCliente({ jogo, nomeFicha, slugFicha, dados }: { jogo: Jogo; nomeFicha: string; slugFicha: string; dados: DadoEscada[] }) {
