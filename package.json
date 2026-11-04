@@ -14,9 +14,14 @@
     "testar:escada": "tsx scripts/testar-escada.ts",
     "testar:jogos": "tsx scripts/testar-jogos.ts",
     "testar:lab": "tsx scripts/testar-lab.ts",
+<<<<<<< HEAD
     "testar:narrativos": "tsx scripts/testar-narrativos.ts",
     "testar:estudos": "tsx scripts/testar-estudos.ts",
     "testar": "npm run testar:escada && npm run testar:jogos && npm run testar:lab && npm run testar:narrativos && npm run testar:estudos"
+=======
+    "testar:linguas": "tsx scripts/testar-linguas.ts",
+    "testar": "npm run testar:escada && npm run testar:jogos && npm run testar:lab && npm run testar:linguas"
+>>>>>>> worktree-agent-acafd4897ab3fc2df
   },
   "dependencies": {
     "framer-motion": "^14.9.0",

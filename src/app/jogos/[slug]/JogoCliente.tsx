@@ -17,8 +17,12 @@ const JOGOS_MAPA: Record<string, // eslint-disable-next-line @typescript-eslint/
   balanco: dynamic(() => import("@/components/jogos/Balanco"), { ssr: false, loading: Carregando }),
   "jornada-cientifica": dynamic(() => import("@/components/jogos/Jornada"), { ssr: false, loading: Carregando }),
   escada: dynamic(() => import("@/components/jogos/EscadaJogo"), { ssr: false, loading: Carregando }),
+<<<<<<< HEAD
   "arquivo-perdido": dynamic(() => import("@/components/jogos/ArquivoPerdido"), { ssr: false, loading: Carregando }),
   crononauta: dynamic(() => import("@/components/jogos/Crononauta"), { ssr: false, loading: Carregando }),
+=======
+  "lingua-galactica": dynamic(() => import("@/components/jogos/LinguaGalactica"), { ssr: false, loading: Carregando }),
+>>>>>>> worktree-agent-acafd4897ab3fc2df
 };
 
 export function JogoCliente({ jogo, nomeFicha, slugFicha, dados }: { jogo: Jogo; nomeFicha: string; slugFicha: string; dados: DadoEscada[] }) {

@@ -54,8 +54,12 @@ export const CARIMBOS: Carimbo[] = [
   { id: "algoritmo", titulo: "Código no ponto", como: "Jogue Algoritmo", cor: "#47e0df" },
   { id: "linha-do-tempo", titulo: "Viajante do tempo", como: "Jogue Linha do Tempo", cor: "#fdc13f" },
   { id: "balanco", titulo: "Nada se perde", como: "Jogue Balanço", cor: "#f8a8c8" },
+<<<<<<< HEAD
   { id: "arquivo-perdido", titulo: "Sentido restaurado", como: "Chegue a um final de Arquivo Perdido", cor: "#ffb24d" },
   { id: "crononauta", titulo: "Fonte na mão", como: "Entregue um relatório em Crononauta", cor: "#7fd8ff" },
+=======
+  { id: "lingua-galactica", titulo: "Tradutor galáctico", como: "Conclua uma lição de Língua Galáctica", cor: "#9cc4ff" },
+>>>>>>> worktree-agent-acafd4897ab3fc2df
   { id: "laboratorio", titulo: "Laboratório completo", como: "Use todos os equipamentos do Laboratório Vivo", cor: "#3ee8e6" },
 ];
 
