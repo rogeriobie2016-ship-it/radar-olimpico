@@ -51,6 +51,12 @@ export const JOGOS: Jogo[] = [
     como: "Use mais e menos em cada substância. As barras mostram quantos átomos há de cada lado. Equilibre com o menor número de toques.",
     oportunidades: ["ocq", "oqep", "quimeninas", "obq", "olimpiada-da-coruja", "tbc"], principal: "ocq",
   },
+  {
+    slug: "lingua-galactica", titulo: "Língua Galáctica", olimpiada: "OBLI, The Big Challenge e Olimpíada de Inglês",
+    resumo: "Viaje de astro em astro com lições curtas de inglês e espanhol, do iniciante ao intermediário.",
+    como: "Escolha o idioma e toque no astro que está brilhando. Traduza, monte frases, ligue pares, complete e escreva o que ouvir. Cada lição concluída destrava a próxima, e o que você errar volta no final.",
+    oportunidades: ["obli", "olimpiada-de-ingles", "the-big-challenge", "prep-estudar-fora", "estudar-fora-ceara"], principal: "obli",
+  },
 ];
 
 export const jogosDe = (id: string) => JOGOS.filter((j) => j.oportunidades.includes(id));

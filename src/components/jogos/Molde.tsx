@@ -62,7 +62,7 @@ export function Molde({ jogo, nomeFicha, slugFicha, children }: { jogo: Jogo; no
   const { quem, escolher } = useGuia();
 
   return (
-    <div className="palco flex min-h-[32rem] flex-col">
+    <div className="palco palco-escuro flex min-h-[32rem] flex-col">
       {fase === "inicio" && (
         <div className="entrada-seq flex flex-1 flex-col justify-end gap-4 p-5 sm:p-8">
           <p className="text-[0.9375rem] font-bold text-[#a9c6d8]">Quem vai narrar?</p>

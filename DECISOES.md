@@ -98,7 +98,7 @@ Pedido: "tá com muito cara de IA", site premium, jogos por olimpíada, atualiza
 
 ### Jogos
 
-- **Sete jogos:** Jornada Científica (Ceará Científico), Escada (catálogo), Alvo (OBMEP), Lançamento (OBA e OBAFOG), Algoritmo (OBI e OBR), Linha do Tempo (ONHB e OCHE) e Balanço (Química). Mecânicas de gênero, com conteúdo original.
+- **Sete jogos na primeira leva:** Jornada Científica (Ceará Científico), Escada (catálogo), Alvo (OBMEP), Lançamento (OBA e OBAFOG), Algoritmo (OBI e OBR), Linha do Tempo (ONHB e OCHE) e Balanço (Química). Mecânicas de gênero, com conteúdo original.
 - **Testados:** `npm run testar:jogos` confirma que toda fase do Algoritmo tem solução e que o limite anunciado é o mínimo real, que as equações equilibram e que os alvos são válidos.
 - **Conteúdo escrito por mim precisa de revisão pedagógica:** decisões da Jornada Científica e fatos da Linha do Tempo.
 - **Acessibilidade:** Alvo, Algoritmo, Linha do Tempo, Balanço e Jornada usam botões e funcionam por teclado. Escada aceita setas e botões, mas o desenho é visual. Lançamento tem controles deslizantes e o desenho também é visual.
@@ -114,6 +114,19 @@ Os itens sem logo nos PDFs tiveram o logo buscado no site oficial e no perfil of
 ## Laboratório Vivo (04/11/2026)
 
 Laboratório em 3D no navegador (`src/lab/`), sem headset: anda com joystick, teclado ou tocando no chão, e cada equipamento abre um experimento real que leva às olimpíadas daquele campo. Fica logo abaixo da landing, na página inicial, e também tem endereço próprio. Three.js só é baixado quando a pessoa entra, então o resto do site continua leve. Os estudantes em 3D foram modelados no próprio código, com as cores e proporções do logo e contorno branco de adesivo; no painel, o narrador continua sendo a ilustração oficial. Todos os experimentos existem também na versão sem 3D, para aparelho sem WebGL. As contas e dados dos experimentos ficam em `src/lab/estacoes.ts`, cobertos por `npm run testar:lab`.
+
+## Língua Galáctica (04/11/2026)
+
+Oitavo jogo: trilha de lições curtas de inglês e espanhol, do iniciante ao intermediário, em um mapa de astros. O conteúdo fica em `src/lib/estudo/` (`ingles.ts`, `espanhol.ts`) e as regras em `motor.ts`, sem nada de tela, cobertos por `npm run testar:linguas`.
+
+- **Identidade própria:** astros, nave e rota desenhados no código, com as cores do logo JOC. Nada de marca, personagem ou arte de outro app. O narrador é o mascote de sempre.
+- **Vidas sem castigo:** três vidas por tentativa, sem espera para jogar de novo. O que a pessoa erra volta no fim sem custar vida, e o resultado lista cada erro com a explicação. Repetir lição concluída vale metade do XP.
+- **Sequência de dias:** usa a data do Ceará e aceita `?hoje=`, como o resto do site. Só conta com lição concluída. Tudo fica só no aparelho.
+- **Sem voz no aparelho:** ouvir e escrever vira escrever a partir do português, com a inicial de cada palavra como pista. A mesma troca aparece em "Não dá para ouvir agora", pensando em sala de aula sem fone. A voz só toca quando a pessoa aperta o botão.
+- **Escrita:** maiúsculas e pontuação não contam. Acento ou apóstrofo faltando é aceito, com a escrita certa na tela. O ñ conta como letra própria, porque ano e año são palavras diferentes, e há teclas para ele.
+- **Tela da lição:** usa `dialog` nativo em tela cheia, que prende o foco e não depende do tema do site. O resultado volta para o palco, para o confete e o carimbo aparecerem por cima.
+- **Revisão:** frases e explicações foram escritas por mim e relidas por um segundo revisor automático. Professores de língua da rede devem revisar antes da divulgação. O foco em leitura, conectores e falsos cognatos foi uma escolha pedagógica: a OBLI cita leitura, escrita, compreensão auditiva e expressão oral, mas não li provas nem matrizes das olimpíadas, então o jogo não afirma que algo "cai na prova". Expressão oral não é treinada.
+- **Espanhol sem olimpíada no catálogo:** não há olimpíada de espanhol em `data/oportunidades.json`. O jogo aponta para OBLI, Olimpíada de Inglês e The Big Challenge, e também para Estudar Fora do Ceará e Prep Estudar Fora, que cobram língua estrangeira. A COPES pode indicar se há olimpíada de espanhol a incluir.
 
 ## Sons (04/11/2026)
 
