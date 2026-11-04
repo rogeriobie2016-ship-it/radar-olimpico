@@ -187,6 +187,9 @@ function Mapa({ feitos, aoIr, jogador }: { feitos: IdEstacao[]; aoIr: (id: IdEst
   );
 }
 
+const PREVIA_SRCSET = `${asset("/lab-previa-740.webp")} 740w, ${asset("/lab-previa.webp")} 960w`;
+const PREVIA_SIZES = "(min-width: 1024px) 560px, 100vw";
+
 export function LabCliente({ fichas, internacionais, embutido = false }: { fichas: Record<string, FichaLab>; internacionais: ItemInternacional[]; embutido?: boolean }) {
   const Titulo = embutido ? "h2" : "h1";
   const Subtitulo = embutido ? "h3" : "h2";
@@ -419,7 +422,7 @@ export function LabCliente({ fichas, internacionais, embutido = false }: { ficha
               {fase === "inicio" && (
                 <button type="button" onClick={entrar} aria-label="Entrar no laboratório" data-som="achou" className="lab-previa">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={asset("/lab-previa.webp")} alt="" width={960} height={540} fetchPriority={embutido ? undefined : "high"} loading={embutido ? "lazy" : undefined} decoding="async" />
+                  <img src={asset("/lab-previa.webp")} srcSet={PREVIA_SRCSET} sizes={PREVIA_SIZES} alt="" width={960} height={540} fetchPriority={embutido ? undefined : "high"} loading={embutido ? "lazy" : undefined} />
                   <span className="lab-previa-toque" aria-hidden="true">▶</span>
                 </button>
               )}

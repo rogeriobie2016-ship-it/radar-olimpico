@@ -19,3 +19,6 @@ export const NAV_COMPLETA = [
   { href: "/professores/", rotulo: "Professores", resumo: "Orientar e registrar" },
   { href: "/minha-lista/", rotulo: "Minha lista", resumo: "Itens salvos neste aparelho" },
 ] as const;
+
+// Topo enxuto: o resto fica no Menu, que aparece em todas as larguras.
+export const NAV_TOPO = NAV_COMPLETA.filter((n) => ["/laboratorio/", "/radar/", "/escada/", "/jogos/", "/estudos/"].includes(n.href));

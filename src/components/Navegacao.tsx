@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import { Busca } from "./Busca";
 import Link from "./L";
 import { asset } from "@/lib/base";
-import { NAV_COMPLETA, NAV_INFERIOR } from "@/lib/navegacao";
+import { NAV_COMPLETA, NAV_INFERIOR, NAV_TOPO } from "@/lib/navegacao";
 
 function AlternarTema() {
   const [tema, setTema] = useState<"light" | "dark" | null>(null);
@@ -64,12 +64,12 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
             </span>
           </Link>
           <nav aria-label="Principal" className="hidden items-center gap-0.5 xl:gap-2 lg:flex">
-            {NAV_COMPLETA.filter((n) => n.href !== "/novidades/").slice(0, 8).map((n) => (
+            {NAV_TOPO.map((n) => (
               <Link
                 key={n.href}
                 href={n.href}
                 aria-current={ativo(n.href) ? "page" : undefined}
-                className={`${n.href === "/ceara-cientifico/" || n.href === "/joc/" || n.href === "/calendario/" ? "max-xl:hidden " : ""}whitespace-nowrap rounded-full px-3 py-1.5 text-[0.9375rem] font-bold no-underline transition-colors hover:bg-fundo-2 ${ativo(n.href) ? "bg-turquesa !text-[#05272a]" : ""}`}
+                className={`whitespace-nowrap rounded-full px-3 py-1.5 text-[0.9375rem] font-bold no-underline transition-colors hover:bg-fundo-2 ${ativo(n.href) ? "bg-turquesa !text-[#05272a]" : ""}`}
               >
                 {n.rotulo}
               </Link>
@@ -84,7 +84,7 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
             <Busca />
             <BotaoTema />
             <BotaoSom className="max-sm:hidden" />
-            <button type="button" onClick={() => menu.current?.showModal()} className="min-h-11 text-[0.9375rem] font-medium xl:hidden">
+            <button type="button" onClick={() => menu.current?.showModal()} className="min-h-11 text-[0.9375rem] font-medium">
               Menu
             </button>
           </div>

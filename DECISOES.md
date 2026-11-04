@@ -202,3 +202,9 @@ Jogo em 3D (`src/components/jogos/celula/`): uma nave em miniatura visita as org
 - **Técnica de imagem:** composição em HalfFloat com MSAA 4x, bloom com limiar 1,0 (só brilha o que passa de 1), tone mapping Neutral (ACES lavava as cores saturadas), ambiente pintado por código e filtrado por PMREM com desfoque alto, e MeshPhysicalMaterial com ondulação no vértice e normal recalculada. A profundidade vem de borda acesa com miolo escuro, muito mais que de emissivo chapado.
 - **Queda de qualidade automática:** bloom, depois partículas, depois transmissão e MSAA, e só então a resolução, que nunca fica abaixo de 1x. `?qualidade=0` trava o nível, para conferir o visual em máquina lenta.
 - **Sem WebGL 2, ou se a placa de vídeo parar:** os mesmos desafios seguem em 2D, com a pontuação mantida.
+
+## Topo com cinco links e Menu em todas as larguras
+
+- Com Estudos, o topo passou da largura em telas de 1280 e 1366 px. Ficam Laboratório, Radar, Escada Olímpica, Jogos e Estudos; o resto está no Menu, que agora aparece também no computador, e no rodapé.
+- A barra de vidro no tema claro subiu de 74% para 90% de opacidade: sobre um bloco escuro, o texto da barra inferior caía para contraste 3,59.
+- Merge por união em `globals.css` pode perder uma chave de fechamento quando dois blocos terminam no mesmo ponto. Depois de cada merge, rodar `npm run build`, não só `tsc`.
