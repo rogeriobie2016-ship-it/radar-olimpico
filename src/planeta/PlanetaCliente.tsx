@@ -464,7 +464,7 @@ export function PlanetaCliente({ estantes }: { estantes: EstantePlaneta[] }) {
         </div>
         <button type="button" onClick={entrar} aria-label="Entrar no planeta" data-som="achou" className="lab-previa plan-previa">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={asset("/planeta-previa.webp")} alt="" width={960} height={720} fetchPriority="high" />
+          <img src={asset("/planeta-previa.webp")} srcSet={`${asset("/planeta-previa-740.webp")} 740w, ${asset("/planeta-previa.webp")} 960w`} sizes="(min-width: 1024px) 560px, 100vw" alt="" width={960} height={720} fetchPriority="high" />
           <span className="lab-previa-toque" aria-hidden="true">▶</span>
         </button>
       </div>
