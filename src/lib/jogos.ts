@@ -51,6 +51,12 @@ export const JOGOS: Jogo[] = [
     como: "Use mais e menos em cada substância. As barras mostram quantos átomos há de cada lado. Equilibre com o menor número de toques.",
     oportunidades: ["ocq", "oqep", "quimeninas", "obq", "olimpiada-da-coruja", "tbc"], principal: "ocq",
   },
+  {
+    slug: "nave-celular", titulo: "Nave Celular", olimpiada: "OBB e ONC",
+    resumo: "Pilote uma nave em miniatura dentro de uma célula, de organela em organela, até o ATP.",
+    como: "Voe entre núcleo, ribossomos, retículo, cloroplasto e mitocôndria. Cumpra a missão de cada um, responda ao desafio e siga o trajeto da energia até o fim.",
+    oportunidades: ["obb", "obob", "tnbio", "oiab", "ibo", "onc", "oboc", "obc-ciencias", "tbc", "ciic", "obbiotec", "obbs", "obmed", "vitalis"], principal: "obb",
+  },
 ];
 
 export const jogosDe = (id: string) => JOGOS.filter((j) => j.oportunidades.includes(id));

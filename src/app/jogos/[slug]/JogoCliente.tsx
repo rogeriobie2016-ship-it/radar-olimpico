@@ -16,6 +16,7 @@ const JOGOS_MAPA: Record<string, // eslint-disable-next-line @typescript-eslint/
   "linha-do-tempo": dynamic(() => import("@/components/jogos/LinhaDoTempo"), { ssr: false, loading: Carregando }),
   balanco: dynamic(() => import("@/components/jogos/Balanco"), { ssr: false, loading: Carregando }),
   "jornada-cientifica": dynamic(() => import("@/components/jogos/Jornada"), { ssr: false, loading: Carregando }),
+  "nave-celular": dynamic(() => import("@/components/jogos/celula/NaveCelular"), { ssr: false, loading: Carregando }),
   escada: dynamic(() => import("@/components/jogos/EscadaJogo"), { ssr: false, loading: Carregando }),
 };
 

@@ -6,7 +6,7 @@ import { JOGOS } from "@/lib/jogos";
 
 export const metadata: Metadata = {
   title: "Jogos",
-  description: "Jogos para treinar para o Ceará Científico, OBMEP, OBA, OBI, ONHB e olimpíadas de Química.",
+  description: "Jogos para treinar para o Ceará Científico, OBMEP, OBA, OBI, ONHB, OBB, ONC e olimpíadas de Química.",
 };
 
 const ARTE: Record<string, string> = {
