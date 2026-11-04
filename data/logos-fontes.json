@@ -99,6 +99,10 @@
     "url": "https://ioinformatics.org/icons/ioi-logo-2020.png",
     "origem": "img"
   },
+  "ipho": {
+    "url": "https://www.ipho-new.org/physics/wp-content/uploads/2019/07/IPHO.png",
+    "origem": "navegador"
+  },
   "iypt-brasil": {
     "url": "https://static.wixstatic.com/media/5fe33e_d141403b20914e6b8868fcf328a23983~mv2.png/v1/fill/w_231,h_79,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IYPT_BR_horizontal.png",
     "origem": "img"
@@ -350,6 +354,10 @@
   "rise-for-the-world": {
     "url": "https://www.risefortheworld.org/wp-content/uploads/2026/04/cropped-favicon-180x180.png",
     "origem": "touch-icon"
+  },
+  "rotary-youth-exchange": {
+    "url": "https://www.rotary.org/get-involved/youth-programs/rotary-youth-exchange",
+    "origem": "navegador"
   },
   "stockholm-junior-water-prize": {
     "url": "https://sjwp.com.br/wp-content/uploads/2026/04/Logos-site-3.png",

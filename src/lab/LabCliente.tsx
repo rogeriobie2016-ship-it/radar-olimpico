@@ -149,12 +149,13 @@ function Joystick({ aoMover }: { aoMover: (x: number, y: number) => void }) {
 
 function CartaoEstacao({ e, feito, aoAbrir }: { e: Estacao; feito: boolean; aoAbrir: () => void }) {
   return (
-    <button type="button" className="lab-cartao" style={{ background: e.cor, color: e.tinta }} onClick={aoAbrir}>
-      <span className="estreito text-lg uppercase leading-tight">
+    <button type="button" className="lab-cartao" onClick={aoAbrir}>
+      <span aria-hidden="true" className="ponto-campo" style={{ background: feito ? "#2fd27f" : e.cor }} />
+      <span className="estreito leading-tight">
         {feito ? "✓ " : ""}
         {e.nome}
       </span>
-      <span className="text-sm font-bold">{e.campo}</span>
+      <span className="text-sm opacity-75">{e.campo}</span>
     </button>
   );
 }
@@ -425,7 +426,7 @@ export function LabCliente({ fichas, internacionais, embutido = false }: { ficha
             </div>
 
             <div>
-              <Subtitulo className="estreito text-xl uppercase">O que tem lá dentro</Subtitulo>
+              <Subtitulo className="estreito !text-lg">O que tem lá dentro</Subtitulo>
               {embutido ? (
                 <div className="-mx-4 mt-3">
                   <Carrossel rotulo="Equipamentos do laboratório" classe="gap-2 px-4 pb-2">

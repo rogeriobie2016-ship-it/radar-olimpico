@@ -5,7 +5,6 @@ import { Numeros, QuadroPrazos } from "./InicioCliente";
 import { AvisoRadar } from "@/components/AvisoRadar";
 import { Expedicao, type Escondida } from "@/components/Expedicao";
 import Link from "@/components/L";
-import { Mascote } from "@/components/Mascote";
 import { FitaLogos, Mundos, type DadosMundo, type ItemCarta } from "@/components/Mundos";
 import { RadarEscopo, type Ponto } from "@/components/RadarEscopo";
 import { Seta } from "@/components/Seta";
@@ -28,7 +27,6 @@ const ESCONDIDAS: [string, number, number][] = [
 ];
 
 const COR_JOGO = ["#f58a33", "#00c9c8", "#fdc13f", "#0a2a55", "#06393f", "#8a3f12", "#f8a8c8"];
-const TINTA_JOGO = ["#1c0f05", "#04211f", "#1c0f05", "#f4fbff", "#f4fbff", "#f4fbff", "#2b0a1b"];
 
 export default function Inicio() {
   const comData = resumos.filter((r) => r.fim || r.inicio);
@@ -70,17 +68,18 @@ export default function Inicio() {
       <LabCliente embutido {...dadosLab()} />
 
       {/* Atalhos por campo do conhecimento */}
-      <section id="campos" aria-label="Escolha seu campo" className="bg-fundo-2 py-5">
+      <section id="campos" aria-label="Escolha seu campo" className="py-7">
         <div className="mx-auto max-w-6xl px-4">
-          <h2 className="uppercase">Escolha seu campo</h2>
-          <p className="mt-1 font-bold">{resumos.length} oportunidades. Toca para ir direto. Nas fileiras, usa as setas ou arrasta para o lado, e toca na carta para virar.</p>
+          <h2>Escolha seu campo</h2>
+          <p className="mt-1 text-tinta-2">{resumos.length} oportunidades. Use as setas para ver mais e toque na carta para virar.</p>
         </div>
         <div className="mx-auto mt-3 max-w-6xl">
           <Carrossel rotulo="Campos do conhecimento" classe="gap-2 px-4 pb-2">
             {mundos.map((m) => (
-              <a key={m.id} href={`#${m.id}`} className="campo-azulejo" style={{ background: m.fundo, color: m.tinta }}>
-                <span className="estreito uppercase leading-tight">{m.titulo}</span>
-                <span className="text-sm font-bold">{m.itens.length}</span>
+              <a key={m.id} href={`#${m.id}`} className="campo-azulejo">
+                <span aria-hidden="true" className="ponto-campo" style={{ background: m.fundo }} />
+                <span className="estreito leading-tight">{m.titulo}</span>
+                <span className="text-sm text-tinta-2">{m.itens.length}</span>
               </a>
             ))}
           </Carrossel>
@@ -90,22 +89,20 @@ export default function Inicio() {
       <FitaLogos itens={fita} />
 
       {/* Escada Olímpica: o convite principal */}
-      <section className="relative overflow-hidden bg-marca text-[#1c0f05]">
-        <div className="mx-auto grid max-w-6xl items-end gap-2 px-4 pt-8 sm:grid-cols-[1fr_auto]">
-          <div className="flex flex-col items-start gap-3 pb-8">
-            <h2 className="titulo-1 !text-[clamp(2.4rem,10vw,5rem)]">Escada Olímpica</h2>
-            <p className="max-w-md text-lg font-bold leading-snug">Responda 14 perguntas e descubra as olimpíadas perfeitas para você e para a sua escola, degrau por degrau.</p>
-            <Link href="/escada/" className="btn bg-[#071a2e] text-white shadow-[0_5px_0_#000]">
+      <section className="mx-auto max-w-6xl px-4 py-6">
+        <div className="vidro grid items-end gap-2 overflow-hidden px-5 pt-6 sm:grid-cols-[1fr_auto] sm:px-8">
+          <div className="flex flex-col items-start gap-3 pb-6">
+            <h2 className="!text-[clamp(2rem,6vw,3.25rem)]">Escada Olímpica</h2>
+            <p className="max-w-md text-tinta-2">Responda 14 perguntas e descubra as olimpíadas perfeitas para você e para a sua escola, degrau por degrau.</p>
+            <Link href="/escada/" className="btn btn-primario">
               Quero minha Escada
               <Seta />
             </Link>
           </div>
-          <div aria-hidden="true" className="relative flex h-52 items-end gap-1 sm:h-72 sm:w-96">
-            {[28, 42, 56, 70, 86, 100].map((a, i) => (
-              <span key={a} className="azulejo subir-degrau flex-1" style={{ height: `${a}%`, background: ["#00c9c8", "#fdc13f", "#ffffff"][i % 3], animationDelay: `${i * 70}ms`, borderRadius: "12px 12px 0 0" }} />
+          <div aria-hidden="true" className="relative flex h-40 items-end gap-1 sm:h-56 sm:w-80">
+            {[22, 36, 50, 64, 80, 100].map((a, i) => (
+              <span key={a} className="subir-degrau flex-1 rounded-t-lg" style={{ height: `${a}%`, background: `linear-gradient(180deg, var(--marca), color-mix(in srgb, var(--marca) ${70 - i * 8}%, transparent))`, opacity: 0.35 + i * 0.13, animationDelay: `${i * 70}ms` }} />
             ))}
-            <Mascote quem="menino" pose="acena" className="flutua absolute bottom-[34%] left-[6%] w-24 sm:w-32" />
-            <Mascote quem="menina" pose="comemora" className="absolute bottom-[86%] right-0 w-20 sm:w-28" />
           </div>
         </div>
       </section>
@@ -115,7 +112,7 @@ export default function Inicio() {
       <div className="mx-auto flex max-w-6xl flex-col gap-14 px-4 pt-12">
         <section className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,34rem)] lg:gap-14">
           <div className="flex flex-col gap-5">
-            <h2 className="regua uppercase">O radar de verdade</h2>
+            <h2>O radar de verdade</h2>
             <p className="max-w-xl">Cada ponto é uma oportunidade. O anel mostra o nível e o setor mostra a área. Toque e descubra.</p>
             <Numeros itens={comData} total={resumos.length} vagas={resumos.filter((r) => r.vagaOlimpica).length} />
             <AvisoRadar itens={comData} edicao={meta.ultimaEdicaoRadar} />
@@ -132,7 +129,7 @@ export default function Inicio() {
 
         <section aria-labelledby="t-jogos">
           <div className="flex items-baseline justify-between gap-4">
-            <h2 id="t-jogos" className="regua uppercase">Treine jogando</h2>
+            <h2 id="t-jogos">Treine jogando</h2>
             <Link href="/jogos/" className="link shrink-0 text-[0.9375rem]">
               Todos
             </Link>
@@ -140,16 +137,19 @@ export default function Inicio() {
           <ul className="mt-4 grid grid-cols-2 gap-2.5 lg:grid-cols-4">
             {JOGOS.map((j, i) => (
               <li key={j.slug} className="grid">
-                <Link href={`/jogos/${j.slug}/`} className="azulejo flex min-h-36 min-w-0 flex-col justify-between gap-3 p-4 no-underline transition-transform duration-200 hover:-translate-y-1.5 hover:rotate-[-1deg]" style={{ background: COR_JOGO[i], color: TINTA_JOGO[i] }}>
-                  <span className="estreito text-[1.5rem] leading-none">{j.titulo}</span>
-                  <span className="text-[0.8125rem] font-bold leading-tight opacity-90">{j.olimpiada}</span>
+                <Link href={`/jogos/${j.slug}/`} className="cartao-vidro flex min-h-32 min-w-0 flex-col justify-between gap-3 p-4 no-underline">
+                  <span aria-hidden="true" className="ponto-campo" style={{ background: COR_JOGO[i % COR_JOGO.length] }} />
+                  <span>
+                    <span className="estreito block text-[1.25rem] leading-tight">{j.titulo}</span>
+                    <span className="mt-1 block text-[0.8125rem] leading-tight text-tinta-2">{j.olimpiada}</span>
+                  </span>
                 </Link>
               </li>
             ))}
           </ul>
         </section>
 
-        <section className="-mx-4 overflow-hidden bg-cc-fundo px-4 py-10 text-white lg:mx-0 lg:rounded-3xl lg:px-8">
+        <section className="vidro overflow-hidden px-5 py-8 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-end">
             <div className="flex flex-col items-start gap-5">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -168,8 +168,8 @@ export default function Inicio() {
                 [ed.ano, "última edição"],
               ].map(([n, t]) => (
                 <div key={t} className="py-2">
-                  <dd className="estreito text-5xl font-black leading-none text-amarelo">{n}</dd>
-                  <dt className="mt-1 text-sm font-bold text-cc-claro">{t}</dt>
+                  <dd className="estreito text-4xl font-bold leading-none">{n}</dd>
+                  <dt className="mt-1 text-sm text-tinta-2">{t}</dt>
                 </div>
               ))}
             </dl>
@@ -179,16 +179,13 @@ export default function Inicio() {
         <section aria-labelledby="t-caminhos" className="grid gap-2.5 sm:grid-cols-3">
           <h2 id="t-caminhos" className="sr-only">Por perfil</h2>
           {[
-            { t: "Para professores", x: "Como orientar um projeto e registrar a participação.", h: "/professores/", p: "acena" as const, q: "menina" as const },
-            { t: "Para a escola", x: "Simule a prioridade no JOC e calcule o prazo da viagem.", h: "/joc/", p: "foguete" as const, q: "menino" as const },
-            { t: "Meu passaporte", x: "Salve oportunidades e colecione carimbos de cientista.", h: "/minha-lista/", p: "comemora" as const, q: "menina" as const },
+            { t: "Para professores", x: "Como orientar um projeto e registrar a participação.", h: "/professores/" },
+            { t: "Para a escola", x: "Simule a prioridade no JOC e calcule o prazo da viagem.", h: "/joc/" },
+            { t: "Meu passaporte", x: "Salve oportunidades e colecione carimbos de cientista.", h: "/minha-lista/" },
           ].map((c) => (
-            <Link key={c.h} href={c.h} className="linha-lista !mb-0 flex items-end gap-2 !px-3 pt-3">
-              <span className="flex-1 pb-3">
-                <span className="estreito block text-[1.5rem] leading-none">{c.t}</span>
-                <span className="mt-1.5 block text-sm text-tinta-2">{c.x}</span>
-              </span>
-              <Mascote quem={c.q} pose={c.p} className="w-16 shrink-0" />
+            <Link key={c.h} href={c.h} className="cartao-vidro block p-4 no-underline">
+              <span className="estreito block text-[1.25rem] leading-tight">{c.t}</span>
+              <span className="mt-1.5 block text-sm text-tinta-2">{c.x}</span>
             </Link>
           ))}
         </section>

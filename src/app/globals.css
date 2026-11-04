@@ -2,12 +2,18 @@
 
 /* Sistema visual: papel branco, tinta preta, réguas finas. A cor da marca JOC aparece pouco, e por isso pesa. */
 :root {
-  --ruido: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='r'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.1 -.42'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23r)'/%3E%3C/svg%3E");
-  --fundo: #071a2e;
-  --fundo-2: #0e2a44;
-  --tinta: #f4fbff;
-  --tinta-2: #a9c6d8;
-  --linha: #234a68;
+  --fundo: #070e1d;
+  --fundo-2: #101b30;
+  --tinta: #f2f6fb;
+  --tinta-2: #a4b4c8;
+  --linha: #26344b;
+  --vidro: rgb(255 255 255 / 6%);
+  --vidro-forte: rgb(12 20 36 / 68%);
+  --vidro-cartao: #121d33;
+  --borda-vidro: rgb(255 255 255 / 12%);
+  --sombra: 0 18px 44px -24px rgb(0 0 0 / 70%);
+  --luz-1: rgb(0 201 200 / 13%);
+  --luz-2: rgb(245 138 51 / 8%);
 
   --marca: #f58a33;
   --marca-forte: #ffa65c;
@@ -33,11 +39,18 @@
 }
 
 :root[data-theme="light"] {
-  --fundo: #f3fbfd;
+  --fundo: #f5f7fb;
   --fundo-2: #ffffff;
-  --tinta: #0b2438;
-  --tinta-2: #47657a;
-  --linha: #c8e0ea;
+  --tinta: #0d1f33;
+  --tinta-2: #51647a;
+  --linha: #d8e0ea;
+  --vidro: rgb(255 255 255 / 62%);
+  --vidro-forte: rgb(255 255 255 / 74%);
+  --vidro-cartao: #ffffff;
+  --borda-vidro: rgb(13 31 51 / 9%);
+  --sombra: 0 18px 44px -26px rgb(13 31 51 / 28%);
+  --luz-1: rgb(0 201 200 / 15%);
+  --luz-2: rgb(245 138 51 / 10%);
   --marca-forte: #b04d08;
   --turquesa-forte: #00696a;
   --ok: #0a7a43;
@@ -88,29 +101,13 @@ body {
   transition: background-color 200ms;
 }
 
-/* Céu de estrelas e malha de laboratório, leves, feitos só com gradientes. */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background-image: var(--ruido);
-  opacity: 0.1;
-}
-
+/* Fundo liso com duas luzes muito suaves: é o que dá profundidade ao vidro. */
 body::before {
   content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
-  background-image:
-    radial-gradient(1.5px 1.5px at 20px 30px, rgb(255 255 255 / 55%), transparent),
-    radial-gradient(1px 1px at 90px 120px, rgb(255 255 255 / 45%), transparent),
-    radial-gradient(1.5px 1.5px at 160px 70px, rgb(253 193 63 / 60%), transparent),
-    radial-gradient(1px 1px at 230px 190px, rgb(0 201 200 / 70%), transparent),
-    linear-gradient(rgb(0 201 200 / 5%) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(0 201 200 / 5%) 1px, transparent 1px);
-  background-size: 260px 240px, 260px 240px, 260px 240px, 260px 240px, 40px 40px, 40px 40px;
+  background:
+    radial-gradient(60vmax 45vmax at 85% -5%, var(--luz-1), transparent 70%),
+    radial-gradient(55vmax 45vmax at 0% 45%, var(--luz-2), transparent 70%);
 }
-:root[data-theme="light"] body::before { opacity: 0.25; }
 
 h1, h2, h3, .titulo, .estreito {
   font-family: var(--font-display);
@@ -342,8 +339,6 @@ p { text-wrap: pretty; }
 
   /* Mundo do conhecimento */
   .mundo { position: relative; overflow: hidden; isolation: isolate; }
-  .mundo::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background-image: var(--ruido); opacity: 0.2; }
-  .mundo-arte { position: absolute; inset: -6%; width: 112%; height: 112%; opacity: 0.32; animation: deriva 26s ease-in-out infinite alternate; }
 
   .subir-degrau { animation: degrau 620ms var(--mola) both; transform-origin: bottom; }
   .entrada-pergunta { animation: pergunta 300ms var(--curva) both; }
@@ -424,7 +419,6 @@ p { text-wrap: pretty; }
     .trilha-rolagem { display: block; position: fixed; inset: 3.5rem 0 auto 0; z-index: 41; height: 3px; pointer-events: none; }
     .trilha-barra { position: absolute; inset: 0; transform-origin: left; background: linear-gradient(90deg, var(--turquesa), var(--amarelo), var(--marca)); animation: trilha-barra linear both; animation-timeline: scroll(root); }
     .trilha-foguete { position: absolute; left: 0; top: -8px; overflow: visible; animation: trilha-foguete linear both; animation-timeline: scroll(root); }
-    .mundo-arte { animation: deriva 26s ease-in-out infinite alternate, paralaxe linear both; animation-timeline: auto, view(); }
   }
 }
 @keyframes trilha-barra { from { transform: scaleX(0); } to { transform: scaleX(1); } }
@@ -528,4 +522,91 @@ p { text-wrap: pretty; }
 
 h1, h2 { overflow-wrap: break-word; hyphens: auto; }
 main { overflow-x: clip; }
-.lab-capa-secao { border-block: 4px solid var(--turquesa); background: radial-gradient(90% 90% at 75% 20%, #14407a, #0a2350 60%, #071a3a); color: #f4fbff; }
+
+/* ---------- Acabamento: vidro, respiro e menos peso ---------- */
+:root {
+  --cursor-lupa: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M20 20l8 8' stroke='%23071a2e' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M20 20l8 8' stroke='%23f58a33' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='13' cy='13' r='9' fill='%23bff5f4' fill-opacity='.4' stroke='%23071a2e' stroke-width='5'/%3E%3Ccircle cx='13' cy='13' r='9' fill='none' stroke='%23fdc13f' stroke-width='3'/%3E%3Cpath d='M8.5 11a5 5 0 0 1 3.5-3' fill='none' stroke='white' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E") 13 13;
+  --cursor-lupa-ativa: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M20 20l8 8' stroke='%23071a2e' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M20 20l8 8' stroke='%23f58a33' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='13' cy='13' r='9' fill='%23bff5f4' fill-opacity='.4' stroke='%23071a2e' stroke-width='5'/%3E%3Ccircle cx='13' cy='13' r='9' fill='none' stroke='%2300c9c8' stroke-width='3'/%3E%3Cpath d='M8.5 11a5 5 0 0 1 3.5-3' fill='none' stroke='white' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E") 13 13;
+}
+
+/* Cenas que são sempre escuras, nos dois temas. */
+.cena-lupa, .lab-capa, .lab-tela, .lab-painel, .palco {
+  --fundo: #070e1d;
+  --fundo-2: #101b30;
+  --tinta: #f2f6fb;
+  --tinta-2: #a4b4c8;
+  --linha: #26344b;
+  --vidro: rgb(255 255 255 / 7%);
+  --borda-vidro: rgb(255 255 255 / 14%);
+  --turquesa-forte: #3ee8e6;
+  color: var(--tinta);
+  color-scheme: dark;
+}
+
+/* Cursor de mini lupa em todo o site, só em quem tem mouse. */
+@media (hover: hover) and (pointer: fine) {
+  html { cursor: var(--cursor-lupa), auto; }
+  a, button, summary, label, select, [role="button"], input[type="range"], input[type="checkbox"], .btn { cursor: var(--cursor-lupa-ativa), pointer; }
+  input[type="text"], input[type="search"], input:not([type]), textarea { cursor: text; }
+  .lab-canvas, .lab-canvas:active, .quadro-radar, .lupa-pega { cursor: var(--cursor-lupa), auto; }
+}
+
+/* Título sem peso de cartaz: a abertura continua sendo a única em maiúsculas grandes. */
+h2, .titulo-2 { font-size: clamp(1.45rem, 3.6vw, 2.1rem); font-weight: 700; letter-spacing: -0.02em; text-transform: none; }
+h3, .titulo-3 { font-weight: 700; letter-spacing: -0.015em; }
+.regua { padding-top: 0; }
+.regua::before { display: none; }
+
+/* Superfícies */
+.vidro { border-radius: 28px; background: var(--vidro); -webkit-backdrop-filter: blur(22px) saturate(170%); backdrop-filter: blur(22px) saturate(170%); box-shadow: inset 0 0 0 1px var(--borda-vidro), var(--sombra); }
+.cartao-vidro { border-radius: 20px; background: var(--vidro-cartao); box-shadow: inset 0 0 0 1px var(--borda-vidro), var(--sombra); transition: translate 220ms var(--curva), box-shadow 220ms; }
+@media (hover: hover) { .cartao-vidro:hover { translate: 0 -2px; } }
+.ponto-campo { display: inline-block; flex: none; width: 0.6rem; height: 0.6rem; border-radius: 999px; box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 10%, transparent); }
+.ver-tudo { flex: none; padding: 0.3rem 0.75rem; border-radius: 999px; background: var(--vidro); box-shadow: inset 0 0 0 1px var(--borda-vidro); font-size: 0.875rem; font-weight: 700; text-decoration: none; }
+.campo-azulejo { flex-direction: column; justify-content: space-between; width: 9.25rem; min-height: 6.25rem; border-radius: 20px; background: var(--vidro-cartao); color: var(--tinta); box-shadow: inset 0 0 0 1px var(--borda-vidro); }
+.carta-mais { width: 7.5rem; background: var(--vidro-cartao); color: var(--tinta); box-shadow: inset 0 0 0 1px var(--borda-vidro); }
+.carta-mais .estreito { text-transform: none; }
+
+/* Barras de navegação em vidro */
+header.sticky, nav[aria-label="Atalhos"] { background: var(--vidro-forte) !important; -webkit-backdrop-filter: blur(24px) saturate(180%); backdrop-filter: blur(24px) saturate(180%); border-color: var(--borda-vidro) !important; }
+
+/* Botões sem degrau */
+.btn { min-height: 3rem; border-radius: 14px; font-weight: 700; }
+.btn-primario { box-shadow: 0 10px 22px -12px var(--marca); }
+.btn-marca { box-shadow: 0 10px 22px -12px var(--amarelo); }
+.btn-secundario { background: var(--vidro); color: var(--tinta); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: inset 0 0 0 1px var(--borda-vidro); }
+.btn:active, .btn:hover:active { transform: scale(0.98); box-shadow: none; }
+
+/* Listas e cartas */
+.linha-lista { background: var(--vidro-cartao); box-shadow: inset 0 0 0 1px var(--borda-vidro); transition: translate 220ms var(--curva), box-shadow 220ms; }
+@media (hover: hover) { .linha-lista:hover { transform: none; translate: 0 -2px; box-shadow: inset 0 0 0 1px var(--borda-vidro), var(--sombra); } }
+.azulejo { box-shadow: inset 0 0 0 1px rgb(0 0 0 / 6%); }
+.carta-frente { background: var(--vidro-cartao); color: var(--tinta); box-shadow: inset 0 0 0 1px var(--borda-vidro); }
+.carta-frente .estreito { font-weight: 700; }
+.carta-verso { background: var(--vidro-cartao); color: var(--tinta); box-shadow: inset 0 0 0 1px var(--borda-vidro); }
+.carta-vira { background: transparent; color: var(--tinta-2); }
+@media (hover: hover) { .carta:not([data-virada="true"]):hover .carta-miolo { transform: translateY(-4px); } }
+
+/* Balões e bonecos sem sombra dura */
+.balao { box-shadow: 0 10px 24px -14px rgb(0 0 0 / 55%); }
+.carrossel-seta { box-shadow: inset 0 0 0 1px rgb(13 31 51 / 8%), 0 8px 20px -8px rgb(0 0 0 / 45%); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); background: rgb(255 255 255 / 86%); }
+
+/* Texto em amarelo e turquesa fica ilegível no claro: escurece só fora das cenas escuras. */
+:root[data-theme="light"] .text-amarelo { color: #9a6700; }
+:root[data-theme="light"] .text-turquesa { color: #00696a; }
+:root[data-theme="light"] .text-marca { color: #b04d08; }
+:root[data-theme="light"] .palco .text-marca { color: #f58a33; }
+:root[data-theme="light"] .cena-lupa .text-amarelo, :root[data-theme="light"] .lab-capa .text-amarelo, :root[data-theme="light"] .lab-tela .text-amarelo, :root[data-theme="light"] .palco .text-amarelo, :root[data-theme="light"] .bg-cc-fundo .text-amarelo { color: #fdc13f; }
+:root[data-theme="light"] .lab-capa .text-turquesa, :root[data-theme="light"] .palco .text-turquesa { color: #00c9c8; }
+
+/* Laboratório: a seção é uma cena escura, com cartões de vidro */
+.lab-capa { background: radial-gradient(90% 90% at 78% 12%, #143a70, #0a1c3d 58%, #070e1d); }
+.lab-escolha { background: var(--vidro); box-shadow: inset 0 0 0 1px var(--borda-vidro); }
+.lab-escolha[aria-pressed="true"] { background: rgb(255 255 255 / 14%); color: var(--tinta); box-shadow: inset 0 0 0 1.5px var(--amarelo); }
+.lab-cartao { flex: none; gap: 0.3rem; padding: 0.8rem 0.9rem; border-radius: 18px; background: var(--vidro); color: var(--tinta); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: inset 0 0 0 1px var(--borda-vidro); }
+.lab-previa { box-shadow: 0 0 0 1px var(--borda-vidro), 0 30px 60px -28px rgb(0 0 0 / 80%); }
+.lab-previa-toque { width: 3.75rem; height: 3.75rem; font-size: 1.35rem; box-shadow: 0 12px 26px -8px rgb(0 0 0 / 60%); animation: none; }
+.lab-botao, .lab-progresso { background: rgb(12 20 36 / 58%); -webkit-backdrop-filter: blur(18px) saturate(170%); backdrop-filter: blur(18px) saturate(170%); box-shadow: inset 0 0 0 1px rgb(255 255 255 / 16%); }
+.lab-painel { background: rgb(10 18 34 / 82%); -webkit-backdrop-filter: blur(26px) saturate(170%); backdrop-filter: blur(26px) saturate(170%); box-shadow: inset 0 0 0 1px rgb(255 255 255 / 12%), 0 -10px 40px rgb(0 0 0 / 40%); }
+.lab-entrar { box-shadow: 0 14px 30px -12px rgb(0 0 0 / 60%); animation: none; }
+.lab-acao { box-shadow: none; }

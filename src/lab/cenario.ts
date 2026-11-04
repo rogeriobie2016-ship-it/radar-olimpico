@@ -26,7 +26,7 @@ export const TOON = () => materialDesenho();
 function textura(tela: HTMLCanvasElement) {
   const t = new THREE.CanvasTexture(tela);
   t.colorSpace = THREE.SRGBColorSpace;
-  t.anisotropy = 4;
+  t.anisotropy = 12;
   return t;
 }
 
@@ -41,19 +41,19 @@ const familia = (v: string, reserva: string) => (typeof document === "undefined"
 const FONTE = () => `800 {t}px ${familia("--fonte-titulo", "'Trebuchet MS', sans-serif")}`;
 
 function chao(pecas: { cor: string; angulo: number }[]) {
-  const T = 2048;
+  const T = /Android|iPhone|iPad|Mobile/i.test(navigator.userAgent) ? 2048 : 4096;
   const { c, g } = tela2d(T, T);
   const m = T / 2;
   const fundo = g.createRadialGradient(m, m, 60, m, m, m);
-  fundo.addColorStop(0, "#123a70");
-  fundo.addColorStop(0.65, "#0a2350");
-  fundo.addColorStop(1, "#071a3a");
+  fundo.addColorStop(0, "#102b56");
+  fundo.addColorStop(0.65, "#0a1b3c");
+  fundo.addColorStop(1, "#060f24");
   g.fillStyle = fundo;
   g.fillRect(0, 0, T, T);
   const u = m / RAIO_SALA;
   // Malha do laboratório
-  g.strokeStyle = "rgba(127,245,239,.09)";
-  g.lineWidth = 2;
+  g.strokeStyle = "rgba(127,245,239,.055)";
+  g.lineWidth = T / 1024;
   for (let i = -RAIO_SALA; i <= RAIO_SALA; i += 2) {
     g.beginPath();
     g.moveTo(m + i * u, 0);
@@ -75,27 +75,28 @@ function chao(pecas: { cor: string; angulo: number }[]) {
     const x = Math.sin(p.angulo);
     const z = Math.cos(p.angulo);
     g.strokeStyle = p.cor;
-    g.globalAlpha = 0.45;
-    g.lineWidth = 0.5 * u;
-    g.setLineDash([0.7 * u, 0.55 * u]);
+    g.globalAlpha = 0.5;
+    g.lineWidth = 0.22 * u;
+    g.setLineDash([]);
     g.beginPath();
     g.moveTo(m + x * 4.4 * u, m + z * 4.4 * u);
     g.lineTo(m + x * (RAIO_ESTACAO - 3.9) * u, m + z * (RAIO_ESTACAO - 3.9) * u);
     g.stroke();
     g.setLineDash([]);
-    g.globalAlpha = 0.3;
+    g.globalAlpha = 0.14;
     g.fillStyle = p.cor;
     g.beginPath();
     g.arc(m + x * RAIO_ESTACAO * u, m + z * RAIO_ESTACAO * u, 3.9 * u, 0, Math.PI * 2);
     g.fill();
     g.globalAlpha = 1;
     g.strokeStyle = p.cor;
-    g.lineWidth = 6;
+    g.lineWidth = (T / 2048) * 4;
     g.beginPath();
     g.arc(m + x * RAIO_ESTACAO * u, m + z * RAIO_ESTACAO * u, 3.9 * u, 0, Math.PI * 2);
     g.stroke();
   }
-  const piso = new THREE.Mesh(new THREE.CircleGeometry(RAIO_SALA, 72), new THREE.MeshBasicMaterial({ map: textura(c) }));
+  const piso = new THREE.Mesh(new THREE.CircleGeometry(RAIO_SALA, 128), new THREE.MeshStandardMaterial({ map: textura(c), roughness: 0.42, metalness: 0.08, envMapIntensity: 0.35 }));
+  piso.receiveShadow = true;
   piso.rotation.x = -Math.PI / 2;
   // O círculo do three tem a textura mapeada no plano XY: girar leva +Y da textura para -Z do mundo.
   return piso;
@@ -133,11 +134,13 @@ function ceu() {
   // Planeta com anéis e planeta azul, os mesmos da abertura do site
   const toon = TOON();
   const l = new Lote();
-  l.add(esfera(13, 24, 16), "#f58a33", [55, 58, -80]);
+  l.add(esfera(13, 40, 28), "#f58a33", [55, 58, -80]);
   l.add(toro(21, 1, 48), "#fdc13f", [55, 58, -80], [1.25, 0.25, 0]);
   l.add(esfera(8, 20, 14), "#00b8b6", [-70, 38, 70]);
   l.add(esfera(2.2, 12, 8), "#f4fbff", [-55, 46, 62]);
-  grupo.add(l.malha(toon));
+  const astros = l.malha(toon);
+  astros.traverse((o) => void (o.castShadow = o.receiveShadow = false));
+  grupo.add(astros);
   return grupo;
 }
 
@@ -154,8 +157,7 @@ function estrutura(toon: THREE.Material) {
     if (i % 2 === 0) l.add(toro(RAIO_SALA, 0.09, 18, Math.PI / 2), "#2a64a8", [0, 8.8, 0], [0, a - Math.PI / 2, 0], [1, 0.5, 1]);
   }
   // Anel de luz no alto
-  l.add(toro(RAIO_SALA - 0.05, 0.12, 72), "#00c9c8", [0, 1.55, 0], [Math.PI / 2, 0, 0]);
-  l.add(toro(RAIO_SALA - 0.05, 0.14, 72), "#2a64a8", [0, 8.8, 0], [Math.PI / 2, 0, 0]);
+    l.add(toro(RAIO_SALA - 0.05, 0.14, 72), "#2a64a8", [0, 8.8, 0], [Math.PI / 2, 0, 0]);
   // Pódio central
   l.add(cilindro(3.4, 0.5, 40, 3.1), "#1d4f8c", [0, 0.25, 0]);
   l.add(cilindro(2.2, 0.35, 32, 2), "#fdc13f", [0, 0.67, 0]);
@@ -170,11 +172,22 @@ function estrutura(toon: THREE.Material) {
     l.add(esfera(0.5, 8, 6), "#2cc97a", [x + 0.25, 1.75, z + 0.1]);
     l.add(esfera(0.42, 8, 6), "#0d8c4c", [x - 0.3, 1.6, z - 0.15]);
   });
-  return l.malha(toon);
+  const grupo = l.malha(toon);
+  // Faixas de luz na mureta e no pódio
+  const neon = new THREE.MeshBasicMaterial({ color: new THREE.Color("#00e5e3").multiplyScalar(1.7) });
+  const faixa = new THREE.Mesh(new THREE.TorusGeometry(RAIO_SALA - 0.04, 0.05, 8, 144), neon);
+  faixa.rotation.x = Math.PI / 2;
+  faixa.position.y = 1.56;
+  const faixaPodio = new THREE.Mesh(new THREE.TorusGeometry(3.42, 0.035, 8, 96), new THREE.MeshBasicMaterial({ color: new THREE.Color("#fdc13f").multiplyScalar(1.7) }));
+  faixaPodio.rotation.x = Math.PI / 2;
+  faixaPodio.position.y = 0.06;
+  grupo.add(faixa, faixaPodio);
+  return grupo;
 }
 
 function placaNome(e: Estacao) {
-  const { c, g } = tela2d(512, 200);
+  const { c, g } = tela2d(1024, 400);
+  g.scale(2, 2);
   g.fillStyle = e.cor;
   g.beginPath();
   g.roundRect(0, 0, 512, 200, 44);
@@ -209,7 +222,7 @@ function selo() {
 // ---------------------------------------------------------------- equipamentos
 
 type Equip = { grupo: THREE.Group; atualizar?: (t: number, dt: number) => void; controles?: Record<string, (v: unknown) => void>; foco?: number };
-type Mats = { toon: THREE.Material; contorno: THREE.Material; vidro: THREE.Material };
+type Mats = { toon: THREE.Material; contorno: THREE.Material | null; vidro: THREE.Material };
 
 function mesa(l: Lote, largura = 4, cor = "#e8eef2") {
   l.add(caixa(largura, 0.18, 1.8), cor, [0, 1.05, 0]);
@@ -232,6 +245,8 @@ function telescopio(m: Mats): Equip {
   lt.add(cilindro(0.34, 2.8, 16, 0.42), "#ffffff", [0, 0.1, 0]);
   lt.add(cilindro(0.47, 0.5, 16), "#f58a33", [0, 1.4, 0]);
   lt.add(cilindro(0.5, 0.1, 16), "#fdc13f", [0, 1.68, 0]);
+  lt.add(cilindro(0.4, 0.04, 20), "#123a70", [0, 1.73, 0]);
+  lt.add(esfera(0.1, 10, 8), "#bfe8ff", [0.14, 1.75, 0.14], [0, 0, 0], [1, 0.12, 1]);
   lt.add(cilindro(0.2, 0.5, 12), "#3d4a54", [0, -1.4, 0]);
   lt.add(cilindro(0.14, 0.75, 10), "#00c9c8", [0.42, 0.45, 0], [0, 0, 0], [1, 1, 1]);
   const tubo = lt.malha(m.toon, m.contorno);
@@ -340,7 +355,7 @@ function quimica(m: Mats): Equip {
   // Frasco principal com líquido que muda de cor
   const frasco = new THREE.Group();
   frasco.position.set(0, 1.14, 0.1);
-  const liquido = new THREE.MeshToonMaterial({ color: "#7a3fc9" });
+  const liquido = new THREE.MeshStandardMaterial({ color: "#7a3fc9" });
   const lg = torno([[0, 0.06], [0.68, 0.06], [0.66, 0.2], [0.43, 0.68], [0, 0.68]], 18);
   frasco.add(new THREE.Mesh(lg, liquido));
   const corpo = new THREE.Mesh(torno([[0, 0], [0.72, 0], [0.74, 0.14], [0.23, 1.25], [0.23, 1.7], [0.3, 1.75]], 18), m.vidro);
@@ -443,9 +458,9 @@ function lousa(m: Mats): Equip {
   grupo.add(quadro);
 
   // Sólidos flutuando, como o tetraedro do logo
-  const tetra = new THREE.Mesh(new THREE.TetrahedronGeometry(0.55), new THREE.MeshToonMaterial({ color: "#f58a33" }));
+  const tetra = new THREE.Mesh(new THREE.TetrahedronGeometry(0.55), new THREE.MeshStandardMaterial({ color: "#f58a33" }));
   tetra.position.set(-2.3, 4.9, 0.5);
-  const cubo = new THREE.Mesh(new THREE.OctahedronGeometry(0.42), new THREE.MeshToonMaterial({ color: "#00c9c8" }));
+  const cubo = new THREE.Mesh(new THREE.OctahedronGeometry(0.42), new THREE.MeshStandardMaterial({ color: "#00c9c8" }));
   cubo.position.set(2.3, 4.9, 0.5);
   grupo.add(tetra, cubo);
   return {
@@ -659,7 +674,7 @@ function financas(m: Mats): Equip {
   grupo.add(l.malha(m.toon, m.contorno));
 
   const n = 34;
-  const moedas = new THREE.InstancedMesh(new THREE.CylinderGeometry(0.27, 0.27, 0.075, 16), new THREE.MeshToonMaterial({ color: "#fdc13f" }), n);
+  const moedas = new THREE.InstancedMesh(new THREE.CylinderGeometry(0.27, 0.27, 0.075, 16), new THREE.MeshStandardMaterial({ color: "#fdc13f" }), n);
   grupo.add(moedas);
   const d = new THREE.Object3D();
   let alvo = 0.3;
@@ -693,7 +708,7 @@ function portal(m: Mats): Equip {
   // Globo com paralelos e meridianos. Sem continentes desenhados à mão: nada de mapa inventado.
   const globo = new THREE.Group();
   globo.position.y = 3;
-  globo.add(new THREE.Mesh(new THREE.SphereGeometry(1.45, 28, 18), new THREE.MeshToonMaterial({ color: "#1b7fd1" })));
+  globo.add(new THREE.Mesh(new THREE.SphereGeometry(1.45, 28, 18), new THREE.MeshStandardMaterial({ color: "#1b7fd1" })));
   const linhas = new Lote();
   for (let i = 0; i < 6; i++) linhas.add(toro(1.47, 0.012, 44), "#bff5f4", [0, 0, 0], [0, (i / 6) * Math.PI, 0]);
   for (const y of [-0.9, -0.45, 0, 0.45, 0.9]) linhas.add(toro(Math.sqrt(1.47 * 1.47 - y * y), 0.012, 44), "#bff5f4", [0, y, 0], [Math.PI / 2, 0, 0]);
@@ -747,8 +762,9 @@ export type Cenario = { grupo: THREE.Group; pecas: PecaEstacao[]; obstaculos: { 
 export function criarCenario(): Cenario {
   const grupo = new THREE.Group();
   const toon = materialDesenho();
-  const contorno = materialContorno("#ffffff", 0.022);
-  const vidro = new THREE.MeshToonMaterial({ color: "#bfefff", transparent: true, opacity: 0.32, depthWrite: false, side: THREE.DoubleSide });
+  // Equipamentos sem contorno: quem define a forma agora é a luz. O contorno fica só nos estudantes, como no logo.
+  const contorno = null;
+  const vidro = new THREE.MeshPhysicalMaterial({ color: "#d4f4ff", transparent: true, opacity: 0.26, roughness: 0.04, metalness: 0, clearcoat: 1, envMapIntensity: 1.8, depthWrite: false, side: THREE.DoubleSide });
   const m: Mats = { toon, contorno, vidro };
 
   const angulos = ESTACOES.map((e, i) => ({ cor: e.cor, angulo: (i / ESTACOES.length) * Math.PI * 2 }));
@@ -798,13 +814,53 @@ export function criarCenario(): Cenario {
     };
   });
 
+  // Cones de luz sobre cada equipamento e brilho no chão: é o que dá atmosfera sem custo de luz real.
+  const { c: tc, g: tg } = tela2d(4, 128);
+  const gc = tg.createLinearGradient(0, 0, 0, 128);
+  gc.addColorStop(0, "rgba(255,255,255,.55)");
+  gc.addColorStop(1, "rgba(255,255,255,0)");
+  tg.fillStyle = gc;
+  tg.fillRect(0, 0, 4, 128);
+  const texCone = textura(tc);
+  const { c: rc, g: rg } = tela2d(128, 128);
+  const gr = rg.createRadialGradient(64, 64, 4, 64, 64, 64);
+  gr.addColorStop(0, "rgba(255,255,255,.75)");
+  gr.addColorStop(1, "rgba(255,255,255,0)");
+  rg.fillStyle = gr;
+  rg.fillRect(0, 0, 128, 128);
+  const texBrilho = textura(rc);
+  for (const p of pecas) {
+    const cone = new THREE.Mesh(new THREE.CylinderGeometry(0.9, 4.1, 9.5, 28, 1, true), new THREE.MeshBasicMaterial({ color: p.estacao.cor, map: texCone, transparent: true, opacity: 0.08, depthWrite: false, side: THREE.DoubleSide, blending: THREE.AdditiveBlending }));
+    cone.position.set(p.posicao.x, 4.75, p.posicao.z);
+    grupo.add(cone);
+    const chaoLuz = new THREE.Mesh(new THREE.PlaneGeometry(10, 10), new THREE.MeshBasicMaterial({ color: p.estacao.cor, map: texBrilho, transparent: true, opacity: 0.16, depthWrite: false, blending: THREE.AdditiveBlending }));
+    chaoLuz.rotation.x = -Math.PI / 2;
+    chaoLuz.position.set(p.posicao.x, 0.025, p.posicao.z);
+    grupo.add(chaoLuz);
+  }
+
+  // Poeira de luz flutuando no ar
+  const nPo = 420;
+  const posPo = new Float32Array(nPo * 3);
+  for (let i = 0; i < nPo; i++) {
+    const a = ((i * 2654435761) % 4294967296) / 4294967296;
+    const b = ((i * 340573321) % 4294967296) / 4294967296;
+    const d = ((i * 1640531527) % 4294967296) / 4294967296;
+    const r = Math.sqrt(a) * (RAIO_SALA - 1);
+    posPo.set([Math.cos(b * Math.PI * 2) * r, 0.4 + d * 9, Math.sin(b * Math.PI * 2) * r], i * 3);
+  }
+  const gPo = new THREE.BufferGeometry();
+  gPo.setAttribute("position", new THREE.BufferAttribute(posPo, 3));
+  const poeira = new THREE.Points(gPo, new THREE.PointsMaterial({ map: texBrilho, color: "#bff5f4", size: 0.14, transparent: true, opacity: 0.55, depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: true }));
+  grupo.add(poeira);
+
   const logoCentro = new THREE.Sprite(new THREE.SpriteMaterial({ transparent: true, depthWrite: false, opacity: 0 }));
   logoCentro.scale.set(6.3, 3.9, 1);
   logoCentro.position.set(0, 3.7, 0);
   grupo.add(logoCentro);
 
   // Feixe do projetor central
-  const feixe = new THREE.Mesh(new THREE.CylinderGeometry(2.7, 1.5, 3.2, 28, 1, true), new THREE.MeshBasicMaterial({ color: "#3ee8e6", transparent: true, opacity: 0.1, depthWrite: false, side: THREE.DoubleSide, blending: THREE.AdditiveBlending }));
+  const feixe = new THREE.Mesh(new THREE.CylinderGeometry(2.7, 1.5, 3.2, 28, 1, true), new THREE.MeshBasicMaterial({ color: "#3ee8e6", transparent: true, opacity: 0.06, depthWrite: false, side: THREE.DoubleSide, blending: THREE.AdditiveBlending }));
   feixe.position.y = 2.45;
   grupo.add(feixe);
 
@@ -846,6 +902,8 @@ export function criarCenario(): Cenario {
 
   const atualizar = (t: number) => {
     atomo.rotation.y = t * 0.12;
+    poeira.rotation.y = t * 0.012;
+    poeira.position.y = Math.sin(t * 0.25) * 0.25;
     orbitas.forEach((o) => {
       const a = t * o.v;
       o.e.position.set(Math.cos(a) * 3.2, Math.sin(a) * 3.2, 0);
@@ -856,7 +914,7 @@ export function criarCenario(): Cenario {
       d.o.rotation.y = a + (d.v > 0 ? Math.PI / 2 : -Math.PI / 2);
       d.o.rotation.z = Math.sin(t * 1.7 + d.f) * 0.08;
     });
-    (feixe.material as THREE.MeshBasicMaterial).opacity = 0.09 + Math.sin(t * 2) * 0.025;
+    (feixe.material as THREE.MeshBasicMaterial).opacity = 0.055 + Math.sin(t * 2) * 0.015;
   };
 
   return { grupo, pecas, obstaculos, logoCentro, atualizar };

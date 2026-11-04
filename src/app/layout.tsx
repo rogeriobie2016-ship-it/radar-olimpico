@@ -39,7 +39,8 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const scriptTema = `try{var t=localStorage.getItem('radar-tema');document.documentElement.dataset.theme=t||'dark'}catch(e){document.documentElement.dataset.theme='dark'}`;
+// Roda antes de pintar: segue o aparelho, a menos que a pessoa já tenha escolhido no botão.
+const scriptTema = `(function(){var t=null;try{t=localStorage.getItem('radar-tema')}catch(e){}document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')})()`;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

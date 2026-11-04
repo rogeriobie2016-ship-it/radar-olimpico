@@ -1,4 +1,9 @@
 import * as THREE from "three";
+import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
+import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass.js";
+import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
+import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
+import { RoomEnvironment } from "three/examples/jsm/environments/RoomEnvironment.js";
 import { criarCenario, RAIO_SALA, type Cenario, type PecaEstacao } from "./cenario";
 import { criarPersonagem, type Personagem, type Quem } from "./personagem";
 import type { IdEstacao } from "./estacoes";
@@ -25,7 +30,8 @@ export class Laboratorio {
   private cenario: Cenario;
   private jogador: Personagem;
   private guia: Personagem;
-  private relogio = new THREE.Clock();
+  private ultimoQuadro = performance.now();
+  private tempo = 0;
   private quadro = 0;
   private descartado = false;
   private resize: ResizeObserver;
@@ -61,6 +67,11 @@ export class Laboratorio {
 
   // Qualidade adaptativa
   private dpr: number;
+  private nivel = 1;
+  private luzCamera!: THREE.DirectionalLight;
+  private fixo = false;
+  private movel = false;
+  private composer: EffectComposer | null = null;
   private somaQuadros = 0;
   private contaQuadros = 0;
   private ray = new THREE.Raycaster();
@@ -74,16 +85,51 @@ export class Laboratorio {
   ) {
     this.movimentoReduzido = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     this.renderer = new THREE.WebGLRenderer({ canvas: tela, antialias: true, powerPreference: "high-performance", alpha: false });
-    this.dpr = Math.min(window.devicePixelRatio || 1, window.innerWidth < 800 ? 1.5 : 1.75);
+    const movel = /Android|iPhone|iPad|Mobile/i.test(navigator.userAgent);
+    const forcado = new URLSearchParams(location.search).get("q");
+    // Começa no melhor que o aparelho aguenta. Se faltar fôlego, desliga efeitos antes de perder nitidez.
+    this.nivel = forcado === "alta" ? 2 : forcado === "media" ? 1 : !movel && (navigator.hardwareConcurrency ?? 4) >= 6 ? 2 : 1;
+    this.fixo = !!forcado;
+    this.dpr = Math.min(window.devicePixelRatio || 1, 2);
     this.renderer.setPixelRatio(this.dpr);
     this.renderer.toneMapping = THREE.NoToneMapping;
+    this.renderer.shadowMap.enabled = true;
+    this.renderer.shadowMap.type = THREE.PCFShadowMap;
+    this.movel = movel;
     this.camera = new THREE.PerspectiveCamera(58, 1, 0.1, 400);
 
     this.cena.background = new THREE.Color("#071a3a");
-    this.cena.add(new THREE.AmbientLight("#ffffff", 2.1));
-    const sol = new THREE.DirectionalLight("#fff6e6", 1.5);
-    sol.position.set(6, 16, 9);
+    // Reflexos do ambiente em tudo, com uma luz principal que projeta sombra de verdade.
+    const pm = new THREE.PMREMGenerator(this.renderer);
+    const sala = new RoomEnvironment();
+    this.cena.environment = pm.fromScene(sala, 0.04).texture;
+    this.cena.environmentIntensity = 0.3;
+    pm.dispose();
+    sala.traverse((o) => {
+      const m = o as THREE.Mesh;
+      m.geometry?.dispose?.();
+      const mt = m.material as THREE.Material | undefined;
+      mt?.dispose?.();
+    });
+    this.cena.add(new THREE.HemisphereLight("#dcebff", "#23345c", 1.05));
+    const sol = new THREE.DirectionalLight("#fff4e3", 1.55);
+    sol.position.set(11, 26, 13);
+    sol.castShadow = true;
+    sol.shadow.mapSize.setScalar(this.movel ? 2048 : 4096);
+    sol.shadow.camera.left = sol.shadow.camera.bottom = -27;
+    sol.shadow.camera.right = sol.shadow.camera.top = 27;
+    sol.shadow.camera.near = 2;
+    sol.shadow.camera.far = 70;
+    sol.shadow.bias = -0.00025;
+    sol.shadow.normalBias = 0.035;
+    sol.shadow.radius = 3.5;
     this.cena.add(sol);
+    const contraluz = new THREE.DirectionalLight("#7fd8ff", 0.45);
+    contraluz.position.set(-14, 10, -16);
+    this.cena.add(contraluz);
+    // Luz que acompanha a câmera, bem suave: rostos nunca ficam no escuro.
+    this.luzCamera = new THREE.DirectionalLight("#fff8f0", 0.95);
+    this.cena.add(this.luzCamera, this.luzCamera.target);
 
     this.cenario = criarCenario();
     this.cena.add(this.cenario.grupo);
@@ -117,6 +163,7 @@ export class Laboratorio {
     });
     this.carregarLogos(base);
 
+    this.aplicarNivel();
     this.resize = new ResizeObserver(() => this.ajustar());
     this.resize.observe(tela);
     this.ajustar();
@@ -134,7 +181,6 @@ export class Laboratorio {
 
     if (this.movimentoReduzido) this.intro = 0;
     this.yaw = 0;
-    this.relogio.start();
     this.renderer.compile(this.cena, this.camera);
     this.quadro = requestAnimationFrame(this.laco);
     requestAnimationFrame(() => this.eventos.aoPronto());
@@ -261,6 +307,8 @@ export class Laboratorio {
         mat.dispose();
       }
     });
+    this.composer?.dispose();
+    this.cena.environment?.dispose();
     this.renderer.dispose();
     this.renderer.forceContextLoss();
   }
@@ -293,7 +341,7 @@ export class Laboratorio {
       cancelAnimationFrame(this.quadro);
       this.teclas.clear();
     } else if (!this.descartado) {
-      this.relogio.getDelta();
+      this.ultimoQuadro = performance.now();
       this.quadro = requestAnimationFrame(this.laco);
     }
   };
@@ -377,11 +425,37 @@ export class Laboratorio {
     this.eventos.aoAndar?.();
   }
 
+  // Nível 2: sombras vivas, brilho e antisserrilhado. Nível 1: sombra fixa, sem brilho. Nível 0: menos resolução.
+  private aplicarNivel() {
+    const sm = this.renderer.shadowMap;
+    sm.autoUpdate = this.nivel >= 2;
+    sm.needsUpdate = true;
+    if (this.nivel >= 2 && !this.composer) {
+      const alvo = new THREE.WebGLRenderTarget(4, 4, { type: THREE.HalfFloatType, samples: 4 });
+      const c = new EffectComposer(this.renderer, alvo);
+      c.addPass(new RenderPass(this.cena, this.camera));
+      c.addPass(new UnrealBloomPass(new THREE.Vector2(256, 256), 0.42, 0.6, 1.02));
+      c.addPass(new OutputPass());
+      this.composer = c;
+    }
+    if (this.nivel < 2 && this.composer) {
+      this.composer.dispose();
+      this.composer = null;
+    }
+    this.dpr = this.nivel === 0 ? 1 : Math.min(window.devicePixelRatio || 1, this.nivel === 2 ? 2 : 1.5);
+    this.renderer.setPixelRatio(this.dpr);
+    this.ajustar();
+  }
+
   private ajustar() {
     const l = this.tela.clientWidth;
     const a = this.tela.clientHeight;
     if (!l || !a) return;
     this.renderer.setSize(l, a, false);
+    if (this.composer) {
+      this.composer.setPixelRatio(this.dpr);
+      this.composer.setSize(l, a);
+    }
     this.camera.aspect = l / a;
     // Em tela em pé, abre um pouco o campo de visão para o laboratório caber.
     this.camera.fov = l < a ? 68 : 58;
@@ -537,7 +611,7 @@ export class Laboratorio {
       const fora = p.ponto.clone().normalize();
       const lado = new THREE.Vector3(fora.z, 0, -fora.x);
       // Olha para o equipamento, um pouco de lado, deixando a pessoa no quadro
-      this.camAlvo.copy(p.ponto).addScaledVector(fora, -2.6).addScaledVector(lado, 2.2).setY(p.foco.y + 1.5);
+      this.camAlvo.copy(p.ponto).addScaledVector(fora, -1.3).addScaledVector(lado, 3.7).setY(p.foco.y + 1.9);
       this.olhaAlvo.copy(p.foco);
       const v = Math.min(1, dt * 2.6);
       this.camPos.lerp(this.camAlvo, v);
@@ -579,6 +653,8 @@ export class Laboratorio {
     }
     this.camera.position.copy(this.camPos);
     this.camera.lookAt(this.camOlha);
+    this.luzCamera.position.copy(this.camPos);
+    this.luzCamera.target.position.copy(this.camOlha);
 
     // Painel aberto: desloca a imagem para o equipamento ficar visível ao lado
     const d = this.deslocamento;
@@ -593,22 +669,25 @@ export class Laboratorio {
   private qualidade(dt: number) {
     this.somaQuadros += dt;
     this.contaQuadros++;
-    if (this.somaQuadros < 1.5) return;
+    if (this.somaQuadros < 2.5) return;
     const media = this.somaQuadros / this.contaQuadros;
     this.somaQuadros = 0;
     this.contaQuadros = 0;
-    if (media > 1 / 32 && this.dpr > 0.8) {
-      this.dpr = Math.max(0.8, this.dpr - 0.25);
-      this.renderer.setPixelRatio(this.dpr);
-      this.ajustar();
+    // Nunca abaixo da resolução normal da tela: nitidez é o último a ceder.
+    if (!this.fixo && media > 1 / 30 && this.nivel > 0) {
+      this.nivel -= 1;
+      this.aplicarNivel();
     }
   }
 
   private laco = () => {
     if (this.descartado) return;
     this.quadro = requestAnimationFrame(this.laco);
-    const dt = Math.min(0.05, this.relogio.getDelta());
-    const t = this.relogio.elapsedTime;
+    const agora = performance.now();
+    const dt = Math.min(0.05, (agora - this.ultimoQuadro) / 1000);
+    this.ultimoQuadro = agora;
+    this.tempo += dt;
+    const t = this.tempo;
 
     if (!this.focada && this.intro <= 0) this.mover(dt);
     else if (this.intro > 0) {
@@ -651,6 +730,7 @@ export class Laboratorio {
 
     this.moverCamera(dt);
     this.qualidade(dt);
-    this.renderer.render(this.cena, this.camera);
+    if (this.composer) this.composer.render(dt);
+    else this.renderer.render(this.cena, this.camera);
   };
 }

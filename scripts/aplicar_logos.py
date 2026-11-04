@@ -74,6 +74,18 @@ for id_, n in ESCOLHA.items():
     im.save(DESTINO / f"{id_}.webp", quality=82, method=6)
     fontes[id_] = {"url": c["url"], "origem": c["origem"]}
 
+# Achados à mão no navegador, onde a busca automática foi bloqueada.
+EXTRAS = {"ipho": ("ipho__9.png", "https://www.ipho-new.org/physics/wp-content/uploads/2019/07/IPHO.png"), "rotary-youth-exchange": ("rotary-youth-exchange__9.png", "https://www.rotary.org/get-involved/youth-programs/rotary-youth-exchange")}
+for id_, (arq, url) in EXTRAS.items():
+    p = BASE / arq
+    if p.exists():
+        im = aparar(Image.open(p).convert("RGBA"))
+        if claro_demais(im):
+            escuras.add(id_)
+        im.thumbnail((320, 320), Image.LANCZOS)
+        im.save(DESTINO / f"{id_}.webp", quality=82, method=6)
+        fontes[id_] = {"url": url, "origem": "navegador"}
+
 json.dump(dict(sorted(fontes.items())), open(fontes_p, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 ids = sorted(p.stem for p in DESTINO.glob("*.webp"))
 (RAIZ / "src" / "lib" / "logos.ts").write_text(

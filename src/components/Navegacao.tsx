@@ -1,6 +1,7 @@
 "use client";
 
 import { BotaoSom } from "./Som";
+import { BotaoTema } from "./Tema";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { Busca } from "./Busca";
@@ -55,7 +56,7 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
     <>
       <header className="sticky top-0 z-40 border-b border-linha bg-fundo/90 backdrop-blur-md">
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-2 px-4 sm:gap-6">
-          <Link href="/" className="estreito flex shrink-0 items-center gap-2 text-[1.05rem] min-[380px]:text-[1.2rem] uppercase leading-none no-underline">
+          <Link href="/" className="estreito flex shrink-0 items-center gap-2 text-[1rem] min-[380px]:text-[1.15rem] uppercase leading-none no-underline">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={asset("/icons/favicon-96.png")} alt="" width={36} height={36} className="rounded-lg" />
             <span>
@@ -76,12 +77,13 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
           </nav>
           <div className="flex items-center gap-1.5 sm:gap-4">
             {temNovo && (
-              <Link href="/novidades/" className="selo-novidade no-underline max-[349px]:hidden">
+              <Link href="/novidades/" className="selo-novidade no-underline max-[379px]:hidden">
                 NOVIDADE
               </Link>
             )}
             <Busca />
-            <BotaoSom />
+            <BotaoTema />
+            <BotaoSom className="max-sm:hidden" />
             <button type="button" onClick={() => menu.current?.showModal()} className="min-h-11 text-[0.9375rem] font-medium xl:hidden">
               Menu
             </button>
@@ -96,7 +98,7 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
             key={n.href}
             href={n.href}
             aria-current={ativo(n.href) ? "page" : undefined}
-            className={`estreito flex min-h-[2.9rem] items-center justify-center rounded-xl text-[0.9375rem] no-underline transition-all duration-200 ${ativo(n.href) ? "bg-marca text-[#1c0f05] shadow-[0_3px_0_#b95c14]" : "text-tinta-2"}`}
+            className={`estreito flex min-h-[2.9rem] items-center justify-center rounded-xl text-[0.9375rem] no-underline transition-all duration-200 ${ativo(n.href) ? "bg-marca text-[#1c0f05]" : "text-tinta-2"}`}
           >
             {n.rotulo}
           </Link>
@@ -120,7 +122,8 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
             </li>
           ))}
         </ul>
-        <div className="px-4 pb-8">
+        <div className="flex items-center gap-3 px-4 pb-8">
+          <BotaoSom className="sm:hidden" />
           <AlternarTema />
         </div>
       </dialog>

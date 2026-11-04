@@ -1,29 +1,28 @@
 import * as THREE from "three";
+import { RoundedBoxGeometry } from "three/examples/jsm/geometries/RoundedBoxGeometry.js";
 import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 
-// Muitas peças da mesma cor de material viram uma malha só: menos chamadas de desenho, mais fluidez em celular de escola.
+// Muitas peças do mesmo material viram uma malha só: menos chamadas de desenho, mais fluidez em celular de escola.
 
 type V3 = [number, number, number];
 
-export const caixa = (l: number, a: number, p: number) => new THREE.BoxGeometry(l, a, p);
-export const cilindro = (r: number, a: number, s = 12, r2 = r) => new THREE.CylinderGeometry(r2, r, a, s);
-export const esfera = (r: number, w = 14, h = 10) => new THREE.SphereGeometry(r, w, h);
-export const toro = (r: number, t: number, s = 20, arco = Math.PI * 2) => new THREE.TorusGeometry(r, t, 8, s, arco);
-export const capsula = (r: number, a: number) => new THREE.CapsuleGeometry(r, a, 4, 10);
-export const torno = (pontos: [number, number][], s = 16, ini = 0, arco = Math.PI * 2) => new THREE.LatheGeometry(pontos.map(([x, y]) => new THREE.Vector2(x, y)), s, ini, arco);
+// Computador recebe o dobro de segmentos: curvas lisas de verdade. Celular fica no meio-termo.
+const Q = typeof navigator !== "undefined" && !/Android|iPhone|iPad|Mobile/i.test(navigator.userAgent) ? 2 : 1.4;
+const q = (n: number) => Math.round(n * Q);
 
-let gradiente: THREE.DataTexture | null = null;
-function degraus() {
-  if (!gradiente) {
-    gradiente = new THREE.DataTexture(new Uint8Array([150, 215, 255]), 3, 1, THREE.RedFormat);
-    gradiente.minFilter = gradiente.magFilter = THREE.NearestFilter;
-    gradiente.needsUpdate = true;
-  }
-  return gradiente;
-}
+export const caixa = (l: number, a: number, p: number) => {
+  const menor = Math.min(l, a, p);
+  // Quina levemente arredondada: é ela que pega o brilho e tira a cara de bloco.
+  return menor > 0.035 ? new RoundedBoxGeometry(l, a, p, 2, Math.min(0.05, menor * 0.22)) : new THREE.BoxGeometry(l, a, p);
+};
+export const cilindro = (r: number, a: number, s = 12, r2 = r) => new THREE.CylinderGeometry(r2, r, a, q(s));
+export const esfera = (r: number, w = 14, h = 10) => new THREE.SphereGeometry(r, q(w), q(h));
+export const toro = (r: number, t: number, s = 20, arco = Math.PI * 2) => new THREE.TorusGeometry(r, t, 10, q(s), arco);
+export const capsula = (r: number, a: number) => new THREE.CapsuleGeometry(r, a, 6, q(12));
+export const torno = (pontos: [number, number][], s = 16, ini = 0, arco = Math.PI * 2) => new THREE.LatheGeometry(pontos.map(([x, y]) => new THREE.Vector2(x, y)), q(s), ini, arco);
 
-/** Sombreado em degraus, como a ilustração do logo. */
-export const materialDesenho = (lados: THREE.Side = THREE.FrontSide) => new THREE.MeshToonMaterial({ vertexColors: true, gradientMap: degraus(), side: lados });
+/** Material principal: reage à luz e ao reflexo do ambiente, com brilho suave. */
+export const materialDesenho = (lados: THREE.Side = THREE.FrontSide) => new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.52, metalness: 0.03, side: lados });
 
 /** Contorno de adesivo: a malha cresce pela normal e só o lado de trás aparece. */
 export function materialContorno(cor = "#ffffff", espessura = 0.03) {
@@ -73,10 +72,13 @@ export class Lote {
   }
 
   /** Malha pronta, com contorno opcional por cima da mesma geometria. */
-  malha(material: THREE.Material, contorno?: THREE.Material) {
+  malha(material: THREE.Material, contorno?: THREE.Material | null) {
     const g = this.geometria();
     const grupo = new THREE.Group();
-    grupo.add(new THREE.Mesh(g, material));
+    const m = new THREE.Mesh(g, material);
+    m.castShadow = true;
+    m.receiveShadow = true;
+    grupo.add(m);
     if (contorno) grupo.add(new THREE.Mesh(g, contorno));
     return grupo;
   }

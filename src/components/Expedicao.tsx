@@ -10,7 +10,7 @@ import { carimbar, useGuia } from "@/lib/guia";
 
 export type Escondida = { id: string; slug: string; nome: string; sigla: string | null; x: number; y: number; area: string };
 
-const RAIO = 92;
+const RAIO = 64;
 
 /** Número pseudoaleatório estável, para o céu ser igual no servidor e no aparelho. */
 const pr = (i: number) => {
@@ -182,7 +182,7 @@ export function Expedicao({ escondidas, abertas }: { escondidas: Escondida[]; ab
       if (a.mexeu) {
         for (const e of escondidas) {
           if (achadasRef.current.includes(e.id)) continue;
-          if (Math.hypot((e.x / 100) * L - px, (e.y / 100) * A - py) < RAIO * 0.62) {
+          if (Math.hypot((e.x / 100) * L - px, (e.y / 100) * A - py) < RAIO * 0.78) {
             achadasRef.current = [...achadasRef.current, e.id];
             setAchadas(achadasRef.current);
             setUltima(e);
@@ -217,20 +217,12 @@ export function Expedicao({ escondidas, abertas }: { escondidas: Escondida[]; ab
         onPointerDown={(e) => mover(e.clientX, e.clientY)}
       >
         <CenaUniverso />
-        {/* Ruído em SVG próprio: é desenhado uma vez e não refaz junto com os planetas. */}
-        <svg className="pointer-events-none absolute inset-0 z-[1] size-full opacity-[0.11]" aria-hidden="true">
-          <filter id="ruido-cena">
-            <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch" />
-            <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.1 -.42" />
-          </filter>
-          <rect width="100%" height="100%" filter="url(#ruido-cena)" />
-        </svg>
 
         <div ref={raio} className="camada-raiox" style={{ "--r": `${RAIO}px` } as React.CSSProperties}>
           <CenaRaioX />
           {explorando && escondidas.map((e) => (
             <span key={e.id} className="achado" style={{ left: `${e.x}%`, top: `${e.y}%` }}>
-              <LogoOlimpiada id={e.id} nome={e.nome} sigla={e.sigla} className="size-20" />
+              <LogoOlimpiada id={e.id} nome={e.nome} sigla={e.sigla} className="size-16" />
             </span>
           ))}
         </div>
@@ -269,11 +261,11 @@ export function Expedicao({ escondidas, abertas }: { escondidas: Escondida[]; ab
             onPointerCancel={() => (alvo.current.arrastando = false)}
           />
           <svg width="290" height="290" viewBox="-145 -145 290 290" className="pointer-events-none absolute -left-[145px] -top-[145px] overflow-visible">
-            <circle r={RAIO + 3} fill="none" stroke="#fdc13f" strokeWidth="9" />
-            <circle r={RAIO - 3} fill="none" stroke="#fff" strokeWidth="2" opacity=".65" />
-            <path d="M-54 -58Q-34 -78 -8 -80" stroke="#fff" strokeWidth="6" strokeLinecap="round" fill="none" opacity=".55" />
-            <path d="M68 68L118 118" stroke="#f58a33" strokeWidth="18" strokeLinecap="round" />
-            <path d="M64 64L76 76" stroke="#fdc13f" strokeWidth="12" />
+            <circle r={RAIO + 2} fill="none" stroke="#fdc13f" strokeWidth="6" />
+            <circle r={RAIO - 2} fill="none" stroke="#fff" strokeWidth="1.5" opacity=".65" />
+            <path d="M-38 -40Q-24 -54 -6 -56" stroke="#fff" strokeWidth="4" strokeLinecap="round" fill="none" opacity=".55" />
+            <path d="M48 48L82 82" stroke="#f58a33" strokeWidth="12" strokeLinecap="round" />
+            <path d="M46 46L54 54" stroke="#fdc13f" strokeWidth="8" />
           </svg>
         </div>
 

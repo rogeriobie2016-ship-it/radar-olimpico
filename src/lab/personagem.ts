@@ -7,7 +7,7 @@ import { caixa, capsula, cilindro, esfera, Lote, materialContorno, materialDesen
 export type Quem = "menino" | "menina";
 
 const COR = {
-  jaleco: "#ffffff",
+  jaleco: "#eef2f5",
   dobra: "#d9dde0",
   traco: "#5f5f5f",
   luva: "#00d0cc",
@@ -36,7 +36,7 @@ function pontosEsfera(n: number) {
   return r;
 }
 
-function cabecaMenino(l: Lote) {
+function cabecaMenino(l: Lote, lh: Lote) {
   l.add(esfera(0.37, 18, 14), PELE.menino, [0, 0, 0], [0, 0, 0], [1, 1.04, 0.98]);
   // Orelhas
   l.add(esfera(0.085, 10, 8), PELE.menino, [0.365, -0.04, -0.02], [0, 0, 0], [0.7, 1.1, 1]);
@@ -49,11 +49,17 @@ function cabecaMenino(l: Lote) {
     if (rosto || nuca || orelha) return;
     const tam = 0.135 + (i % 4) * 0.018;
     const raio = 0.47 + (i % 3) * 0.025;
-    l.add(esfera(tam, 8, 6), i % 5 === 0 ? "#4a3535" : "#3d2b2b", [p.x * raio, 0.07 + p.y * raio * 1.02, p.z * raio]);
+    lh.add(esfera(tam, 8, 6), "#33231f", [p.x * raio, 0.07 + p.y * raio * 1.02, p.z * raio]);
+  });
+  // Cachinhos por cima do volume: é o que tira a cara de bolas e dá textura de cabelo crespo.
+  pontosEsfera(190).forEach((p, i) => {
+    if ((p.z > 0.3 && p.y < 0.46 && Math.abs(p.x) < 0.8) || p.y < -0.66 || (p.y < -0.05 && Math.abs(p.x) > 0.74 && p.z > -0.35)) return;
+    const raio = 0.585 + (i % 5) * 0.012;
+    lh.add(esfera(0.05 + (i % 3) * 0.012, 6, 5), i % 3 === 0 ? "#513a33" : i % 3 === 1 ? "#3f2c27" : "#2c1e1b", [p.x * raio, 0.07 + p.y * raio * 1.02, p.z * raio]);
   });
   // Mechas sobre a testa, como no logo
-  l.add(esfera(0.09, 8, 6), "#3d2b2b", [-0.08, 0.28, 0.31], [0, 0, 0.5], [1.5, 0.75, 0.6]);
-  l.add(esfera(0.08, 8, 6), "#3d2b2b", [0.12, 0.3, 0.3], [0, 0, -0.4], [1.4, 0.7, 0.6]);
+  lh.add(esfera(0.09, 8, 6), "#33231f", [-0.08, 0.28, 0.31], [0, 0, 0.5], [1.5, 0.75, 0.6]);
+  lh.add(esfera(0.08, 8, 6), "#33231f", [0.12, 0.3, 0.3], [0, 0, -0.4], [1.4, 0.7, 0.6]);
   // Sobrancelhas grossas e bochechas
   l.add(capsula(0.024, 0.09), "#2a1c17", [-0.135, 0.125, 0.335], [0, 0, 1.75]);
   l.add(capsula(0.024, 0.09), "#2a1c17", [0.135, 0.11, 0.335], [0, 0, 1.2]);
@@ -123,7 +129,7 @@ export type Personagem = {
 
 export function criarPersonagem(quem: Quem): Personagem {
   const toon = materialDesenho(THREE.DoubleSide);
-  const contorno = materialContorno("#ffffff", 0.028);
+  const contorno = materialContorno("#ffffff", 0.016);
   const raiz = new THREE.Group();
   const pele = PELE[quem];
 
@@ -170,9 +176,12 @@ export function criarPersonagem(quem: Quem): Personagem {
   const cabeca = new THREE.Group();
   cabeca.position.y = 1.02 + 0.33;
   const lc = new Lote();
-  if (quem === "menino") cabecaMenino(lc);
+  const lh = new Lote();
+  if (quem === "menino") cabecaMenino(lc, lh);
   else cabecaMenina(lc);
   cabeca.add(lc.malha(toon, contorno));
+  // Cabelo fosco: sem reflexo, ele deixa de parecer plástico.
+  if (!lh.vazio) cabeca.add(lh.malha(new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.96, metalness: 0, envMapIntensity: 0.15 })));
   const basico = new THREE.MeshBasicMaterial({ vertexColors: true });
 
   const le = new Lote();
