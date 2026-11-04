@@ -4,6 +4,8 @@ import { m } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
 import { LinhaOportunidade } from "@/components/LinhaOportunidade";
 import { PainelFiltros } from "@/components/PainelFiltros";
+import { TrilhaCampo } from "@/components/TrilhaCampo";
+import { campoDoFiltro } from "@/lib/campos";
 import { aplicarFiltros, FILTROS_VAZIOS, useFiltros } from "@/lib/filtros";
 import { calcularStatus, compararPrazo, estaAberto, useHoje } from "@/lib/status";
 import type { Resumo } from "@/lib/tipos";
@@ -13,6 +15,7 @@ const POR_PAGINA = 30;
 export function RadarCliente({ itens }: { itens: Resumo[] }) {
   const { filtros, setFiltros, alternar, limpar } = useFiltros();
   const hoje = useHoje();
+  const campoFiltrado = campoDoFiltro(filtros.area);
   const [ordem, setOrdem] = useState<"prazo" | "nome">("prazo");
   const [limite, setLimite] = useState(POR_PAGINA);
   const [montado, setMontado] = useState(false);
@@ -26,6 +29,8 @@ export function RadarCliente({ itens }: { itens: Resumo[] }) {
   return (
     <div className="flex flex-col gap-4">
       <PainelFiltros itens={itens} filtros={filtros} setFiltros={setFiltros} alternar={alternar} limpar={limpar} total={resultado.length} />
+
+      {campoFiltrado && <TrilhaCampo campo={campoFiltrado} atual="olimpiadas" />}
 
       <div className="flex items-center justify-between gap-3">
         <p className="num font-semibold" role="status">

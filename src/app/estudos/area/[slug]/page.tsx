@@ -4,6 +4,8 @@ import { Carrossel } from "@/components/Carrossel";
 import { Cabecalho, LinkExterno, LinkFonte } from "@/components/estudos/Cabecalho";
 import Link from "@/components/L";
 import { Seta } from "@/components/Seta";
+import { TrilhaCampo } from "@/components/TrilhaCampo";
+import { campoDoEstudo, hrefRadar } from "@/lib/campos";
 import { oportunidades } from "@/lib/dados";
 import { areasEstudo } from "@/lib/estudos";
 import { JOGOS } from "@/lib/jogos";
@@ -27,6 +29,7 @@ export default async function AreaPagina({ params }: Props) {
   const area = areasEstudo.find((a) => a.slug === slug);
   if (!area) notFound();
 
+  const campo = campoDoEstudo(area.slug);
   const grupos = [...new Set(area.materiais.map((m) => m.grupo))];
   const fichas = area.oportunidades.map((id) => oportunidades.find((o) => o.id === id)).filter((o): o is (typeof oportunidades)[number] => !!o);
   const jogos = area.jogos.map((s) => JOGOS.find((j) => j.slug === s)).filter((j): j is (typeof JOGOS)[number] => !!j);
@@ -35,6 +38,8 @@ export default async function AreaPagina({ params }: Props) {
     <div className="est-ambiente">
       <div className="est-pagina">
         <Cabecalho titulo={area.titulo} frase={area.resumo} />
+
+        {campo && <TrilhaCampo campo={campo} atual="estudos" />}
 
         {area.aviso && <p className="est-vidro est-nota est-aviso" role="note">{area.aviso}</p>}
 
@@ -114,6 +119,7 @@ export default async function AreaPagina({ params }: Props) {
               </Link>
             ))}
           </Carrossel>
+          {campo && <Link href={hrefRadar(campo)} className="link w-fit text-[0.9375rem]">Ver todas: {campo.rotuloRadar}</Link>}
         </section>
       </div>
     </div>

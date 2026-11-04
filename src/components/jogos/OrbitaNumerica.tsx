@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Fala } from "@/components/Fala";
 import { sementeira } from "@/lib/estudo/orbita";
 import { Placar, type AoTerminar } from "./Molde";
+import { BotaoTelaCheia } from "./TelaCheia";
 import { criarMotor, type Painel, type Tela } from "./orbitaMotor";
 
 const ALTOS = "⁰¹²³⁴⁵⁶⁷⁸⁹";
@@ -70,6 +71,7 @@ export default function OrbitaNumerica({ aoTerminar }: { aoTerminar: AoTerminar 
       </div>
       <div ref={tela} className="orbita-tela">
         <canvas ref={canvas} role="img" aria-label="Espaço com a nave, as cápsulas de resposta e os asteroides. Use as setas, arraste a nave ou toque nos botões de resposta." />
+        <BotaoTelaCheia className="orbita-tela-cheia" soIcone />
         <button type="button" className="orbita-pausa" aria-label="Pausar" onClick={() => motor.current?.pausar()}>
           <svg viewBox="0 0 10 10" width="18" height="18" shapeRendering="crispEdges" aria-hidden="true">
             <path d="M2 1h2v8H2zM6 1h2v8H6z" fill="currentColor" />

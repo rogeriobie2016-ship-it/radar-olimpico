@@ -220,3 +220,14 @@ Os seis vêm da lista da UFC no Catálogo 2026 (p. 72 a 76). Nenhum foi apagado,
 - **OBMEP Jr.:** o link leva a uma notícia sobre uma professora. Não confirmamos o programa; pode ser a Olimpíada Mirim, mas isso não foi afirmado. Sem link, com aviso, sem logo, fora da Escada e dos jogos de Matemática.
 - **OLP:** o catálogo usava o link e o texto da Olimpíada de Português (OP), que é outra competição, do Instituto Philotimia. Em 2026 a edição do MEC com a UFPI é só para professores. A ficha foi corrigida, o logo da OP saiu, e Arquivo Perdido passou a apontar para a OP.
 - **Pendente:** a COPES ou a UFC precisam dizer qual competição o edital aceita nos casos de CIIC, IBPhO, OBMEP Jr. e OLP. Ainda não foi visto o edital da UFC em si, só a lista do catálogo.
+
+## Olimpíadas, jogos e estudos ligados por campo
+
+- `src/lib/campos.ts` é a fonte única: cada campo diz quais áreas do catálogo, jogos e página de estudo andam juntos. `npm run validar` acusa jogo sem campo, área sem campo e link que não existe.
+- O catálogo não tem área de línguas. Nesse campo, a porta do Radar abre "Oportunidades lá fora".
+- Educação Financeira e Gestão não tem jogo nem área de estudo própria: cai em "Pesquisa e olimpíadas".
+
+## Tela cheia nos jogos
+
+- O botão fica numa barra do próprio palco. Nativo onde o navegador deixa; no iPhone, que não deixa, o jogo ocupa a janela. A mesma classe vale nos dois casos.
+- A Nave Celular passou a abrir dentro do palco, não no `body`: o que está fora do elemento em tela cheia não aparece.

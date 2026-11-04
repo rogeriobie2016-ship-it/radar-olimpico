@@ -11,6 +11,9 @@ import { Seta } from "@/components/Seta";
 import { Status } from "@/components/Status";
 import { novidades, oportunidades, resumir } from "@/lib/dados";
 import { jogosDe } from "@/lib/jogos";
+import { TrilhaCampoLista } from "@/components/TrilhaCampo";
+import { CAMPOS } from "@/lib/campos";
+import { areasEstudo } from "@/lib/estudos";
 import { dataExtenso, ROTULO_CUSTO, ROTULO_MODALIDADE, ROTULO_NIVEL, ROTULO_PARTICIPACAO, ROTULO_TIPO } from "@/lib/rotulos";
 import type { Oportunidade } from "@/lib/schema";
 
@@ -72,6 +75,7 @@ export default async function PaginaOportunidade({ params }: Props) {
   const origens = oportunidades.filter((x) => x.credenciaPara.includes(o.id));
   const fases = [...o.provas].sort((a, b) => a.data.localeCompare(b.data));
   const jogos = jogosDe(o.id);
+  const campos = CAMPOS.filter((c) => c.areas.some((a) => o.areas.includes(a)) || areasEstudo.find((a) => a.slug === c.areaEstudo)?.oportunidades.includes(o.id)).slice(0, 2);
   const sigla = o.sigla && o.sigla.length <= 9 ? o.sigla : null;
   const novidade = novidades.itens.find((n) => n.oportunidadeId === o.id);
 
@@ -228,6 +232,12 @@ export default async function PaginaOportunidade({ params }: Props) {
                 </li>
               ))}
             </ul>
+          </Bloco>
+        )}
+
+        {campos.length > 0 && (
+          <Bloco titulo="Continue na área">
+            <TrilhaCampoLista campos={campos} />
           </Bloco>
         )}
 

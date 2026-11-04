@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 import { Fala } from "@/components/Fala";
 import Link from "@/components/L";
 import { BotaoSom } from "@/components/Som";
+import { BotaoTelaCheia, useDestinoDoJogo } from "../TelaCheia";
 import { confete } from "@/lib/guia";
 import { tocar } from "@/lib/som";
 import { alvosAtivos, AVISO_ESCALA, chegar, comecarMissao, CURIOSIDADES, desafioAtual, missaoAtual, MISSOES, novaPartida, passoAtual, POTENCIAL, proximoDesafio, responder, resumoFinal, tocarAlvo, type Alvo, type Partida } from "@/lib/estudo/celula";
@@ -97,6 +98,7 @@ function EscadaEnergia({ feitos }: { feitos: string[] }) {
 }
 
 export default function NaveCelular({ aoTerminar }: { aoTerminar: AoTerminar }) {
+  const destino = useDestinoDoJogo();
   const [montado, setMontado] = useState(false);
   const [modo, setModo] = useState<"carregando" | "3d" | "2d">("carregando");
   const [partida, setPartidaEstado] = useState<Partida>(() => novaPartida());
@@ -351,7 +353,7 @@ export default function NaveCelular({ aoTerminar }: { aoTerminar: AoTerminar }) 
           fala={fala?.t ?? ""}
         />
       </div>,
-      document.body,
+      destino,
     );
   }
 
@@ -374,6 +376,7 @@ export default function NaveCelular({ aoTerminar }: { aoTerminar: AoTerminar }) 
               <Placar esquerda={`Missão ${partida.m + 1} de ${quantos}`} direita={partida.pontos} />
             </div>
             <BotaoSom className="nave-botao" />
+            <BotaoTelaCheia className="nave-botao" soIcone />
             <Link href="/jogos/" className="nave-botao" aria-label="Sair do jogo">
               Sair
             </Link>
@@ -441,6 +444,6 @@ export default function NaveCelular({ aoTerminar }: { aoTerminar: AoTerminar }) 
 
       <div className={`nave-cortina ${cortina ? "nave-cortina-on" : ""}`} aria-hidden="true" />
     </div>,
-    document.body,
+    destino,
   );
 }

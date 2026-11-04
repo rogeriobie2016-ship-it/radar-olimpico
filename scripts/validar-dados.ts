@@ -3,6 +3,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { ZodType } from "zod";
+import { CAMPOS } from "../src/lib/campos";
 import { JOGOS } from "../src/lib/jogos";
 import { areasEstudoSchema, baralhosSchema, cearaCientificoSchema, culturaSchema, jocSchema, metaSchema, novidadesSchema, oportunidadesSchema, problemasEstudos, tecnicasSchema, type AreasEstudo, type Oportunidade } from "../src/lib/schema";
 
@@ -54,6 +55,34 @@ try {
   for (const p of problemas) {
     erros++;
     console.error(`\n✗ estudos/areas.json: ${p}`);
+  }
+} catch {
+  // JSON inválido já foi avisado acima.
+}
+
+// Cada campo liga olimpíadas, jogos e estudos: as três portas precisam levar a algum lugar.
+try {
+  const fichas = lerJson("oportunidades.json") as Oportunidade[];
+  const areasCatalogo = new Set(fichas.flatMap((o) => o.areas));
+  const estudos = (lerJson("estudos/areas.json") as AreasEstudo).areas;
+  const problemas: string[] = [];
+  for (const j of JOGOS) {
+    const n = CAMPOS.filter((c) => c.jogos.some(([s]) => s === j.slug)).length;
+    if (n !== 1) problemas.push(`o jogo "${j.slug}" está em ${n} campos, e deve estar em 1`);
+  }
+  for (const a of areasCatalogo) if (!CAMPOS.some((c) => c.areas.includes(a))) problemas.push(`a área "${a}" do catálogo não leva a nenhum campo`);
+  for (const c of CAMPOS) {
+    for (const [s] of c.jogos) if (!JOGOS.some((j) => j.slug === s)) problemas.push(`campo "${c.id}": o jogo "${s}" não existe`);
+    for (const a of c.areas) if (!areasCatalogo.has(a)) problemas.push(`campo "${c.id}": a área "${a}" não existe no catálogo`);
+    if (c.areaEstudo) {
+      const e = estudos.find((x) => x.slug === c.areaEstudo);
+      if (!e) problemas.push(`campo "${c.id}": a área de estudo "${c.areaEstudo}" não existe`);
+      else for (const [s] of c.jogos) if (!e.jogos.includes(s)) problemas.push(`estudos/areas.json: a área "${e.slug}" não cita o jogo "${s}"`);
+    }
+  }
+  for (const p of problemas) {
+    erros++;
+    console.error(`\n✗ src/lib/campos.ts: ${p}`);
   }
 } catch {
   // JSON inválido já foi avisado acima.

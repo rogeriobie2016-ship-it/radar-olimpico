@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { JogoCliente } from "./JogoCliente";
 import Link from "@/components/L";
 import { Seta } from "@/components/Seta";
+import { TrilhaCampo } from "@/components/TrilhaCampo";
+import { campoDoJogo } from "@/lib/campos";
 import { oportunidades, resumos } from "@/lib/dados";
 import { JOGOS } from "@/lib/jogos";
 
@@ -21,6 +23,7 @@ export default async function PaginaJogo({ params }: Props) {
   const jogo = JOGOS.find((j) => j.slug === slug);
   if (!jogo) notFound();
   const ficha = oportunidades.find((o) => o.id === jogo.principal)!;
+  const campo = campoDoJogo(jogo.slug);
   // Só a Escada usa dados do catálogo nas perguntas.
   const dados = slug === "escada" ? resumos.filter((r) => r.temFicha).map((r) => ({ id: r.id, sigla: r.sigla, nome: r.nome, nivel: r.nivel, area: r.areas[0], custo: r.custo, credenciaPara: r.credenciaPara })) : [];
 
@@ -35,6 +38,7 @@ export default async function PaginaJogo({ params }: Props) {
         <p className="mt-2 text-tinta-2">{jogo.olimpiada}</p>
       </header>
       <JogoCliente jogo={jogo} nomeFicha={ficha.sigla && ficha.sigla.length <= 9 ? ficha.sigla : ficha.nome} slugFicha={ficha.slug} dados={dados} />
+      {campo && <TrilhaCampo campo={campo} atual="jogos" />}
       <p className="text-sm text-tinta-2">Jogo de treino do Radar Olímpico, sem vínculo com a organização das olimpíadas. O recorde fica salvo só neste aparelho.</p>
     </div>
   );

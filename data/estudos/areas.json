@@ -28,7 +28,7 @@
         { "grupo": null, "titulo": "Materiais de matemática do NOIC", "descricao": "Guia de estudos, lista de ideias, problemas da semana e simulados.", "tipo": "Guia", "url": "https://noic.com.br/materiais-matematica/", "oficial": false, "nota": "Feito por estudantes e ex-competidores, não pelos organizadores.", "conferidoEm": "2026-11-04" }
       ],
       "oportunidades": ["obmep", "obm", "canguru", "mcem", "omifce", "gepemac", "mandacaru", "tm2"],
-      "jogos": ["alvo"]
+      "jogos": ["orbita-numerica", "alvo"]
     },
     {
       "slug": "linguagens",
@@ -50,7 +50,7 @@
         { "grupo": null, "titulo": "Provas e gabaritos do Enem", "descricao": "Arquivo oficial do Inep. A área de Linguagens é um bom banco de leitura.", "tipo": "Banco de questões", "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos", "oficial": true, "nota": "Não é prova de olimpíada, mas ajuda a treinar leitura.", "conferidoEm": "2026-11-04" }
       ],
       "oportunidades": ["olimpiada-de-portugues", "op-be-a-ba", "obl", "obol", "olimpiada-de-literatura", "concurso-cartas"],
-      "jogos": []
+      "jogos": ["arquivo-perdido"]
     },
     {
       "slug": "linguas-estrangeiras",
@@ -76,7 +76,7 @@
         { "grupo": "Outras línguas", "titulo": "Aprender alemão com a DW", "descricao": "Cursos da Deutsche Welle com teste de nivelamento, em português.", "tipo": "Curso", "url": "https://learngerman.dw.com/pt-br/", "oficial": false, "nota": null, "conferidoEm": "2026-11-04" }
       ],
       "oportunidades": ["obli", "the-big-challenge", "olimpiada-de-ingles", "concurso-cartas-upu"],
-      "jogos": []
+      "jogos": ["lingua-galactica"]
     },
     {
       "slug": "natureza",
@@ -111,7 +111,7 @@
         { "grupo": "Para todas", "titulo": "Khan Academy", "descricao": "Aulas e exercícios gratuitos para estudantes, em português.", "tipo": "Curso", "url": "https://pt.khanacademy.org/", "oficial": false, "nota": null, "conferidoEm": "2026-11-04" }
       ],
       "oportunidades": ["oba", "obafog", "obfep", "obf", "ocf", "ocq", "oqep", "obq", "quimeninas", "obb", "tnbio"],
-      "jogos": ["lancamento", "balanco"]
+      "jogos": ["nave-celular", "lancamento", "balanco"]
     },
     {
       "slug": "humanas",
@@ -137,7 +137,7 @@
         { "grupo": null, "titulo": "Provas e gabaritos do Enem", "descricao": "Arquivo oficial do Inep. A área de Ciências Humanas ajuda no treino de leitura de fontes.", "tipo": "Banco de questões", "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos", "oficial": true, "nota": "Não é prova de olimpíada.", "conferidoEm": "2026-11-04" }
       ],
       "oportunidades": ["onhb", "onhb-a", "oche", "obg", "onfil", "oscear", "obapo"],
-      "jogos": ["linha-do-tempo"]
+      "jogos": ["crononauta", "linha-do-tempo"]
     },
     {
       "slug": "tecnologia",

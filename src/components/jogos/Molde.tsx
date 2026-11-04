@@ -1,7 +1,7 @@
 "use client";
 
 import { tocar } from "@/lib/som";
-import { useCallback, useEffect, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import Link from "@/components/L";
 import { Fala } from "@/components/Fala";
 import { Mascote, type Quem } from "@/components/Mascote";
@@ -9,7 +9,9 @@ import { Seta } from "@/components/Seta";
 import { urlAbsoluta } from "@/lib/base";
 import { carimbar, confete, useGuia } from "@/lib/guia";
 import { linkWhatsApp } from "@/lib/ics";
+import { campoDoJogo } from "@/lib/campos";
 import type { Jogo } from "@/lib/jogos";
+import { BotaoTelaCheia, TelaCheiaProvider, useTelaCheiaDoPalco } from "./TelaCheia";
 
 const chave = (s: string) => `radar-jogo-${s}`;
 
@@ -60,9 +62,16 @@ export function Molde({ jogo, nomeFicha, slugFicha, children }: { jogo: Jogo; no
 
   const url = urlAbsoluta(`/jogos/${jogo.slug}/`);
   const { quem, escolher } = useGuia();
+  const palco = useRef<HTMLDivElement>(null);
+  const telaCheia = useTelaCheiaDoPalco(palco);
+  const campo = campoDoJogo(jogo.slug);
 
   return (
-    <div className="palco palco-escuro flex min-h-[32rem] flex-col">
+    <TelaCheiaProvider value={telaCheia}>
+    <div ref={palco} className={`palco palco-escuro flex min-h-[32rem] flex-col ${telaCheia.cheia ? "palco-cheio" : ""}`}>
+      <div className="palco-barra">
+        <BotaoTelaCheia className="palco-tela-cheia" />
+      </div>
       {fase === "inicio" && (
         <div className="entrada-seq flex flex-1 flex-col justify-end gap-4 p-5 sm:p-8">
           <p className="text-[0.9375rem] font-bold text-[#a9c6d8]">Quem vai narrar?</p>
@@ -95,6 +104,12 @@ export function Molde({ jogo, nomeFicha, slugFicha, children }: { jogo: Jogo; no
               Conhecer {nomeFicha}
               <Seta />
             </Link>
+            {campo && (
+              <Link href={campo.estudo} className="btn btn-secundario">
+                {campo.rotuloEstudo}
+                <Seta />
+              </Link>
+            )}
             <a href={linkWhatsApp(`Fiz ${placar.pontos} pontos em ${jogo.titulo}, no Radar Olímpico. Tenta aí: ${url}`)} target="_blank" rel="noopener noreferrer" className="btn btn-secundario">
               Desafiar pelo WhatsApp
             </a>
@@ -102,6 +117,7 @@ export function Molde({ jogo, nomeFicha, slugFicha, children }: { jogo: Jogo; no
         </div>
       )}
     </div>
+    </TelaCheiaProvider>
   );
 }
 
