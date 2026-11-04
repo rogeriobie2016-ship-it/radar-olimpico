@@ -1,4 +1,6 @@
 import { Carrossel } from "@/components/Carrossel";
+import { dadosLab } from "@/lab/dados";
+import { LabCliente } from "@/lab/LabCliente";
 import { Numeros, QuadroPrazos } from "./InicioCliente";
 import { AvisoRadar } from "@/components/AvisoRadar";
 import { Expedicao, type Escondida } from "@/components/Expedicao";
@@ -64,21 +66,8 @@ export default function Inicio() {
     <>
       <Expedicao escondidas={escondidas} abertas={abertasAgora} />
 
-      {/* Laboratório Vivo: a experiência principal do site */}
-      <section className="relative overflow-hidden bg-[#071a3a]">
-        <Link href="/laboratorio/" className="group relative mx-auto grid max-w-6xl gap-4 px-4 py-6 no-underline sm:grid-cols-[1.25fr_1fr] sm:items-center">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={asset("/lab-previa.webp")} alt="O Laboratório Vivo em 3D, com os dois estudantes e os equipamentos em volta" width={960} height={540} loading="lazy" decoding="async" className="azulejo aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-[1.015]" />
-          <span className="flex flex-col items-start gap-2">
-            <span className="estreito text-sm uppercase text-turquesa">Em 3D, direto no navegador</span>
-            <span className="titulo-1 !text-[clamp(2.2rem,8vw,4rem)] text-white">
-              Laboratório <span className="text-amarelo">Vivo</span>
-            </span>
-            <span className="text-lg font-bold leading-snug text-white">Entra, anda e mexe em telescópio, microscópio, pêndulo, robô. Cada equipamento leva às olimpíadas daquele campo.</span>
-            <span className="btn btn-marca mt-1">Entrar no laboratório →</span>
-          </span>
-        </Link>
-      </section>
+      {/* Logo depois da landing: o Laboratório Vivo, sem sair da página */}
+      <LabCliente embutido {...dadosLab()} />
 
       {/* Atalhos por campo do conhecimento */}
       <section id="campos" aria-label="Escolha seu campo" className="bg-fundo-2 py-5">

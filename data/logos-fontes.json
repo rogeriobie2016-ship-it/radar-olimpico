@@ -1,0 +1,406 @@
+{
+  "afs-global-stem-academies": {
+    "url": "https://d22dvihj4pfop3.cloudfront.net/wp-content/uploads/sites/78/2024/08/05102002/logo-afs.png",
+    "origem": "json-ld"
+  },
+  "apho": {
+    "url": "http://asianphysicsolympiad.org/images/header.jpg",
+    "origem": "img"
+  },
+  "apmo": {
+    "url": "https://apmo-official.org/static/apmologo.gif",
+    "origem": "img"
+  },
+  "beamline-for-schools": {
+    "url": "https://beamlineforschools.cern/wp-content/uploads/2025/11/bl4s_logo_transparent_2025_10.09.2025_1-1-1024x858.png",
+    "origem": "img"
+  },
+  "bebras": {
+    "url": "https://static.wixstatic.com/media/e77980_5236d8d18d4445af9bbfc981d9e9d519~mv2.png",
+    "origem": "img"
+  },
+  "blue-planet-awareness": {
+    "url": "https://bowseat.org/wp-content/themes/bowseat/images/logo.png",
+    "origem": "img"
+  },
+  "breakthrough-junior-challenge": {
+    "url": "https://scontent-lax3-1.cdninstagram.com/v/t51.2885-19/329733390_193989773262947_811863472766801993_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=109&ig_cache_key=GA5VpxNjgIbDbrAAAElYYeyGUUQLbkULAAAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=MAxbcwtQdAwQ7kNvwF8OpVb&_nc_oc=AdoSk-Ib-YgQD8EjOmIDyqcbTN121-QdNn5TPs6C08qWvoEY_KOBOo6rHe9CJI0rKno&_nc_zt=24&_nc_ht=scontent-lax3-1.cdninstagram.com&_nc_ss=7c689&oh=00_AQSz-9yy1kS4ZfhaaIC1kSC3joP1zfyJ4zf5oDn_WrvjNg&oe=6AF0D243",
+    "origem": "instagram"
+  },
+  "camaleao-quimica": {
+    "url": "https://sites.google.com/sitesv-images-rt/AMxu72tdw555dA-E33Az4cmMHY36PNrnW7GlQNHfPKluud-QFY27HYERfQmqkKX2Qxqx-FF4yPiH_jjXbcZbBUPg_mcvNWZDxqm7swgLVvGjUnq0IVUG9An6PPNhNHj2Ujm3NE6NCIieJIO8p5RSJVwIj7DKzJwYbfMYb-Ywyde2gHot6qJMGDd8OpONqQJPv4Q=w16383",
+    "origem": "og"
+  },
+  "cbr": {
+    "url": "https://cbr.robocup.org.br/wp-content/uploads/2019/07/cbrRobot.png",
+    "origem": "img"
+  },
+  "concurso-cartas": {
+    "url": "https://www.correios.com.br/educacao-e-cultura/++theme++tema-do-portal-correios/static/imagens/correios.svg",
+    "origem": "img"
+  },
+  "concurso-cartas-upu": {
+    "url": "https://www.correios.com.br/educacao-e-cultura/concurso-internacional-de-redacao-de-cartas/++theme++tema-do-portal-correios/static/imagens/correios.svg",
+    "origem": "img"
+  },
+  "conrad-challenge": {
+    "url": "https://conrad.spacecenter.org/wp-content/uploads/2022/07/Conrad-Challenge-Vertical-Logo-Reverse-RGB-1024x579.png",
+    "origem": "img"
+  },
+  "dialogos-brazil-conference": {
+    "url": "https://framerusercontent.com/images/36B0x9UzW99WNPN1vglc7lj0.png",
+    "origem": "touch-icon"
+  },
+  "diamond-challenge": {
+    "url": "https://diamondchallenge.org/wp-content/uploads/2023/11/DC-logo_003C71V-1-e1760459361526.png",
+    "origem": "img"
+  },
+  "earth-prize": {
+    "url": "https://scontent-lax3-2.cdninstagram.com/v/t51.2885-19/271115229_999801370880778_5254064398705297150_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=103&ig_cache_key=GN3jKBAKq45lUI0DAP4G27_7L_pIbkULAAAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy42MDAuQzMifQ%3D%3D&_nc_ohc=HA7FeDPUU5EQ7kNvwHr4Xe5&_nc_oc=AdpH3TXFue3j2eYckirnuOdKJGZSEk2SxZptobGIiVYLfX2w-4rFVG7Sox3MgQrqxI4&_nc_zt=24&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_ss=7c689&oh=00_AQQB7qlZUZYY4FyR1wBTe1c-4py5aXpDNzhHfCjGs-LXrQ&oe=6AF0D3BE",
+    "origem": "instagram"
+  },
+  "egmo": {
+    "url": "https://www.egmo.org/logo.png",
+    "origem": "og"
+  },
+  "egoi": {
+    "url": "https://egoi.org/EGOI_header.png",
+    "origem": "img"
+  },
+  "eupho": {
+    "url": "https://eupho.ee/wp-content/uploads/2020/07/cropped-eupho_sq-1-180x180.png",
+    "origem": "touch-icon"
+  },
+  "fao-concurso-cartazes": {
+    "url": "https://scontent-lax3-1.cdninstagram.com/v/t51.2885-19/64236108_1223735664452595_4647614854377504768_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=108&ig_cache_key=GEwq1APzI5Qp_1gEAAAAAAAWpX9AbkULAAAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy44MDAuQzMifQ%3D%3D&_nc_ohc=0OU-UjuNMQcQ7kNvwFw6pU_&_nc_oc=AdrfldIVItTnz9Qm1T_WTnjnNRTfVCQ5fKsCOxTPnK7UgR9xTOj9js3T8pOXGtF8Szs&_nc_zt=24&_nc_ht=scontent-lax3-1.cdninstagram.com&_nc_ss=7c689&oh=00_AQQjXiC1FwsuxdG1Q3IjnRLnniaVVGfokuMQyrG3jpHsAw&oe=6AF0BB89",
+    "origem": "instagram"
+  },
+  "gks-graduacao": {
+    "url": "https://www.studyinkorea.go.kr/public/v3/images/plan/logo-gks-blue.svg",
+    "origem": "img"
+  },
+  "ibo": {
+    "url": "https://www.ibo-info.org/apple-touch-icon.png",
+    "origem": "touch-icon"
+  },
+  "imcho": {
+    "url": "https://static.tildacdn.com/tild3964-3835-4464-a535-303133613166/fav_MMO.png",
+    "origem": "icon"
+  },
+  "imo": {
+    "url": "https://www.imo-official.org/assets/media/logos/imo-logo.svg",
+    "origem": "img"
+  },
+  "ioaa": {
+    "url": "https://ioaastrophysics.org/static/img/ioaa-logo.png",
+    "origem": "img"
+  },
+  "ioi": {
+    "url": "https://ioinformatics.org/icons/ioi-logo-2020.png",
+    "origem": "img"
+  },
+  "iypt-brasil": {
+    "url": "https://static.wixstatic.com/media/5fe33e_d141403b20914e6b8868fcf328a23983~mv2.png/v1/fill/w_231,h_79,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IYPT_BR_horizontal.png",
+    "origem": "img"
+  },
+  "jacob-palis-jr": {
+    "url": "https://www.obm.org.br/content/themes/obm/img/logo-full.jpg",
+    "origem": "img"
+  },
+  "jovem-senador": {
+    "url": "https://www12.senado.leg.br/jovemsenador/++theme++senado.jovemsenador/img/logo-rodape.svg",
+    "origem": "img"
+  },
+  "ligmat": {
+    "url": "https://static.wixstatic.com/media/10fe81_8c34b798421446ea97f880204141328d%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/10fe81_8c34b798421446ea97f880204141328d%7Emv2.png",
+    "origem": "touch-icon"
+  },
+  "maratona-tech": {
+    "url": "https://www.maratona.tech/icons/logo-maratona-tech.webp",
+    "origem": "img"
+  },
+  "mext-graduacao": {
+    "url": "https://scontent-lax3-2.cdninstagram.com/v/t51.2885-19/41853702_418025235396533_83846909898260480_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=103&ig_cache_key=GAajfgK1t6kVMXwBAAAAAABS4ikBbkULAAAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy45NjAuQzMifQ%3D%3D&_nc_ohc=C0k20enBQZcQ7kNvwHybzxu&_nc_oc=AdoMkkiDqRmJg1Ki2o5RnCd7k-1bTgKxv7qk7kZ9CndcowDoqHnQ6SUqFUkcRwwPDB4&_nc_zt=24&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_ss=7c689&oh=00_AQRfdvlFD70lVNaZGfI8_D2bKJl_jiumoyycUc4xGEUMag&oe=6AF0CF70",
+    "origem": "instagram"
+  },
+  "mostratec": {
+    "url": "https://mostratec.liberato.com.br/wp-content/uploads/2024/06/Logo-site-mesmo-01.png",
+    "origem": "img"
+  },
+  "nasa-space-apps": {
+    "url": "https://assets.spaceappschallenge.org/media/images/Space_Apps_Logo_Color_and_White.width-440.jpegquality-60.png",
+    "origem": "img"
+  },
+  "nuca-unicef": {
+    "url": "https://www.unicef.org/brazil/sites/unicef.org.brazil/files/styles/logo/public/Portuguese.png.webp?itok=pKeaDWZl",
+    "origem": "img"
+  },
+  "obbiotec": {
+    "url": "https://www.obbiotec.com.br/wp-content/uploads/2022/03/marca_horizontal@4x.png",
+    "origem": "img"
+  },
+  "obc-cidadania": {
+    "url": "https://olimpiadacidadania.com.br/_next/image?url=%2Fbrand%2Fobc-logo-horizontal-preto.png&w=3840&q=75&dpl=dpl_4V5xaf4XKNiAujVLgPNMAYzmnhZt",
+    "origem": "img"
+  },
+  "obc-ciencias": {
+    "url": "https://www.obciencias.com.br/uploads/2/5/5/7/25574839/published/6107729.png?1734787839",
+    "origem": "og"
+  },
+  "obe-empreendedorismo": {
+    "url": "http://obempreende.com.br/wp-content/uploads/2026/02/OBE-2026-1.png",
+    "origem": "img"
+  },
+  "obecon": {
+    "url": "https://www.obecon.org.br/wp-content/uploads/2025/01/obecon-logo.svg",
+    "origem": "img"
+  },
+  "obef": {
+    "url": "https://csa.uem.br/edfin/obef-olimpiada-brasileira-de-educacao-financeira/logo_obef-removebg-preview.png/@@images/18dbeb97-e48d-488e-b14d-cb0728993344.png",
+    "origem": "img"
+  },
+  "obf": {
+    "url": "https://www1.fisica.org.br/olimpiada/2025/images/OBF1.png",
+    "origem": "img"
+  },
+  "obho": {
+    "url": "https://sites.google.com/sitesv-images-rt/AMxu72vTRgFXyAqBmHSn_s4GkAzUuYbHxng68s1CKu0goxA8sBVAg5h12WyURIdguhW2_0JgyJQ7UY2_qf1Ai4cNYI6kvJFJqjpYpAYj1xp_w9HLf-r5vzsnTKYz63eV8R7ZOZ9rK4MCg9cjEoVxLHsXLNJFSiQhes3uBTqcjsXktQg41YnMUX42m-Nz7sOz_aQ=w16383",
+    "origem": "og"
+  },
+  "obict": {
+    "url": "https://www.obict.com.br/assets/images/logo-iii-obict-final-topo-site-333x96.png",
+    "origem": "img"
+  },
+  "obmed": {
+    "url": "https://olimpikei.com.br/wp-content/uploads/2026/08/cropped-favicon-180x180.png",
+    "origem": "touch-icon"
+  },
+  "obmep-jr": {
+    "url": "https://www.obmep.org.br/images/favicon.png",
+    "origem": "icon"
+  },
+  "obn": {
+    "url": "https://brazilianbrainbee.org/wp-content/uploads/2020/01/Logo-OBNG-1-e1578108138603.png",
+    "origem": "img"
+  },
+  "oboa": {
+    "url": "https://i0.wp.com/noic.com.br/wp-content/uploads/2025/07/oboa.jpg?resize=1536%2C793&ssl=1",
+    "origem": "img"
+  },
+  "oboart": {
+    "url": "https://i0.wp.com/noic.com.br/wp-content/uploads/2025/07/oboart.jpg?resize=1080%2C558&#038;ssl=1",
+    "origem": "img"
+  },
+  "obob": {
+    "url": "https://i0.wp.com/noic.com.br/wp-content/uploads/2025/06/noic.png?fit=328%2C122&ssl=1",
+    "origem": "img"
+  },
+  "oboc": {
+    "url": "https://i0.wp.com/noic.com.br/wp-content/uploads/2025/07/oboc.jpg?resize=1024%2C529&#038;ssl=1",
+    "origem": "img"
+  },
+  "oboch": {
+    "url": "https://i0.wp.com/noic.com.br/wp-content/uploads/2025/06/noic.png?fit=328%2C122&ssl=1",
+    "origem": "img"
+  },
+  "oboecon": {
+    "url": "https://i0.wp.com/noic.com.br/wp-content/uploads/2026/09/oboecon.png?resize=1097%2C227&#038;ssl=1",
+    "origem": "img"
+  },
+  "obof": {
+    "url": "https://i0.wp.com/noic.com.br/wp-content/uploads/2025/07/obof.png?resize=695%2C359&#038;ssl=1",
+    "origem": "img"
+  },
+  "obofe": {
+    "url": "https://i0.wp.com/noic.com.br/wp-content/uploads/2025/06/noic.png?fit=328%2C122&ssl=1",
+    "origem": "img"
+  },
+  "obofog": {
+    "url": "https://i0.wp.com/noic.com.br/wp-content/uploads/2025/07/obofog.jpg?resize=1080%2C558&#038;ssl=1",
+    "origem": "img"
+  },
+  "oboi": {
+    "url": "https://i0.wp.com/noic.com.br/wp-content/uploads/2025/07/oboi-1.webp?resize=768%2C372&#038;ssl=1",
+    "origem": "img"
+  },
+  "oboia": {
+    "url": "https://i0.wp.com/noic.com.br/wp-content/uploads/2026/05/logo-OBOIA-2.0.png?resize=1600%2C826&#038;ssl=1",
+    "origem": "img"
+  },
+  "obol": {
+    "url": "https://i0.wp.com/noic.com.br/wp-content/uploads/2025/07/obol.png?resize=695%2C359&#038;ssl=1",
+    "origem": "img"
+  },
+  "obom": {
+    "url": "https://i0.wp.com/noic.com.br/wp-content/uploads/2025/06/noic.png?fit=328%2C122&ssl=1",
+    "origem": "img"
+  },
+  "oboq": {
+    "url": "https://i0.wp.com/noic.com.br/wp-content/uploads/2024/04/OBOQ_.png?resize=431%2C158&#038;ssl=1",
+    "origem": "img"
+  },
+  "obor": {
+    "url": "https://i0.wp.com/noic.com.br/wp-content/uploads/2025/06/noic.png?fit=328%2C122&ssl=1",
+    "origem": "img"
+  },
+  "obq": {
+    "url": "https://obquimica.org/storage/sites/logos/01KEHHX04TW2XFPNZ5EP64TJJS.png",
+    "origem": "img"
+  },
+  "obqjr": {
+    "url": "https://obquimica.org/storage/sites/logos/01KEHHX04TW2XFPNZ5EP64TJJS.png",
+    "origem": "img"
+  },
+  "obs-saber": {
+    "url": "https://obssaberes.org/web-site/assets/images/logo/mobile-logo.png",
+    "origem": "img"
+  },
+  "obs-sociologia": {
+    "url": "https://olimpiadadesociologia.com.br/wp-content/uploads/2026/03/Logo_OBS_Vertical-1024x896.png",
+    "origem": "img"
+  },
+  "obsat": {
+    "url": "https://obsat.org.br/img/logotipos/logotipo_obsat_cinza_letrapreta_800.png",
+    "origem": "img"
+  },
+  "ocf": {
+    "url": "https://wp.ufc.br/assets/sitiomodelo/brasao-5.png",
+    "origem": "og"
+  },
+  "oiab": {
+    "url": "https://www.oiab.org/img/img-logo.jpg",
+    "origem": "img"
+  },
+  "oiaf": {
+    "url": "https://www1.fisica.org.br/~oibf/home/wp-content/themes/widely/style/img/logo.png",
+    "origem": "img"
+  },
+  "oiaq": {
+    "url": "https://obquimica.org/storage/sites/logos/01KEHHX04TW2XFPNZ5EP64TJJS.png",
+    "origem": "img"
+  },
+  "oii": {
+    "url": "https://www.iberoinformatica.org/static/img/logo-oii-text-horizontal-en.svg",
+    "origem": "img"
+  },
+  "olaa": {
+    "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUP2lDLSLW1SRKvD_R_lcDuQ1D0dFVD0s_3fVVPgCfNS3vXYvjeSFTwp-CY92Isgz16GU4WHddOJoRBWy7quGsyKCXK8-bVBlbK6eaX59t3aR7C-Wgh5qji0iCvb5B09H9PInunSKARqEGLxZoid9VPjQwAj_NyqlEjo-50SVbKLJHoPlevHvIdMXlJ3w/s320/Logo_of_fc.png",
+    "origem": "img"
+  },
+  "olimpiada-da-coruja": {
+    "url": "https://mkt.estrategia.com/militares/wp-content/uploads/sites/7/2024/07/logo_estrategia_militares.webp",
+    "origem": "json-ld"
+  },
+  "olimpiada-de-ingles": {
+    "url": "https://oingles.com/themes/olimpiada-ingles/images/logo/OI_v1_horizontal_colorida.svg",
+    "origem": "img"
+  },
+  "olimpiada-de-sustentabilidade": {
+    "url": "https://olimpiadasustentabilidade.org/__l5e/assets-v1/4ee61457-8cb8-4ada-8c72-2014148580ab/logo.png",
+    "origem": "img"
+  },
+  "olimpiada-do-bem-publico": {
+    "url": "https://eppg.fgv.br/sites/default/files/styles/medium/public/2025-10/logotipo_politize.png?itok=w22Y1bDm",
+    "origem": "img"
+  },
+  "olimpiada-itabirana": {
+    "url": "https://olimpiadaitabirana.com.br/static/img/logos/logo2026branca.png",
+    "origem": "img"
+  },
+  "olimpiada-mirim": {
+    "url": "https://olimpiadamirim.obmep.org.br/favicon/apple-touch-icon.png",
+    "origem": "touch-icon"
+  },
+  "olp": {
+    "url": "https://olimpiadadeportugues.org/images/site/logo-new.png",
+    "origem": "img"
+  },
+  "omerj": {
+    "url": "https://sites.google.com/sitesv-images-rt/AMxu72uAx8_udloCeNj2I2M9atLC5KQk01uIn6Iys-w5oRITG8M0SnEDoCFc2g66ocAwwPTlGanGq0Y_sVxvJKOdGtotlByeZgjvmDVQGc4jblE5UA7Gcc4lsbOHcQUVG3YNm92JPmRg-BVKFbsPS4u2ovuYomL3Fn1hv2MdRwxFQyXzrsuPuNXEO-j_SM5k=w16383",
+    "origem": "og"
+  },
+  "ona": {
+    "url": "https://scontent-lax3-2.cdninstagram.com/v/t51.82787-19/605960446_17866047438535771_4415043865539919731_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=100&ig_cache_key=GP44HiRbPB1TE3k-AHM-RvkAY0U9bmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=jidpXI5kHKQQ7kNvwEwMsIf&_nc_oc=Adr75JG7j38kLAIT12rZvh1DT0t1kJvl3OZwv6nk0DzI5EgySeVN5BN9yJfQ8OVhYgY&_nc_zt=24&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_gid=bazDH-CW_-jRfZNmHUL09w&_nc_ss=7c689&oh=00_AQQ0HpH558wPEPk0N9aFKMEPjv7djsmbx5Zp1Uj8dVhK5w&oe=6AF0CF8A",
+    "origem": "instagram"
+  },
+  "ong-globalizacao": {
+    "url": "https://diplomun.com/__l5e/assets-v1/4ba81c0d-a75b-4138-ba75-b4ac7fcdd5f7/logo-horizontal-dark.png",
+    "origem": "img"
+  },
+  "onneq": {
+    "url": "https://obquimica.org/storage/sites/logos/01KEHHX04TW2XFPNZ5EP64TJJS.png",
+    "origem": "img"
+  },
+  "onsc": {
+    "url": "https://cdn.nativosdofuturo.com.br/wp-content/uploads/2025/08/Logotipo-_-Nativos-do-Futuro@2x.png",
+    "origem": "img"
+  },
+  "op-be-a-ba": {
+    "url": "https://olimpiadadeportugues.org/images/site/logo-new.png",
+    "origem": "img"
+  },
+  "prep-estudar-fora": {
+    "url": "https://www.estudar.org.br/wp-content/uploads/2026/08/Ativo-1.svg",
+    "origem": "img"
+  },
+  "regeneron-isef": {
+    "url": "https://www.societyforscience.org/wp-content/uploads/sites/4/2026/06/rwpb9bja_400x400.png",
+    "origem": "json-ld"
+  },
+  "rise-for-the-world": {
+    "url": "https://www.risefortheworld.org/wp-content/uploads/2026/04/cropped-favicon-180x180.png",
+    "origem": "touch-icon"
+  },
+  "stockholm-junior-water-prize": {
+    "url": "https://sjwp.com.br/wp-content/uploads/2026/04/Logos-site-3.png",
+    "origem": "img"
+  },
+  "tbr": {
+    "url": "https://www.torneiobrasilderobotica.com.br/images/logo.svg",
+    "origem": "img"
+  },
+  "technovation": {
+    "url": "https://technovationchallenge.org/wp-content/uploads/2026/08/cropped-Technovation_Text-Only_White-scaled-1.png",
+    "origem": "img"
+  },
+  "tfc": {
+    "url": "https://scontent-lax3-2.cdninstagram.com/v/t51.2885-19/329865632_1250778958883933_6734189278787557009_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=100&ig_cache_key=GKBZqRNdbImrk3EEAJFWYER4pXRdbkULAAAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=IL72-URWcUcQ7kNvwGFGoGd&_nc_oc=AdplCAX0u0oO6PH9qQbbaHCkRmPKqYkh6SXmXgpN-x6rpynQKC44VBmFpnCjoCjXhSo&_nc_zt=24&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_ss=7c689&oh=00_AQR-BUv_-rMKrImea4zG6-f_VqOLmGLhFDjpykq-5y99iQ&oe=6AF0D227",
+    "origem": "instagram"
+  },
+  "the-big-challenge": {
+    "url": "https://www.thebigchallenge.com/_next/image?url=%2Fassets%2Fbrand%2Ftbc-logo-signature.png&w=2048&q=75&dpl=dpl_7CE4Xr6VDCuXJfw9KFWzkJLuNvoA",
+    "origem": "img"
+  },
+  "titas-da-matematica": {
+    "url": "https://edicao2026.titasdamatematica.com.br/emblema.webp",
+    "origem": "json-ld"
+  },
+  "tjr": {
+    "url": "https://www.torneiojrobotica.org/gallery/favicons/favicon-120x120.png",
+    "origem": "touch-icon"
+  },
+  "tm2": {
+    "url": "https://www.tm2.org.br/content/themes/tm2/img/logo.png",
+    "origem": "img"
+  },
+  "turkiye-burslari-graduacao": {
+    "url": "https://www.turkiyeburslari.gov.tr/YTB/images/logo/tb-logo.png",
+    "origem": "img"
+  },
+  "tvq": {
+    "url": "https://sites.google.com/sitesv-images-rt/AMxu72shu6WpkgRUJC5Ila4x7Rn1dE4seRGlURqg0LvxJpbK5uRrW0Jnhg315xG4mzD4lZGpWs5qpKHJCKeKxYpo80RyEskyEQwckTVtcaUBlsFxa96KjIRWvSzUtxi9ciI5i3N3OT1J2NXl6tXGdMWpkXt7XBoeFxCTc-eCVoItPxEx_hFH4vC08BfKt0bBPggKoW1g8gBRuy3At0aswqk67IA01w",
+    "origem": "icon"
+  },
+  "uwc-brasil": {
+    "url": "http://br.uwc.org/wp-content/uploads/sites/111/2025/08/logo-Br.jpg",
+    "origem": "img"
+  },
+  "vitalis": {
+    "url": "https://olimpiadademedicina.org/static/Logo-c87fd11f703b0f6ac702a6298ce44616.svg",
+    "origem": "img"
+  },
+  "yale-young-global-scholars": {
+    "url": "https://scontent-lax3-2.cdninstagram.com/v/t51.2885-19/241492228_445235630065631_3432509296189214006_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=111&ig_cache_key=GAThZA7fR5J-8JQBADaNlccEuaIvbkULAAAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=jR1z1stxnNQQ7kNvwHKSKwp&_nc_oc=AdrfcVrj_rDupTQptizUmBq8TzdyL7gqyiZLCWJL8DgsVVIR9Af3lJ6zgo-mC5-KLt8&_nc_zt=24&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_ss=7c689&oh=00_AQRVsLrE_mbpClpdmC6rTZC7oS-71XS4llOORiveAOiaVQ&oe=6AF0C03B",
+    "origem": "instagram"
+  }
+}

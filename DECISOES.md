@@ -107,9 +107,13 @@ Pedido: "tá com muito cara de IA", site premium, jogos por olimpíada, atualiza
 
 As instruções estão em `scripts/rotina-pesquisa.md`, para a equipe poder ajustar sem recriar a rotina. O usuário escolheu rodar na nuvem. Para agendar, faltam a conexão do GitHub com a conta Claude e um ambiente de nuvem. Horário previsto: segundas, 7h em Fortaleza (10:00 UTC).
 
+## Logos buscados na web (04/11/2026)
+
+Os itens sem logo nos PDFs tiveram o logo buscado no site oficial e no perfil oficial do Instagram (`scripts/buscar_logos.mjs`) e escolhido a olho (`scripts/aplicar_logos.py`). O desenho não é alterado. Quando a olimpíada não publica logo próprio, aparece o da organização: é o caso de OBOs do NOIC, Programa Nacional Olimpíadas de Química, UFC na OCF e Correios nos concursos de cartas. A fonte de cada um está em `data/logos-fontes.json`. A COPES pode trocar qualquer um enviando o arquivo em `public/olimpiadas/<id>.webp`.
+
 ## Laboratório Vivo (04/11/2026)
 
-Laboratório em 3D no navegador (`src/lab/`), sem headset: anda com joystick, teclado ou tocando no chão, e cada equipamento abre um experimento real que leva às olimpíadas daquele campo. Three.js só é baixado quando a pessoa entra, então o resto do site continua leve. Os estudantes em 3D foram modelados no próprio código, com as cores e proporções do logo e contorno branco de adesivo; no painel, o narrador continua sendo a ilustração oficial. Todos os experimentos existem também na versão sem 3D, para aparelho sem WebGL. As contas e dados dos experimentos ficam em `src/lab/estacoes.ts`, cobertos por `npm run testar:lab`.
+Laboratório em 3D no navegador (`src/lab/`), sem headset: anda com joystick, teclado ou tocando no chão, e cada equipamento abre um experimento real que leva às olimpíadas daquele campo. Fica logo abaixo da landing, na página inicial, e também tem endereço próprio. Three.js só é baixado quando a pessoa entra, então o resto do site continua leve. Os estudantes em 3D foram modelados no próprio código, com as cores e proporções do logo e contorno branco de adesivo; no painel, o narrador continua sendo a ilustração oficial. Todos os experimentos existem também na versão sem 3D, para aparelho sem WebGL. As contas e dados dos experimentos ficam em `src/lab/estacoes.ts`, cobertos por `npm run testar:lab`.
 
 ## Sons (04/11/2026)
 

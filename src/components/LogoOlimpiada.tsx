@@ -1,8 +1,6 @@
 import { asset } from "@/lib/base";
-import { COM_LOGO } from "@/lib/logos";
+import { COM_LOGO, PLACA_ESCURA } from "@/lib/logos";
 
-// Logos com letras claras precisam de placa escura para aparecer. O logo em si não muda.
-const PLACA_ESCURA = new Set(["oimc"]);
 const CORES = ["#f58a33", "#00c9c8", "#fdc13f"];
 
 const cor = (id: string) => CORES[[...id].reduce((s, c) => s + c.charCodeAt(0), 0) % 3];

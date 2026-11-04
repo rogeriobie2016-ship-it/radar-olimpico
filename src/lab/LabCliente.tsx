@@ -147,6 +147,18 @@ function Joystick({ aoMover }: { aoMover: (x: number, y: number) => void }) {
   );
 }
 
+function CartaoEstacao({ e, feito, aoAbrir }: { e: Estacao; feito: boolean; aoAbrir: () => void }) {
+  return (
+    <button type="button" className="lab-cartao" style={{ background: e.cor, color: e.tinta }} onClick={aoAbrir}>
+      <span className="estreito text-lg uppercase leading-tight">
+        {feito ? "✓ " : ""}
+        {e.nome}
+      </span>
+      <span className="text-sm font-bold">{e.campo}</span>
+    </button>
+  );
+}
+
 const ANGULO = (i: number) => (i / ESTACOES.length) * Math.PI * 2;
 
 /** Mapa redondo: mostra onde você está e leva até o equipamento com um toque. */
@@ -174,7 +186,9 @@ function Mapa({ feitos, aoIr, jogador }: { feitos: IdEstacao[]; aoIr: (id: IdEst
   );
 }
 
-export function LabCliente({ fichas, internacionais }: { fichas: Record<string, FichaLab>; internacionais: ItemInternacional[] }) {
+export function LabCliente({ fichas, internacionais, embutido = false }: { fichas: Record<string, FichaLab>; internacionais: ItemInternacional[]; embutido?: boolean }) {
+  const Titulo = embutido ? "h2" : "h1";
+  const Subtitulo = embutido ? "h3" : "h2";
   const { quem, escolher } = useGuia();
   const [fase, setFase] = useState<Fase>("inicio");
   const [feitos, setFeitos] = useState<IdEstacao[]>([]);
@@ -359,14 +373,14 @@ export function LabCliente({ fichas, internacionais }: { fichas: Record<string, 
   return (
     <>
       {fase === "inicio" || fase === "lista" ? (
-        <section className="lab-capa">
+        <section id="laboratorio" aria-label="Laboratório Vivo" className={`lab-capa ${embutido ? "lab-capa-secao" : ""}`}>
           <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-5 px-4 py-5 lg:py-8">
             <div className="grid items-center gap-5 lg:grid-cols-[1fr_1.1fr]">
               <div className="flex flex-col gap-3">
                 <p className="estreito text-sm uppercase text-turquesa">Em 3D, direto no navegador. Sem instalar nada.</p>
-                <h1>
+                <Titulo className="titulo-1">
                   Laboratório <span className="text-amarelo">Vivo</span>
-                </h1>
+                </Titulo>
                 <p className="max-w-xl text-lg font-bold leading-snug">Entra, anda e mexe nos equipamentos. Cada um é um experimento de verdade e uma porta para as olimpíadas daquele campo.</p>
 
                 {fase === "inicio" && (
@@ -374,7 +388,7 @@ export function LabCliente({ fichas, internacionais }: { fichas: Record<string, 
                     <div className="grid max-w-md grid-cols-2 gap-2" role="group" aria-label="Com quem você entra?">
                       {(["menina", "menino"] as Quem[]).map((q) => (
                         <button key={q} type="button" onClick={() => escolher(q)} aria-pressed={quem === q} className="lab-escolha">
-                          <Mascote quem={q} pose={quem === q ? "acena" : "parado"} prioridade className="w-12 shrink-0" />
+                          <Mascote quem={q} pose={quem === q ? "acena" : "parado"} prioridade={!embutido} className="w-12 shrink-0" />
                           <span className="estreito text-left text-[0.9375rem] leading-tight">{q === "menina" ? "Entrar com ela" : "Entrar com ele"}</span>
                         </button>
                       ))}
@@ -404,35 +418,33 @@ export function LabCliente({ fichas, internacionais }: { fichas: Record<string, 
               {fase === "inicio" && (
                 <button type="button" onClick={entrar} aria-label="Entrar no laboratório" data-som="achou" className="lab-previa">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={asset("/lab-previa.webp")} alt="" width={960} height={540} fetchPriority="high" />
+                  <img src={asset("/lab-previa.webp")} alt="" width={960} height={540} fetchPriority={embutido ? undefined : "high"} loading={embutido ? "lazy" : undefined} decoding="async" />
                   <span className="lab-previa-toque" aria-hidden="true">▶</span>
                 </button>
               )}
             </div>
 
             <div>
-              <h2 className="!text-2xl uppercase">O que tem lá dentro</h2>
-              <ul className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-                {ESTACOES.map((e) => (
-                  <li key={e.id}>
-                    <button
-                      type="button"
-                      className="lab-cartao"
-                      style={{ background: e.cor, color: e.tinta }}
-                      onClick={() => {
-                        setFase("lista");
-                        setAberta(e.id);
-                      }}
-                    >
-                      <span className="estreito text-lg uppercase leading-tight">
-                        {feitos.includes(e.id) ? "✓ " : ""}
-                        {e.nome}
-                      </span>
-                      <span className="text-sm font-bold">{e.campo}</span>
-                    </button>
-                  </li>
-                ))}
-              </ul>
+              <Subtitulo className="estreito text-xl uppercase">O que tem lá dentro</Subtitulo>
+              {embutido ? (
+                <div className="-mx-4 mt-3">
+                  <Carrossel rotulo="Equipamentos do laboratório" classe="gap-2 px-4 pb-2">
+                    {ESTACOES.map((e) => (
+                      <div key={e.id} className="w-44">
+                        <CartaoEstacao e={e} feito={feitos.includes(e.id)} aoAbrir={() => { setFase("lista"); setAberta(e.id); }} />
+                      </div>
+                    ))}
+                  </Carrossel>
+                </div>
+              ) : (
+                <ul className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                  {ESTACOES.map((e) => (
+                    <li key={e.id}>
+                      <CartaoEstacao e={e} feito={feitos.includes(e.id)} aoAbrir={() => { setFase("lista"); setAberta(e.id); }} />
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         </section>
