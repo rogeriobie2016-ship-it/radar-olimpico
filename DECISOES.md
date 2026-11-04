@@ -140,3 +140,20 @@ Pedido: "muito sério", cara bem mais jovem, identidade e cores da JOC, logos re
 - **Passaporte Científico:** carimbos por jogar, salvar e terminar a Escada. Fica só no aparelho.
 - **Botão "Quero me inscrever"** leva ao site oficial. A inscrição continua sendo feita lá.
 - **Jogos:** os mascotes narram em todos, comentando acertos e erros.
+
+## Biblioteca de Estudos (04/11/2026)
+
+Rota `/estudos/`, com Como estudar, Plano da semana, Foco, Baralhos, seis áreas e Dicas culturais. Conteúdo em `data/estudos/`, validado por `npm run validar`. Regras do plano e da revisão cobertas por `npm run testar:estudos`.
+
+- **Afirmações de pesquisa:** cada uma aponta para uma fonte, e o validador recusa fonte inexistente. Referências conferidas no Crossref e resumos no OpenAlex. Sem resumo aberto (Rohrer e Taylor 2007, Diekelmann e Born 2010), a afirmação foi mantida no nível do que outras fontes descrevem. O estudo de Fiorella e Mayer (2013) ficou de fora, porque não confirmei o resultado de longo prazo. Vale revisão pedagógica.
+- **Prova antiga:** não encontrei estudo específico sobre provas de olimpíada. A página diz isso e cita a pesquisa sobre testes de treino em geral.
+- **Números que são escolha de projeto, não da pesquisa:** intervalos dos baralhos (1, 2, 4, 8 e 16 dias), blocos de 25 ou 50 minutos, ordem das atividades no plano e o aviso acima de 4 horas por dia. As telas dizem que são sugestão.
+- **O que costuma cair:** só o que está em regulamento, site oficial ou ficha do Radar, com a fonte ao lado. Não listei conteúdos prováveis por conta própria. Os textos de "por onde começar" são orientação minha e devem ser revisados pela COPES.
+- **Links conferidos:** todos abertos em 04/11/2026, com a data em `conferidoEm`. JSON não aceita comentário, então cada arquivo tem um campo `comentario`.
+- **Links descartados:** ONHB (site com aviso de manutenção, erro 503), Geopark Araripe (`geoparkararipe.urca.br` exibe texto de apostas e cassinos, possível invasão: avisar a URCA), Domínio Público, Atlas Escolar do IBGE e BN Digital (bloqueiam a abertura automática, não deu para conferir; podem funcionar no navegador comum), TV5Monde (acesso negado), Aula Virtual do Cervantes (manutenção), Museu do Ceará (em obra, reabertura não confirmada).
+- **Livros de domínio público:** apontam para o Wikisource e o Project Gutenberg, porque o portal Domínio Público não abriu na conferência.
+- **Imagens:** só duas, ambas de domínio público no Wikimedia Commons, com fonte e licença no cartão. São carregadas da própria fonte, sem cópia no repositório, por isso dependem do Wikimedia estar no ar. Usam `crossOrigin="anonymous"`, porque sem isso o Wikimedia grava cookie de terceiros no aparelho do estudante (e o Lighthouse caía para 77 em boas práticas). Se preferirem, copiem para `public/` e troquem o `src`. Capas comerciais e logos institucionais ficaram de fora, por falta de licença clara para uso.
+- **Classificação indicativa:** não consegui consultar a base do Ministério da Justiça obra a obra. As que aparecem vêm de imprensa e guias, com a fonte no cartão. Sem fonte, o campo não aparece. Em Estrelas Além do Tempo, as fontes divergem, e o cartão diz isso.
+- **Museu do Eclipse:** o Ibram informa acesso grátis e horário, mas o Mapa Cultural do Ceará ainda mostra aviso de reforma. O cartão avisa e traz o telefone. Vale a COPES confirmar.
+- **Visual:** só usa `--fundo`, `--fundo-2`, `--tinta`, `--tinta-2` e `--linha`, e nada das cores da marca, para funcionar no tema claro. As setas do `Carrossel` seguem brancas, porque são do componente existente.
+- **Links de fichas que estão quebrados ou antigos, não alterados:** a ficha da OBA aponta para `http://www.oba.org.br/site/`, que deu erro 404 (o site atual é `https://site.oba.org.br/`). A ficha da OBF aponta para o site de 2025.

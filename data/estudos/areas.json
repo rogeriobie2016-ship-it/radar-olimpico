@@ -1,0 +1,173 @@
+{
+  "comentario": "Todos os links abertos e conferidos em 2026-11-04. Quando abrir de novo e confirmar, atualize o conferidoEm do item.",
+  "areas": [
+    {
+      "slug": "matematica",
+      "titulo": "Matemática",
+      "resumo": "Da OBMEP à OBM. Tem prova antiga e solução de sobra, de graça.",
+      "comecar": [
+        "Ache o seu nível na OBMEP: nível 1 para 6º e 7º anos, nível 2 para 8º e 9º, nível 3 para o Ensino Médio.",
+        "Faça uma prova antiga inteira, com tempo marcado, e só então abra a solução.",
+        "Anote o assunto que derrubou você e veja a videoaula dele no Portal da OBMEP."
+      ],
+      "aviso": null,
+      "oQueCai": [
+        { "texto": "OBMEP: a primeira fase tem 20 questões de múltipla escolha e a segunda tem 6 questões discursivas. Os conteúdos são os previstos na BNCC, diferenciados por nível.", "fonte": { "rotulo": "Regulamento da OBMEP 2026", "url": "https://www.obmep.org.br/regulamento.htm", "conferidoEm": "2026-11-04" } },
+        { "texto": "Canguru: prova de raciocínio lógico, separada em seis níveis, do 3º ano do Fundamental ao 3º do Médio.", "fonte": { "rotulo": "Provas anteriores do Canguru", "url": "https://www.cangurudematematicabrasil.com.br/provas-anteriores-popup", "conferidoEm": "2026-11-04" } },
+        { "texto": "OBM: participa quem recebe convite, e as provas ficam separadas nos níveis 1, 2, 3 e universitário.", "fonte": { "rotulo": "Provas e gabaritos da OBM", "url": "https://www.obm.org.br/como-se-preparar/provas-e-gabaritos/", "conferidoEm": "2026-11-04" } }
+      ],
+      "materiais": [
+        { "grupo": null, "titulo": "Provas e soluções da OBMEP", "descricao": "Todas as edições publicadas, de 2005 a 2025.", "tipo": "Provas", "url": "https://www.obmep.org.br/provas.htm", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Banco de Questões da OBMEP", "descricao": "Coletâneas de 2006 a 2020.", "tipo": "Banco de questões", "url": "https://www.obmep.org.br/banco.htm", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Portal da OBMEP", "descricao": "Videoaulas, apostilas, exercícios e problemas resolvidos, do IMPA.", "tipo": "Curso", "url": "https://portaldaobmep.impa.br/", "oficial": true, "nota": "Dá para navegar sem cadastro, com acesso a parte do conteúdo.", "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Apostilas do PIC", "descricao": "Material do Programa de Iniciação Científica Jr. da OBMEP.", "tipo": "Guia", "url": "https://www.obmep.org.br/apostilas.htm", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Clubes de Matemática da OBMEP", "descricao": "Problemas novos com solução, para resolver com a turma.", "tipo": "Banco de questões", "url": "https://clubes.obmep.org.br/blog/", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Provas e gabaritos da OBM", "descricao": "Edições de 1997 a 2026, por nível.", "tipo": "Provas", "url": "https://www.obm.org.br/como-se-preparar/provas-e-gabaritos/", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Revista Eureka!", "descricao": "A revista da OBM, com artigos e problemas para quem quer ir além.", "tipo": "Guia", "url": "https://www.obm.org.br/revista-eureka/", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Provas anteriores do Canguru", "descricao": "Provas e gabaritos de 2021 a 2026, em português e inglês.", "tipo": "Provas", "url": "https://www.cangurudematematicabrasil.com.br/provas-anteriores-popup", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Materiais de matemática do NOIC", "descricao": "Guia de estudos, lista de ideias, problemas da semana e simulados.", "tipo": "Guia", "url": "https://noic.com.br/materiais-matematica/", "oficial": false, "nota": "Feito por estudantes e ex-competidores, não pelos organizadores.", "conferidoEm": "2026-11-04" }
+      ],
+      "oportunidades": ["obmep", "obm", "canguru", "mcem", "omifce", "gepemac", "mandacaru", "tm2"],
+      "jogos": ["alvo"]
+    },
+    {
+      "slug": "linguagens",
+      "titulo": "Linguagens",
+      "resumo": "Português, linguística e literatura. Aqui treina quem gosta de texto e quem gosta de decifrar.",
+      "comecar": [
+        "Escolha por onde entrar: Olimpíada de Português se você gosta de ler e escrever, OBL se você gosta de decifrar línguas.",
+        "Resolva uma prova antiga e confira no gabarito.",
+        "Em cada erro, volte ao texto e ache a pista que passou batida."
+      ],
+      "aviso": null,
+      "oQueCai": [
+        { "texto": "OBL: a fase 1 é online, com 18 problemas de múltipla escolha sobre temas linguísticos, usando vídeos, canções, textos e imagens, em três ciclos de dificuldade crescente.", "fonte": { "rotulo": "Como é a OBL", "url": "https://obling.org/como-e", "conferidoEm": "2026-11-04" } },
+        { "texto": "Olimpíada de Português: competição de língua portuguesa do 6º ano ao Ensino Médio. O Torneio traz provas e gabaritos separados por categoria.", "fonte": { "rotulo": "Treinamento da OP", "url": "https://olimpiadadeportugues.org/treinamento/treinamento-individual", "conferidoEm": "2026-11-04" } }
+      ],
+      "materiais": [
+        { "grupo": null, "titulo": "Edições da OBL", "descricao": "Cada edição traz as provas das fases. A mais recente é a Ojidu (2025-26).", "tipo": "Provas", "url": "https://obling.org/anteriores", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Treinamento da Olimpíada de Português", "descricao": "Provas e gabaritos do Torneio da OP 2026, por categoria.", "tipo": "Provas", "url": "https://olimpiadadeportugues.org/treinamento/treinamento-individual", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Provas e gabaritos do Enem", "descricao": "Arquivo oficial do Inep. A área de Linguagens é um bom banco de leitura.", "tipo": "Banco de questões", "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos", "oficial": true, "nota": "Não é prova de olimpíada, mas ajuda a treinar leitura.", "conferidoEm": "2026-11-04" }
+      ],
+      "oportunidades": ["olimpiada-de-portugues", "op-be-a-ba", "obl", "obol", "olimpiada-de-literatura", "concurso-cartas"],
+      "jogos": []
+    },
+    {
+      "slug": "linguas-estrangeiras",
+      "titulo": "Línguas estrangeiras",
+      "resumo": "Inglês na frente, com caminho aberto para espanhol e alemão. Também abre porta para bolsas fora do país.",
+      "comecar": [
+        "Tire um pouco por dia para ouvir e ler. Pouco e sempre rende mais do que muito de uma vez.",
+        "Faça uma prova antiga da OBLI e veja em que habilidade você mais errou.",
+        "Guarde as palavras novas num baralho de revisão."
+      ],
+      "aviso": null,
+      "oQueCai": [
+        { "texto": "OBLI: explora leitura, escrita, compreensão auditiva e expressão oral em inglês.", "fonte": { "rotulo": "Ficha da OBLI no Radar", "url": "/oportunidade/obli/", "conferidoEm": "2026-11-04" } },
+        { "texto": "The Big Challenge: evento anual de inglês do 4º ano do Fundamental ao 3º do Médio, em formato impresso ou online.", "fonte": { "rotulo": "Site do Big Challenge Brasil", "url": "https://www.thebigchallenge.com/br", "conferidoEm": "2026-11-04" } }
+      ],
+      "materiais": [
+        { "grupo": "Inglês", "titulo": "Provas e resoluções da OBLI", "descricao": "Provas, resoluções e notas de corte, de 2024 a 2026.", "tipo": "Provas", "url": "https://www.seletaeducacao.com.br/obli-provas-e-resultados", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": "Inglês", "titulo": "Recursos do Big Challenge", "descricao": "Fichas e séries em áudio para praticar inglês.", "tipo": "Guia", "url": "https://www.thebigchallenge.com/br/professores/academy/recursos-pedagogicos", "oficial": true, "nota": "A página é voltada a professores. A plataforma Academy tem teste grátis de 30 dias.", "conferidoEm": "2026-11-04" },
+        { "grupo": "Inglês", "titulo": "LearnEnglish Teens", "descricao": "Site gratuito do British Council para adolescentes: leitura, escrita, escuta e gramática.", "tipo": "Curso", "url": "https://learnenglishteens.britishcouncil.org/", "oficial": false, "nota": "Em inglês.", "conferidoEm": "2026-11-04" },
+        { "grupo": "Inglês", "titulo": "BBC Learning English", "descricao": "Vídeos, áudios e aulas curtas da BBC.", "tipo": "Curso", "url": "https://www.bbc.co.uk/learningenglish/", "oficial": false, "nota": "Em inglês.", "conferidoEm": "2026-11-04" },
+        { "grupo": "Inglês", "titulo": "Olimpíadas de inglês no NOIC", "descricao": "Materiais de preparação feitos por ex-competidores.", "tipo": "Guia", "url": "https://noic.com.br/olimpiadas/ingles/", "oficial": false, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": "Outras línguas", "titulo": "RTVE Play", "descricao": "Plataforma da TV pública espanhola, para treinar o ouvido em espanhol.", "tipo": "Prática", "url": "https://www.rtve.es/play/", "oficial": false, "nota": "Parte do catálogo tem classificação +12 ou +16 e parte pede assinatura.", "conferidoEm": "2026-11-04" },
+        { "grupo": "Outras línguas", "titulo": "Aprender alemão com a DW", "descricao": "Cursos da Deutsche Welle com teste de nivelamento, em português.", "tipo": "Curso", "url": "https://learngerman.dw.com/pt-br/", "oficial": false, "nota": null, "conferidoEm": "2026-11-04" }
+      ],
+      "oportunidades": ["obli", "the-big-challenge", "olimpiada-de-ingles", "concurso-cartas-upu"],
+      "jogos": []
+    },
+    {
+      "slug": "natureza",
+      "titulo": "Natureza",
+      "resumo": "Física, química, biologia e astronomia. Cada uma tem arquivo próprio de provas.",
+      "comecar": [
+        "Escolha uma ciência para começar, não as quatro. A OBA e a OBFEP são boas portas de entrada.",
+        "Faça a prova antiga do seu nível e marque o que você não reconheceu.",
+        "Veja o fenômeno em ação num simulador antes de voltar para a conta."
+      ],
+      "aviso": null,
+      "oQueCai": [
+        { "texto": "OBA: as provas são separadas nos níveis I a IV, com gabarito publicado em cada edição.", "fonte": { "rotulo": "Provas e gabaritos da OBA", "url": "https://site.oba.org.br/provas-e-gabaritos", "conferidoEm": "2026-11-04" } },
+        { "texto": "OBF: competição em fases, com a primeira online e as seguintes presenciais. O programa sai no site da edição.", "fonte": { "rotulo": "Site da OBF", "url": "https://www1.fisica.org.br/olimpiada/2025/", "conferidoEm": "2026-11-04" } },
+        { "texto": "OBB: para o Ensino Médio, contextualiza as principais áreas da Biologia.", "fonte": { "rotulo": "Ficha da OBB no Radar", "url": "/oportunidade/obb/", "conferidoEm": "2026-11-04" } },
+        { "texto": "OBQ: o Programa Nacional indica livros de referência para cada olimpíada, e na OBQ alguns são ligados a fases específicas.", "fonte": { "rotulo": "Bibliografia das Olimpíadas de Química", "url": "https://obquimica.org/bibliografia", "conferidoEm": "2026-11-04" } }
+      ],
+      "materiais": [
+        { "grupo": "Física", "titulo": "Provas da OBF", "descricao": "Arquivo da Sociedade Brasileira de Física, de 2006 a 2024.", "tipo": "Provas", "url": "https://www1.fisica.org.br/olimpiada/2025/index.php/provas.html", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": "Física", "titulo": "Provas da OBFEP", "descricao": "Olimpíada de Física das Escolas Públicas.", "tipo": "Provas", "url": "https://www1.fisica.org.br/~obfep/provas/", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": "Física", "titulo": "Física no NOIC", "descricao": "Materiais e problemas de quem já competiu.", "tipo": "Guia", "url": "https://noic.com.br/olimpiadas/fisica/", "oficial": false, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": "Química", "titulo": "Bibliografia das Olimpíadas de Química", "descricao": "Livros indicados pelo Programa Nacional, por olimpíada.", "tipo": "Guia", "url": "https://obquimica.org/bibliografia", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": "Química", "titulo": "Arquivos da Olimpíada Cearense de Química", "descricao": "Gabaritos e documentos da OCQ, por ano.", "tipo": "Provas", "url": "https://ceara.obquimica.org/arquivos", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": "Química", "titulo": "Documentos da OQEP 2026", "descricao": "Edital, regulamento e gabaritos da OQEP Ceará, no IFCE.", "tipo": "Provas", "url": "https://portal.ifce.edu.br/institucional/pesquisa-pos-graduacao-e-inovacao/editais/oqep-2026/", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": "Química", "titulo": "Química no NOIC", "descricao": "Materiais e problemas de quem já competiu.", "tipo": "Guia", "url": "https://noic.com.br/olimpiadas/quimica/", "oficial": false, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": "Biologia", "titulo": "Provas da OBB", "descricao": "Provas, gabaritos e classificações, no site do Instituto Butantan.", "tipo": "Provas", "url": "https://olimpiadasdebiologia.butantan.gov.br/provas-gabaritos-e-classificacoes", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": "Biologia", "titulo": "Biologia no NOIC", "descricao": "Materiais e problemas de quem já competiu.", "tipo": "Guia", "url": "https://noic.com.br/olimpiadas/biologia/", "oficial": false, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": "Astronomia", "titulo": "Provas e gabaritos da OBA", "descricao": "Da edição de 2026 para trás, por nível.", "tipo": "Provas", "url": "https://site.oba.org.br/provas-e-gabaritos", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": "Astronomia", "titulo": "Stellarium Web", "descricao": "Mapa do céu no navegador, para achar o que a prova pergunta.", "tipo": "Prática", "url": "https://stellarium-web.org/", "oficial": false, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": "Astronomia", "titulo": "Astronomia no NOIC", "descricao": "Materiais e problemas de quem já competiu.", "tipo": "Guia", "url": "https://noic.com.br/olimpiadas/astronomia/", "oficial": false, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": "Para todas", "titulo": "Simulações PhET", "descricao": "Simulações gratuitas de física, química e biologia, da Universidade do Colorado.", "tipo": "Prática", "url": "https://phet.colorado.edu/pt_BR/", "oficial": false, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": "Para todas", "titulo": "Khan Academy", "descricao": "Aulas e exercícios gratuitos para estudantes, em português.", "tipo": "Curso", "url": "https://pt.khanacademy.org/", "oficial": false, "nota": null, "conferidoEm": "2026-11-04" }
+      ],
+      "oportunidades": ["oba", "obafog", "obfep", "obf", "ocf", "ocq", "oqep", "obq", "quimeninas", "obb", "tnbio"],
+      "jogos": ["lancamento", "balanco"]
+    },
+    {
+      "slug": "humanas",
+      "titulo": "Humanas e história",
+      "resumo": "História, geografia e filosofia. Aqui o treino é ler fonte, comparar visões e escrever bem.",
+      "comecar": [
+        "Comece pela OCHE, se você é do Ceará: as provas de anos anteriores estão abertas no IFCE.",
+        "Faça uma prova antiga com calma e anote de onde veio cada resposta.",
+        "Na filosofia, treine escrevendo: leia os ensaios premiados e tente um seu."
+      ],
+      "aviso": "O site da ONHB exibia aviso de manutenção em 04/11/2026, com data de 23/10/2026. Por isso, ele fica fora da lista de materiais por enquanto. As informações estão na ficha da olimpíada.",
+      "oQueCai": [
+        { "texto": "ONHB: o participante assume o papel de historiador e investiga os pontos de vista presentes em episódios da história do Brasil.", "fonte": { "rotulo": "Ficha da ONHB no Radar", "url": "/oportunidade/onhb/", "conferidoEm": "2026-11-04" } },
+        { "texto": "OCHE: estimula o estudo de História, Geografia, Cultura, Economia e Meio Ambiente.", "fonte": { "rotulo": "Ficha da OCHE no Radar", "url": "/oportunidade/oche/", "conferidoEm": "2026-11-04" } },
+        { "texto": "ONFIL: em até quatro horas, cada participante escreve um ensaio sobre um de quatro tópicos, revelados só no dia da prova.", "fonte": { "rotulo": "Site da ONFIL", "url": "https://onfilbr.org/", "conferidoEm": "2026-11-04" } },
+        { "texto": "OBG: provas em fases, com gabarito publicado em cada edição.", "fonte": { "rotulo": "Edições anteriores da OBG", "url": "https://obgeografia.com.br/edicoes-anteriores/", "conferidoEm": "2026-11-04" } }
+      ],
+      "materiais": [
+        { "grupo": null, "titulo": "Documentos da OCHE 2025", "descricao": "Provas e gabaritos das fases, no IFCE. O site da OCHE lista as outras edições.", "tipo": "Provas", "url": "https://portal.ifce.edu.br/institucional/pesquisa-pos-graduacao-e-inovacao/editais/oche-2025/", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Edições anteriores da OBG", "descricao": "Provas e gabaritos da Olimpíada Brasileira de Geografia, de 2015 a 2025.", "tipo": "Provas", "url": "https://obgeografia.com.br/edicoes-anteriores/", "oficial": true, "nota": "Alguns anos estão incompletos no próprio site.", "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Materiais de apoio da ONFIL", "descricao": "Provas e ensaios medalhistas da Olimpíada Nacional de Filosofia.", "tipo": "Provas", "url": "https://onfilbr.org/materiais/", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "História no NOIC", "descricao": "Como estudar, materiais, comentário de questões da ONHB e da OCHE, e dicas culturais.", "tipo": "Guia", "url": "https://noic.com.br/olimpiadas/historia/", "oficial": false, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Provas e gabaritos do Enem", "descricao": "Arquivo oficial do Inep. A área de Ciências Humanas ajuda no treino de leitura de fontes.", "tipo": "Banco de questões", "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos", "oficial": true, "nota": "Não é prova de olimpíada.", "conferidoEm": "2026-11-04" }
+      ],
+      "oportunidades": ["onhb", "onhb-a", "oche", "obg", "onfil", "oscear", "obapo"],
+      "jogos": ["linha-do-tempo"]
+    },
+    {
+      "slug": "tecnologia",
+      "titulo": "Tecnologia",
+      "resumo": "Lógica, programação e robótica. Não precisa de computador caro nem de saber programar para começar.",
+      "comecar": [
+        "Nunca programou? Faça o Desafio da Semana do Bebras e a modalidade Iniciação da OBI: nenhuma das duas pede programação.",
+        "Quer aprender a programar? O curso Saci, da OBI, é grátis e roda no navegador.",
+        "Depois, resolva tarefas de provas antigas na área Pratique e veja se a sua solução passa."
+      ],
+      "aviso": null,
+      "oQueCai": [
+        { "texto": "OBI: as ementas definem o que pode ser cobrado em cada nível. A modalidade Iniciação não tem ementa e não exige conhecimento prévio.", "fonte": { "rotulo": "Material de estudo da OBI", "url": "https://olimpiada.ic.unicamp.br/prepare/estude/", "conferidoEm": "2026-11-04" } },
+        { "texto": "Bebras: 12 questões de raciocínio lógico e estratégia, sem exigir programação ou robótica.", "fonte": { "rotulo": "Site do Bebras Brasil", "url": "https://www.bebrasbrasil.com.br/", "conferidoEm": "2026-11-04" } },
+        { "texto": "OBR teórica: problemas de robótica resolvidos com o que se aprende na escola, como ciências, matemática e linguagens.", "fonte": { "rotulo": "Modalidade teórica da OBR", "url": "https://obr.robocup.org.br/modalidade-teorica/", "conferidoEm": "2026-11-04" } }
+      ],
+      "materiais": [
+        { "grupo": null, "titulo": "Pratique, da OBI", "descricao": "Envie soluções para tarefas de provas anteriores e veja se estão corretas.", "tipo": "Prática", "url": "https://olimpiada.ic.unicamp.br/pratique/", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Ementas da OBI", "descricao": "O que pode cair em cada nível e modalidade.", "tipo": "Guia", "url": "https://olimpiada.ic.unicamp.br/prepare/ementas/", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Curso Saci", "descricao": "Programação para iniciantes, com blocos e Python, sem instalar nada.", "tipo": "Curso", "url": "https://olimpiada.ic.unicamp.br/saci", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Provas anteriores do Bebras", "descricao": "Questões de pensamento computacional já usadas.", "tipo": "Provas", "url": "https://www.bebrasbrasil.com.br/provasanteriores", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Desafio da Semana do Bebras", "descricao": "Uma questão por semana, da comunidade internacional do Bebras.", "tipo": "Prática", "url": "https://www.bebrasbrasil.com.br/desafio-da-semana", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Modalidade teórica da OBR", "descricao": "Como funcionam as provas teóricas de robótica, por nível.", "tipo": "Guia", "url": "https://obr.robocup.org.br/modalidade-teorica/", "oficial": true, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Neps Academy", "descricao": "Plataforma de programação criada por ex-competidores, indicada pela própria OBI.", "tipo": "Curso", "url": "https://neps.academy/br", "oficial": false, "nota": "Dá para começar de graça. Também tem plano pago.", "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Informática no NOIC", "descricao": "Materiais e resoluções comentadas de provas da OBI.", "tipo": "Guia", "url": "https://noic.com.br/olimpiadas/informatica/", "oficial": false, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "Scratch", "descricao": "Programação em blocos do MIT, para criar jogos e histórias.", "tipo": "Prática", "url": "https://scratch.mit.edu/", "oficial": false, "nota": null, "conferidoEm": "2026-11-04" },
+        { "grupo": null, "titulo": "CS50x", "descricao": "Curso de introdução à computação de Harvard, com aulas dubladas em português.", "tipo": "Curso", "url": "https://cs50.harvard.edu/x/", "oficial": false, "nota": "Exercícios e site em inglês.", "conferidoEm": "2026-11-04" }
+      ],
+      "oportunidades": ["obi", "cf-obi", "oci", "obr", "bebras", "onia", "obt", "onda"],
+      "jogos": ["algoritmo"]
+    }
+  ]
+}

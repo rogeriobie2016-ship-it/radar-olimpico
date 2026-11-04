@@ -150,3 +150,148 @@ export type Meta = z.infer<typeof metaSchema>;
 export type Novidade = z.infer<typeof novidadeSchema>;
 export type CearaCientifico = z.infer<typeof cearaCientificoSchema>;
 export type Joc = z.infer<typeof jocSchema>;
+
+// Biblioteca de Estudos: conteúdo em data/estudos/, editável sem programar.
+const conferido = data;
+/** Link externo ou caminho interno do site, como /oportunidade/obmep/. */
+const endereco = z.string().regex(/^(https:\/\/|http:\/\/|\/)/, "use um link completo (https://) ou um caminho do site (/estudos/)");
+const textoCurto = z.string().min(2);
+const idSimples = z.string().regex(/^[a-z0-9-]+$/, "use só letras minúsculas, números e hífen");
+
+const fonteLink = z.object({ rotulo: textoCurto, url: endereco, conferidoEm: conferido });
+
+export const tecnicasSchema = z
+  .object({
+    comentario: z.string(),
+    introducao: textoCurto,
+    tecnicas: z.array(
+      z.object({
+        id: idSimples,
+        titulo: textoCurto,
+        gancho: textoCurto,
+        passos: z.array(textoCurto).min(1),
+        pesquisa: z.array(z.object({ texto: textoCurto, fontes: z.array(z.string()).min(1, "toda afirmação precisa de fonte") })).min(1),
+        cuidado: z.string().nullable(),
+        ferramenta: z.object({ rotulo: textoCurto, href: endereco }).nullable(),
+      }),
+    ),
+    pausas: z.object({ texto: textoCurto, fontes: z.array(z.string()).min(1, "toda afirmação precisa de fonte") }),
+    fontes: z.array(z.object({ id: z.string(), citacao: textoCurto, referencia: textoCurto, url: z.url(), conferidoEm: conferido })),
+  })
+  .superRefine((d, ctx) => {
+    const ids = new Set(d.fontes.map((f) => f.id));
+    d.tecnicas.forEach((t, i) =>
+      t.pesquisa.forEach((p, j) =>
+        p.fontes.forEach((f) => {
+          if (!ids.has(f)) ctx.addIssue({ code: "custom", path: ["tecnicas", i, "pesquisa", j, "fontes"], message: `fonte inexistente: ${f}` });
+        }),
+      ),
+    );
+    d.pausas.fontes.forEach((f) => {
+      if (!ids.has(f)) ctx.addIssue({ code: "custom", path: ["pausas", "fontes"], message: `fonte inexistente: ${f}` });
+    });
+  });
+
+export const areasEstudoSchema = z.object({
+  comentario: z.string(),
+  areas: z.array(
+    z.object({
+      slug: idSimples,
+      titulo: textoCurto,
+      resumo: textoCurto,
+      comecar: z.array(textoCurto).min(1),
+      aviso: z.string().nullable(),
+      oQueCai: z.array(z.object({ texto: textoCurto, fonte: fonteLink })).min(1),
+      materiais: z
+        .array(
+          z.object({
+            grupo: z.string().nullable(),
+            titulo: textoCurto,
+            descricao: textoCurto,
+            tipo: z.enum(["Provas", "Banco de questões", "Curso", "Guia", "Prática"]),
+            url: z.url(),
+            oficial: z.boolean(),
+            nota: z.string().nullable(),
+            conferidoEm: conferido,
+          }),
+        )
+        .min(1),
+      oportunidades: z.array(z.string()),
+      jogos: z.array(z.string()),
+    }),
+  ),
+});
+
+export const TIPOS_CULTURA = ["filme", "documentario", "livro", "podcast", "canal", "lugar"] as const;
+
+export const culturaSchema = z.object({
+  comentario: z.string(),
+  itens: z.array(
+    z.object({
+      id: idSimples,
+      tipo: z.enum(TIPOS_CULTURA),
+      titulo: textoCurto,
+      autoria: textoCurto,
+      ano: z.string().nullable(),
+      descricao: textoCurto,
+      classificacao: z.object({ texto: textoCurto, url: z.url() }).nullable(),
+      gratuito: z.boolean().nullable(),
+      dominioPublico: z.boolean(),
+      ceara: z.boolean(),
+      nota: z.string().nullable(),
+      link: z.object({ rotulo: textoCurto, url: z.url() }),
+      imagem: z
+        .object({
+          src: endereco,
+          alt: textoCurto,
+          fonte: z.url(),
+          licenca: textoCurto,
+          largura: z.number().positive(),
+          altura: z.number().positive(),
+        })
+        .nullable(),
+      conferidoEm: conferido,
+    }),
+  ),
+});
+
+export const baralhosSchema = z.object({
+  comentario: z.string(),
+  baralhos: z.array(
+    z
+      .object({
+        id: idSimples,
+        titulo: textoCurto,
+        resumo: textoCurto,
+        fonte: fonteLink,
+        cartas: z.array(z.object({ frente: z.string().min(1), verso: z.string().min(1) })).min(1),
+      })
+      .superRefine((b, ctx) => {
+        const vistas = new Set<string>();
+        b.cartas.forEach((c, i) => {
+          if (vistas.has(c.frente)) ctx.addIssue({ code: "custom", path: ["cartas", i, "frente"], message: `frente repetida: ${c.frente}` });
+          vistas.add(c.frente);
+        });
+      }),
+  ),
+});
+
+export type Tecnicas = z.infer<typeof tecnicasSchema>;
+export type AreasEstudo = z.infer<typeof areasEstudoSchema>;
+export type AreaEstudo = AreasEstudo["areas"][number];
+export type Cultura = z.infer<typeof culturaSchema>;
+export type ItemCultura = Cultura["itens"][number];
+export type Baralhos = z.infer<typeof baralhosSchema>;
+
+/** Ligações entre arquivos que o Zod sozinho não enxerga: fichas e jogos citados precisam existir. */
+export function problemasEstudos(areas: AreasEstudo, idsOportunidades: Set<string>, slugsJogos: Set<string>): string[] {
+  const problemas: string[] = [];
+  const slugs = new Set<string>();
+  for (const a of areas.areas) {
+    if (slugs.has(a.slug)) problemas.push(`slug repetido em areas.json: ${a.slug}`);
+    slugs.add(a.slug);
+    for (const id of a.oportunidades) if (!idsOportunidades.has(id)) problemas.push(`área "${a.titulo}": a ficha "${id}" não existe em oportunidades.json`);
+    for (const j of a.jogos) if (!slugsJogos.has(j)) problemas.push(`área "${a.titulo}": o jogo "${j}" não existe em src/lib/jogos.ts`);
+  }
+  return problemas;
+}

@@ -3,7 +3,8 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { ZodType } from "zod";
-import { cearaCientificoSchema, jocSchema, metaSchema, novidadesSchema, oportunidadesSchema } from "../src/lib/schema";
+import { JOGOS } from "../src/lib/jogos";
+import { areasEstudoSchema, baralhosSchema, cearaCientificoSchema, culturaSchema, jocSchema, metaSchema, novidadesSchema, oportunidadesSchema, problemasEstudos, tecnicasSchema, type AreasEstudo, type Oportunidade } from "../src/lib/schema";
 
 const pasta = join(process.cwd(), "data");
 const arquivos: [string, ZodType][] = [
@@ -12,6 +13,10 @@ const arquivos: [string, ZodType][] = [
   ["joc.json", jocSchema],
   ["meta.json", metaSchema],
   ["novidades.json", novidadesSchema],
+  ["estudos/tecnicas.json", tecnicasSchema],
+  ["estudos/areas.json", areasEstudoSchema],
+  ["estudos/cultura.json", culturaSchema],
+  ["estudos/baralhos.json", baralhosSchema],
 ];
 
 let erros = 0;
@@ -39,6 +44,19 @@ for (const [nome, schema] of arquivos) {
   } else {
     console.log(`✓ ${nome}${Array.isArray(json) ? `: ${json.length} itens` : ""}`);
   }
+}
+
+// A Biblioteca de Estudos liga áreas a fichas e jogos: tudo o que ela cita precisa existir.
+const lerJson = (nome: string) => JSON.parse(readFileSync(join(pasta, nome), "utf-8")) as unknown;
+try {
+  const ids = new Set((lerJson("oportunidades.json") as Oportunidade[]).map((o) => o.id));
+  const problemas = problemasEstudos(lerJson("estudos/areas.json") as AreasEstudo, ids, new Set(JOGOS.map((j) => j.slug)));
+  for (const p of problemas) {
+    erros++;
+    console.error(`\n✗ estudos/areas.json: ${p}`);
+  }
+} catch {
+  // JSON inválido já foi avisado acima.
 }
 
 if (erros) {

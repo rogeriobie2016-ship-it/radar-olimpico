@@ -1,0 +1,58 @@
+{
+  "comentario": "Baralhos prontos. Conferidos em 2026-11-04. Mudar a frente de uma carta faz o aparelho tratá-la como carta nova. Use só fatos com fonte registrada em fonte.",
+  "baralhos": [
+    {
+      "id": "como-estudar",
+      "titulo": "Como estudar",
+      "resumo": "As ideias desta biblioteca, para testar agora.",
+      "fonte": { "rotulo": "Página Como estudar", "url": "/estudos/como-estudar/", "conferidoEm": "2026-11-04" },
+      "cartas": [
+        { "frente": "O que é recuperação ativa?", "verso": "Fechar o material e tentar lembrar sem olhar." },
+        { "frente": "Reler ganha de se testar quando?", "verso": "Só minutos depois do estudo. Dias depois, quem se testou lembra mais." },
+        { "frente": "O que é repetição espaçada?", "verso": "Rever o assunto em sessões separadas por um intervalo, em vez de tudo de uma vez." },
+        { "frente": "Quanto mais longe a prova, o intervalo entre revisões deve...", "verso": "Aumentar." },
+        { "frente": "O que é intercalação?", "verso": "Misturar tipos de questão, para escolher o método a cada uma." },
+        { "frente": "Por que explicar para alguém ajuda?", "verso": "Mostra o que você entendeu e onde ainda trava." },
+        { "frente": "Como treinar com prova antiga?", "verso": "Tempo marcado, sem consulta, gabarito só no fim." },
+        { "frente": "Trocar sono por estudo além do normal costuma causar o quê no dia seguinte?", "verso": "Mais dificuldade para entender a aula e para ir bem em tarefa ou prova." },
+        { "frente": "Quanto sono é recomendado dos 13 aos 18 anos?", "verso": "De 8 a 10 horas em 24 horas." }
+      ]
+    },
+    {
+      "id": "simbolos-quimicos",
+      "titulo": "Símbolos químicos",
+      "resumo": "Doze elementos que aparecem o tempo todo.",
+      "fonte": { "rotulo": "Tabela periódica da IUPAC", "url": "https://iupac.org/what-we-do/periodic-table-of-elements/", "conferidoEm": "2026-11-04" },
+      "cartas": [
+        { "frente": "Na", "verso": "Sódio" },
+        { "frente": "K", "verso": "Potássio" },
+        { "frente": "Fe", "verso": "Ferro" },
+        { "frente": "Cu", "verso": "Cobre" },
+        { "frente": "Ag", "verso": "Prata" },
+        { "frente": "Au", "verso": "Ouro" },
+        { "frente": "Pb", "verso": "Chumbo" },
+        { "frente": "Hg", "verso": "Mercúrio" },
+        { "frente": "P", "verso": "Fósforo" },
+        { "frente": "S", "verso": "Enxofre" },
+        { "frente": "Sn", "verso": "Estanho" },
+        { "frente": "Mg", "verso": "Magnésio" }
+      ]
+    },
+    {
+      "id": "sistema-solar",
+      "titulo": "Planetas do Sistema Solar",
+      "resumo": "A ordem e alguns destaques, para a OBA.",
+      "fonte": { "rotulo": "NASA: About the Planets", "url": "https://science.nasa.gov/solar-system/planets/", "conferidoEm": "2026-11-04" },
+      "cartas": [
+        { "frente": "Qual é o planeta mais perto do Sol?", "verso": "Mercúrio" },
+        { "frente": "Qual planeta vem logo depois da Terra, contando a partir do Sol?", "verso": "Marte" },
+        { "frente": "Qual é o maior planeta do Sistema Solar?", "verso": "Júpiter" },
+        { "frente": "Quantos planetas tem o Sistema Solar?", "verso": "Oito" },
+        { "frente": "Qual é o planeta mais distante do Sol?", "verso": "Netuno" },
+        { "frente": "Quais são os quatro planetas rochosos?", "verso": "Mercúrio, Vênus, Terra e Marte" },
+        { "frente": "Quais são os dois gigantes gasosos?", "verso": "Júpiter e Saturno" },
+        { "frente": "Quais são os dois gigantes de gelo?", "verso": "Urano e Netuno" }
+      ]
+    }
+  ]
+}
