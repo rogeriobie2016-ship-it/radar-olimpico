@@ -62,8 +62,12 @@ export function Busca() {
 
   return (
     <>
-      <button type="button" onClick={abrir} className="min-h-11 px-1 text-[0.9375rem] font-medium">
-        Buscar
+      <button type="button" onClick={abrir} aria-label="Buscar" className="grid min-h-11 min-w-9 place-items-center px-1 text-[0.9375rem] font-medium">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" aria-hidden="true" className="lg:hidden">
+          <circle cx="10.5" cy="10.5" r="6.5" />
+          <path d="M15.5 15.5L21 21" />
+        </svg>
+        <span className="hidden lg:inline">Buscar</span>
       </button>
       <dialog ref={dialogo} aria-label="Buscar oportunidades" className="tela-cheia">
         <div className="mx-auto flex h-full max-w-3xl flex-col px-4">

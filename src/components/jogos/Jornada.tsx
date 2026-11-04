@@ -1,5 +1,6 @@
 "use client";
 
+import { tocar } from "@/lib/som";
 import { useMemo, useState } from "react";
 import { Fala } from "@/components/Fala";
 import { Placar, type AoTerminar } from "./Molde";
@@ -163,6 +164,7 @@ export default function Jornada({ aoTerminar }: { aoTerminar: AoTerminar }) {
     if (resposta) return;
     setResposta(o);
     setNotas((n) => [...n, o.nota]);
+    tocar(o.nota === 2 ? "acerto" : o.nota === 1 ? "passo" : "erro");
   };
 
   const continuar = () => {

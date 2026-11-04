@@ -28,6 +28,8 @@ export const oportunidadeSchema = z.object({
   inscricoes: z.object({ inicio: data.nullable(), fim: data.nullable() }),
   provas: z.array(z.object({ fase: z.string(), data })),
   linkOficial: z.url().nullable(),
+  instagram: z.url().nullable().optional(),
+  idiomas: z.array(z.string()).nullable().optional(),
   comoParticipar: z.array(z.string()),
   desbloqueia: z.array(
     z.object({ tipo: z.enum(["medalha", "vaga-olimpica", "bolsa", "credenciamento"]), texto: z.string() }),

@@ -1,5 +1,6 @@
 "use client";
 
+import { Carrossel } from "./Carrossel";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "./L";
 import { LogoOlimpiada } from "./LogoOlimpiada";
@@ -235,10 +236,10 @@ export function Expedicao({ escondidas, abertas }: { escondidas: Escondida[]; ab
         </div>
 
         {/* Mascotes: tocar troca quem guia */}
-        <button type="button" onClick={() => escolher(outro)} aria-label="Trocar de guia" className="absolute bottom-[6.6rem] right-1 z-10 w-[7.25rem] transition-transform duration-300 hover:-translate-y-2 sm:w-44 lg:bottom-6 lg:right-10 lg:w-64">
+        <button type="button" onClick={() => escolher(outro)} aria-label="Trocar de guia" className="absolute bottom-[10.2rem] right-1 z-10 w-[6.5rem] transition-transform duration-300 hover:-translate-y-2 sm:w-44 lg:bottom-6 lg:right-10 lg:w-64">
           <Mascote quem={quem} pose={achadas.length ? "comemora" : "lupa"} falando prioridade />
         </button>
-        <div className="flutua pointer-events-none absolute bottom-[8.6rem] left-1 z-[5] w-[5.5rem] sm:w-32 lg:bottom-16 lg:left-auto lg:right-[22rem] lg:w-44" style={{ animationDelay: "-2s" }}>
+        <div className="flutua pointer-events-none absolute bottom-[12.4rem] left-1 z-[5] w-[5rem] sm:w-32 lg:bottom-16 lg:left-auto lg:right-[22rem] lg:w-44" style={{ animationDelay: "-2s" }}>
           <Mascote quem={outro} pose={outro === "menino" ? "foguete" : "tubo"} prioridade />
         </div>
 
@@ -281,6 +282,9 @@ export function Expedicao({ escondidas, abertas }: { escondidas: Escondida[]; ab
           <p role="status" className="balao max-w-[15rem] self-start !text-[0.875rem] lg:max-w-[18rem]">
             {fala}
           </p>
+          <Link href="/laboratorio/" className="btn btn-marca w-full sm:w-auto sm:self-start">
+            Entrar no Laboratório 3D →
+          </Link>
           <div className="grid grid-cols-[1fr_auto] gap-2 sm:flex [&_.btn]:whitespace-nowrap max-sm:[&_.btn]:px-3.5">
             <Link href="/escada/" className="btn btn-primario">
               Descobrir a minha
@@ -293,18 +297,18 @@ export function Expedicao({ escondidas, abertas }: { escondidas: Escondida[]; ab
       </div>
 
       {achadas.length > 0 && (
-        <ul className="rolagem-x !mx-0 border-b border-linha bg-fundo-2 py-2.5" aria-label="Olimpíadas encontradas">
+        <Carrossel rotulo="Olimpíadas encontradas" compacto classe="rolagem-x !mx-0 border-b border-linha bg-fundo-2 py-2.5">
           {achadas.map((id) => {
             const e = escondidas.find((x) => x.id === id)!;
             return (
-              <li key={id}>
+              <span key={id}>
                 <Link href={`/oportunidade/${e.slug}/`} className="achado-link block" aria-label={`Ver ${e.nome}`}>
                   <LogoOlimpiada id={e.id} nome={e.nome} sigla={e.sigla} className="h-14 w-20" />
                 </Link>
-              </li>
+              </span>
             );
           })}
-        </ul>
+        </Carrossel>
       )}
     </section>
   );

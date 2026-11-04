@@ -1,5 +1,6 @@
 "use client";
 
+import { BotaoSom } from "./Som";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { Busca } from "./Busca";
@@ -53,34 +54,35 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
   return (
     <>
       <header className="sticky top-0 z-40 border-b border-linha bg-fundo/90 backdrop-blur-md">
-        <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-6 px-4">
-          <Link href="/" className="estreito flex items-center gap-2 text-[1.2rem] uppercase leading-none no-underline">
+        <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-2 px-4 sm:gap-6">
+          <Link href="/" className="estreito flex shrink-0 items-center gap-2 text-[1.05rem] min-[380px]:text-[1.2rem] uppercase leading-none no-underline">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={asset("/icons/favicon-96.png")} alt="" width={36} height={36} className="rounded-lg" />
             <span>
-              Radar <span className="text-amarelo">Olímpico</span>
+              Radar <span className="block text-amarelo xl:inline">Olímpico</span>
             </span>
           </Link>
           <nav aria-label="Principal" className="hidden items-center gap-0.5 xl:gap-2 lg:flex">
-            {NAV_COMPLETA.slice(0, 7).map((n) => (
+            {NAV_COMPLETA.filter((n) => n.href !== "/novidades/").slice(0, 7).map((n) => (
               <Link
                 key={n.href}
                 href={n.href}
                 aria-current={ativo(n.href) ? "page" : undefined}
-                className={`whitespace-nowrap rounded-full px-3 py-1.5 text-[0.9375rem] font-bold no-underline transition-colors hover:bg-fundo-2 ${ativo(n.href) ? "bg-turquesa !text-[#05272a]" : ""}`}
+                className={`${n.href === "/ceara-cientifico/" || n.href === "/joc/" ? "max-xl:hidden " : ""}whitespace-nowrap rounded-full px-3 py-1.5 text-[0.9375rem] font-bold no-underline transition-colors hover:bg-fundo-2 ${ativo(n.href) ? "bg-turquesa !text-[#05272a]" : ""}`}
               >
                 {n.rotulo}
               </Link>
             ))}
           </nav>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-1.5 sm:gap-4">
             {temNovo && (
-              <Link href="/novidades/" className="selo-novidade no-underline">
+              <Link href="/novidades/" className="selo-novidade no-underline max-[349px]:hidden">
                 NOVIDADE
               </Link>
             )}
             <Busca />
-            <button type="button" onClick={() => menu.current?.showModal()} className="min-h-11 text-[0.9375rem] font-medium lg:hidden">
+            <BotaoSom />
+            <button type="button" onClick={() => menu.current?.showModal()} className="min-h-11 text-[0.9375rem] font-medium xl:hidden">
               Menu
             </button>
           </div>
@@ -88,7 +90,7 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
       </header>
 
       {/* Barra inferior só com texto: o polegar alcança, e nada compete com o conteúdo. */}
-      <nav aria-label="Atalhos" className="sem-print fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 gap-1 border-t border-linha bg-fundo/95 p-1.5 pb-[calc(0.375rem+env(safe-area-inset-bottom))] backdrop-blur-md lg:hidden">
+      <nav aria-label="Atalhos" className="sem-print fixed inset-x-0 bottom-0 z-40 grid grid-cols-5 gap-1 border-t border-linha bg-fundo/95 p-1.5 pb-[calc(0.375rem+env(safe-area-inset-bottom))] backdrop-blur-md lg:hidden">
         {NAV_INFERIOR.map((n) => (
           <Link
             key={n.href}

@@ -1,5 +1,6 @@
 "use client";
 
+import { tocar } from "@/lib/som";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Fala } from "@/components/Fala";
 import { Placar, type AoTerminar } from "./Molde";
@@ -182,10 +183,12 @@ export default function EscadaJogo({ aoTerminar, dados }: { aoTerminar: AoTermin
       if (degraus[e.passo] !== dir) {
         e.tempo -= 1.4;
         e.tremer = 1;
+        tocar("erro");
         if (navigator.vibrate) navigator.vibrate(40);
         return;
       }
       e.passo += 1;
+      tocar("passo", 1 + e.passo * 0.012);
       e.tempo = Math.min(e.max, e.tempo + 0.42);
       setPasso(e.passo);
       if (e.passo >= totalDegraus) {
@@ -219,6 +222,7 @@ export default function EscadaJogo({ aoTerminar, dados }: { aoTerminar: AoTermin
     if (!questao || resposta) return;
     setResposta(o);
     const certa = o === questao.certa;
+    tocar(certa ? "acerto" : "erro");
     if (certa) {
       acertosRef.current += 1;
       setAcertos(acertosRef.current);

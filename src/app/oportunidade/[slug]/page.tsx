@@ -77,7 +77,7 @@ export default async function PaginaOportunidade({ params }: Props) {
 
   return (
     <article className="mx-auto grid max-w-6xl gap-10 px-4 pt-4 lg:grid-cols-[1.4fr_1fr] lg:gap-14">
-      <div className="flex flex-col gap-10">
+      <div className="flex min-w-0 flex-col gap-10">
         <header className="flex flex-col gap-4">
           <Link href="/radar/" className="sem-print inline-flex min-h-11 items-center gap-2 self-start text-[0.9375rem] font-medium no-underline">
             <Seta direcao="esquerda" tamanho={16} />
@@ -89,9 +89,9 @@ export default async function PaginaOportunidade({ params }: Props) {
               {ROTULO_TIPO[o.tipo]}, {ROTULO_NIVEL[o.nivel].toLowerCase()}
             </span>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex min-w-0 items-center gap-4">
             <LogoOlimpiada id={o.id} nome={o.nome} sigla={o.sigla} className="size-28 sm:size-36" lazy={false} />
-            <h1 className="!text-[clamp(1.75rem,6.5vw,3.25rem)] !normal-case">{o.nome}</h1>
+            <h1 className="min-w-0 !text-[clamp(1.5rem,6.5vw,3.25rem)] !normal-case">{o.nome}</h1>
           </div>
           {o.descricao && <p className="max-w-2xl">{o.descricao}</p>}
         </header>
@@ -194,6 +194,14 @@ export default async function PaginaOportunidade({ params }: Props) {
                 <AConfirmar />
               )}
             </Linha>
+            {o.instagram && (
+              <Linha rotulo="Instagram">
+                <a href={o.instagram} target="_blank" rel="noopener noreferrer" className="link break-words">
+                  {o.instagram.includes("/p/") ? "Ver o post de divulgação" : o.instagram.replace(/^https?:\/\/(www\.)?instagram\.com\//, "@").replace(/\/$/, "")}
+                </a>
+              </Linha>
+            )}
+            {o.idiomas && o.idiomas.length > 0 && <Linha rotulo="Idioma pedido">{o.idiomas.join(", ")}</Linha>}
           </dl>
         </Bloco>
 

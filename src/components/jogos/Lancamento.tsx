@@ -1,5 +1,6 @@
 "use client";
 
+import { tocar } from "@/lib/som";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Fala } from "@/components/Fala";
 import { Placar, type AoTerminar } from "./Molde";
@@ -123,6 +124,7 @@ export default function Lancamento({ aoTerminar }: { aoTerminar: AoTerminar }) {
   const lancar = () => {
     if (voando) return;
     setVoando(true);
+    tocar("lancar");
     const rad = (angulo * Math.PI) / 180;
     let vx = velocidade * Math.cos(rad);
     const vy0 = velocidade * Math.sin(rad);
@@ -143,6 +145,8 @@ export default function Lancamento({ aoTerminar }: { aoTerminar: AoTerminar }) {
         const queda = x;
         const erro = Math.abs(queda - alvo);
         const ganho = pontuacao(erro);
+        tocar("pouso");
+        if (ganho > 0) tocar("acerto");
         rastros.current.push(atual.current);
         desenhar({ x: queda, y: 0 });
         const total = pontos + ganho;

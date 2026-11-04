@@ -12,6 +12,8 @@ Encontrar olimpíadas do conhecimento, feiras e eventos científicos com inscri�
 2. Pesquise na web em português. Comece por:
    - "olimpíadas inscrições abertas" com o mês e o ano atuais
    - "olimpíada científica ensino médio inscrições" com o ano atual e o seguinte
+   - bolsas, intercâmbios, feiras internacionais e programas acadêmicos para estudantes de ensino médio de escola pública: agências da ONU, embaixadas, Brazil Conference, programas de universidades
+   - edital novo das oportunidades internacionais de `oportunidades.json` que estão com prazo vazio
    - novas edições das olimpíadas de `oportunidades.json` que têm `inscricoes.fim` no passado ou nulo, priorizando OBMEP, OBA, ONHB, OBR, OBI, ONC, FEBRACE, OCQ, OQEP, OCHE, OMIFCE e Ceará Científico
 3. Abra a página oficial de cada achado. Portal de notícia serve para descobrir, nunca como única fonte de um prazo.
 4. Registre só o que leu na fonte, conforme o formato abaixo.

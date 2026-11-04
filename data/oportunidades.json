@@ -21,7 +21,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição anual de matemática para países da região do Pacífico, iniciada em 1989, com prova de cinco questões em quatro horas. Cada país participante tem um representante que organiza a prova localmente.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -185,7 +185,7 @@
       "tipo": "gratuito",
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição opcional na modalidade Programação da OBI, que busca incentivar a participação feminina e não afeta a classificação na OBI. Tem quatro níveis conforme a série e é realizada presencialmente na escola, com inscrição feita pelo coordenador local.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -348,7 +348,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição europeia de matemática para estudantes do ensino médio do sexo feminino, iniciada pelo Reino Unido em 2012 e hoje com mais de sessenta países. A participação é só por convite, e cada país indica até quatro estudantes.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -403,7 +403,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição internacional anual de ciência da computação para jovens mulheres, no estilo da International Olympiad in Informatics, com sede em um país diferente a cada ano.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -458,7 +458,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Olimpíada Europeia de Física, com edição de 2026 realizada em Gotemburgo, na Suécia.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -544,7 +544,9 @@
       "Depois de participar, avise a escola para registrar no Portal Educação Científica."
     ],
     "desbloqueia": [],
-    "credenciaPara": [],
+    "credenciaPara": [
+      "regeneron-isef"
+    ],
     "financiavelJOC": true,
     "fonte": "Folder FEBRACE 2027, consultado em 03/11/2026; Catálogo 2026, p. 69",
     "aConfirmar": true,
@@ -796,7 +798,7 @@
       "tipo": "gratuito",
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição de geoinformação com o lema \"Inspirando a próxima geração de geocientistas\".",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -843,7 +845,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição de biologia para estudantes do ensino médio no mundo todo. Participam a cada ano os vencedores das olimpíadas nacionais de biologia de mais de 70 países e regiões.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -953,7 +955,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Olimpíada Internacional de Química, realizada em países anfitriões, como o Uzbequistão em 2026 e Taipé Chinês em 2027. A participação é por equipes, conforme o regulamento.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -1008,7 +1010,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição internacional de matemática realizada em edições anuais, com prova, participantes e júri. A edição de 2026 foi em Xangai e a de 2027 será em Budapeste, na Hungria.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -1063,7 +1065,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Projeto internacional da Universidade Estatal de Moscou Lomonosov e da Fundação Andrey Melnichenko, voltado a apoiar e desenvolver jovens talentos em química.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -1118,7 +1120,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Uma das cinco olimpíadas científicas internacionais, busca despertar o entusiasmo pela informática e pela tecnologia da informação. Reúne estudantes de grande talento de vários países para trocar experiências científicas e culturais.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -1173,7 +1175,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Olimpíada internacional de astronomia e astrofísica para estudantes do ensino médio de alto desempenho, que busca ampliar o interesse dos jovens por astronomia e áreas de STEM. A 19ª edição foi marcada para 2026 em Hanói, no Vietnã.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -1228,7 +1230,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição anual de física para estudantes do ensino secundário, realizada em países anfitriões diferentes, com duração de nove a dez dias. Cada equipe nacional tem até cinco estudantes e dois líderes.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -1575,7 +1577,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Olimpíada Brasileira Online de Física Experimental, competição online e gratuita criada pelo NOIC para incentivar estudantes na física experimental e promover o interesse pela ciência entre jovens brasileiros.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -1923,7 +1925,7 @@
       "tipo": "gratuito",
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição nacional que promove a educação em biologia sintética por meio de desafios interdisciplinares, organizada pela SynBioBR com apoio do Arco Instituto. É voltada a estudantes do 6º ao 9º ano do Ensino Fundamental e do Ensino Médio de escolas públicas e privadas.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -2023,7 +2025,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição gratuita de economia, educação financeira e negócios para estudantes do Ensino Médio ou do 9º ano do Ensino Fundamental. Tem três fases eliminatórias, e os 15 melhores da final presencial em São Paulo disputam vaga na seletiva para a International Economics Olympiad.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -2133,7 +2135,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição nacional que estimula o estudo da educação financeira entre crianças e adolescentes, realizada pela UFPB em parceria com a UEM. É destinada a alunos do Ensino Fundamental e Médio de escolas públicas e privadas, com inscrição gratuita feita pela escola.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -2292,7 +2294,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição de física em fases, com Secretaria Geral ligada à Sociedade Brasileira de Física. A primeira fase é online e as seguintes são presenciais.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -3018,7 +3020,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Olimpíada do Programa Nacional Olimpíadas de Química para estudantes do Ensino Médio de escolas públicas e privadas, selecionados pelas olimpíadas estaduais. Depois das estaduais há prova nacional e etapas que definem a equipe brasileira na IChO e na OIAQ.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -3432,7 +3434,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Olimpíada organizada pelo NECIM da Universidade Federal do Ceará, que busca despertar o interesse pela Física, descobrir jovens talentos e integrar escolas e universidade. Participam alunos do 8º e 9º anos do Ensino Fundamental e do Ensino Médio de escolas públicas e particulares do Ceará.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -3726,7 +3728,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição anual de Biologia para estudantes pré-universitários de países ibero-americanos, que busca estimular o interesse pelo estudo da Biologia.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -3781,7 +3783,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição internacional de Física para estudantes do ensino médio, organizada por professores e pesquisadores da região. Participam vinte nações latino-americanas, além da Espanha e de Portugal.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -3891,7 +3893,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Concurso anual de química para estudantes ibero-americanos, realizado em outubro em um dos países da região. Cada país envia uma equipe de até quatro estudantes não universitários, com menos de 19 anos, escolhidos em processo seletivo nacional.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -3946,7 +3948,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição anual de programação, individual e online, em que estudantes do ensino secundário resolvem quatro problemas algorítmicos em cinco horas. Cada país participante pode enviar até quinze alunos.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -4170,7 +4172,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Evento organizado por representantes de países latino-americanos para promover a astronomia e reunir estudantes talentosos, fundado em Montevidéu em 2008 e realizado anualmente em diferentes países da região.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -4457,7 +4459,7 @@
       "tipo": "gratuito",
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição para escolas com inscrição gratuita de professores e estudantes, em grupos de Ensino Fundamental e Ensino Médio. A primeira fase combina desafios digitais e provas e classifica finalistas de cada estado e do Distrito Federal para a Semana Olímpica em Brasília.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -4504,7 +4506,7 @@
       "tipo": "gratuito",
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Iniciativa técnico-científica e educacional promovida pelo Ministério do Empreendedorismo, da Microempresa e da Empresa de Pequeno Porte e executada pela Universidade Federal do Maranhão. É voltada a estudantes do Ensino Médio, de cursos técnicos de nível médio e da EJA correspondente.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -4735,7 +4737,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição no formato CTF (capturar a bandeira), em que os participantes resolvem problemas sobre o conteúdo de um treinamento e são pontuados pelo tempo de resposta. A página pertence ao projeto Nativos do Futuro, vinculado ao Inatel.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -5270,7 +5272,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição acadêmica nacional de Língua Portuguesa para alunos de escolas públicas e privadas, do 6º ao 9º ano do Ensino Fundamental e de todas as séries do Ensino Médio.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -5494,7 +5496,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Olimpíada de matemática para estudantes dos ensinos fundamental, médio e superior do estado do Rio de Janeiro, organizada por uma comissão de professores voluntários.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -6047,7 +6049,7 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": null,
+    "descricao": "Competição para alunas do 8º ano do Ensino Fundamental até o último ano do Ensino Médio, de escolas públicas ou privadas de todo o Brasil, realizada pela Associação da OBM com apoio do CNPq e da SBM.",
     "objetivo": null,
     "observacoes": null,
     "inscricoes": {
@@ -6193,5 +6195,4870 @@
       "modalidade"
     ],
     "atualizadoEm": "2026-11-03"
+  },
+  {
+    "id": "dialogos-brazil-conference",
+    "slug": "dialogos-brazil-conference",
+    "nome": "Diálogos BC27 (Brazil Conference at Harvard & MIT)",
+    "sigla": null,
+    "tipo": "programa",
+    "organizador": "Brazil Conference at Harvard & MIT",
+    "areas": [
+      "Multidisciplinar"
+    ],
+    "publico": {
+      "texto": "Equipes de 2 a 5 estudantes do 1º ao 3º ano do Ensino Médio de escola pública, com 1 professor orientador. Menores de 18 anos precisam de autorização do responsável.",
+      "series": [
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": null,
+    "participacao": "grupo",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": "A divulgação não diz se a inscrição é gratuita. Para a equipe vencedora, passaporte, visto, passagem, hospedagem e alimentação são pagos."
+    },
+    "descricao": "Programa com painéis, webinars e oficinas, seguidos de um Desafio de Ciência e Inovação, para estudantes e professores de escolas públicas. A equipe vencedora leva 2 estudantes e 1 professor à Brazil Conference 2027, em Harvard e no MIT.",
+    "objetivo": "Estudantes de escola pública criam soluções para questões nacionais.",
+    "observacoes": "O prazo original era 01/11 e foi prorrogado para 12/11, às 23h59 de Brasília, em post do perfil oficial. O ano foi deduzido da data dos posts. O edital está no Google Drive e não pôde ser lido. Na edição anterior, foram 242 equipes e mais de 600 estudantes.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": "2026-11-12"
+    },
+    "provas": [],
+    "linkOficial": "https://www.brazilconference.org/programas",
+    "comoParticipar": [
+      "Leia o edital do Diálogos na página de programas.",
+      "Forme a equipe com um professor orientador.",
+      "Inscreva-se pelo link na bio do perfil oficial. Dúvidas: dialogos@brazilconference.org."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.brazilconference.org/programas; https://www.instagram.com/brazil_conference/p/DfA22lGo7jG/; https://www.instagram.com/p/DfP__6JgSvK/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "idiomas",
+      "modalidade",
+      "provas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/brazil_conference/p/DfA22lGo7jG/",
+    "idiomas": null
+  },
+  {
+    "id": "uwc-brasil",
+    "slug": "uwc-brasil",
+    "nome": "United World Colleges, seleção no Brasil",
+    "sigla": "UWC",
+    "tipo": "bolsa",
+    "organizador": "UWC Brasil",
+    "areas": [
+      "Multidisciplinar"
+    ],
+    "publico": {
+      "texto": "Brasileiros ou residentes permanentes de 15 a 18 anos até 31 de agosto do ano de ingresso, no 1º ou 2º ano do Ensino Médio ou equivalente técnico.",
+      "series": [
+        "1EM",
+        "2EM",
+        "TEC"
+      ]
+    },
+    "modalidade": null,
+    "participacao": "individual",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": "Cerca de 80% dos estudantes do IBDP selecionados por comitê nacional recebem apoio total ou parcial. A bolsa integral costuma cobrir alojamento, alimentação, material, aulas e seguro saúde. Passagens, vistos e roupas ficam de fora, salvo exceções."
+    },
+    "descricao": "Seleção nacional para estudar em colégios UWC no exterior, com bolsas parciais ou integrais conforme a situação da família. Não é preciso saber outra língua no processo brasileiro.",
+    "objetivo": null,
+    "observacoes": "A página informa que o período de inscrição foi encerrado e não traz datas da próxima seleção. Há formulário de aviso no site. Finalistas de anos anteriores não podem se inscrever de novo.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://br.uwc.org/",
+    "comoParticipar": [
+      "Confira os requisitos e o cronograma no site.",
+      "Cadastre-se no aviso de abertura das inscrições."
+    ],
+    "desbloqueia": [
+      {
+        "tipo": "bolsa",
+        "texto": "Bolsa parcial ou integral em colégio UWC, conforme vagas e situação socioeconômica."
+      }
+    ],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://br.uwc.org/requisitos/; https://br.uwc.org/custos/bolsas/; https://br.uwc.org/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "inscricoes",
+      "modalidade",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/uwc.brasil/",
+    "idiomas": []
+  },
+  {
+    "id": "jovens-embaixadores",
+    "slug": "jovens-embaixadores",
+    "nome": "Programa Jovens Embaixadores",
+    "sigla": null,
+    "tipo": "intercambio",
+    "organizador": "Embaixada e Consulados dos EUA no Brasil, com Grupo Mais Unidos",
+    "areas": [
+      "Multidisciplinar"
+    ],
+    "publico": {
+      "texto": "Na edição 2025: brasileiros de 15 a 18 anos no Ensino Médio da rede pública, com bom inglês, ótimo histórico escolar, baixa renda e sem viagem anterior aos EUA.",
+      "series": [
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "presencial",
+    "participacao": "individual",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Programa do Departamento de Estado dos EUA que leva estudantes da rede pública com liderança e impacto social para um período curto nos Estados Unidos. As secretarias estaduais de educação e os centros binacionais participam da seleção.",
+    "objetivo": null,
+    "observacoes": "A página oficial só vai até a edição 2025. Não encontrei edital oficial para 2026 ou 2027, por isso os requisitos podem ter mudado.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://br.usembassy.gov/youth-ambassador-program/",
+    "comoParticipar": [
+      "Acompanhe a página da Embaixada dos EUA e a Secretaria da Educação até sair o novo edital."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://br.usembassy.gov/youth-ambassador-program/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "inscricoes",
+      "provas",
+      "publico",
+      "instagram"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": [
+      "Inglês"
+    ]
+  },
+  {
+    "id": "yale-young-global-scholars",
+    "slug": "yale-young-global-scholars",
+    "nome": "Yale Young Global Scholars",
+    "sigla": "YYGS",
+    "tipo": "programa",
+    "organizador": "Universidade Yale",
+    "areas": [
+      "Multidisciplinar"
+    ],
+    "publico": {
+      "texto": "Estudantes do equivalente a sophomore ou junior do high school, de 16 a 18 anos até 18 de julho de 2027. Aceita candidatos de todos os países.",
+      "series": []
+    },
+    "modalidade": "presencial",
+    "participacao": "individual",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": "valor",
+      "observacao": "Sessão de 2 semanas: US$ 7.500. Há auxílio por necessidade, para estudantes de todos os países, até o valor total. A viagem não é coberta. Taxa de inscrição de US$ 100 na fase regular, com pedido de isenção."
+    },
+    "descricao": "Programa de verão de duas semanas no campus de Yale, com aulas em inglês para estudantes de todo o mundo. Estudantes de baixa renda podem pedir auxílio financeiro.",
+    "objetivo": null,
+    "observacoes": "A fase Early Action já fechou. Resultado da fase regular até 10 de março de 2027. Falta confirmar qual série brasileira equivale a sophomore e junior.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": "2027-01-06"
+    },
+    "provas": [
+      {
+        "fase": "Sessão I (início)",
+        "data": "2027-06-20"
+      },
+      {
+        "fase": "Sessão II (início)",
+        "data": "2027-07-04"
+      },
+      {
+        "fase": "Sessão III (início)",
+        "data": "2027-07-18"
+      }
+    ],
+    "linkOficial": "https://globalscholars.yale.edu/",
+    "comoParticipar": [
+      "Confira os critérios e os componentes da candidatura.",
+      "Envie a candidatura pelo site até 6 de janeiro de 2027, às 23h59 da costa leste dos EUA.",
+      "Peça isenção de taxa e auxílio financeiro, se precisar."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://globalscholars.yale.edu/eligibility; https://globalscholars.yale.edu/application-deadlines; https://globalscholars.yale.edu/tuition; https://globalscholars.yale.edu/how-to-apply",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://instagram.com/yaleygs/",
+    "idiomas": [
+      "Inglês"
+    ]
+  },
+  {
+    "id": "rise-for-the-world",
+    "slug": "rise-for-the-world",
+    "nome": "Rise",
+    "sigla": null,
+    "tipo": "bolsa",
+    "organizador": "The Eric and Wendy Schmidt Fund for Strategic Innovation",
+    "areas": [
+      "Multidisciplinar"
+    ],
+    "publico": {
+      "texto": "Os bolsistas foram selecionados quando tinham de 15 a 17 anos. A lista oficial de bolsistas inclui brasileiros.",
+      "series": []
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": "Os benefícios podem incluir um encontro presencial custeado, bolsa de graduação de quatro anos por necessidade, kit de tecnologia e financiamento competitivo para projetos."
+    },
+    "descricao": "Programa global que apoia jovens promissores com bolsa de graduação conforme a necessidade, mentoria e rede de contatos. A proposta é trabalhar junto por causas sociais ao longo da vida.",
+    "objetivo": "Dar oportunidades para jovens trabalharem juntos a serviço dos outros.",
+    "observacoes": "O site oficial não mostra chamada aberta e a página antiga de candidatura está fora do ar. Não consegui confirmar se há novo ciclo.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www.risefortheworld.org/",
+    "comoParticipar": [
+      "Pergunte sobre o próximo ciclo em rise@risefortheworld.org."
+    ],
+    "desbloqueia": [
+      {
+        "tipo": "bolsa",
+        "texto": "Bolsa de graduação de quatro anos, por necessidade, para quem é selecionado."
+      }
+    ],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.risefortheworld.org/; https://www.risefortheworld.org/global-winners/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "idiomas",
+      "inscricoes",
+      "modalidade",
+      "participacao",
+      "provas",
+      "publico",
+      "instagram"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "afs-global-stem-academies",
+    "slug": "afs-global-stem-academies",
+    "nome": "AFS Global STEM Academies",
+    "sigla": null,
+    "tipo": "bolsa",
+    "organizador": "AFS Intercultura Brasil, com patrocínio da bp",
+    "areas": [
+      "Ciências da Natureza",
+      "Tecnologia e Computação"
+    ],
+    "publico": {
+      "texto": "Na edição 2026: brasileiros de 15 a 17 anos e meio, no Ensino Médio em escola pública ou privada, sem reprovação, com média 7 em STEM e inglês intermediário.",
+      "series": [
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "hibrida",
+    "participacao": "individual",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": "Na edição 2026, bolsa integral com curso, passagem aérea, seguro, hospedagem e parte das refeições. Não cobre roupas, gastos pessoais, vacinas e bagagem despachada."
+    },
+    "descricao": "Bolsa integral com 12 semanas virtuais e 4 semanas presenciais no exterior, para jovens interessados em ciência e tecnologia. Na edição 2026, os destinos foram China, Egito e Índia.",
+    "objetivo": null,
+    "observacoes": "As inscrições da edição 2026 estão encerradas e a página não anuncia a próxima edição.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www.afs.org.br/afs-global-stem-academies-2026-2/",
+    "comoParticipar": [
+      "Acompanhe a página de bolsas do AFS até abrir a próxima edição."
+    ],
+    "desbloqueia": [
+      {
+        "tipo": "bolsa",
+        "texto": "Bolsa integral para as fases virtual e presencial no exterior."
+      }
+    ],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.afs.org.br/afs-global-stem-academies-2026-2/; https://www.afs.org.br/o-afs-encoraja-o-mundo-a-aprender-a-conviver-em-harmonia/bolsas-de-intercambio/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "inscricoes",
+      "provas",
+      "publico",
+      "custo"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/afsbra/",
+    "idiomas": [
+      "Inglês"
+    ]
+  },
+  {
+    "id": "rotary-youth-exchange",
+    "slug": "rotary-youth-exchange",
+    "nome": "Intercâmbio de Jovens do Rotary (Rotary Youth Exchange)",
+    "sigla": null,
+    "tipo": "intercambio",
+    "organizador": "Rotary International",
+    "areas": [
+      "Multidisciplinar"
+    ],
+    "publico": {
+      "texto": "Estudantes de 15 a 19 anos que são líderes na escola e na comunidade.",
+      "series": []
+    },
+    "modalidade": "presencial",
+    "participacao": "individual",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": "valor",
+      "observacao": "Hospedagem, alimentação e taxas escolares são oferecidas. O estudante costuma pagar passagem, seguro, passaporte, visto e gastos pessoais. Cada programa varia."
+    },
+    "descricao": "Intercâmbio organizado por clubes Rotary em mais de 100 países, com opção de um ano letivo em escola local ou de alguns dias a três meses. O estudante mora com famílias anfitriãs.",
+    "objetivo": null,
+    "observacoes": "A oferta, os prazos e o processo dependem do clube e do distrito. Não confirmei a chamada do distrito que atende o Ceará.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www.rotary.org/get-involved/youth-programs/rotary-youth-exchange",
+    "comoParticipar": [
+      "Procure um Rotary Club da sua cidade e pergunte pelas vagas e pelo processo seletivo."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.rotary.org/get-involved/youth-programs/rotary-youth-exchange",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "idiomas",
+      "inscricoes",
+      "provas",
+      "instagram"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "estudar-fora-ceara",
+    "slug": "estudar-fora-ceara",
+    "nome": "Programa Estudar Fora (Governo do Ceará)",
+    "sigla": null,
+    "tipo": "intercambio",
+    "organizador": "Secretaria da Educação do Ceará (Seduc)",
+    "areas": [
+      "Linguagens e Códigos"
+    ],
+    "publico": {
+      "texto": "Estudantes do Ensino Médio da rede estadual do Ceará, com pelo menos 14 anos até o embarque, sem reprovação no ano anterior, frequência mínima de 85%, média geral 7 e média 8 em português, matemática e língua estrangeira.",
+      "series": [
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "presencial",
+    "participacao": "individual",
+    "nivel": "estadual",
+    "formato": "projeto",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": "A lei prevê bolsas-intercâmbio, passagens, acomodação, alimentação, passaporte, visto, seguro, translado e curso, custeados pelo Estado."
+    },
+    "descricao": "Intercâmbio internacional gratuito criado pela Lei estadual 17.008/2019, com curso intensivo de 1 a 2 meses ou imersão acadêmica de 3 a 6 meses. A lei garante ao menos uma vaga por Crede e prioridade a famílias do CadÚnico em caso de empate.",
+    "objetivo": "Fortalecer o conhecimento e o domínio prático de uma língua estrangeira.",
+    "observacoes": "Só li a lei. Não encontrei edital recente, e o portal da Seduc bloqueou a consulta. Vale confirmar internamente na Seduc se o programa está ativo antes de publicar.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://belt.al.ce.gov.br/index.php/legislacao-do-ceara/organizacao-tematica/educacao/item/download/6411_b2839e77ead005b64708df3ca157cf8a",
+    "comoParticipar": [
+      "Acompanhe os editais da Seduc. A lei determina a publicação no site com 15 dias de antecedência."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://belt.al.ce.gov.br/index.php/legislacao-do-ceara/organizacao-tematica/educacao/item/download/6411_b2839e77ead005b64708df3ca157cf8a",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "idiomas",
+      "inscricoes",
+      "provas",
+      "instagram"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "regeneron-isef",
+    "slug": "regeneron-isef",
+    "nome": "Regeneron International Science and Engineering Fair",
+    "sigla": "ISEF",
+    "tipo": "feira",
+    "organizador": "Society for Science",
+    "areas": [
+      "Multidisciplinar"
+    ],
+    "publico": {
+      "texto": "Estudantes do Ensino Médio finalistas de feiras afiliadas. No Brasil, a seleção passa pela FEBRACE e pela Mostratec.",
+      "series": [
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "presencial",
+    "participacao": "individual-ou-grupo",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Feira internacional de ciências e engenharia para o Ensino Médio, com a edição de 2027 em Los Angeles, em maio. Não há inscrição direta: é preciso vencer uma feira afiliada.",
+    "objetivo": null,
+    "observacoes": "A FEBRACE seleciona 9 projetos, individuais ou em grupo, entre seus finalistas. O envio de projetos para a FEBRACE 2027 terminou em 29/10/2026. Sugestão: ligar o id febrace a este item em credenciaPara.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "FEBRACE 2027: divulgação dos finalistas",
+        "data": "2026-12-18"
+      },
+      {
+        "fase": "FEBRACE 2027: mostra presencial",
+        "data": "2027-03-15"
+      }
+    ],
+    "linkOficial": "https://www.societyforscience.org/isef/",
+    "comoParticipar": [
+      "Inscreva o projeto na FEBRACE ou em feira afiliada a ela ou à Mostratec.",
+      "Chegue à final e passe pela seleção para a ISEF."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.societyforscience.org/isef/; https://febrace.org.br/sobre/participacao-isef/; https://febrace.org.br/calendario/datas-importantes/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "idiomas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://instagram.com/society4science",
+    "idiomas": null
+  },
+  {
+    "id": "stockholm-junior-water-prize",
+    "slug": "stockholm-junior-water-prize",
+    "nome": "Stockholm Junior Water Prize (Prêmio Jovem da Água de Estocolmo)",
+    "sigla": "SJWP",
+    "tipo": "feira",
+    "organizador": "Stockholm Water Foundation. No Brasil, ABES",
+    "areas": [
+      "Meio Ambiente",
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Jovens de 15 a 20 anos que não estejam no ensino superior, com projetos sobre água, meio ambiente ou sustentabilidade.",
+      "series": [
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": "Inscrição gratuita na etapa brasileira de 2026."
+    },
+    "descricao": "Competição internacional de pesquisa sobre água, com final em Estocolmo durante a Semana Mundial da Água. Em 2026, um estudante do Ceará venceu a etapa brasileira.",
+    "objetivo": null,
+    "observacoes": "A etapa de 2026 está encerrada e o edital de 2027 não foi encontrado. Não confirmei se a viagem do vencedor é custeada.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www.sjwp.com.br/",
+    "comoParticipar": [
+      "Acompanhe o site da etapa brasileira até sair o edital. Contato: jps@abes-dn.org.br."
+    ],
+    "desbloqueia": [
+      {
+        "tipo": "credenciamento",
+        "texto": "O vencedor da etapa brasileira segue para a etapa internacional em Estocolmo."
+      }
+    ],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.sjwp.com.br/; https://stockholmwaterfoundation.org/stockholm-junior-water-prize/; https://www.abes-dn.org.br/lancamento-do-edital-do-premio-jovem-da-agua-de-estocolmo-2026/; https://abes-dn.org.br/estudante-do-ceara-e-o-grande-vencedor-da-etapa-brasileira-do-stockholm-junior-water-prize-2026/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "idiomas",
+      "inscricoes",
+      "modalidade",
+      "participacao",
+      "provas",
+      "instagram"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "breakthrough-junior-challenge",
+    "slug": "breakthrough-junior-challenge",
+    "nome": "Breakthrough Junior Challenge",
+    "sigla": null,
+    "tipo": "programa",
+    "organizador": null,
+    "areas": [
+      "Ciências da Natureza",
+      "Matemática"
+    ],
+    "publico": {
+      "texto": "Na edição 2026: estudantes de 13 a 18 anos, com permissão do responsável se menores.",
+      "series": [
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "individual",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição em que o estudante explica em vídeo de até 2 minutos, em inglês, um conceito de física, ciências da vida ou matemática. Os prêmios são bolsa de US$ 250 mil, US$ 50 mil para o professor e um laboratório de ciências de US$ 100 mil.",
+    "objetivo": null,
+    "observacoes": "O prazo da edição 2026 já passou e as datas de 2027 não saíram. A edição 2026 ainda está em avaliação.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://breakthroughjuniorchallenge.org/",
+    "comoParticipar": [
+      "Crie uma conta no site quando abrir a próxima edição.",
+      "Envie o vídeo em inglês e avalie vídeos de outros participantes."
+    ],
+    "desbloqueia": [
+      {
+        "tipo": "bolsa",
+        "texto": "Bolsa de US$ 250 mil para o ensino superior."
+      }
+    ],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://breakthroughjuniorchallenge.org/rules; https://breakthroughjuniorchallenge.org/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "inscricoes",
+      "organizador",
+      "provas",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/breakthrough",
+    "idiomas": [
+      "Inglês"
+    ]
+  },
+  {
+    "id": "conrad-challenge",
+    "slug": "conrad-challenge",
+    "nome": "Conrad Challenge",
+    "sigla": null,
+    "tipo": "programa",
+    "organizador": null,
+    "areas": [
+      "Tecnologia e Computação",
+      "Educação Financeira e Gestão",
+      "Meio Ambiente"
+    ],
+    "publico": {
+      "texto": "Equipes de 2 a 5 estudantes de 13 a 18 anos, com um orientador adulto. Aberto a participantes de outros países.",
+      "series": []
+    },
+    "modalidade": null,
+    "participacao": "grupo",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": "valor",
+      "observacao": "Fases iniciais gratuitas. Fase de Inovação: US$ 499 por equipe, com auxílio para equipes que se qualificam."
+    },
+    "descricao": "Desafio de inovação e empreendedorismo em que equipes criam soluções em áreas como água, saúde, energia, cibersegurança e aeroespacial. Todos os envios são em inglês.",
+    "objetivo": null,
+    "observacoes": "A primeira fase do ciclo 2026-2027 já fechou, então novas equipes só entram no próximo ciclo. Os documentos oficiais divergem em um dia nas datas de fase.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "Innovation Summit, ciclo 2026-2027 (início)",
+        "data": "2027-04-21"
+      }
+    ],
+    "linkOficial": "https://conrad.spacecenter.org/the-challenge/",
+    "comoParticipar": [
+      "Forme a equipe com um orientador.",
+      "Acompanhe a abertura do próximo ciclo no site."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://conrad.spacecenter.org/the-challenge/rules-and-regulations/; https://conrad.spacecenter.org/the-challenge/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "inscricoes",
+      "modalidade",
+      "organizador",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://instagram.com/conradchallenge",
+    "idiomas": [
+      "Inglês"
+    ]
+  },
+  {
+    "id": "diamond-challenge",
+    "slug": "diamond-challenge",
+    "nome": "Diamond Challenge",
+    "sigla": null,
+    "tipo": "programa",
+    "organizador": null,
+    "areas": [
+      "Educação Financeira e Gestão"
+    ],
+    "publico": {
+      "texto": "Estudantes do Ensino Médio de 14 a 18 anos na data do envio, em equipes de 2 a 4, com um orientador adulto de 21 anos ou mais. Aberto a qualquer país.",
+      "series": [
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": null,
+    "participacao": "grupo",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": "Prêmios principais de US$ 12 mil, US$ 8 mil e US$ 4,5 mil em cada trilha. A página não cita taxa de inscrição."
+    },
+    "descricao": "Competição de empreendedorismo para o Ensino Médio, com trilhas de negócios e de inovação social. Os envios escritos são em inglês.",
+    "objetivo": null,
+    "observacoes": "A página chama o calendário de 2027 sem escrever o ano em cada data, então os anos foram deduzidos. O envio fecha às 17h do horário da costa leste dos EUA. Finalistas precisam ir presencialmente ao encontro final.",
+    "inscricoes": {
+      "inicio": "2026-09-16",
+      "fim": "2027-01-14"
+    },
+    "provas": [
+      {
+        "fase": "Anúncio dos finalistas",
+        "data": "2027-03-09"
+      },
+      {
+        "fase": "Limitless World Summit (início)",
+        "data": "2027-04-29"
+      }
+    ],
+    "linkOficial": "https://diamondchallenge.org/competition/",
+    "comoParticipar": [
+      "Forme a equipe e encontre um orientador adulto.",
+      "Envie a proposta em inglês pelo site até o prazo."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://diamondchallenge.org/competition/; https://diamondchallenge.org/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "inscricoes",
+      "modalidade",
+      "provas",
+      "organizador"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/diamondchalleng/",
+    "idiomas": [
+      "Inglês"
+    ]
+  },
+  {
+    "id": "earth-prize",
+    "slug": "earth-prize",
+    "nome": "The Earth Prize",
+    "sigla": null,
+    "tipo": "programa",
+    "organizador": "The Earth Foundation",
+    "areas": [
+      "Meio Ambiente"
+    ],
+    "publico": {
+      "texto": "Estudantes de 13 a 19 anos, sozinhos ou em equipes de até 5. Menores precisam de consentimento do responsável.",
+      "series": []
+    },
+    "modalidade": null,
+    "participacao": "individual-ou-grupo",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": "As regras não citam taxa de participação. Sete vencedores regionais recebem US$ 10 mil cada para aplicar a ideia."
+    },
+    "descricao": "Competição de sustentabilidade em que jovens propõem soluções ambientais. A inscrição e o envio podem ser feitos em qualquer idioma.",
+    "objetivo": null,
+    "observacoes": "Equipes selecionadas recebem mentoria em março de 2027. A organização foi deduzida do nome da comunidade citada no guia.",
+    "inscricoes": {
+      "inicio": "2026-01-11",
+      "fim": "2027-01-10"
+    },
+    "provas": [
+      {
+        "fase": "Fim do envio dos projetos",
+        "data": "2027-01-31"
+      },
+      {
+        "fase": "Anúncio dos selecionados",
+        "data": "2027-03-03"
+      },
+      {
+        "fase": "Cerimônia de premiação",
+        "data": "2027-05-28"
+      }
+    ],
+    "linkOficial": "https://www.theearthprize.org/2027",
+    "comoParticipar": [
+      "Cadastre-se em theearthprize.org/onboarding.",
+      "O líder da equipe cria o time no portal e envia o projeto."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.theearthprize.org/2027; https://www.theearthprize.org/participant-submission-package",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "modalidade",
+      "organizador"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://instagram.com/theearthprize",
+    "idiomas": []
+  },
+  {
+    "id": "beamline-for-schools",
+    "slug": "beamline-for-schools",
+    "nome": "Beamline for Schools",
+    "sigla": "BL4S",
+    "tipo": "programa",
+    "organizador": "CERN",
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Equipes de estudantes de 16 a 19 anos do Ensino Médio. Para ser convidada como vencedora, a equipe precisa de ao menos 5 integrantes. Menores de 16 podem participar, mas só viaja quem tiver 16 anos na visita.",
+      "series": [
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": null,
+    "participacao": "grupo",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": "Sem taxa de inscrição. Equipes vencedoras recebem apoio para viagem, hospedagem e equipamento."
+    },
+    "descricao": "Competição de física em que equipes do Ensino Médio propõem um experimento real. As vencedoras fazem o experimento no CERN, no DESY ou no ELSA.",
+    "objetivo": null,
+    "observacoes": "O envio começa em dezembro de 2026, sem dia informado. Os experimentos são no fim de setembro de 2027. Os termos de 2027 ainda têm campos de data incompletos. Cada equipe vencedora viaja com 1 ou 2 adultos.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": "2027-03-12"
+    },
+    "provas": [],
+    "linkOficial": "https://beamlineforschools.cern/",
+    "comoParticipar": [
+      "Forme a equipe com um professor ou responsável da escola.",
+      "Acompanhe os eventos online a partir de novembro de 2026.",
+      "Envie a proposta de experimento até 12 de março de 2027, às 23h59 de Genebra."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://beamlineforschools.cern/; https://beamlineforschools.cern/terms-and-conditions/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "idiomas",
+      "modalidade",
+      "inscricoes",
+      "instagram"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "technovation",
+    "slug": "technovation",
+    "nome": "Technovation Challenge",
+    "sigla": null,
+    "tipo": "programa",
+    "organizador": "Technovation",
+    "areas": [
+      "Tecnologia e Computação",
+      "Educação Financeira e Gestão"
+    ],
+    "publico": {
+      "texto": "Jovens de 8 a 18 anos. A temporada 2027 tem trilha de meninas e trilha mista.",
+      "series": []
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição gratuita em que equipes de jovens criam soluções com tecnologia para problemas reais. Não é preciso se conectar a um grupo local.",
+    "objetivo": null,
+    "observacoes": "Uma página antiga ainda diz que a inscrição está fechada, mas o calendário da temporada mostra abertura em 11/10/2026. A entrega dos projetos é às 17h do horário do Pacífico.",
+    "inscricoes": {
+      "inicio": "2026-10-11",
+      "fim": "2027-03-11"
+    },
+    "provas": [
+      {
+        "fase": "Entrega dos projetos",
+        "data": "2027-05-05"
+      }
+    ],
+    "linkOficial": "https://technovationchallenge.org/competition/",
+    "comoParticipar": [
+      "Inscreva-se até 11 de março de 2027.",
+      "Monte a equipe, siga o currículo gratuito e envie o projeto."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://technovationchallenge.org/competition/; https://technovationchallenge.org/get-started/; https://technovationchallenge.org/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "idiomas",
+      "inscricoes",
+      "modalidade",
+      "participacao"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://instagram.com/technovationglobal",
+    "idiomas": null
+  },
+  {
+    "id": "nasa-space-apps",
+    "slug": "nasa-space-apps",
+    "nome": "NASA Space Apps Challenge",
+    "sigla": null,
+    "tipo": "evento",
+    "organizador": "NASA",
+    "areas": [
+      "Tecnologia e Computação",
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Todas as idades, níveis de experiência e formações.",
+      "series": []
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Hackathon global anual em que equipes usam dados abertos da NASA para resolver desafios reais. Um projeto de Aracaju ficou entre os vencedores globais de 2025.",
+    "objetivo": null,
+    "observacoes": "As inscrições de 2026 estão abertas, sem data final informada na página lida. Não confirmei evento local em Fortaleza nem regras para menores de idade.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "Hackathon 2026 (início)",
+        "data": "2026-11-14"
+      }
+    ],
+    "linkOficial": "https://www.spaceappschallenge.org/",
+    "comoParticipar": [
+      "Inscreva-se no site oficial e veja se há evento local perto de você."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.spaceappschallenge.org/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "idiomas",
+      "inscricoes",
+      "modalidade",
+      "participacao",
+      "publico",
+      "instagram"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "fao-concurso-cartazes",
+    "slug": "fao-concurso-cartazes",
+    "nome": "Concurso de Cartazes do Dia Mundial da Alimentação",
+    "sigla": null,
+    "tipo": "programa",
+    "organizador": "Organização das Nações Unidas para a Alimentação e a Agricultura (FAO)",
+    "areas": [
+      "Linguagens e Códigos",
+      "Meio Ambiente"
+    ],
+    "publico": {
+      "texto": "Crianças e jovens de 5 a 19 anos de qualquer país, com categorias de 13 a 15 e de 16 a 19 anos. Menores precisam de permissão do responsável.",
+      "series": []
+    },
+    "modalidade": "online",
+    "participacao": "individual",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Concurso de cartazes da FAO, com o tema Innovate today. Nourish tomorrow. Vale desenho, pintura ou arte digital, mas não vale foto nem conteúdo gerado por IA.",
+    "objetivo": null,
+    "observacoes": "Prazo muito próximo: fecha ao meio-dia do horário da Europa Central de 6 de novembro de 2026. Os vencedores recebem certificado e kit de presentes.",
+    "inscricoes": {
+      "inicio": "2026-07-01",
+      "fim": "2026-11-06"
+    },
+    "provas": [],
+    "linkOficial": "https://www.fao.org/world-food-day/contest/en",
+    "comoParticipar": [
+      "Crie um cartaz e salve em JPEG.",
+      "Envie pelo formulário online, um por pessoa."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.fao.org/world-food-day/contest/en",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "idiomas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://instagram.com/fao",
+    "idiomas": null
+  },
+  {
+    "id": "nuca-unicef",
+    "slug": "nuca-unicef",
+    "nome": "Núcleo de Cidadania de Adolescentes (Selo UNICEF)",
+    "sigla": "NUCA",
+    "tipo": "programa",
+    "organizador": "UNICEF",
+    "areas": [
+      "Multidisciplinar"
+    ],
+    "publico": {
+      "texto": "Adolescentes de municípios inscritos no Selo UNICEF. O Ceará aderiu 100% à edição 2025-2028.",
+      "series": []
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Grupos de adolescentes apoiados pelo UNICEF, que planejam e lideram ações para melhorar suas comunidades. No Ceará, há experiências como as de Jucás e Cruz.",
+    "objetivo": null,
+    "observacoes": "As páginas lidas não informam faixa etária nem como entrar. A participação é local, pelo município.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www.unicef.org/brazil/selo-unicef",
+    "comoParticipar": [
+      "Pergunte na prefeitura ou na escola como entrar no NUCA do seu município."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.unicef.org/brazil/selo-unicef; https://www.unicef.org/brazil/comunicados-de-imprensa/mais-de-57-mil-adolescentes-mobilizam-suas-comunidades-e-promovem-mudancas",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "idiomas",
+      "inscricoes",
+      "modalidade",
+      "participacao",
+      "publico",
+      "instagram"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "concurso-cartas-upu",
+    "slug": "concurso-cartas-upu",
+    "nome": "Concurso Internacional de Redação de Cartas",
+    "sigla": null,
+    "tipo": "programa",
+    "organizador": "União Postal Universal (UPU). No Brasil, Correios",
+    "areas": [
+      "Linguagens e Códigos"
+    ],
+    "publico": {
+      "texto": "Estudantes de até 15 anos de escolas públicas e privadas.",
+      "series": []
+    },
+    "modalidade": null,
+    "participacao": "individual",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Concurso de cartas com fases escolar, estadual e nacional, organizadas pelos Correios. A primeira colocada no Brasil representa o país na fase internacional, a cargo da UPU.",
+    "objetivo": null,
+    "observacoes": "Na prática, atende mais o Ensino Fundamental e parte do 1º ano do Médio. A edição 2026 está encerrada e a de 2027 não foi publicada.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www.correios.com.br/concursocartas",
+    "comoParticipar": [
+      "A inscrição é feita pela escola, que escolhe até duas cartas de seus alunos."
+    ],
+    "desbloqueia": [
+      {
+        "tipo": "credenciamento",
+        "texto": "A melhor carta do Brasil vai à fase internacional da UPU."
+      }
+    ],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.correios.com.br/concursocartas",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "idiomas",
+      "inscricoes",
+      "modalidade",
+      "provas",
+      "instagram"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "blue-planet-awareness",
+    "slug": "blue-planet-awareness",
+    "nome": "Blue Planet Awareness Contest",
+    "sigla": null,
+    "tipo": "programa",
+    "organizador": "Bow Seat",
+    "areas": [
+      "Meio Ambiente",
+      "Linguagens e Códigos"
+    ],
+    "publico": {
+      "texto": "Estudantes de 11 a 18 anos dos anos finais do Fundamental ou do Ensino Médio, de qualquer país. Quem já entrou no ensino superior não participa.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "individual-ou-grupo",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Concurso criativo sobre desinformação ambiental, com arte, escrita, performance, filme ou multimídia. O tema de 2027 é Nature of Truth.",
+    "objetivo": null,
+    "observacoes": "Antes se chamava Ocean Awareness Contest. O envio fecha às 23h59 do horário da costa leste dos EUA. É preciso indicar um adulto responsável.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": "2027-06-07"
+    },
+    "provas": [],
+    "linkOficial": "https://bowseat.org/programs/blue-planet-awareness-contest/contest-overview/",
+    "comoParticipar": [
+      "Crie uma conta na plataforma online.",
+      "Envie o trabalho até 7 de junho de 2027, com os dados de um adulto responsável."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://bowseat.org/programs/blue-planet-awareness-contest/rules-eligibility/; https://bowseat.org/programs/blue-planet-awareness-contest/contest-overview/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "idiomas",
+      "instagram"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "prep-estudar-fora",
+    "slug": "prep-estudar-fora",
+    "nome": "Prep Program (Estudar Fora)",
+    "sigla": null,
+    "tipo": "programa",
+    "organizador": "Fundação Estudar",
+    "areas": [
+      "Multidisciplinar"
+    ],
+    "publico": {
+      "texto": "Brasileiros no penúltimo ou último ano do Ensino Médio, sem matrícula em universidade. Alunos do 1º ano podem participar como treineiros. Aceita qualquer renda, de escola pública ou privada.",
+      "series": [
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": null,
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": "Programa e seleção gratuitos, com apoio para custos da candidatura em caso de necessidade. Não garante bolsa: o auxílio vem das universidades."
+    },
+    "descricao": "Preparação gratuita para quem quer fazer graduação no exterior, com orientação de especialistas e mentoria de quem estudou fora. A turma de 2025 ganhou mais de US$ 25 milhões em bolsas das universidades.",
+    "objetivo": null,
+    "observacoes": "As inscrições da Turma 2027 estão encerradas. As páginas divergem sobre o nível de inglês: excelente ou intermediário. As entrevistas são em inglês.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www.estudarfora.org.br/prep-program/",
+    "comoParticipar": [
+      "Fique atento à abertura da próxima turma, com formulário, testes de lógica e inglês, redações e vídeo.",
+      "Quem avança faz entrevistas de inglês e de perfil."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.estudarfora.org.br/prep-program/; https://www.estudarfora.org.br/prep-estudar-fora/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "inscricoes",
+      "modalidade",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://instagram.com/estudarfora/",
+    "idiomas": [
+      "Inglês"
+    ]
+  },
+  {
+    "id": "gks-graduacao",
+    "slug": "gks-graduacao",
+    "nome": "Global Korea Scholarship, graduação",
+    "sigla": "GKS-U",
+    "tipo": "bolsa",
+    "organizador": "Governo da Coreia do Sul (NIIED)",
+    "areas": [
+      "Multidisciplinar"
+    ],
+    "publico": {
+      "texto": "Quem concluiu ou está concluindo o Ensino Médio, com menos de 25 anos, sem cidadania coreana (nem os pais), e nota de 80% ou entre os 20% melhores da turma.",
+      "series": [
+        "3EM"
+      ]
+    },
+    "modalidade": "presencial",
+    "participacao": "individual",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": "A bolsa inclui passagem, curso de coreano, mensalidade e ajuda mensal."
+    },
+    "descricao": "Bolsa do governo sul-coreano para fazer graduação na Coreia, com um ano de curso de coreano antes do início do curso.",
+    "objetivo": null,
+    "observacoes": "A seleção de 2027 está encerrada, conforme a página oficial. Não li o edital em PDF nem confirmei as vagas para o Brasil.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www.studyinkorea.go.kr/ko/plan/scholarship.do",
+    "comoParticipar": [
+      "Acompanhe os avisos do portal Study in Korea até abrir o próximo ciclo."
+    ],
+    "desbloqueia": [
+      {
+        "tipo": "bolsa",
+        "texto": "Bolsa de graduação com passagem, curso de coreano, mensalidade e ajuda mensal."
+      }
+    ],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.studyinkorea.go.kr/ko/plan/scholarship.do; https://www.studyinkorea.go.kr/en/plan/gksNoticeRead.do?bbsId=BBSMSTR_000000000461&nttId=4522",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "idiomas",
+      "inscricoes",
+      "provas",
+      "publico",
+      "instagram"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "mext-graduacao",
+    "slug": "mext-graduacao",
+    "nome": "Bolsa MEXT do Governo do Japão, graduação",
+    "sigla": "MEXT",
+    "tipo": "bolsa",
+    "organizador": "Governo do Japão (MEXT)",
+    "areas": [
+      "Multidisciplinar"
+    ],
+    "publico": {
+      "texto": "Na seleção 2027: brasileiros sem cidadania japonesa, nascidos após 2 de abril de 2002, com Ensino Médio concluído ou previsto até março de 2027, e alto rendimento escolar.",
+      "series": [
+        "3EM"
+      ]
+    },
+    "modalidade": "presencial",
+    "participacao": "individual",
+    "nivel": "internacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Bolsa de 5 anos para graduação no Japão, com um ano de curso preparatório, ou 7 anos em Medicina, Odontologia, Veterinária e Farmácia. A seleção tem provas de inglês, japonês e matemática, entre outras.",
+    "objetivo": null,
+    "observacoes": "A página do Consulado do Recife mostra inscrições encerradas. Os requisitos foram lidos na página da Embaixada em Brasília, que atende DF, GO e TO, então falta confirmar no edital do Recife se ele atende o Ceará.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www.recife.br.emb-japan.go.jp/itpr_pt/bolsas_de_estudo.html",
+    "comoParticipar": [
+      "Acompanhe a página de bolsas do consulado até sair o próximo edital.",
+      "Comece a estudar japonês: quem zera a prova é reprovado."
+    ],
+    "desbloqueia": [
+      {
+        "tipo": "bolsa",
+        "texto": "Bolsa de graduação no Japão, de 5 ou 7 anos."
+      }
+    ],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.br.emb-japan.go.jp/itpr_pt/graduacao.html; https://www.recife.br.emb-japan.go.jp/itpr_pt/bolsas_de_estudo.html",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "inscricoes",
+      "provas",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/embaixadajapao/",
+    "idiomas": [
+      "Inglês",
+      "Japonês"
+    ]
+  },
+  {
+    "id": "turkiye-burslari-graduacao",
+    "slug": "turkiye-burslari-graduacao",
+    "nome": "Türkiye Bursları, graduação",
+    "sigla": null,
+    "tipo": "bolsa",
+    "organizador": "Governo da Turquia",
+    "areas": [
+      "Multidisciplinar"
+    ],
+    "publico": {
+      "texto": "Cidadãos de qualquer país (exceto turcos) com menos de 21 anos e nota mínima de 70%, formados ou concluindo o ano letivo antes de agosto.",
+      "series": [
+        "3EM"
+      ]
+    },
+    "modalidade": "presencial",
+    "participacao": "individual",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": "Candidatura online gratuita. A bolsa inclui apoio financeiro, mensalidade, moradia e seguro saúde."
+    },
+    "descricao": "Bolsa do governo turco para cursar graduação na Turquia, em diversas áreas. A seleção é feita online e tem período único para todos os países.",
+    "objetivo": null,
+    "observacoes": "O calendário oficial mostra o período geral de 10 de janeiro a 20 de fevereiro, sem indicar o ano. Por isso, a data de 2027 não foi registrada como prazo.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www.turkiyeburslari.gov.tr/scholarshipsprograms",
+    "comoParticipar": [
+      "Acompanhe o calendário oficial.",
+      "Candidate-se pelo sistema online do programa quando abrir o período."
+    ],
+    "desbloqueia": [
+      {
+        "tipo": "bolsa",
+        "texto": "Bolsa de graduação com apoio financeiro, mensalidade, moradia e seguro saúde."
+      }
+    ],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.turkiyeburslari.gov.tr/scholarshipsprograms; https://www.turkiyeburslari.gov.tr/calendar; https://www.turkiyeburslari.gov.tr/announcements/turkiye-scholarships-2026-applications-121",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "idiomas",
+      "inscricoes",
+      "provas",
+      "instagram"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "obbiotec",
+    "slug": "obbiotec",
+    "nome": "Olimpíada Brasileira de Biotecnologia",
+    "sigla": "OBBiotec",
+    "tipo": "olimpiada",
+    "organizador": null,
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Estudantes do ensino básico (a página não lista as séries).",
+      "series": []
+    },
+    "modalidade": "online",
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Olimpíada pensada por pesquisadores de todo o Brasil para estudantes do ensino básico, com provas on-line, cursos e materiais de apoio para estudantes e professores.",
+    "objetivo": null,
+    "observacoes": "4ª edição, 2026. A inscrição pode ser feita pelo estudante ou pela escola, e a 2ª fase é realizada nas escolas. A página cita resultados, bolsas de Iniciação Científica Júnior e Mostra Nacional.",
+    "inscricoes": {
+      "inicio": "2026-02-02",
+      "fim": "2026-04-10"
+    },
+    "provas": [
+      {
+        "fase": "1ª fase (04 a 08/05)",
+        "data": "2026-05-04"
+      },
+      {
+        "fase": "2ª fase, nas escolas (16 a 18/06)",
+        "data": "2026-06-16"
+      },
+      {
+        "fase": "Resultado final, a partir de",
+        "data": "2026-08-31"
+      }
+    ],
+    "linkOficial": "https://www.obbiotec.com.br/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.obbiotec.com.br/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "instagram",
+      "organizador",
+      "participacao",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "obict",
+    "slug": "obict",
+    "nome": "Olimpíada Brasileira de Inovação, Ciência e Tecnologia",
+    "sigla": "OBICT",
+    "tipo": "olimpiada",
+    "organizador": "EDUSPACE",
+    "areas": [
+      "Tecnologia e Computação",
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Categorias: Ensino Fundamental anos iniciais, Ensino Fundamental anos finais, Ensino Médio ou técnico, e categoria aberta.",
+      "series": [
+        "EF-iniciais",
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM",
+        "TEC"
+      ]
+    },
+    "modalidade": "hibrida",
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Olimpíada aberta e gratuita para estudantes da educação básica e público em geral, que liga as disciplinas escolares a temas como inteligência artificial e sustentabilidade.",
+    "objetivo": null,
+    "observacoes": "III edição, 2026. Fases 1 e 2 são online e a fase 3 é presencial para as categorias 1 a 3. A página traz datas divergentes para as fases entre o texto principal e as perguntas frequentes; por isso as provas ficaram sem data.",
+    "inscricoes": {
+      "inicio": "2026-02-20",
+      "fim": "2026-04-05"
+    },
+    "provas": [],
+    "linkOficial": "https://www.obict.com.br/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.obict.com.br/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/ob_ict/",
+    "idiomas": null
+  },
+  {
+    "id": "obs-sociologia",
+    "slug": "obs-sociologia",
+    "nome": "Olimpíada Brasileira de Sociologia",
+    "sigla": "OBS",
+    "tipo": "olimpiada",
+    "organizador": null,
+    "areas": [
+      "Ciências Humanas e Sociais Aplicadas"
+    ],
+    "publico": {
+      "texto": "Estudantes do 8º ou 9º ano do Ensino Fundamental ou do Ensino Médio.",
+      "series": [
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "hibrida",
+    "participacao": "grupo",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": "Gratuita para equipes de escolas públicas. Escolas não públicas pagam em lotes; os valores não aparecem na página."
+    },
+    "descricao": "Competição nacional em Ciências Sociais (Sociologia, Antropologia e Ciência Política) para estudantes da Educação Básica, com trabalho colaborativo em equipes. Tem cinco fases: três online e duas presenciais no Rio de Janeiro.",
+    "objetivo": null,
+    "observacoes": "Edição 2026. Primeiro se faz a inscrição individual e depois a da equipe.",
+    "inscricoes": {
+      "inicio": "2025-12-19",
+      "fim": "2026-03-16"
+    },
+    "provas": [
+      {
+        "fase": "1ª fase, online (23 a 30/03)",
+        "data": "2026-03-23"
+      },
+      {
+        "fase": "2ª fase, online (06 a 13/04)",
+        "data": "2026-04-06"
+      },
+      {
+        "fase": "3ª fase, online (28/04 a 12/05)",
+        "data": "2026-04-28"
+      },
+      {
+        "fase": "4ª e 5ª fases, presenciais (19 e 20/06)",
+        "data": "2026-06-19"
+      }
+    ],
+    "linkOficial": "https://olimpiadadesociologia.com.br/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://olimpiadadesociologia.com.br/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "organizador"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/olimpiada_sociologia_br",
+    "idiomas": null
+  },
+  {
+    "id": "obho",
+    "slug": "obho",
+    "nome": "Olimpíada Brasileira de História Online",
+    "sigla": "OBHO",
+    "tipo": "olimpiada",
+    "organizador": null,
+    "areas": [
+      "Ciências Humanas e Sociais Aplicadas"
+    ],
+    "publico": {
+      "texto": "Estudantes do 4º ano do Ensino Fundamental ao 3º ano do Ensino Médio, de escolas públicas e privadas, e Categoria Aberta para diferentes idades.",
+      "series": [
+        "EF-iniciais",
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Competição educacional nacional em formato 100% digital, que busca incentivar o estudo de História, o pensamento crítico e a valorização do conhecimento.",
+    "objetivo": null,
+    "observacoes": "Edição 2026.2. A página mostra \"disponível no dia 14/11/2026\" sem dizer a qual etapa se refere, e o cronograma está em imagem. Há inscrição individual e por instituição de ensino.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://sites.google.com/view/obhonline",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://sites.google.com/view/obhonline",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "instagram",
+      "organizador",
+      "participacao",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "ona",
+    "slug": "ona",
+    "nome": "Olimpíada Nacional de Astronomia",
+    "sigla": "ONA",
+    "tipo": "olimpiada",
+    "organizador": null,
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Estudantes de diferentes níveis, com prova adaptada ao nível de escolaridade (a página não lista as séries).",
+      "series": []
+    },
+    "modalidade": "online",
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Competição científica nacional de Astronomia, Astrofísica, Astronáutica e Ciências Espaciais, em fase única e ambiente digital, para estudantes das redes pública e privada e participantes independentes.",
+    "objetivo": null,
+    "observacoes": "Edição 2026 (o ano vem do título do edital; as datas na página não repetem o ano). Há inscrição individual e escolar. Não confundir com a ONAD, que já está no catálogo.",
+    "inscricoes": {
+      "inicio": "2026-01-11",
+      "fim": "2026-05-01"
+    },
+    "provas": [
+      {
+        "fase": "Prova (13 a 15/05)",
+        "data": "2026-05-13"
+      },
+      {
+        "fase": "Resultado final",
+        "data": "2026-06-07"
+      }
+    ],
+    "linkOficial": "https://onaolimpiada.netlify.app/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [
+      {
+        "tipo": "medalha",
+        "texto": "Medalhas de ouro, prata e bronze, com classificação estadual e nacional"
+      }
+    ],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://onaolimpiada.netlify.app/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "organizador",
+      "participacao",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/ona_oficiall/",
+    "idiomas": null
+  },
+  {
+    "id": "olimpiada-de-ingles",
+    "slug": "olimpiada-de-ingles",
+    "nome": "Olimpíada de Inglês",
+    "sigla": "OI",
+    "tipo": "olimpiada",
+    "organizador": "Centro Brasileiro de Olimpíadas Científicas",
+    "areas": [
+      "Linguagens e Códigos"
+    ],
+    "publico": {
+      "texto": "Estudantes do Ensino Básico e público em geral, por faixa etária: até 9 anos, até 12, até 16 e livre.",
+      "series": []
+    },
+    "modalidade": "online",
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Competição nacional de conhecimento em língua inglesa, organizada por faixas etárias e níveis de proficiência, que busca valorizar o estudo do idioma e o contato com a cultura dos países anglófonos.",
+    "objetivo": null,
+    "observacoes": "3ª edição. Realizada com apoio oficial da Embaixada dos Estados Unidos, segundo a página. Admite inscrição individual ou por escola.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "Aplicação online das provas",
+        "data": "2026-11-05"
+      },
+      {
+        "fase": "Divulgação dos premiados",
+        "data": "2026-11-24"
+      }
+    ],
+    "linkOficial": "https://oingles.com/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [
+      {
+        "tipo": "medalha",
+        "texto": "Ouro, prata, bronze e menção honrosa"
+      }
+    ],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://oingles.com/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "inscricoes",
+      "participacao",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/olimpiada.de.ingles/",
+    "idiomas": [
+      "Inglês"
+    ]
+  },
+  {
+    "id": "obc-cidadania",
+    "slug": "obc-cidadania",
+    "nome": "Olimpíada Brasileira de Cidadania",
+    "sigla": "OBC",
+    "tipo": "olimpiada",
+    "organizador": "Redenec (Rede Nacional de Educação Cidadã)",
+    "areas": [
+      "Ciências Humanas e Sociais Aplicadas"
+    ],
+    "publico": {
+      "texto": "Estudantes do Ensino Médio, em duplas da mesma escola.",
+      "series": [
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "hibrida",
+    "participacao": "grupo",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "pago",
+      "observacao": "R$ 20 por dupla em escola pública e R$ 80 em escola privada, ou plano por escola de R$ 120 (pública) e R$ 240 (privada). Isenção para famílias no CadÚnico."
+    },
+    "descricao": "Olimpíada científica e formativa em que duplas de estudantes do Ensino Médio investigam, propõem e agem sobre a realidade de suas comunidades. Tem fases online, visita a equipamento público com relatório e apresentação nacional.",
+    "objetivo": null,
+    "observacoes": "1ª edição, 2026. Comitê científico indicado como FGV/CEAPG. Não confundir com a Olimpíada Brasileira de Ciências, de mesma sigla.",
+    "inscricoes": {
+      "inicio": "2026-08-03",
+      "fim": "2026-08-28"
+    },
+    "provas": [
+      {
+        "fase": "Fase objetiva I, online (31/08 a 05/09)",
+        "data": "2026-08-31"
+      },
+      {
+        "fase": "Fase objetiva II, online (07 a 12/09)",
+        "data": "2026-09-07"
+      },
+      {
+        "fase": "Campo: visita e relatório (14 a 28/09)",
+        "data": "2026-09-14"
+      },
+      {
+        "fase": "Avaliação por pares (30/09 a 07/10)",
+        "data": "2026-09-30"
+      },
+      {
+        "fase": "Pitch final nacional",
+        "data": "2026-10-31"
+      }
+    ],
+    "linkOficial": "https://olimpiadacidadania.com.br/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://olimpiadacidadania.com.br/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/olimpiadacidadania",
+    "idiomas": null
+  },
+  {
+    "id": "obn",
+    "slug": "obn",
+    "nome": "Olimpíada Brasileira de Neurociências (Brazilian Brain Bee)",
+    "sigla": "OBN",
+    "tipo": "olimpiada",
+    "organizador": "Comissão Organizadora da OBN e Organização Ciências e Cognição",
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Alunos do Ensino Médio.",
+      "series": [
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Olimpíada científica para alunos do Ensino Médio que busca despertar o interesse por neurociências. Tem etapas locais, etapa nacional e o vencedor nacional representa o Brasil na International Brain Bee.",
+    "objetivo": null,
+    "observacoes": "XIV edição, 2026. Inscrição nas etapas locais aberta a partir de 01/02/2026, com datas definidas por cada comitê local. A etapa nacional de 2026 foi virtual; o banner da página ainda dizia datas a confirmar, mas um aviso traz 25 e 26/09/2026.",
+    "inscricoes": {
+      "inicio": "2026-02-01",
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "Etapa nacional, virtual (25 e 26/09)",
+        "data": "2026-09-25"
+      }
+    ],
+    "linkOficial": "https://brazilianbrainbee.org/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://brazilianbrainbee.org/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "instagram",
+      "modalidade",
+      "participacao"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "obqjr",
+    "slug": "obqjr",
+    "nome": "Olimpíada Brasileira de Química Júnior",
+    "sigla": "OBQJr",
+    "tipo": "olimpiada",
+    "organizador": "Programa Nacional Olimpíadas de Química (Associação Brasileira de Química, com coordenação da UFC e realização também da UFPI)",
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Estudantes do 6º ao 9º ano do Ensino Fundamental de escolas públicas e privadas de todo o país.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF"
+      ]
+    },
+    "modalidade": null,
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": "Cobrança apenas para recursos contra o resultado final."
+    },
+    "descricao": "Competição nacional em duas fases que busca despertar o interesse pela Química em alunos mais novos, identificar talentos e preparar estudantes para olimpíadas como a OBQ.",
+    "objetivo": null,
+    "observacoes": "A escola precisa ter um representante cadastrado. Modalidade A (6º e 7º), B (8º e 9º) e C (prova adaptada). Datas no calendário de obquimica.org/calendario, que não carregou no texto lido.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://obquimica.org/olimpiada/olimpiada-brasileira-de-quimica-junior",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://obquimica.org/olimpiada/olimpiada-brasileira-de-quimica-junior",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "modalidade",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/obquimica",
+    "idiomas": null
+  },
+  {
+    "id": "the-big-challenge",
+    "slug": "the-big-challenge",
+    "nome": "The Big Challenge (Olimpíada Nacional de Inglês)",
+    "sigla": null,
+    "tipo": "olimpiada",
+    "organizador": "The Big Challenge",
+    "areas": [
+      "Linguagens e Códigos"
+    ],
+    "publico": {
+      "texto": "Do 4º ano do Ensino Fundamental ao 3º ano do Ensino Médio.",
+      "series": [
+        "EF-iniciais",
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": "A página diz \"tudo incluído\", sem informar valores."
+    },
+    "descricao": "Evento anual de língua inglesa para turmas do 4º ano do Ensino Fundamental ao 3º ano do Ensino Médio, com formatos impresso e online e medalhas para os alunos.",
+    "objetivo": null,
+    "observacoes": "Formatos impresso e online. A página fala em inscrever a turma ou os alunos, sem definir participação individual ou em grupo.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "Período da Olimpíada 2026 (24/08 a 12/09)",
+        "data": "2026-08-24"
+      }
+    ],
+    "linkOficial": "https://www.thebigchallenge.com/br",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.thebigchallenge.com/br",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "inscricoes",
+      "modalidade",
+      "participacao"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/thebigchallengebrasil/",
+    "idiomas": [
+      "Inglês"
+    ]
+  },
+  {
+    "id": "olimpiada-de-sustentabilidade",
+    "slug": "olimpiada-de-sustentabilidade",
+    "nome": "Olimpíada de Sustentabilidade",
+    "sigla": null,
+    "tipo": "olimpiada",
+    "organizador": null,
+    "areas": [
+      "Meio Ambiente"
+    ],
+    "publico": {
+      "texto": "Estudantes do Ensino Fundamental II, do Ensino Médio e concluintes do Ensino Médio.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "individual-ou-grupo",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição acadêmica nacional 100% online e gratuita, feita por estudantes para estudantes, com foco em pensamento crítico e resolução de problemas e inspirada nos Objetivos de Desenvolvimento Sustentável da ONU.",
+    "objetivo": null,
+    "observacoes": "Edição 2026, fase única com 10 questões e 5 dias corridos para responder. A página mostra \"19 anos de idade ou menos\" e \"3 por equipe\" sem detalhar o critério.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "Resultados",
+        "data": "2026-10-24"
+      }
+    ],
+    "linkOficial": "https://olimpiadasustentabilidade.org/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://olimpiadasustentabilidade.org/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "organizador"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/olimpiadasustentabilidade",
+    "idiomas": null
+  },
+  {
+    "id": "obmed",
+    "slug": "obmed",
+    "nome": "Olimpíada Brasileira de Medicina",
+    "sigla": "OBMED",
+    "tipo": "olimpiada",
+    "organizador": "Olimpikei",
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Júnior: 6º ao 9º ano do Ensino Fundamental. Sênior: 1ª à 3ª série do Ensino Médio.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "pago",
+      "observacao": "A escola paga por nível, não por aluno. Os valores não estão preenchidos na página, nem há indicação de gratuidade na modalidade individual."
+    },
+    "descricao": "Olimpíada que transforma o conhecimento escolar em raciocínio clínico, com níveis Júnior e Sênior e modalidades pela escola ou individual.",
+    "objetivo": null,
+    "observacoes": "Edição 2027 ainda sem inscrições abertas e com calendário em branco (\"dd/mm\"). Na modalidade Escola a prova é impressa ou online; na Livre-individual, 100% online.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://olimpikei.com.br/olimpiadas/olimpiada-brasileira-de-medicina",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://olimpikei.com.br/olimpiadas/olimpiada-brasileira-de-medicina",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "modalidade",
+      "participacao",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/obmed_olimpikei/",
+    "idiomas": null
+  },
+  {
+    "id": "vitalis",
+    "slug": "vitalis",
+    "nome": "Vitalis Olimpíada de Medicina",
+    "sigla": null,
+    "tipo": "olimpiada",
+    "organizador": "Instituto Vertere",
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Júnior Regular: 6º ao 9º ano. Sênior Regular: Ensino Médio, incluindo o 4º ano de cursos técnicos. Categorias Livres para qualquer interessado.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM",
+        "TEC"
+      ]
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Olimpíada gratuita focada em medicina, com categorias para o Ensino Fundamental II e o Ensino Médio e categoria livre para qualquer interessado.",
+    "objetivo": null,
+    "observacoes": "A página cita apenas o cronograma e regulamento de 2025, sem datas no texto.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://olimpiadademedicina.org/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://olimpiadademedicina.org/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "modalidade",
+      "participacao",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/olimpiadademedicina.br/",
+    "idiomas": null
+  },
+  {
+    "id": "olimpiada-do-bem-publico",
+    "slug": "olimpiada-do-bem-publico",
+    "nome": "Olimpíada do Bem Público",
+    "sigla": "OBP",
+    "tipo": "olimpiada",
+    "organizador": "Escola de Políticas Públicas e Governo da FGV (FGV EPPG)",
+    "areas": [
+      "Linguagens e Códigos",
+      "Ciências Humanas e Sociais Aplicadas"
+    ],
+    "publico": {
+      "texto": "Estudantes do 1º, 2º ou 3º ano do Ensino Médio de escolas públicas ou privadas de todo o Brasil, incluindo a EJA.",
+      "series": [
+        "1EM",
+        "2EM",
+        "3EM",
+        "EJA"
+      ]
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": "\"Totalmente gratuita\", segundo as perguntas frequentes da 5ª edição."
+    },
+    "descricao": "Concurso nacional de redação e argumentação para estudantes do Ensino Médio de escolas públicas e privadas, com fase de redação e fase de pitch oral diante de uma banca.",
+    "objetivo": null,
+    "observacoes": "6ª edição, tema \"Empreendedorismo em prol da Sociedade\". A página já traz os medalhistas da 6ª edição e não mostra as datas dela. Cada estudante indica um professor orientador.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://eppg.fgv.br/olimpiada-do-bem-publico",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://eppg.fgv.br/olimpiada-do-bem-publico",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "modalidade",
+      "participacao",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/fgv.eppg/",
+    "idiomas": null
+  },
+  {
+    "id": "jovem-senador",
+    "slug": "jovem-senador",
+    "nome": "Programa Jovem Senador e Jovem Senadora Brasileiros",
+    "sigla": null,
+    "tipo": "programa",
+    "organizador": "Senado Federal",
+    "areas": [
+      "Linguagens e Códigos",
+      "Ciências Humanas e Sociais Aplicadas"
+    ],
+    "publico": {
+      "texto": "Estudantes do Ensino Médio de escolas públicas estaduais e do Distrito Federal, com no máximo 19 anos completos até 31 de dezembro do ano da edição (regra da edição 2026).",
+      "series": [
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": null,
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Programa do Senado Federal que seleciona, por concurso de redação, estudantes do Ensino Médio da rede pública para vivenciar o funcionamento do Poder Legislativo em Brasília. Sai um vencedor por unidade da federação.",
+    "objetivo": null,
+    "observacoes": "A edição 2026 terminou em 21/08/2026. O tema de 2027 foi anunciado em 25/08/2026, ainda sem datas na página. A redação é feita na escola com professor orientador e a escola entrega o texto à secretaria de educação. Em 2026, vencedores e professores receberam viagem a Brasília com despesas pagas e notebook.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www12.senado.leg.br/jovemsenador",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www12.senado.leg.br/jovemsenador; https://www12.senado.leg.br/jovemsenador/home/noticias-1/externas/2026/02/inscricoes-para-o-jovem-senador-2026-comecam-nesta-segunda",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "modalidade",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/jovemsenador",
+    "idiomas": null
+  },
+  {
+    "id": "concurso-cartas",
+    "slug": "concurso-cartas",
+    "nome": "Concurso Internacional de Redação de Cartas para Jovens",
+    "sigla": null,
+    "tipo": "programa",
+    "organizador": "União Postal Universal; no Brasil, Correios",
+    "areas": [
+      "Linguagens e Códigos"
+    ],
+    "publico": {
+      "texto": "Estudantes de até 15 anos, por meio de escolas públicas e privadas.",
+      "series": []
+    },
+    "modalidade": null,
+    "participacao": "individual",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Concurso anual da União Postal Universal que incentiva a escrita e a criatividade de crianças e adolescentes por meio da carta. No Brasil é realizado pelos Correios, com fases escolar, estadual e nacional antes da etapa internacional.",
+    "objetivo": null,
+    "observacoes": "55ª edição, 2026, com resultados já publicados. A primeira colocação nacional representa o Brasil na fase internacional.",
+    "inscricoes": {
+      "inicio": "2026-02-23",
+      "fim": "2026-03-27"
+    },
+    "provas": [],
+    "linkOficial": "https://www.correios.com.br/educacao-e-cultura/concurso-internacional-de-redacao-de-cartas",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.correios.com.br/educacao-e-cultura/concurso-internacional-de-redacao-de-cartas",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "instagram",
+      "modalidade",
+      "provas",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "cdr-cgu",
+    "slug": "cdr-cgu",
+    "nome": "Concurso de Desenho e Redação da CGU",
+    "sigla": "CDR",
+    "tipo": "programa",
+    "organizador": "Controladoria-Geral da União (CGU)",
+    "areas": [
+      "Linguagens e Códigos",
+      "Ciências Humanas e Sociais Aplicadas"
+    ],
+    "publico": {
+      "texto": "Estudantes matriculados em qualquer etapa da Educação Básica, incluindo a EJA, e seus professores.",
+      "series": [
+        "EF-iniciais",
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM",
+        "EJA"
+      ]
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Projeto pedagógico-cultural da Controladoria-Geral da União sobre ética, cidadania e participação social, com trabalhos de desenho e redação de estudantes e professores de todo o país.",
+    "objetivo": null,
+    "observacoes": "A página aponta para a 15ª edição, sem datas no texto lido.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www.gov.br/cgu/pt-br/educacao-cidada/programas/desenho-redacao",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.gov.br/cgu/pt-br/educacao-cidada/programas/desenho-redacao",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "instagram",
+      "modalidade",
+      "participacao",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "oboart",
+    "slug": "oboart",
+    "nome": "Olimpíada Brasileira Online de Artes",
+    "sigla": "OBOArt",
+    "tipo": "olimpiada",
+    "organizador": "NOIC",
+    "areas": [
+      "Linguagens e Códigos"
+    ],
+    "publico": {
+      "texto": "Nível Tom Jobim: exclusivo para o Ensino Fundamental. Nível Tarsila do Amaral: aberto a todos, recomendado para o Ensino Médio.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição online e gratuita de artes, em fase única de 30 questões de múltipla escolha, criada pelo NOIC para despertar o interesse por artes entre estudantes brasileiros.",
+    "objetivo": null,
+    "observacoes": "Edição 2026. O regulamento diz que é, no momento, a única olimpíada de artes no Brasil. Algumas escolas podem aplicar a prova presencialmente.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "Fase única (31/08 a 06/09)",
+        "data": "2026-08-31"
+      }
+    ],
+    "linkOficial": "https://noic.com.br/obo/artes/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://noic.com.br/obo/artes/; https://noic.com.br/wp-content/uploads/2026/08/oboart.pdf",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/projetonoic/",
+    "idiomas": null
+  },
+  {
+    "id": "op-be-a-ba",
+    "slug": "op-be-a-ba",
+    "nome": "Olimpíada de Português bê-á-bá",
+    "sigla": null,
+    "tipo": "olimpiada",
+    "organizador": null,
+    "areas": [
+      "Linguagens e Códigos"
+    ],
+    "publico": {
+      "texto": "Alunos dos Anos Iniciais do Ensino Fundamental de escolas públicas e privadas de todo o Brasil.",
+      "series": [
+        "EF-iniciais"
+      ]
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Olimpíada de português para alunos dos Anos Iniciais, que busca fortalecer a capacidade interpretativa, criativa e expressiva das crianças com base em expressões populares e clássicos da literatura infantil.",
+    "objetivo": null,
+    "observacoes": "4ª edição. O calendário da página não mostra datas. Versão para Anos Iniciais da Olimpíada de Português, que já está no catálogo.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://olimpiadadeportugues.org/4a-op-be-a-ba",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://olimpiadadeportugues.org/4a-op-be-a-ba",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "modalidade",
+      "organizador",
+      "participacao",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/olimpiadadeportugues/",
+    "idiomas": null
+  },
+  {
+    "id": "ong-globalizacao",
+    "slug": "ong-globalizacao",
+    "nome": "Olimpíada Nacional de Globalização",
+    "sigla": "ONG",
+    "tipo": "olimpiada",
+    "organizador": "Instituto Diplomun",
+    "areas": [
+      "Ciências Humanas e Sociais Aplicadas"
+    ],
+    "publico": {
+      "texto": "8º e 9º anos do Ensino Fundamental, 1ª a 3ª série do Ensino Médio, EJA nos anos equivalentes e primeiro ano de gap year após o Ensino Médio.",
+      "series": [
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM",
+        "EJA"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": "O frete das medalhas físicas fica por conta do medalhista."
+    },
+    "descricao": "Competição nacional e gratuita sobre globalização, geopolítica, economia internacional e direitos humanos, que vai de questões objetivas até a defesa em vídeo de uma solução para um problema global real.",
+    "objetivo": null,
+    "observacoes": "Edição 2026, inscrições encerradas. Há inscrição individual e institucional, feita por um representante da escola.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "1ª fase (7 a 14/09)",
+        "data": "2026-09-07"
+      },
+      {
+        "fase": "2ª fase (21 a 28/09)",
+        "data": "2026-09-21"
+      },
+      {
+        "fase": "Fase final (5 a 12/10)",
+        "data": "2026-10-05"
+      },
+      {
+        "fase": "Divulgação dos medalhistas",
+        "data": "2026-10-26"
+      }
+    ],
+    "linkOficial": "https://www.diplomun.com/ong.html",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.diplomun.com/ong.html",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "participacao"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/institutodiplomun/",
+    "idiomas": null
+  },
+  {
+    "id": "obs-saber",
+    "slug": "obs-saber",
+    "nome": "Olimpíada Brasileira do Saber",
+    "sigla": "OBS",
+    "tipo": "olimpiada",
+    "organizador": "LODIBECS",
+    "areas": [
+      "Multidisciplinar"
+    ],
+    "publico": {
+      "texto": "Estudantes brasileiros do Ensino Médio.",
+      "series": [
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": null,
+    "participacao": "individual-ou-grupo",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Evento anual que busca promover e reconhecer o conhecimento e a excelência acadêmica de estudantes do Ensino Médio, com provas aplicadas na escola e etapa final por equipes.",
+    "objetivo": null,
+    "observacoes": "A página cita a edição 2026, sem datas no texto. 1ª e 2ª fases individuais; na 3ª fase, uma equipe por escola. Não confundir com a Olimpíada Brasileira de Sociologia, de mesma sigla.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://obssaberes.org/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://obssaberes.org/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "instagram",
+      "modalidade",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "obe-empreendedorismo",
+    "slug": "obe-empreendedorismo",
+    "nome": "Olimpíada Brasileira de Empreendedorismo",
+    "sigla": "OBE",
+    "tipo": "olimpiada",
+    "organizador": "Expacer",
+    "areas": [
+      "Educação Financeira e Gestão"
+    ],
+    "publico": {
+      "texto": "Do 6º ano do Ensino Fundamental ao 3º ano do Ensino Médio, de escolas públicas e privadas. Equipes de 2 a 5 estudantes da mesma escola.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "grupo",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição nacional e gratuita de empreendedorismo para escolas, em que equipes criam ideias de negócio e chegam a uma etapa final com protótipo e pitch em vídeo.",
+    "objetivo": null,
+    "observacoes": "4ª edição, 2026, entre maio e setembro. Não confundir com a Olimpíada Nacional de Empreendedorismo (ONE/UFMA) nem com a Olimpíada Brasileira de Estatística, de mesma sigla.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": "2026-06-17"
+    },
+    "provas": [
+      {
+        "fase": "Evento de abertura",
+        "data": "2026-05-06"
+      }
+    ],
+    "linkOficial": "https://obempreende.com.br/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://obempreende.com.br/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://instagram.com/obempreendedorismo",
+    "idiomas": null
+  },
+  {
+    "id": "bebras",
+    "slug": "bebras",
+    "nome": "Desafio Bebras Brasil",
+    "sigla": null,
+    "tipo": "olimpiada",
+    "organizador": null,
+    "areas": [
+      "Tecnologia e Computação"
+    ],
+    "publico": {
+      "texto": "Estudantes do 3º ano do Ensino Fundamental ao 3º ano do Ensino Médio. A inscrição é feita pela escola.",
+      "series": [
+        "EF-iniciais",
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "internacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": "A página mostra valor único por escola (R$ 280 para públicas e R$ 580 para privadas) e, em outro trecho, diz que a inscrição é gratuita."
+    },
+    "descricao": "Competição internacional de pensamento computacional, presente em mais de 80 países, com prova de 12 questões em 1 hora que não exige conhecimento de programação.",
+    "objetivo": null,
+    "observacoes": "5ª edição. O desafio é digital e tem versão impressa.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "Provas (01 a 07/10)",
+        "data": "2026-10-01"
+      }
+    ],
+    "linkOficial": "https://www.bebrasbrasil.com.br/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.bebrasbrasil.com.br/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "instagram",
+      "modalidade",
+      "organizador",
+      "participacao"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "cbr",
+    "slug": "cbr",
+    "nome": "Competição Brasileira de Robótica",
+    "sigla": "CBR",
+    "tipo": "evento",
+    "organizador": null,
+    "areas": [
+      "Tecnologia e Computação"
+    ],
+    "publico": {
+      "texto": "A RoboCup Junior é para o Ensino Fundamental e Médio; a RCB Open Challenge, para universitários e Ensino Médio; a CBR é descrita como competição universitária.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "presencial",
+    "participacao": "grupo",
+    "nivel": "nacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": "A página diz \"valores em breve\". A visitação é gratuita."
+    },
+    "descricao": "Competição de robótica por equipes, com categorias como futebol de robôs, @Home e RoboCup Junior, realizada dentro do evento Robótica 2026, que reúne também a Mostra Nacional de Robótica e a OBR.",
+    "objetivo": null,
+    "observacoes": "Edição 2026 no Centro de Convenções de João Pessoa/PB. Resultado dos TDPs em 07/09 e equipes qualificadas em 21/09.",
+    "inscricoes": {
+      "inicio": "2026-06-22",
+      "fim": "2026-08-24"
+    },
+    "provas": [
+      {
+        "fase": "Evento (23 a 29/11)",
+        "data": "2026-11-23"
+      }
+    ],
+    "linkOficial": "https://cbr.robocup.org.br/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://cbr.robocup.org.br/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "formato",
+      "idiomas",
+      "organizador"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/cbrobotica",
+    "idiomas": null
+  },
+  {
+    "id": "maratona-tech",
+    "slug": "maratona-tech",
+    "nome": "Maratona Tech",
+    "sigla": null,
+    "tipo": "olimpiada",
+    "organizador": "Associação Cactus",
+    "areas": [
+      "Tecnologia e Computação"
+    ],
+    "publico": {
+      "texto": "Estudantes do 6º ao 9º ano e da EJA Fundamental, do Ensino Médio e da EJA Médio. Professores também participam.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM",
+        "EJA"
+      ]
+    },
+    "modalidade": "hibrida",
+    "participacao": "individual-ou-grupo",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição nacional e gratuita que busca despertar o interesse de jovens pela tecnologia, com desafios nos eixos da BNCC Computação. A primeira fase é em equipe na escola e a segunda é um desafio prático online individual.",
+    "objetivo": null,
+    "observacoes": "5ª edição, 2026. Na Fase 2 o envio de vídeos vai até 08/11 às 23h59. Premiação com data a confirmar.",
+    "inscricoes": {
+      "inicio": "2026-05-25",
+      "fim": "2026-07-31"
+    },
+    "provas": [
+      {
+        "fase": "Fase 1 (03/08 a 04/10)",
+        "data": "2026-08-03"
+      },
+      {
+        "fase": "Fase 2 (19/10 a 08/11)",
+        "data": "2026-10-19"
+      }
+    ],
+    "linkOficial": "https://maratona.tech/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://maratona.tech/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/maratonatech",
+    "idiomas": null
+  },
+  {
+    "id": "tbr",
+    "slug": "tbr",
+    "nome": "Torneio Brasil de Robótica",
+    "sigla": "TBR",
+    "tipo": "olimpiada",
+    "organizador": null,
+    "areas": [
+      "Tecnologia e Computação"
+    ],
+    "publico": {
+      "texto": "Modalidades por faixa etária: Baby, Kids 1, Kids 2, Middle 1, Middle 2, High, Technic e University.",
+      "series": []
+    },
+    "modalidade": null,
+    "participacao": "grupo",
+    "nivel": "nacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Torneio de robótica por equipes, avaliadas por pesquisa científica, organização e método e por um desafio prático com robôs.",
+    "objetivo": null,
+    "observacoes": "Temporada 2026, sem datas no texto lido.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www.torneiobrasilderobotica.com.br/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.torneiobrasilderobotica.com.br/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "formato",
+      "idiomas",
+      "inscricoes",
+      "modalidade",
+      "organizador",
+      "provas",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/torneiobrasilderobotica",
+    "idiomas": null
+  },
+  {
+    "id": "tfc",
+    "slug": "tfc",
+    "nome": "Torneio Feminino de Computação",
+    "sigla": "TFC",
+    "tipo": "olimpiada",
+    "organizador": "Movimento Meninas Olímpicas",
+    "areas": [
+      "Tecnologia e Computação"
+    ],
+    "publico": {
+      "texto": "Apenas meninas, nos níveis Mirim, Júnior, 1 e 2 (a página não indica as séries).",
+      "series": []
+    },
+    "modalidade": "online",
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Competição brasileira de programação exclusiva para meninas, criada em 2020, que busca incentivar a participação feminina nos cursos de Computação.",
+    "objetivo": null,
+    "observacoes": "7ª edição, 2026, sem datas no texto lido.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://tfcbr.inf.ufsm.br/olimpiadas/computacao-tfc",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://tfcbr.inf.ufsm.br/olimpiadas/computacao-tfc",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "participacao",
+      "provas",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://instagram.com/tfc.br",
+    "idiomas": null
+  },
+  {
+    "id": "tjr",
+    "slug": "tjr",
+    "nome": "Torneio Juvenil de Robótica",
+    "sigla": "TJR",
+    "tipo": "olimpiada",
+    "organizador": null,
+    "areas": [
+      "Tecnologia e Computação"
+    ],
+    "publico": {
+      "texto": null,
+      "series": []
+    },
+    "modalidade": "hibrida",
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Competição de robótica para jovens, com desafios como sumô, cabo de guerra, corrida de arrancada e dirigibilidade de drones, em etapas regionais ao longo do ano e final anual.",
+    "objetivo": null,
+    "observacoes": "O site é do Instituto TJR. Tem etapas presenciais regionais e o TJR@ONLINE. A página lista etapas em Açailândia/MA, Patos/PB, Angra/RJ e Catolé/PB.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "TJR MA, Açailândia",
+        "data": "2026-10-20"
+      },
+      {
+        "fase": "TJR PB, Patos",
+        "data": "2026-10-27"
+      },
+      {
+        "fase": "TJR RJ, Angra",
+        "data": "2026-11-07"
+      },
+      {
+        "fase": "TJR PB, Catolé",
+        "data": "2026-11-18"
+      }
+    ],
+    "linkOficial": "https://www.torneiojrobotica.org/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.torneiojrobotica.org/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "formato",
+      "idiomas",
+      "inscricoes",
+      "nivel",
+      "organizador",
+      "participacao",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/tjrtorneiojuvenilderobotica/",
+    "idiomas": null
+  },
+  {
+    "id": "first-lego-league",
+    "slug": "first-lego-league",
+    "nome": "FIRST LEGO League",
+    "sigla": null,
+    "tipo": "olimpiada",
+    "organizador": "FIRST; no Brasil, SESI Departamento Nacional (Challenge) e Educacional (Discover e Explore)",
+    "areas": [
+      "Tecnologia e Computação"
+    ],
+    "publico": {
+      "texto": "Discover: 3 a 6 anos. Explore: 6 a 10 anos. Challenge: 9 a 15 anos.",
+      "series": []
+    },
+    "modalidade": null,
+    "participacao": "grupo",
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Programa de robótica que busca engajar crianças e jovens em STEAM por meio de competições e trabalho em equipe, organizado por faixas etárias em torno do tema anual da FIRST.",
+    "objetivo": null,
+    "observacoes": null,
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www.firstlegoleague.com.br/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.firstlegoleague.com.br/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "formato",
+      "idiomas",
+      "inscricoes",
+      "instagram",
+      "modalidade",
+      "provas",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "ligmat",
+    "slug": "ligmat",
+    "nome": "Liga de Matemática",
+    "sigla": "LigMAT",
+    "tipo": "olimpiada",
+    "organizador": null,
+    "areas": [
+      "Matemática"
+    ],
+    "publico": {
+      "texto": null,
+      "series": []
+    },
+    "modalidade": "hibrida",
+    "participacao": "grupo",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Competição de matemática por equipes, com provas online na Seletiva Olímpica e partidas orais presenciais de perguntas e respostas na Superliga.",
+    "objetivo": null,
+    "observacoes": "Seletiva Olímpica 2026, sem datas no texto lido. O rodapé cita o Instituto Philotimia, sem dizer se é o organizador.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www.ligmat.com/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.ligmat.com/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "organizador",
+      "provas",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/ligmatbrasil/",
+    "idiomas": null
+  },
+  {
+    "id": "jacob-palis-jr",
+    "slug": "jacob-palis-jr",
+    "nome": "Competição Jacob Palis Júnior de Matemática",
+    "sigla": null,
+    "tipo": "olimpiada",
+    "organizador": "Associação Olimpíada Brasileira de Matemática (AOBM), com apoio da SBM",
+    "areas": [
+      "Matemática"
+    ],
+    "publico": {
+      "texto": "Alunos de escolas públicas ou privadas. Nível 1: 6º ou 7º ano. Nível 2: 8º ou 9º ano. Nível 3: Ensino Médio.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Competição para estudantes da educação básica, do 6º ano do Ensino Fundamental ao Ensino Médio, organizada em três níveis conforme a série.",
+    "objetivo": null,
+    "observacoes": "5ª edição, 2026, citada apenas no nome do regulamento, sem datas na página.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://www.obm.org.br/competicao-jacob-palis-junior-de-matematica/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.obm.org.br/competicao-jacob-palis-junior-de-matematica/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "modalidade",
+      "participacao",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/obm_oficial/",
+    "idiomas": null
+  },
+  {
+    "id": "ompd",
+    "slug": "ompd",
+    "nome": "Olimpíada Matemáticos por Diversão",
+    "sigla": "OMpD",
+    "tipo": "olimpiada",
+    "organizador": null,
+    "areas": [
+      "Matemática"
+    ],
+    "publico": {
+      "texto": null,
+      "series": []
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Competição de matemática do canal Matemático por Diversão, do Prof. Davi Lopes, com segunda fase para os aprovados na primeira.",
+    "objetivo": null,
+    "observacoes": "A página traz apenas a edição 2025 (publicação de 16/09/2025 sobre os aprovados para a segunda fase). Não há edição vigente confirmada.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://matematicopordiversao.wordpress.com/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://matematicopordiversao.wordpress.com/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "formato",
+      "idiomas",
+      "inscricoes",
+      "instagram",
+      "modalidade",
+      "nivel",
+      "organizador",
+      "participacao",
+      "provas",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "olimpiada-mirim",
+    "slug": "olimpiada-mirim",
+    "nome": "Olimpíada Mirim - OBMEP",
+    "sigla": null,
+    "tipo": "olimpiada",
+    "organizador": "IMPA, com apoio da B3 Social",
+    "areas": [
+      "Matemática"
+    ],
+    "publico": {
+      "texto": "Alunos dos 2º, 3º, 4º e 5º anos do Ensino Fundamental de escolas públicas e privadas.",
+      "series": [
+        "EF-iniciais"
+      ]
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": "Gratuita para escolas públicas na inscrição sem premiação. Inscrição com premiação e de escolas privadas tem taxa."
+    },
+    "descricao": "Olimpíada realizada pelo IMPA para alunos do 2º ao 5º ano do Ensino Fundamental de escolas públicas e privadas, que busca estimular o estudo da Matemática e difundir a cultura matemática.",
+    "objetivo": null,
+    "observacoes": "5ª edição, 2026. Verificar se é a mesma \"OBMEP Jr.\" já cadastrada no catálogo (id obmep-jr).",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://olimpiadamirim.obmep.org.br/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://olimpiadamirim.obmep.org.br/static/media/regulamento.8e507e85.pdf",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "instagram",
+      "modalidade",
+      "participacao",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "titas-da-matematica",
+    "slug": "titas-da-matematica",
+    "nome": "Olimpíada Nacional Titãs da Matemática",
+    "sigla": null,
+    "tipo": "olimpiada",
+    "organizador": null,
+    "areas": [
+      "Matemática"
+    ],
+    "publico": {
+      "texto": "Do 6º ano do Ensino Fundamental ao 4º ano do Técnico Integrado.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM",
+        "TEC"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Competição nacional de matemática realizada integralmente online para estudantes do Ensino Fundamental, Ensino Médio e Técnico Integrado.",
+    "objetivo": null,
+    "observacoes": null,
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "Prova",
+        "data": "2026-10-22"
+      }
+    ],
+    "linkOficial": "https://edicao2026.titasdamatematica.com.br/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://edicao2026.titasdamatematica.com.br/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "instagram",
+      "organizador",
+      "participacao"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "olimpiada-itabirana",
+    "slug": "olimpiada-itabirana",
+    "nome": "Olimpíada Itabirana de Matemática",
+    "sigla": "OIM",
+    "tipo": "olimpiada",
+    "organizador": null,
+    "areas": [
+      "Matemática"
+    ],
+    "publico": {
+      "texto": "Estudantes do Ensino Fundamental e Médio. A página não diz se a participação é nacional ou restrita à região de Itabira/MG.",
+      "series": []
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "regional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Olimpíada em fases que estimula o raciocínio lógico e valoriza talentos de estudantes do Ensino Fundamental e Médio, com a etapa especial Elas em Destaque.",
+    "objetivo": null,
+    "observacoes": "Edição 2026. Inscrição de escolas de 23/02 a 25/05 e de alunos de 02/03 a 08/06 (prorrogada). Apoio e realização: UEMG, IFNMG, IFMG, entre outros.",
+    "inscricoes": {
+      "inicio": "2026-02-23",
+      "fim": "2026-06-08"
+    },
+    "provas": [
+      {
+        "fase": "1ª fase (14 a 19/06)",
+        "data": "2026-06-14"
+      },
+      {
+        "fase": "2ª fase",
+        "data": "2026-08-05"
+      },
+      {
+        "fase": "Elas em Destaque",
+        "data": "2026-08-06"
+      },
+      {
+        "fase": "Cerimônia de premiação",
+        "data": "2026-11-14"
+      }
+    ],
+    "linkOficial": "https://olimpiadaitabirana.com.br/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://olimpiadaitabirana.com.br/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "modalidade",
+      "nivel",
+      "organizador",
+      "participacao",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/olimpiada.oim/",
+    "idiomas": null
+  },
+  {
+    "id": "iypt-brasil",
+    "slug": "iypt-brasil",
+    "nome": "IYPT Brasil",
+    "sigla": "IYPT",
+    "tipo": "olimpiada",
+    "organizador": null,
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": null,
+      "series": []
+    },
+    "modalidade": "hibrida",
+    "participacao": "grupo",
+    "nivel": "nacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Versão brasileira do International Young Physicists' Tournament, com os mesmos 17 problemas do torneio internacional. A primeira fase usa relatórios científicos e vídeos, e o Torneio Nacional é presencial no formato de Physics Fights.",
+    "objetivo": null,
+    "observacoes": "Edição 2027, com inscrições abertas até 18/12/2026. Regulamento lançado em outubro de 2026, em documento externo que não foi lido.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": "2026-12-18"
+    },
+    "provas": [],
+    "linkOficial": "https://www.iyptbrasil.com/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://www.iyptbrasil.com/; https://www.iyptbrasil.com/sobre-o-torneio",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "formato",
+      "idiomas",
+      "inscricoes",
+      "organizador",
+      "provas",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/iypt.brasil/",
+    "idiomas": null
+  },
+  {
+    "id": "obsat",
+    "slug": "obsat",
+    "nome": "Olimpíada Brasileira de Satélites",
+    "sigla": "OBSAT",
+    "tipo": "olimpiada",
+    "organizador": "Olimpíada Brasileira de Satélites; realização da UFSCar, com apoio da Agência Espacial Brasileira",
+    "areas": [
+      "Tecnologia e Computação",
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Modalidade Prática: Ensino Fundamental II, Médio ou Técnico e Superior. Modalidade Teórica: do 1º ano do Ensino Fundamental ao Ensino Médio ou Técnico.",
+      "series": [
+        "EF-iniciais",
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM",
+        "TEC"
+      ]
+    },
+    "modalidade": "hibrida",
+    "participacao": "individual-ou-grupo",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Olimpíada bianual com experiências teóricas e práticas com satélites de pequeno porte, que busca disseminar a cultura aeroespacial e o conhecimento em STEM entre estudantes e professores.",
+    "objetivo": null,
+    "observacoes": "Teórica é individual e online. Prática é em equipes de 2 a 4 estudantes com um mentor maior de 18 anos, com fases regionais e final presenciais. Sem datas no texto lido.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://obsat.org.br/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://obsat.org.br/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/obsatoficial/",
+    "idiomas": null
+  },
+  {
+    "id": "onneq",
+    "slug": "onneq",
+    "nome": "Olimpíada Norte/Nordeste de Química",
+    "sigla": "ONNeQ",
+    "tipo": "olimpiada",
+    "organizador": "Associação Brasileira de Química, com promoção da UFC e da UFPI",
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Alunos do Ensino Médio de escolas federais, estaduais, municipais e particulares do Norte e do Nordeste, selecionados na seletiva estadual.",
+      "series": [
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "regional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": "A página não informa taxa de inscrição. Recurso de resultado custa R$ 50 por item."
+    },
+    "descricao": "Olimpíada regional iniciada em 1995 para alunos do Ensino Médio de escolas do Norte e do Nordeste, em etapa única com prova de 5 questões analítico-expositivas. Participam até 50 estudantes por estado, indicados pelo coordenador estadual após a seletiva estadual.",
+    "objetivo": null,
+    "observacoes": "O regulamento fala em inscrição e prova em maio, sem data exata do ano.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://obquimica.org/olimpiada/olimpiada-nortenordeste-de-quimica",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [
+      {
+        "tipo": "medalha",
+        "texto": "54 medalhas na premiação geral e 48 medalhas para os três primeiros de escolas públicas de cada estado"
+      }
+    ],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://obquimica.org/olimpiada/olimpiada-nortenordeste-de-quimica",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "modalidade",
+      "participacao",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/obquimica",
+    "idiomas": null
+  },
+  {
+    "id": "obc-ciencias",
+    "slug": "obc-ciencias",
+    "nome": "Olimpíada Brasileira de Ciências",
+    "sigla": "OBC",
+    "tipo": "olimpiada",
+    "organizador": "b8projetos",
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Estudantes de até 15 anos.",
+      "series": []
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Competição anual que avalia Física, Química e Biologia de forma simultânea e seleciona alunos para representar o Brasil na Olimpíada Internacional Júnior de Ciências (IJSO).",
+    "objetivo": null,
+    "observacoes": "Página sem datas nem edição identificada. Não confundir com a Olimpíada Brasileira de Cidadania, de mesma sigla.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "http://www.obciencias.com.br/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "http://www.obciencias.com.br/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "instagram",
+      "modalidade",
+      "participacao",
+      "provas",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "tvq",
+    "slug": "tvq",
+    "nome": "Torneio Virtual de Química",
+    "sigla": "TVQ",
+    "tipo": "olimpiada",
+    "organizador": "IQ-Unicamp",
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": null,
+      "series": []
+    },
+    "modalidade": null,
+    "participacao": null,
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Torneio de química do IQ-Unicamp com provas online em fases, regido pelo edital do TVQ 2026.",
+    "objetivo": null,
+    "observacoes": "17ª edição, 2026. A segunda fase teve quatro provas semanais. O calendário 2026 está em página externa e não foi lido.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "3ª fase (10 e 11/10)",
+        "data": "2026-10-10"
+      }
+    ],
+    "linkOficial": "https://sites.google.com/unicamp.br/torneio-virtual-de-quimica",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://sites.google.com/unicamp.br/torneio-virtual-de-quimica",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "instagram",
+      "modalidade",
+      "participacao",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": null,
+    "idiomas": null
+  },
+  {
+    "id": "camaleao-quimica",
+    "slug": "camaleao-quimica",
+    "nome": "Olimpíada Camaleão da Química",
+    "sigla": "OCQ",
+    "tipo": "olimpiada",
+    "organizador": null,
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Estudantes de escolas públicas e privadas, do ensino básico até quem já saiu do Ensino Médio.",
+      "series": []
+    },
+    "modalidade": "online",
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "pago",
+      "observacao": "Valor simbólico de R$ 10 a R$ 30."
+    },
+    "descricao": "Olimpíada de química online fundada em 2020 por estudantes do ensino médio técnico do IFBA Salvador, que busca despertar a curiosidade pelo estudo da química de forma descontraída.",
+    "objetivo": null,
+    "observacoes": "Sem datas de edição no texto lido. Não confundir com a Olimpíada Cearense de Química (OCQ).",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [],
+    "linkOficial": "https://sites.google.com/view/olimpiadacamaleao",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://sites.google.com/view/olimpiadacamaleao",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "organizador",
+      "provas",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/oc.quimica",
+    "idiomas": null
+  },
+  {
+    "id": "mostratec",
+    "slug": "mostratec",
+    "nome": "Mostra Internacional de Ciência e Tecnologia",
+    "sigla": "MOSTRATEC",
+    "tipo": "feira",
+    "organizador": "Fundação Liberato",
+    "areas": [
+      "Multidisciplinar"
+    ],
+    "publico": {
+      "texto": "Projetos de jovens da Educação Infantil ao Ensino Médio, incluindo a Educação Profissional Técnica de Nível Médio.",
+      "series": [
+        "EF-iniciais",
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM",
+        "TEC"
+      ]
+    },
+    "modalidade": "presencial",
+    "participacao": null,
+    "nivel": "internacional",
+    "formato": "projeto",
+    "custo": {
+      "tipo": null,
+      "observacao": null
+    },
+    "descricao": "Feira anual de ciência e tecnologia da Fundação Liberato, em Novo Hamburgo/RS, com projetos de pesquisa de jovens da Educação Infantil ao Ensino Médio, incluindo a Educação Profissional Técnica de Nível Médio.",
+    "objetivo": null,
+    "observacoes": "Submissão direta em 2026 de 01 a 31/07; inscrição via feiras afiliadas a partir de 01/07. As datas oficiais da feira de 2026 e as de 2027 não aparecem na página.",
+    "inscricoes": {
+      "inicio": "2026-07-01",
+      "fim": "2026-07-31"
+    },
+    "provas": [],
+    "linkOficial": "https://mostratec.liberato.com.br/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://mostratec.liberato.com.br/",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "custo",
+      "financiavelJOC",
+      "idiomas",
+      "participacao",
+      "provas"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/mostratecoficial/",
+    "idiomas": null
+  },
+  {
+    "id": "oboa",
+    "slug": "oboa",
+    "nome": "Olimpíada Brasileira Online de Astronomia",
+    "sigla": "OBOA",
+    "tipo": "olimpiada",
+    "organizador": "NOIC",
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Níveis para 6º e 7º anos e para 8º e 9º anos, e nível aberto recomendado para o Ensino Médio.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição online e gratuita organizada pelo NOIC para estimular estudantes brasileiros a participar de olimpíadas de astronomia e a se interessar por ciência.",
+    "objetivo": null,
+    "observacoes": "Edição 2026 (o ano vem do regulamento). Inscrição por formulário, com opção de inscrição em lote pela escola.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "1ª fase (31/08 a 06/09)",
+        "data": "2026-08-31"
+      },
+      {
+        "fase": "2ª fase (05 a 11/10)",
+        "data": "2026-10-05"
+      }
+    ],
+    "linkOficial": "https://noic.com.br/obo/astronomia/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://noic.com.br/obo/astronomia/; https://noic.com.br/wp-content/uploads/2026/05/regulamento_oboa.pdf",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/projetonoic/",
+    "idiomas": null
+  },
+  {
+    "id": "obob",
+    "slug": "obob",
+    "nome": "Olimpíada Brasileira Online de Biologia",
+    "sigla": "OBOB",
+    "tipo": "olimpiada",
+    "organizador": "NOIC",
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Nível Vital Brasil para 8º e 9º anos e Nível Oswaldo Cruz aberto a todos, recomendado para o Ensino Médio.",
+      "series": [
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição online e gratuita criada pelo NOIC para incentivar estudantes a participar de olimpíadas de biologia e a se interessar pela área.",
+    "objetivo": null,
+    "observacoes": "Edição 2026 (o ano vem do regulamento). Inscrição por formulário, com opção de inscrição em lote pela escola.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "1ª fase (17 a 23/08)",
+        "data": "2026-08-17"
+      },
+      {
+        "fase": "2ª fase (21 a 27/09)",
+        "data": "2026-09-21"
+      }
+    ],
+    "linkOficial": "https://noic.com.br/obo/biologia/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://noic.com.br/obo/biologia/; https://noic.com.br/wp-content/uploads/2026/05/regulamento_obob.pdf",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/projetonoic/",
+    "idiomas": null
+  },
+  {
+    "id": "oboc",
+    "slug": "oboc",
+    "nome": "Olimpíada Brasileira Online de Ciências",
+    "sigla": "OBOC",
+    "tipo": "olimpiada",
+    "organizador": "NOIC",
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Nível Iniciante para nascidos após 1 de janeiro de 2011 e Nível Aberto, recomendado para quem está em idade de Seletiva IJSO.",
+      "series": []
+    },
+    "modalidade": "online",
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição online e gratuita criada pelo NOIC para incentivar a participação em olimpíadas de ciências, com questões distribuídas igualmente entre Física, Química e Biologia.",
+    "objetivo": null,
+    "observacoes": "Edição 2026 (o ano vem do regulamento). Inscrição por formulário, com opção de inscrição em lote pela escola.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "1ª fase (31/08 a 06/09)",
+        "data": "2026-08-31"
+      },
+      {
+        "fase": "2ª fase (28/09 a 04/10)",
+        "data": "2026-09-28"
+      }
+    ],
+    "linkOficial": "https://noic.com.br/obo/ciencias/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://noic.com.br/obo/ciencias/; https://noic.com.br/wp-content/uploads/2026/05/regulamento_oboc.pdf",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes",
+      "publico"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/projetonoic/",
+    "idiomas": null
+  },
+  {
+    "id": "oboch",
+    "slug": "oboch",
+    "nome": "Olimpíada Brasileira Online de Ciências Humanas",
+    "sigla": "OBOCH",
+    "tipo": "olimpiada",
+    "organizador": "NOIC",
+    "areas": [
+      "Ciências Humanas e Sociais Aplicadas"
+    ],
+    "publico": {
+      "texto": "Nível único aberto a todos, recomendado para o Ensino Médio e o Ensino Fundamental.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição online e gratuita criada pelo NOIC, com questões que abordam História, Geografia e Filosofia em conjunto.",
+    "objetivo": null,
+    "observacoes": "Edição 2026 (o ano vem do regulamento). Inscrição por formulário, com opção de inscrição em lote pela escola.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "1ª fase (07 a 13/09)",
+        "data": "2026-09-07"
+      },
+      {
+        "fase": "2ª fase (05 a 11/10)",
+        "data": "2026-10-05"
+      }
+    ],
+    "linkOficial": "https://noic.com.br/obo/humanas/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://noic.com.br/obo/humanas/; https://noic.com.br/wp-content/uploads/2026/05/regulamento_oboch.pdf",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/projetonoic/",
+    "idiomas": null
+  },
+  {
+    "id": "oboecon",
+    "slug": "oboecon",
+    "nome": "Olimpíada Brasileira Online de Economia",
+    "sigla": "OBOEcon",
+    "tipo": "olimpiada",
+    "organizador": "NOIC",
+    "areas": [
+      "Educação Financeira e Gestão"
+    ],
+    "publico": {
+      "texto": "Nível único para alunos do Ensino Médio ou do Ensino Fundamental.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "individual-ou-grupo",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição online e gratuita criada pelo NOIC para incentivar a participação em olimpíadas de economia, com prova individual e, na segunda fase, um business case em grupos.",
+    "objetivo": null,
+    "observacoes": "Edição 2026 (o ano vem do regulamento). Inscrição por formulário, com opção de inscrição em lote pela escola.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "1ª fase (07 a 13/09)",
+        "data": "2026-09-07"
+      },
+      {
+        "fase": "2ª fase, business case em grupo (05 a 11/10)",
+        "data": "2026-10-05"
+      }
+    ],
+    "linkOficial": "https://noic.com.br/obo/economia/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://noic.com.br/obo/economia/; https://noic.com.br/wp-content/uploads/2026/05/regulamento_oboecon.pdf",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/projetonoic/",
+    "idiomas": null
+  },
+  {
+    "id": "obof",
+    "slug": "obof",
+    "nome": "Olimpíada Brasileira Online de Física",
+    "sigla": "OBOF",
+    "tipo": "olimpiada",
+    "organizador": "NOIC",
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Níveis para 6º e 7º anos, 8º e 9º anos, 1º e 2º anos do Ensino Médio, e nível aberto recomendado para o 3º ano e o 4º ano técnico.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM",
+        "TEC"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição online e gratuita criada pelo NOIC com o canal Fisicadu para incentivar estudantes a participar de olimpíadas de física.",
+    "objetivo": null,
+    "observacoes": "Edição 2026 (o ano vem do regulamento). Inscrição por formulário, com opção de inscrição em lote pela escola.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "1ª fase (17 a 23/08)",
+        "data": "2026-08-17"
+      },
+      {
+        "fase": "2ª fase (21 a 27/09)",
+        "data": "2026-09-21"
+      }
+    ],
+    "linkOficial": "https://noic.com.br/obo/fisica/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://noic.com.br/obo/fisica/; https://noic.com.br/wp-content/uploads/2026/08/regulamebto_obof.pdf",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/projetonoic/",
+    "idiomas": null
+  },
+  {
+    "id": "obofog",
+    "slug": "obofog",
+    "nome": "Olimpíada Brasileira Online de Foguetes",
+    "sigla": "OBOFog",
+    "tipo": "olimpiada",
+    "organizador": "NOIC",
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Equipes de no máximo 3 competidores. Nível Jayme Boscov: o regulamento diz \"6º e 9º anos\" do Ensino Fundamental. Nível Marcos Pontes: Ensino Médio.",
+      "series": [
+        "6EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "grupo",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição online e gratuita criada pelo NOIC em que equipes montam um foguete, gravam o lançamento e apresentam um relatório sobre o projeto.",
+    "objetivo": null,
+    "observacoes": "Edição 2026 (o ano vem do regulamento). Inscrição por formulário, com opção de inscrição em lote pela escola.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "1ª fase, envio do lançamento (17/08 a 27/09)",
+        "data": "2026-08-17"
+      },
+      {
+        "fase": "2ª fase, envio do vídeo (28/09 a 30/10)",
+        "data": "2026-09-28"
+      }
+    ],
+    "linkOficial": "https://noic.com.br/obo/foguetes/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://noic.com.br/obo/foguetes/; https://noic.com.br/wp-content/uploads/2026/05/regulamento_obofog.pdf",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/projetonoic/",
+    "idiomas": null
+  },
+  {
+    "id": "oboi",
+    "slug": "oboi",
+    "nome": "Olimpíada Brasileira Online de Informática",
+    "sigla": "OBOI",
+    "tipo": "olimpiada",
+    "organizador": "NOIC",
+    "areas": [
+      "Tecnologia e Computação"
+    ],
+    "publico": {
+      "texto": "Nível Júnior até o 1º ano do Ensino Médio, Nível Pleno até o 3º ano e Nível Sênior aberto.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição online e gratuita de programação criada pelo NOIC com o Neps Academy, com prova realizada na plataforma Neps Academy.",
+    "objetivo": null,
+    "observacoes": "Edição 2026 (o ano vem do regulamento). Inscrição por formulário, com opção de inscrição em lote pela escola.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "1ª fase (24 a 30/08)",
+        "data": "2026-08-24"
+      },
+      {
+        "fase": "2ª fase (21 a 27/09)",
+        "data": "2026-09-21"
+      }
+    ],
+    "linkOficial": "https://noic.com.br/obo/informatica/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://noic.com.br/obo/informatica/; https://noic.com.br/wp-content/uploads/2026/05/regulamento_oboi.pdf",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/projetonoic/",
+    "idiomas": null
+  },
+  {
+    "id": "oboia",
+    "slug": "oboia",
+    "nome": "Olimpíada Brasileira Online de Inteligência Artificial",
+    "sigla": "OBOIA",
+    "tipo": "olimpiada",
+    "organizador": "NOIC",
+    "areas": [
+      "Tecnologia e Computação"
+    ],
+    "publico": {
+      "texto": "Nível único aberto a todos, recomendado para o Ensino Médio e o Ensino Fundamental.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição online e gratuita criada pelo NOIC para estimular estudantes brasileiros a participar de olimpíadas de inteligência artificial.",
+    "objetivo": null,
+    "observacoes": "Edição 2026 (o ano vem do regulamento). Inscrição por formulário, com opção de inscrição em lote pela escola.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "1ª fase (31/08 a 06/09)",
+        "data": "2026-08-31"
+      },
+      {
+        "fase": "2ª fase",
+        "data": "2026-09-26"
+      }
+    ],
+    "linkOficial": "https://noic.com.br/obo/ia/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://noic.com.br/obo/ia/; https://noic.com.br/wp-content/uploads/2026/08/oboia.pdf",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/projetonoic/",
+    "idiomas": null
+  },
+  {
+    "id": "obol",
+    "slug": "obol",
+    "nome": "Olimpíada Brasileira Online de Linguística",
+    "sigla": "OBOL",
+    "tipo": "olimpiada",
+    "organizador": "NOIC",
+    "areas": [
+      "Linguagens e Códigos"
+    ],
+    "publico": {
+      "texto": "Nível Mirim: o regulamento diz \"6º e 8º anos\". Nível Regular: aberto, recomendado para o Ensino Médio e o 9º ano.",
+      "series": [
+        "6EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição online e gratuita organizada pelo NOIC para incentivar estudantes brasileiros a participar de olimpíadas de linguística e a se interessar pela área.",
+    "objetivo": null,
+    "observacoes": "Edição 2026 (o ano vem do regulamento). Inscrição por formulário, com opção de inscrição em lote pela escola.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "1ª fase (17 a 23/08)",
+        "data": "2026-08-17"
+      },
+      {
+        "fase": "2ª fase (21 a 27/09)",
+        "data": "2026-09-21"
+      }
+    ],
+    "linkOficial": "https://noic.com.br/obo/linguistica/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://noic.com.br/obo/linguistica/; https://noic.com.br/wp-content/uploads/2026/05/regulamento_obol.pdf",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/projetonoic/",
+    "idiomas": null
+  },
+  {
+    "id": "obom",
+    "slug": "obom",
+    "nome": "Olimpíada Brasileira Online de Matemática",
+    "sigla": "OBOM",
+    "tipo": "olimpiada",
+    "organizador": "NOIC",
+    "areas": [
+      "Matemática"
+    ],
+    "publico": {
+      "texto": "Dois níveis para 8º e 9º anos, abertos a 6º e 7º anos, um nível para o Ensino Médio e um nível aberto recomendado para o Ensino Médio.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição online e gratuita de matemática criada pelo NOIC, em quatro níveis, dois no estilo OBMEP e dois no estilo OBM.",
+    "objetivo": null,
+    "observacoes": "Edição 2026 (o ano vem do regulamento). Inscrição por formulário, com opção de inscrição em lote pela escola.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "1ª fase (24 a 30/08)",
+        "data": "2026-08-24"
+      },
+      {
+        "fase": "2ª fase (28/09 a 04/10)",
+        "data": "2026-09-28"
+      }
+    ],
+    "linkOficial": "https://noic.com.br/obo/matematica/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://noic.com.br/obo/matematica/; https://noic.com.br/wp-content/uploads/2026/07/OBOs_2026.pdf",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/projetonoic/",
+    "idiomas": null
+  },
+  {
+    "id": "oboq",
+    "slug": "oboq",
+    "nome": "Olimpíada Brasileira Online de Química",
+    "sigla": "OBOQ",
+    "tipo": "olimpiada",
+    "organizador": "NOIC",
+    "areas": [
+      "Ciências da Natureza"
+    ],
+    "publico": {
+      "texto": "Nível Iniciante para o Ensino Fundamental e Médio e Nível Avançado aberto, recomendado para o Ensino Médio.",
+      "series": [
+        "6EF",
+        "7EF",
+        "8EF",
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "individual",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição online e gratuita criada pelo NOIC para incentivar a participação de estudantes em olimpíadas de química e despertar o interesse pela área.",
+    "objetivo": null,
+    "observacoes": "Edição 2026 (o ano vem do regulamento). Inscrição por formulário, com opção de inscrição em lote pela escola.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "1ª fase (07 a 13/09)",
+        "data": "2026-09-07"
+      },
+      {
+        "fase": "2ª fase (05 a 11/10)",
+        "data": "2026-10-05"
+      }
+    ],
+    "linkOficial": "https://noic.com.br/obo/quimica/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://noic.com.br/obo/quimica/; https://noic.com.br/wp-content/uploads/2026/05/regulamento_oboq.pdf",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/projetonoic/",
+    "idiomas": null
+  },
+  {
+    "id": "obor",
+    "slug": "obor",
+    "nome": "Olimpíada Brasileira Online de Robótica",
+    "sigla": "OBOR",
+    "tipo": "olimpiada",
+    "organizador": "NOIC",
+    "areas": [
+      "Tecnologia e Computação"
+    ],
+    "publico": {
+      "texto": "Estudantes do 9º ano e do Ensino Médio, segundo a página; o regulamento diz Ensino Médio e Ensino Fundamental. Equipes de 2 a 4 competidores.",
+      "series": [
+        "9EF",
+        "1EM",
+        "2EM",
+        "3EM"
+      ]
+    },
+    "modalidade": "online",
+    "participacao": "grupo",
+    "nivel": "nacional",
+    "formato": "prova",
+    "custo": {
+      "tipo": "gratuito",
+      "observacao": null
+    },
+    "descricao": "Competição online e gratuita criada pelo NOIC para aproximar estudantes de todo o país da robótica, com desafios de programação, mecânica e eletrônica.",
+    "objetivo": null,
+    "observacoes": "Edição 2026 (o ano vem do regulamento). Inscrição por formulário, com opção de inscrição em lote pela escola.",
+    "inscricoes": {
+      "inicio": null,
+      "fim": null
+    },
+    "provas": [
+      {
+        "fase": "1ª fase (17 a 23/08)",
+        "data": "2026-08-17"
+      },
+      {
+        "fase": "2ª fase, envio de vídeo (21/09 a 11/10)",
+        "data": "2026-09-21"
+      }
+    ],
+    "linkOficial": "https://noic.com.br/obo/robotica/",
+    "comoParticipar": [
+      "Veja regulamento, datas e inscrição no site oficial.",
+      "Depois de participar, avise a escola para registrar no Portal Educação Científica."
+    ],
+    "desbloqueia": [],
+    "credenciaPara": [],
+    "financiavelJOC": false,
+    "fonte": "https://noic.com.br/obo/robotica/; https://noic.com.br/wp-content/uploads/2026/05/regulamento_obor.pdf",
+    "aConfirmar": true,
+    "camposAConfirmar": [
+      "financiavelJOC",
+      "idiomas",
+      "inscricoes"
+    ],
+    "atualizadoEm": "2026-11-04",
+    "instagram": "https://www.instagram.com/projetonoic/",
+    "idiomas": null
   }
 ]

@@ -130,6 +130,12 @@ Acompanhe em [**Actions**](../../actions), no item **Monitorar sites oficiais**.
 - **Logos das olimpíadas:** ficam em `public/olimpiadas/<id>.webp`, com o mesmo `id` de `oportunidades.json`. Para acrescentar um logo que falta, envie o arquivo com esse nome e inclua o `id` em `src/lib/logos.ts`.
 - **Mascotes:** os dois estudantes do logo JOC, recortados da ilustração oficial por `scripts/recortar_mascotes.py`, são animados em `src/components/Mascote.tsx`. As falas do guia ficam em `src/components/GuiaFlutuante.tsx` e `src/app/escada/EscadaCliente.tsx`.
 
+### Laboratório Vivo
+
+- **Olimpíadas de cada equipamento:** em `src/lab/estacoes.ts`, na lista `olimpiadas` de cada um, usando os mesmos `id` de `oportunidades.json`.
+- **Mundo Afora:** mostra sozinho tudo que tem `"nivel": "internacional"`. Bolsas, intercâmbios e feiras entram igual a qualquer item, com `"tipo": "bolsa"`, `"intercambio"` ou `"feira"`.
+- **Instagram e idioma:** campos opcionais em `oportunidades.json`. Use `"instagram"` só com link conferido e `"idiomas": ["Inglês"]` quando o idioma for exigido.
+
 ### Testar como o site fica em outra data
 
 Acrescente `?hoje=2026-12-10` ao endereço (exemplo: `.../radar/?hoje=2026-12-10`). Só muda na sua tela, e serve para conferir os status antes de divulgar.

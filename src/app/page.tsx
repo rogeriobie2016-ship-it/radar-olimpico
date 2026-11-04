@@ -1,3 +1,4 @@
+import { Carrossel } from "@/components/Carrossel";
 import { Numeros, QuadroPrazos } from "./InicioCliente";
 import { AvisoRadar } from "@/components/AvisoRadar";
 import { Expedicao, type Escondida } from "@/components/Expedicao";
@@ -33,7 +34,8 @@ export default function Inicio() {
   const ed = cearaCientifico.edicoes[0];
 
   const fichas = oportunidades.filter((o) => o.descricao);
-  const itens: ItemCarta[] = fichas.map((o) => ({ ...resumir(o), resumo: null }));
+  // Todas as oportunidades entram nas fileiras, com ou sem ficha completa.
+  const itens: ItemCarta[] = oportunidades.map((o) => ({ ...resumir(o), resumo: null }));
   const daArea = (a: string) => itens.filter((i) => i.areas.includes(a)).map((i) => i.id);
   const escondidas: Escondida[] = ESCONDIDAS.map(([id, x, y]) => {
     const o = oportunidades.find((p) => p.id === id)!;
@@ -43,15 +45,17 @@ export default function Inicio() {
   const abertasAgora = comData.filter((r) => r.fim && r.fim >= hoje).length;
 
   const mundos: DadosMundo[] = [
-    { id: "comecar", titulo: "Comece aqui", frase: "Sem experiência? Estas são as melhores portas de entrada.", area: "Multidisciplinar", fundo: "#00a3a3", tinta: "#04211f", pose: "acena", quem: "guia", itens: itens.filter((i) => REGRAS[i.id]?.aberta).map((i) => i.id) },
-    { id: "espaco", titulo: "Espaço e natureza", frase: "Das estrelas às células. Física, química, biologia e astronomia.", area: "Ciências da Natureza", fundo: "#0a2a55", tinta: "#f4fbff", pose: "foguete", quem: "menino", itens: daArea("Ciências da Natureza") },
-    { id: "numeros", titulo: "Números", frase: "Lógica, padrões e desafios. Tem medalha esperando.", area: "Matemática", fundo: "#f58a33", tinta: "#1c0f05", pose: "pensa", quem: "menina", itens: daArea("Matemática") },
-    { id: "codigo", titulo: "Código e robôs", frase: "Programação, robótica e inteligência artificial.", area: "Tecnologia e Computação", fundo: "#06393f", tinta: "#f4fbff", pose: "aponta", quem: "menino", itens: daArea("Tecnologia e Computação") },
-    { id: "historia", titulo: "História e sociedade", frase: "Investigue fontes, mapas e as histórias do Ceará e do Brasil.", area: "Ciências Humanas e Sociais Aplicadas", fundo: "#8a3f12", tinta: "#f4fbff", pose: "lupa", quem: "menina", itens: daArea("Ciências Humanas e Sociais Aplicadas") },
-    { id: "palavras", titulo: "Palavras e línguas", frase: "Leitura, literatura, inglês e linguística.", area: "Linguagens e Códigos", fundo: "#fdc13f", tinta: "#1c0f05", pose: "acena", quem: "menino", itens: daArea("Linguagens e Códigos") },
-    { id: "planeta", titulo: "Planeta vivo", frase: "Oceano, clima e natureza. Projetos para mudar o seu território.", area: "Meio Ambiente", fundo: "#0d6b3c", tinta: "#f4fbff", pose: "folha", quem: "menina", itens: daArea("Meio Ambiente") },
-    { id: "dinheiro", titulo: "Dinheiro e futuro", frase: "Investimentos, empreendedorismo e gestão.", area: "Educação Financeira e Gestão", fundo: "#f8a8c8", tinta: "#2b0a1b", pose: "comemora", quem: "menino", itens: daArea("Educação Financeira e Gestão") },
-    { id: "feiras", titulo: "Feiras e projetos", frase: "Crie, apresente e viaje com a sua pesquisa.", area: "Multidisciplinar", fundo: "#23476b", tinta: "#f4fbff", pose: "tubo", quem: "menina", itens: itens.filter((i) => i.tipo === "feira" || i.tipo === "programa").map((i) => i.id) },
+    { filtro: "", id: "comecar", titulo: "Comece aqui", frase: "Sem experiência? Estas são as melhores portas de entrada.", area: "Multidisciplinar", fundo: "#00a3a3", tinta: "#04211f", pose: "acena", quem: "guia", itens: itens.filter((i) => REGRAS[i.id]?.aberta).map((i) => i.id) },
+    { filtro: "nivel=internacional", id: "afora", titulo: "Mundo afora", frase: "Fala inglês ou outra língua? Bolsas, intercâmbios, feiras e programas fora do Brasil.", area: "Multidisciplinar", fundo: "#0b3f73", tinta: "#f4fbff", pose: "foguete", quem: "guia", itens: itens.filter((i) => i.tipo !== "olimpiada" && (i.nivel === "internacional" || i.tipo === "bolsa" || i.tipo === "intercambio")).map((i) => i.id) },
+    { filtro: `area=${encodeURIComponent("Ciências da Natureza")}`, id: "espaco", titulo: "Espaço e natureza", frase: "Das estrelas às células. Física, química, biologia e astronomia.", area: "Ciências da Natureza", fundo: "#0a2a55", tinta: "#f4fbff", pose: "foguete", quem: "menino", itens: daArea("Ciências da Natureza") },
+    { filtro: `area=${encodeURIComponent("Matemática")}`, id: "numeros", titulo: "Números", frase: "Lógica, padrões e desafios. Tem medalha esperando.", area: "Matemática", fundo: "#f58a33", tinta: "#1c0f05", pose: "pensa", quem: "menina", itens: daArea("Matemática") },
+    { filtro: `area=${encodeURIComponent("Tecnologia e Computação")}`, id: "codigo", titulo: "Código e robôs", frase: "Programação, robótica e inteligência artificial.", area: "Tecnologia e Computação", fundo: "#06393f", tinta: "#f4fbff", pose: "aponta", quem: "menino", itens: daArea("Tecnologia e Computação") },
+    { filtro: `area=${encodeURIComponent("Ciências Humanas e Sociais Aplicadas")}`, id: "historia", titulo: "História e sociedade", frase: "Investigue fontes, mapas e as histórias do Ceará e do Brasil.", area: "Ciências Humanas e Sociais Aplicadas", fundo: "#8a3f12", tinta: "#f4fbff", pose: "lupa", quem: "menina", itens: daArea("Ciências Humanas e Sociais Aplicadas") },
+    { filtro: `area=${encodeURIComponent("Linguagens e Códigos")}`, id: "palavras", titulo: "Palavras e línguas", frase: "Leitura, literatura, inglês e linguística.", area: "Linguagens e Códigos", fundo: "#fdc13f", tinta: "#1c0f05", pose: "acena", quem: "menino", itens: daArea("Linguagens e Códigos") },
+    { filtro: `area=${encodeURIComponent("Meio Ambiente")}`, id: "planeta", titulo: "Planeta vivo", frase: "Oceano, clima e natureza. Projetos para mudar o seu território.", area: "Meio Ambiente", fundo: "#0d6b3c", tinta: "#f4fbff", pose: "folha", quem: "menina", itens: daArea("Meio Ambiente") },
+    { filtro: `area=${encodeURIComponent("Educação Financeira e Gestão")}`, id: "dinheiro", titulo: "Dinheiro e futuro", frase: "Investimentos, empreendedorismo e gestão.", area: "Educação Financeira e Gestão", fundo: "#f8a8c8", tinta: "#2b0a1b", pose: "comemora", quem: "menino", itens: daArea("Educação Financeira e Gestão") },
+    { filtro: "tipo=feira,programa", id: "feiras", titulo: "Feiras e projetos", frase: "Crie, apresente e viaje com a sua pesquisa.", area: "Multidisciplinar", fundo: "#23476b", tinta: "#f4fbff", pose: "tubo", quem: "menina", itens: itens.filter((i) => i.tipo === "feira" || i.tipo === "programa").map((i) => i.id) },
+    { filtro: "nivel=internacional&tipo=olimpiada", id: "internacionais", titulo: "Olimpíadas internacionais", frase: "Para quem sonha com uma medalha fora do Brasil.", area: "Multidisciplinar", fundo: "#3b1d73", tinta: "#f4fbff", pose: "comemora", quem: "guia", itens: itens.filter((i) => i.tipo === "olimpiada" && i.nivel === "internacional").map((i) => i.id) },
   ];
 
   const fita = fichas.filter((o) => COM_LOGO.has(o.id) && (REGRAS[o.id]?.aberta || o.nivel === "estadual" || o.tipo === "feira")).slice(0, 20).map((o) => ({ id: o.id, nome: o.nome, slug: o.slug, sigla: o.sigla }));
@@ -59,6 +63,41 @@ export default function Inicio() {
   return (
     <>
       <Expedicao escondidas={escondidas} abertas={abertasAgora} />
+
+      {/* Laboratório Vivo: a experiência principal do site */}
+      <section className="relative overflow-hidden bg-[#071a3a]">
+        <Link href="/laboratorio/" className="group relative mx-auto grid max-w-6xl gap-4 px-4 py-6 no-underline sm:grid-cols-[1.25fr_1fr] sm:items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={asset("/lab-previa.webp")} alt="O Laboratório Vivo em 3D, com os dois estudantes e os equipamentos em volta" width={960} height={540} loading="lazy" decoding="async" className="azulejo aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-[1.015]" />
+          <span className="flex flex-col items-start gap-2">
+            <span className="estreito text-sm uppercase text-turquesa">Em 3D, direto no navegador</span>
+            <span className="titulo-1 !text-[clamp(2.2rem,8vw,4rem)] text-white">
+              Laboratório <span className="text-amarelo">Vivo</span>
+            </span>
+            <span className="text-lg font-bold leading-snug text-white">Entra, anda e mexe em telescópio, microscópio, pêndulo, robô. Cada equipamento leva às olimpíadas daquele campo.</span>
+            <span className="btn btn-marca mt-1">Entrar no laboratório →</span>
+          </span>
+        </Link>
+      </section>
+
+      {/* Atalhos por campo do conhecimento */}
+      <section id="campos" aria-label="Escolha seu campo" className="bg-fundo-2 py-5">
+        <div className="mx-auto max-w-6xl px-4">
+          <h2 className="uppercase">Escolha seu campo</h2>
+          <p className="mt-1 font-bold">{resumos.length} oportunidades. Toca para ir direto. Nas fileiras, usa as setas ou arrasta para o lado, e toca na carta para virar.</p>
+        </div>
+        <div className="mx-auto mt-3 max-w-6xl">
+          <Carrossel rotulo="Campos do conhecimento" classe="gap-2 px-4 pb-2">
+            {mundos.map((m) => (
+              <a key={m.id} href={`#${m.id}`} className="campo-azulejo" style={{ background: m.fundo, color: m.tinta }}>
+                <span className="estreito uppercase leading-tight">{m.titulo}</span>
+                <span className="text-sm font-bold">{m.itens.length}</span>
+              </a>
+            ))}
+          </Carrossel>
+        </div>
+      </section>
+
       <FitaLogos itens={fita} />
 
       {/* Escada Olímpica: o convite principal */}
@@ -112,7 +151,7 @@ export default function Inicio() {
           <ul className="mt-4 grid grid-cols-2 gap-2.5 lg:grid-cols-4">
             {JOGOS.map((j, i) => (
               <li key={j.slug} className="grid">
-                <Link href={`/jogos/${j.slug}/`} className="azulejo flex min-h-36 flex-col justify-between gap-3 p-4 no-underline transition-transform duration-200 hover:-translate-y-1.5 hover:rotate-[-1deg]" style={{ background: COR_JOGO[i], color: TINTA_JOGO[i] }}>
+                <Link href={`/jogos/${j.slug}/`} className="azulejo flex min-h-36 min-w-0 flex-col justify-between gap-3 p-4 no-underline transition-transform duration-200 hover:-translate-y-1.5 hover:rotate-[-1deg]" style={{ background: COR_JOGO[i], color: TINTA_JOGO[i] }}>
                   <span className="estreito text-[1.5rem] leading-none">{j.titulo}</span>
                   <span className="text-[0.8125rem] font-bold leading-tight opacity-90">{j.olimpiada}</span>
                 </Link>

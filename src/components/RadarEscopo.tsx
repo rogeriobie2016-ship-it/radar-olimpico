@@ -1,5 +1,6 @@
 "use client";
 
+import { Carrossel } from "./Carrossel";
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "./L";
 import { LogoOlimpiada } from "./LogoOlimpiada";
@@ -157,7 +158,7 @@ export function RadarEscopo({ pontos }: { pontos: Ponto[] }) {
         </div>
       )}
 
-      <div className="rolagem-x" role="group" aria-label="Destacar área">
+      <Carrossel rotulo="Destacar área" compacto classe="rolagem-x" role="group">
         <button type="button" className="opcao" aria-pressed={!area} onClick={() => setArea(null)}>
           Todas as áreas
         </button>
@@ -166,7 +167,7 @@ export function RadarEscopo({ pontos }: { pontos: Ponto[] }) {
             {AREA_CURTA[a] ?? a}
           </button>
         ))}
-      </div>
+      </Carrossel>
       <p className="text-sm text-tinta-2">Do centro para a borda: escolar, regional, estadual, nacional e internacional. Cada setor é uma área do conhecimento.</p>
     </div>
   );

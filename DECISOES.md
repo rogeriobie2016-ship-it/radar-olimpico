@@ -107,6 +107,18 @@ Pedido: "tá com muito cara de IA", site premium, jogos por olimpíada, atualiza
 
 As instruções estão em `scripts/rotina-pesquisa.md`, para a equipe poder ajustar sem recriar a rotina. O usuário escolheu rodar na nuvem. Para agendar, faltam a conexão do GitHub com a conta Claude e um ambiente de nuvem. Horário previsto: segundas, 7h em Fortaleza (10:00 UTC).
 
+## Laboratório Vivo (04/11/2026)
+
+Laboratório em 3D no navegador (`src/lab/`), sem headset: anda com joystick, teclado ou tocando no chão, e cada equipamento abre um experimento real que leva às olimpíadas daquele campo. Three.js só é baixado quando a pessoa entra, então o resto do site continua leve. Os estudantes em 3D foram modelados no próprio código, com as cores e proporções do logo e contorno branco de adesivo; no painel, o narrador continua sendo a ilustração oficial. Todos os experimentos existem também na versão sem 3D, para aparelho sem WebGL. As contas e dados dos experimentos ficam em `src/lab/estacoes.ts`, cobertos por `npm run testar:lab`.
+
+## Sons (04/11/2026)
+
+Sons sintetizados com Web Audio (`src/lib/som.ts`), sem arquivos de áudio. Ficam ligados por padrão, mas o navegador só libera depois do primeiro toque ou tecla. O botão no topo desliga e a escolha fica salva no aparelho. Som é reforço: nenhuma informação depende dele.
+
+## Oportunidades internacionais (04/11/2026)
+
+O catálogo passou a incluir bolsas, intercâmbios, feiras e programas, além de olimpíadas. Cada item novo teve a página oficial lida; o que não foi confirmado fica como "a confirmar". O campo `instagram` só recebe post ou perfil confirmado, e `idiomas` lista o idioma exigido. Nenhuma bolsa da ONU aberta a menores de 18 anos foi confirmada: entraram concursos e programas de agências da ONU para jovens.
+
 ## Bonecos fiéis ao logo (03/11/2026)
 
 Os mascotes não são mais redesenhados. `scripts/recortar_mascotes.py` recorta a ilustração oficial do logo em camadas (corpo, cabeça, mão) e o site as anima por rotação. Rosto, cabelo, óculos, jaleco e objetos são os do logo. Como o quadro central do logo esconde uma lateral de cada um, só esse pedaço do jaleco foi completado, em branco. Lupa, foguete e folha são objetos acrescentados, para variar as cenas; a pele do piscar e da boca vem da própria cor do desenho.

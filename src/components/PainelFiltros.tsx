@@ -1,5 +1,6 @@
 "use client";
 
+import { Carrossel } from "./Carrossel";
 import { useRef } from "react";
 import { contarFiltros, GRUPOS, opcoesDe, TITULO_GRUPO, type Filtros, type Grupo } from "@/lib/filtros";
 import type { Resumo } from "@/lib/tipos";
@@ -31,7 +32,7 @@ export function PainelFiltros({ itens, filtros, setFiltros, alternar, limpar, to
         enterKeyHint="search"
         className="campo estreito !text-[1.125rem]"
       />
-      <div className="rolagem-x" role="group" aria-label="Filtros">
+      <Carrossel rotulo="Filtros" compacto classe="rolagem-x" role="group">
         <button type="button" className="opcao font-semibold" aria-pressed={n > 0} onClick={() => dialogo.current?.showModal()}>
           Filtros{n ? ` (${n})` : ""}
         </button>
@@ -39,7 +40,10 @@ export function PainelFiltros({ itens, filtros, setFiltros, alternar, limpar, to
         <Opcao ativo={filtros.vaga} rotulo="Aceita na UFC" onClick={() => trocar("vaga")} />
         <Opcao ativo={filtros.joc} rotulo="Financiável pelo JOC" onClick={() => trocar("joc")} />
         <Opcao ativo={filtros.custo.includes("gratuito")} rotulo="Gratuita" onClick={() => alternar("custo", "gratuito")} />
-      </div>
+        <Opcao ativo={filtros.nivel.includes("internacional")} rotulo="Lá fora" onClick={() => alternar("nivel", "internacional")} />
+        <Opcao ativo={filtros.tipo.includes("bolsa")} rotulo="Bolsas" onClick={() => alternar("tipo", "bolsa")} />
+        <Opcao ativo={filtros.tipo.includes("intercambio")} rotulo="Intercâmbio" onClick={() => alternar("tipo", "intercambio")} />
+      </Carrossel>
 
       <dialog
         ref={dialogo}

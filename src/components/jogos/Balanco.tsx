@@ -1,5 +1,6 @@
 "use client";
 
+import { tocar } from "@/lib/som";
 import { useMemo, useState } from "react";
 import { Fala } from "@/components/Fala";
 import { Placar, type AoTerminar } from "./Molde";
@@ -70,6 +71,7 @@ export default function Balanco({ aoTerminar }: { aoTerminar: AoTerminar }) {
       const soma = pontos + ganho;
       setPontos(soma);
       setCerto(true);
+      tocar("acerto");
       setTimeout(() => {
         if (n + 1 >= REACOES.length) {
           aoTerminar(soma, "Nada se perde: o número de átomos de cada elemento é o mesmo antes e depois da reação. Essa ideia está em todas as olimpíadas de Química.");

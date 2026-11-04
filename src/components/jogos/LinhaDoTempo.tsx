@@ -1,5 +1,6 @@
 "use client";
 
+import { tocar } from "@/lib/som";
 import { useMemo, useState } from "react";
 import { Fala } from "@/components/Fala";
 import { Placar, type AoTerminar } from "./Molde";
@@ -63,6 +64,7 @@ export default function LinhaDoTempo({ aoTerminar }: { aoTerminar: AoTerminar })
     const antes = linha[pos - 1]?.ano ?? -Infinity;
     const depois = linha[pos]?.ano ?? Infinity;
     const certo = fato.ano >= antes && fato.ano <= depois;
+    tocar(certo ? "acerto" : "erro");
     const ganho = certo ? 10 + seq * 5 : 0;
     const total = pontos + ganho;
     const restam = certo ? vidas : vidas - 1;

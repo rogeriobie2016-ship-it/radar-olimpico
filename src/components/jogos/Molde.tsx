@@ -1,5 +1,6 @@
 "use client";
 
+import { tocar } from "@/lib/som";
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import Link from "@/components/L";
 import { Fala } from "@/components/Fala";
@@ -46,6 +47,7 @@ export function Molde({ jogo, nomeFicha, slugFicha, children }: { jogo: Jogo; no
       setPlacar({ pontos, resumo, novoRecorde });
       carimbar(jogo.slug === "escada" ? "jogo-escada" : jogo.slug);
       if (novoRecorde) confete();
+      else tocar("fim");
       setFase("fim");
     },
     [jogo.slug],

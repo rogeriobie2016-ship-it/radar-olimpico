@@ -5,6 +5,7 @@ import "./globals.css";
 import { MotionProvider } from "@/components/MotionProvider";
 import { GuiaFlutuante } from "@/components/GuiaFlutuante";
 import { RevelarRolagem } from "@/components/RevelarRolagem";
+import { SomGlobal } from "@/components/Som";
 import { Navegacao } from "@/components/Navegacao";
 import { RegistrarSW } from "@/components/RegistrarSW";
 import { Rodape } from "@/components/Rodape";
@@ -56,6 +57,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <Rodape />
           <GuiaFlutuante />
           <RevelarRolagem />
+          <SomGlobal />
           <RegistrarSW />
         </MotionProvider>
       </body>

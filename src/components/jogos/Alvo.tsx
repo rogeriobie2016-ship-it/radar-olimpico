@@ -1,5 +1,6 @@
 "use client";
 
+import { tocar as som } from "@/lib/som";
 import { useEffect, useRef, useState } from "react";
 import { Fala } from "@/components/Fala";
 import { Placar, type AoTerminar } from "./Molde";
@@ -115,6 +116,7 @@ export default function Alvo({ aoTerminar }: { aoTerminar: AoTerminar }) {
     setOp(null);
     if (r === dados.alvo) {
       setAcertou(true);
+      som("acerto");
       const novoTotal = certas + 1;
       setCertas(novoTotal);
       setTimeout(() => avancar(novoTotal), 750);

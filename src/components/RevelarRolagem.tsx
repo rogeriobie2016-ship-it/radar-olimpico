@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
+import { tocar } from "@/lib/som";
 
 const ALVOS = "main section, main h2, main .azulejo, main .linha-lista, main .placa";
 
@@ -14,7 +15,7 @@ export function RevelarRolagem() {
 
   useEffect(() => {
     // Jogos e o quiz têm a própria coreografia.
-    const emTelaPropria = /^\/(jogos\/[^/]+|escada)/.test(caminho);
+    const emTelaPropria = /^\/(jogos\/[^/]+|escada|laboratorio)/.test(caminho);
     if (emTelaPropria || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const obs = new IntersectionObserver(
@@ -28,6 +29,7 @@ export function RevelarRolagem() {
           el.classList.remove("surge-oculto");
           el.classList.add("surge-ver");
         }
+        if (ordem) tocar("surgir");
       },
       { rootMargin: "0px 0px -6% 0px", threshold: 0.01 },
     );
@@ -35,7 +37,7 @@ export function RevelarRolagem() {
     const q = requestAnimationFrame(() => {
       const limite = window.innerHeight;
       for (const el of document.querySelectorAll<HTMLElement>(ALVOS)) {
-        if (el.closest(".entrada-seq, .rolagem-x, .surge-fora, dialog")) continue;
+        if (el.closest(".entrada-seq, .rolagem-x, .carrossel-faixa, .surge-fora, dialog")) continue;
         if (el.getBoundingClientRect().top < limite) continue;
         el.classList.add("surge-oculto");
         obs.observe(el);

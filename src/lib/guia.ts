@@ -2,6 +2,7 @@
 
 // Guia escolhido pela pessoa e Passaporte Científico. Tudo fica só neste aparelho, sem login.
 import { useCallback, useSyncExternalStore } from "react";
+import { tocar } from "@/lib/som";
 import type { Quem } from "@/components/Mascote";
 
 const ouvintes = new Set<() => void>();
@@ -53,6 +54,7 @@ export const CARIMBOS: Carimbo[] = [
   { id: "algoritmo", titulo: "Código no ponto", como: "Jogue Algoritmo", cor: "#47e0df" },
   { id: "linha-do-tempo", titulo: "Viajante do tempo", como: "Jogue Linha do Tempo", cor: "#fdc13f" },
   { id: "balanco", titulo: "Nada se perde", como: "Jogue Balanço", cor: "#f8a8c8" },
+  { id: "laboratorio", titulo: "Laboratório completo", como: "Use todos os equipamentos do Laboratório Vivo", cor: "#3ee8e6" },
 ];
 
 let carimbosAtuais: string[] | null = null;
@@ -73,6 +75,7 @@ export function carimbar(id: string) {
 
 /** Confete leve: poucos elementos, só com CSS, e nada se a pessoa pediu menos movimento. */
 export function confete(quantos = 42) {
+  tocar("festa");
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   const cores = ["#f58a33", "#00c9c8", "#fdc13f", "#f8a8c8", "#ffffff", "#0fa85a"];
   const caixa = document.createElement("div");

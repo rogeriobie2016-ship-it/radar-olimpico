@@ -9,6 +9,7 @@ import { CARIMBOS, confete, useGuia } from "@/lib/guia";
 type Dica = { fala: string; pose: Pose; href?: string; acao?: string };
 
 const DICAS: [RegExp, Dica][] = [
+  [/^\/laboratorio/, { fala: "Entra comigo! Lá dentro dá para andar e usar cada equipamento.", pose: "foguete" }],
   [/^\/radar/, { fala: "Toda olimpíada do Ceará e do Brasil está aqui. Filtra pela sua série que eu mostro só as que servem pra você.", pose: "lupa", href: "/escada/", acao: "Prefiro que você escolha" }],
   [/^\/escada/, { fala: "Responde com calma. Eu cruzo com as regras de cada olimpíada e monto o seu caminho.", pose: "pensa" }],
   [/^\/oportunidade/, { fala: "Curtiu essa? Salva na lista, chama a turma no WhatsApp e fala com um professor.", pose: "aponta", href: "/minha-lista/", acao: "Ver minha lista" }],

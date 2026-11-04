@@ -13,13 +13,15 @@
     "og": "tsx scripts/gerar-og.tsx",
     "testar:escada": "tsx scripts/testar-escada.ts",
     "testar:jogos": "tsx scripts/testar-jogos.ts",
-    "testar": "npm run testar:escada && npm run testar:jogos"
+    "testar:lab": "tsx scripts/testar-lab.ts",
+    "testar": "npm run testar:escada && npm run testar:jogos && npm run testar:lab"
   },
   "dependencies": {
     "framer-motion": "^14.9.0",
     "next": "^16.4.5",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
+    "three": "^0.187.0",
     "zod": "^4.6.7"
   },
   "devDependencies": {
@@ -29,6 +31,7 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/three": "^0.187.0",
     "satori": "^0.63.2",
     "tailwindcss": "^4.3.4",
     "tsx": "^4",

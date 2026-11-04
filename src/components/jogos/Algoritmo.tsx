@@ -1,5 +1,6 @@
 "use client";
 
+import { tocar } from "@/lib/som";
 import { useEffect, useRef, useState } from "react";
 import { Fala } from "@/components/Fala";
 import { Placar, type AoTerminar } from "./Molde";
@@ -43,12 +44,14 @@ export default function Algoritmo({ aoTerminar }: { aoTerminar: AoTerminar }) {
     let i = 0;
     const seguir = () => {
       setRobo(passos[i]);
+      tocar("passo");
       i++;
       if (i < passos.length) {
         timer.current = setTimeout(seguir, 300);
         return;
       }
       setRodando(false);
+      tocar(chegou ? "acerto" : "erro");
       if (chegou) {
         const extra = Math.max(0, programa.length - nivel.limite);
         const ganho = Math.max(40, 100 - extra * 15);

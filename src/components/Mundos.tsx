@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ArteCartaz, temaDe } from "./Cartaz";
+import { Carrossel } from "./Carrossel";
 import Link from "./L";
 import { LogoOlimpiada } from "./LogoOlimpiada";
 import { Mascote, type Pose, type Quem } from "./Mascote";
@@ -47,6 +48,7 @@ export function Carta({ item, hoje }: { item: ItemCarta; hoje: string }) {
             <span className={`estreito line-clamp-2 leading-[1.05] ${nome.length > 16 ? "text-[0.95rem]" : "text-[1.2rem]"}`}>{nome}</span>
             <span className="text-[0.75rem] font-bold opacity-90">{item.fim && item.fim >= hoje ? `Inscrições até ${dataCurta(item.fim)}` : ROTULO_NIVEL[item.nivel]}</span>
           </span>
+          <span aria-hidden="true" className="carta-vira" title="Toque para virar">⟳</span>
         </button>
 
         <div className="carta-face carta-verso p-3" aria-hidden={!virada}>
@@ -72,7 +74,7 @@ export function Carta({ item, hoje }: { item: ItemCarta; hoje: string }) {
   );
 }
 
-export type DadosMundo = { id: string; titulo: string; frase: string; area: string; fundo: string; tinta: string; pose: Pose; quem: Quem | "guia"; itens: string[] };
+export type DadosMundo = { filtro: string; id: string; titulo: string; frase: string; area: string; fundo: string; tinta: string; pose: Pose; quem: Quem | "guia"; itens: string[] };
 
 export function Mundo({ m, itens, hoje, inverte }: { m: DadosMundo; itens: ItemCarta[]; hoje: string; inverte: boolean }) {
   const { quem } = useGuia();
@@ -87,7 +89,7 @@ export function Mundo({ m, itens, hoje, inverte }: { m: DadosMundo; itens: ItemC
   }, []);
   if (!itens.length) return null;
   return (
-    <section ref={ref} aria-label={m.titulo} className="mundo py-8" style={{ background: m.fundo, color: m.tinta }}>
+    <section ref={ref} id={m.id} aria-label={m.titulo} className="mundo scroll-mt-16 py-8" style={{ background: m.fundo, color: m.tinta }}>
       <ArteCartaz id={m.id} area={m.area} className="mundo-arte" />
       <div className="relative">
         <div className={`mx-auto flex max-w-6xl items-end gap-2 px-4 ${inverte ? "flex-row-reverse text-right" : ""}`}>
@@ -95,13 +97,21 @@ export function Mundo({ m, itens, hoje, inverte }: { m: DadosMundo; itens: ItemC
           <div className="min-w-0 pb-2">
             <h2 className="uppercase">{m.titulo}</h2>
             <p className="mt-1 font-bold leading-snug">{m.frase}</p>
+            <Link href={`/radar/${m.filtro ? `?${m.filtro}` : ""}`} className="mt-1 inline-block text-sm font-extrabold underline">
+              {itens.length} {itens.length === 1 ? "oportunidade" : "oportunidades"} →
+            </Link>
           </div>
         </div>
-        <div className="mx-auto mt-4 flex min-h-[15.5rem] max-w-6xl snap-x gap-2.5 overflow-x-auto px-4 pb-4 pt-2 [scrollbar-width:none] sm:min-h-[18rem] [&::-webkit-scrollbar]:hidden" style={{ scrollPaddingLeft: "1rem" }}>
-          {perto &&
-            itens.map((i) => (
-              <Carta key={i.id} item={i} hoje={hoje} />
-            ))}
+        <div className="mx-auto mt-4 max-w-6xl">
+          <Carrossel rotulo={m.titulo} classe="min-h-[15.5rem] snap-x gap-2.5 px-4 pb-4 pt-2 sm:min-h-[18rem]">
+            {perto && itens.map((i) => <Carta key={i.id} item={i} hoje={hoje} />)}
+            {perto && (
+              <Link href={`/radar/${m.filtro ? `?${m.filtro}` : ""}`} className="carta-mais" style={{ background: m.tinta, color: m.fundo }}>
+                <span className="estreito text-xl uppercase leading-tight">Ver todas</span>
+                <span className="text-sm font-bold">no radar →</span>
+              </Link>
+            )}
+          </Carrossel>
         </div>
       </div>
     </section>
@@ -120,10 +130,12 @@ export function Mundos({ itens, mundos }: { itens: ItemCarta[]; mundos: DadosMun
       {destaques.length > 0 && (
         <section aria-label="Agora no radar" className="mx-auto max-w-6xl px-4 pt-8">
           <h2 className="regua uppercase">Agora no radar</h2>
-          <div className="-mx-4 mt-3 flex snap-x gap-2.5 overflow-x-auto px-4 pb-4 pt-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div className="-mx-4 mt-3">
+            <Carrossel rotulo="Agora no radar" classe="snap-x gap-2.5 px-4 pb-4 pt-2">
             {destaques.map((i) => (
               <Carta key={i.id} item={i} hoje={hoje} />
             ))}
+            </Carrossel>
           </div>
         </section>
       )}
