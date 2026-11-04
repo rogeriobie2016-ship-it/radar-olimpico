@@ -140,3 +140,15 @@ Pedido: "muito sério", cara bem mais jovem, identidade e cores da JOC, logos re
 - **Passaporte Científico:** carimbos por jogar, salvar e terminar a Escada. Fica só no aparelho.
 - **Botão "Quero me inscrever"** leva ao site oficial. A inscrição continua sendo feita lá.
 - **Jogos:** os mascotes narram em todos, comentando acertos e erros.
+
+## Jogos narrativos (04/11/2026)
+
+Dois jogos longos, com mecânicas diferentes e conteúdo em `src/lib/estudo/`. Ao errar, o mascote sempre explica o motivo. As telas dos dois jogos seguem escuras em qualquer tema, com cores próprias.
+
+- **Arquivo Perdido** (OLP, Olimpíada de Português, OBL e Olimpíada de Literatura): história em capítulos na Estação Aracati, em Titã. As escolhas abrem alas diferentes e levam a quatro finais. O final "A primeira conversa" só abre para quem leu as duas alas, porque é a soma das duas pistas. Personagens, versos de Bento e a língua do lago são autorais. Literatura citada, em domínio público: Camões e José de Alencar, conferidos no Wikisource.
+- **Crononauta** (ONHB, ONHB-A, OCHE e OBAPO): investigação de documentos em cinco viagens, na ordem que a pessoa quiser. Em cada uma: analisar a fonte, marcar onde duas versões discordam, achar o trecho impossível e montar a conclusão. No fim, uma tela separada mostra os fatos conferidos.
+- **Regra dos documentos do Crononauta:** todo papel é recriação, com autor fictício e rótulo visível. Pessoa real só aparece como assunto de fato confirmado, nunca com frase inventada. As fontes de cada fato estão no comentário de `src/lib/estudo/crononauta.ts`.
+- **Divergências entre fontes:** quando as fontes discordam de um detalhe, o jogo usa a formulação mais ampla. Exemplos: "janeiro de 1881" (os dias da greve variam), "março de 1914" (o dia da deposição de Franco Rabelo varia), "valado" (o nome do Círculo varia) e a Sociedade das Cearenses Libertadoras sem ano.
+- **Integridade do arquivo:** cada erro tira 4 pontos, e abaixo de 50 a história termina em "Leitura interrompida". Quem erra uma vez em cada mensagem ainda chega à decisão final. O valor é minha escolha e pode ser ajustado em `PERDA_POR_ERRO`.
+- **Testado:** `npm run testar:narrativos` percorre todos os estados de Arquivo Perdido, simula todas as ordens de viagem do Crononauta, confere que todo erro tem explicação, que não há cena órfã nem travessão, e que os jogos estão registrados.
+- **Precisa de revisão da COPES:** o conteúdo pedagógico é meu, e vale uma leitura de professores de Língua Portuguesa e História. Parte dos fatos veio de imprensa e da Wikipédia. Vale conferir especialmente os 500 cativos em Milagres em 1886, que encontrei em uma só reportagem, e as datas da Sedição de Juazeiro.

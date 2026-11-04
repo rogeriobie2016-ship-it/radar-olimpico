@@ -51,6 +51,18 @@ export const JOGOS: Jogo[] = [
     como: "Use mais e menos em cada substância. As barras mostram quantos átomos há de cada lado. Equilibre com o menor número de toques.",
     oportunidades: ["ocq", "oqep", "quimeninas", "obq", "olimpiada-da-coruja", "tbc"], principal: "ocq",
   },
+  {
+    slug: "arquivo-perdido", titulo: "Arquivo Perdido", olimpiada: "OLP, Olimpíada de Português e OBL",
+    resumo: "Restaure as mensagens de uma estação em Titã. Só avança quem interpreta, e suas escolhas mudam o final.",
+    como: "Leia cada mensagem danificada e descubra o que ela quer dizer. Quando errar, eu explico o motivo e você tenta de novo. Suas escolhas abrem caminhos e finais diferentes.",
+    oportunidades: ["olp", "olimpiada-de-portugues", "obl", "olimpiada-de-literatura"], principal: "olp",
+  },
+  {
+    slug: "crononauta", titulo: "Crononauta", olimpiada: "ONHB e OCHE",
+    resumo: "Viaje no tempo e investigue documentos recriados: compare versões, cace anacronismos e monte a conclusão.",
+    como: "Escolha uma viagem no cronógrafo. Em cada uma, analise a fonte, marque onde duas versões discordam, encontre o trecho impossível para a data e monte a conclusão. Todos os documentos são recriações, e no fim eu mostro os fatos.",
+    oportunidades: ["onhb", "onhb-a", "oche", "obapo"], principal: "onhb",
+  },
 ];
 
 export const jogosDe = (id: string) => JOGOS.filter((j) => j.oportunidades.includes(id));
