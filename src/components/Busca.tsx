@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { LogoOlimpiada } from "./LogoOlimpiada";
 import { Status } from "./Status";
 import { asset } from "@/lib/base";
 import { normalizar } from "@/lib/filtros";
@@ -87,7 +88,7 @@ export function Busca() {
               placeholder="Olimpíada, sigla ou área"
               aria-label="Buscar"
               enterKeyHint="search"
-              className="estreito min-h-20 w-full bg-transparent text-[2rem] font-semibold outline-none placeholder:text-tinta-2"
+              className="estreito min-h-20 w-full bg-transparent text-[1.75rem] outline-none placeholder:text-tinta-2"
             />
             <button type="button" onClick={() => dialogo.current?.close()} className="min-h-11 shrink-0 text-[0.9375rem] font-medium">
               Fechar
@@ -103,10 +104,11 @@ export function Busca() {
                   type="button"
                   onClick={() => ir(i)}
                   onMouseEnter={() => setAtivo(n)}
-                  className={`flex w-full items-baseline justify-between gap-4 border-b border-linha py-3 text-left transition-colors ${n === ativo ? "bg-fundo-2" : ""}`}
+                  className={`flex w-full items-center justify-between gap-3 border-b border-linha px-1 py-2.5 text-left transition-colors ${n === ativo ? "bg-fundo-2" : ""}`}
                 >
-                  <span className="min-w-0">
-                    <span className="estreito block text-xl font-bold leading-tight">{i.sigla && i.sigla.length <= 9 ? i.sigla : i.nome}</span>
+                  <LogoOlimpiada id={i.id} nome={i.nome} sigla={i.sigla} className="h-12 w-14" />
+                  <span className="min-w-0 flex-1">
+                    <span className="estreito block text-xl leading-tight">{i.sigla && i.sigla.length <= 9 ? i.sigla : i.nome}</span>
                     {i.sigla && i.sigla.length <= 9 && <span className="block truncate text-sm text-tinta-2">{i.nome}</span>}
                   </span>
                   <span className="flex shrink-0 flex-col items-end gap-0.5">

@@ -33,7 +33,7 @@ const PORTAL = [
 function Secao({ titulo, children }: { titulo: string; children: ReactNode }) {
   return (
     <section>
-      <h2 className="regua mb-4 pt-3">{titulo}</h2>
+      <h2 className="regua mb-4 uppercase">{titulo}</h2>
       {children}
     </section>
   );

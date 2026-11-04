@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { Fala } from "@/components/Fala";
 import { Placar, type AoTerminar } from "./Molde";
 
 type Op = { t: string; nota: 0 | 1 | 2; r: string };
@@ -110,11 +111,11 @@ function Rede({ notas }: { notas: number[] }) {
   return (
     <svg viewBox="0 0 480 160" className="w-full" aria-hidden="true">
       {NOS.slice(1).map(([x, y], i) => (
-        <line key={i} x1={NOS[i][0]} y1={NOS[i][1]} x2={x} y2={y} stroke={notas[i + 1] !== undefined ? "#f3f3ef" : "#33342f"} strokeWidth="2" style={{ transition: "stroke 400ms" }} />
+        <line key={i} x1={NOS[i][0]} y1={NOS[i][1]} x2={x} y2={y} stroke={notas[i + 1] !== undefined ? "#f4fbff" : "#1f4a68"} strokeWidth="2" style={{ transition: "stroke 400ms" }} />
       ))}
       {NOS.map(([x, y], i) => {
         const n = notas[i];
-        const cor = n === undefined ? "#26271f" : n === 2 ? "#4bd68c" : n === 1 ? "#fdc13f" : "#ff8d50";
+        const cor = n === undefined ? "#15395a" : n === 2 ? "#4bd68c" : n === 1 ? "#fdc13f" : "#ff8d50";
         const r = n === undefined ? 9 : n === 2 ? 16 : 12;
         return <circle key={i} cx={x} cy={y} r={r} fill={cor} style={{ transition: "r 400ms cubic-bezier(.2,.8,.2,1), fill 300ms" }} />;
       })}
@@ -144,17 +145,17 @@ export default function Jornada({ aoTerminar }: { aoTerminar: AoTerminar }) {
     return (
       <div className="entrada-pergunta flex flex-1 flex-col gap-4 p-4 sm:p-6">
         <p className="titulo titulo-2">Escolha o problema do seu projeto</p>
-        <ul className="border-t border-[#33342f]">
+        <ul className="border-t border-[#1f4a68]">
           {TEMAS.map((t) => (
-            <li key={t.id} className="border-b border-[#33342f]">
+            <li key={t.id} className="border-b border-[#1f4a68]">
               <button type="button" onClick={() => setTema(t)} className="w-full py-4 text-left transition-colors hover:text-marca">
                 <span className="estreito block text-[1.75rem] font-bold leading-none">{t.nome}</span>
-                <span className="mt-1 block text-[0.9375rem] text-[#a5a79f]">Investigar o {t.foco}</span>
+                <span className="mt-1 block text-[0.9375rem] text-[#a9c6d8]">Investigar o {t.foco}</span>
               </button>
             </li>
           ))}
         </ul>
-        <p className="mt-auto text-sm text-[#a5a79f]">Treino livre. As etapas e a banca são uma simulação, e os critérios reais estão no regulamento do Ceará Científico.</p>
+        <p className="mt-auto text-sm text-[#a9c6d8]">Treino livre. As etapas e a banca são uma simulação, e os critérios reais estão no regulamento do Ceará Científico.</p>
       </div>
     );
 
@@ -195,7 +196,7 @@ export default function Jornada({ aoTerminar }: { aoTerminar: AoTerminar }) {
       {parecer ? (
         <div className="entrada-pergunta flex flex-1 flex-col gap-3 p-4 sm:p-6">
           <p className="titulo titulo-2">{parecer.soma >= MINIMO ? (parecer.etapa === 2 ? "Projeto aprovado na etapa final" : `Classificado para a ${ETAPAS[parecer.etapa + 1].toLowerCase()}`) : "O projeto não avançou"}</p>
-          <p>Nesta etapa, seu projeto somou {parecer.soma} de 6 pontos de rigor.</p>
+          <Fala texto={`Nesta etapa, seu projeto somou ${parecer.soma} de 6 pontos de rigor.`} pose={parecer.soma >= MINIMO ? "comemora" : "triste"} />
           <button type="button" onClick={seguirEtapa} className="tecla tecla-acesa mt-auto min-h-14 text-lg">
             {parecer.soma >= MINIMO && parecer.etapa < 2 ? "Seguir" : "Ver resultado"}
           </button>
@@ -203,12 +204,12 @@ export default function Jornada({ aoTerminar }: { aoTerminar: AoTerminar }) {
       ) : (
         <div key={i} className="entrada-pergunta flex flex-1 flex-col gap-3 p-4 sm:p-6">
           <p className="titulo text-[1.875rem]">{d.p}</p>
-          <ul className="border-t border-[#33342f]">
+          <ul className="border-t border-[#1f4a68]">
             {opcoes.map((o) => {
               const escolhida = resposta === o;
               const cor = !resposta ? "" : escolhida ? (o.nota === 2 ? "text-[#4bd68c]" : o.nota === 1 ? "text-[#fdc13f]" : "text-[#ff8d50]") : "opacity-45";
               return (
-                <li key={o.t} className="border-b border-[#33342f]">
+                <li key={o.t} className="border-b border-[#1f4a68]">
                   <button type="button" disabled={!!resposta} onClick={() => responder(o)} className={`min-h-12 w-full py-3 text-left text-[0.9375rem] leading-snug transition-colors ${cor} ${resposta ? "" : "hover:text-marca"}`}>
                     {o.t}
                   </button>
@@ -216,7 +217,7 @@ export default function Jornada({ aoTerminar }: { aoTerminar: AoTerminar }) {
               );
             })}
           </ul>
-          <p className="min-h-[3.25rem] text-[0.9375rem]" role="status">{resposta?.r}</p>
+          <div className="min-h-[5rem]"><Fala texto={resposta?.r ?? "Pensa como pesquisador. O que você faria?"} pose={resposta ? (resposta.nota === 2 ? "comemora" : resposta.nota === 1 ? "pensa" : "triste") : "lupa"} tamanho={60} /></div>
           <button type="button" onClick={continuar} disabled={!resposta} className="tecla tecla-acesa mt-auto min-h-14 text-lg">
             Continuar
           </button>

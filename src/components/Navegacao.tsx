@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { Busca } from "./Busca";
 import Link from "./L";
-import { Seta } from "./Seta";
+import { asset } from "@/lib/base";
 import { NAV_COMPLETA, NAV_INFERIOR } from "@/lib/navegacao";
 
 function AlternarTema() {
@@ -22,7 +22,7 @@ function AlternarTema() {
   };
   return (
     <button type="button" onClick={alternar} className="min-h-11 text-[0.9375rem] font-medium">
-      {tema === "dark" ? "Modo claro" : "Modo escuro"}
+      {tema === "dark" ? "Modo claro" : "Modo universo"}
     </button>
   );
 }
@@ -42,7 +42,6 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
     window.addEventListener("radar-novidades", conferir);
     return () => window.removeEventListener("radar-novidades", conferir);
   }, [ultimaNovidade]);
-  const sala = caminho === "/";
   const menu = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
@@ -53,10 +52,14 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
 
   return (
     <>
-      <header className={`sticky top-0 z-40 border-b border-linha ${sala ? "cabecalho-sala" : "bg-fundo/95 backdrop-blur-sm"}`}>
+      <header className="sticky top-0 z-40 border-b border-linha bg-fundo/90 backdrop-blur-md">
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-6 px-4">
-          <Link href="/" className="estreito text-[1.3rem] font-bold tracking-tight no-underline">
-            Radar Olímpico
+          <Link href="/" className="estreito flex items-center gap-2 text-[1.2rem] uppercase leading-none no-underline">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={asset("/icons/favicon-96.png")} alt="" width={36} height={36} className="rounded-lg" />
+            <span>
+              Radar <span className="text-amarelo">Olímpico</span>
+            </span>
           </Link>
           <nav aria-label="Principal" className="hidden items-center gap-5 lg:flex">
             {NAV_COMPLETA.slice(0, 7).map((n) => (
@@ -64,7 +67,7 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
                 key={n.href}
                 href={n.href}
                 aria-current={ativo(n.href) ? "page" : undefined}
-                className={`relative py-1 text-[0.9375rem] font-medium no-underline after:absolute after:inset-x-0 after:-bottom-0.5 after:h-[1.5px] after:origin-left after:bg-tinta after:transition-transform after:duration-200 hover:after:scale-x-100 ${ativo(n.href) ? "after:scale-x-100" : "after:scale-x-0"}`}
+                className={`rounded-full px-3 py-1.5 text-[0.9375rem] font-bold no-underline transition-colors hover:bg-fundo-2 ${ativo(n.href) ? "bg-turquesa !text-[#05272a]" : ""}`}
               >
                 {n.rotulo}
               </Link>
@@ -72,7 +75,7 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
           </nav>
           <div className="flex items-center gap-4">
             {temNovo && (
-              <Link href="/novidades/" className="bg-marca px-1.5 py-1 text-[0.6875rem] font-bold leading-none tracking-[0.04em] text-[#111210] no-underline">
+              <Link href="/novidades/" className="selo-novidade no-underline">
                 NOVIDADE
               </Link>
             )}
@@ -85,15 +88,14 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
       </header>
 
       {/* Barra inferior só com texto: o polegar alcança, e nada compete com o conteúdo. */}
-      <nav aria-label="Atalhos" className="sem-print fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 border-t border-tinta bg-fundo pb-[env(safe-area-inset-bottom)] lg:hidden">
+      <nav aria-label="Atalhos" className="sem-print fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 gap-1 border-t border-linha bg-fundo/95 p-1.5 pb-[calc(0.375rem+env(safe-area-inset-bottom))] backdrop-blur-md lg:hidden">
         {NAV_INFERIOR.map((n) => (
           <Link
             key={n.href}
             href={n.href}
             aria-current={ativo(n.href) ? "page" : undefined}
-            className={`relative flex min-h-[3.25rem] items-center justify-center text-[0.9375rem] no-underline ${ativo(n.href) ? "font-bold" : "font-medium text-tinta-2"}`}
+            className={`estreito flex min-h-[2.9rem] items-center justify-center rounded-xl text-[0.9375rem] no-underline transition-all duration-200 ${ativo(n.href) ? "bg-marca text-[#1c0f05] shadow-[0_3px_0_#b95c14]" : "text-tinta-2"}`}
           >
-            {ativo(n.href) && <span aria-hidden="true" className="absolute inset-x-0 -top-px h-[3px] bg-marca" />}
             {n.rotulo}
           </Link>
         ))}
@@ -106,15 +108,12 @@ export function Navegacao({ ultimaNovidade }: { ultimaNovidade: string | null })
             Fechar
           </button>
         </div>
-        <ul className="entrada-seq px-4 pb-6">
-          {NAV_COMPLETA.map((n) => (
-            <li key={n.href} className="border-b border-linha">
-              <Link href={n.href} onClick={() => menu.current?.close()} className="flex items-center justify-between gap-4 py-3.5 no-underline">
-                <span>
-                  <span className="estreito block text-[2rem] font-bold leading-none">{n.rotulo}</span>
-                  <span className="mt-1 block text-sm text-tinta-2">{n.resumo}</span>
-                </span>
-                <Seta tamanho={22} />
+        <ul className="entrada-seq grid grid-cols-2 gap-2 p-3">
+          {NAV_COMPLETA.map((n, i) => (
+            <li key={n.href} className="grid">
+              <Link href={n.href} onClick={() => menu.current?.close()} className="azulejo flex min-h-28 flex-col justify-between gap-2 p-3.5 no-underline" style={{ background: ["#f58a33", "#00c9c8", "#fdc13f"][i % 3], color: "#10201f" }}>
+                <span className="estreito block text-[1.4rem] leading-none">{n.rotulo}</span>
+                <span className="block text-[0.8125rem] font-bold leading-tight">{n.resumo}</span>
               </Link>
             </li>
           ))}

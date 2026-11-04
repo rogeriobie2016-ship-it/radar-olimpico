@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { Fala } from "@/components/Fala";
 import { Placar, type AoTerminar } from "./Molde";
 
 type Fato = { ano: number; texto: string };
@@ -83,10 +84,10 @@ export default function LinhaDoTempo({ aoTerminar }: { aoTerminar: AoTerminar })
 
   const Vaga = ({ pos }: { pos: number }) => (
     <li>
-      <button type="button" disabled={!!retorno} onClick={() => colocar(pos)} aria-label={pos === 0 ? "Colocar antes de tudo" : pos === linha.length ? "Colocar depois de tudo" : `Colocar entre ${linha[pos - 1].ano} e ${linha[pos].ano}`} className="group flex min-h-11 w-full items-center gap-3 text-sm text-[#a5a79f] transition-colors hover:text-marca disabled:opacity-40">
-        <span className="h-px flex-1 bg-[#33342f] transition-colors group-hover:bg-marca" />
+      <button type="button" disabled={!!retorno} onClick={() => colocar(pos)} aria-label={pos === 0 ? "Colocar antes de tudo" : pos === linha.length ? "Colocar depois de tudo" : `Colocar entre ${linha[pos - 1].ano} e ${linha[pos].ano}`} className="group flex min-h-11 w-full items-center gap-3 text-sm text-[#a9c6d8] transition-colors hover:text-marca disabled:opacity-40">
+        <span className="h-px flex-1 bg-[#1f4a68] transition-colors group-hover:bg-marca" />
         Colocar aqui
-        <span className="h-px flex-1 bg-[#33342f] transition-colors group-hover:bg-marca" />
+        <span className="h-px flex-1 bg-[#1f4a68] transition-colors group-hover:bg-marca" />
       </button>
     </li>
   );
@@ -94,9 +95,9 @@ export default function LinhaDoTempo({ aoTerminar }: { aoTerminar: AoTerminar })
   return (
     <>
       <Placar esquerda={`Fato ${i} de ${TOTAL}, ${vidas} ${vidas === 1 ? "chance" : "chances"}`} direita={pontos} />
-      <div className="sticky top-14 z-10 border-b border-[#33342f] bg-[#0f100e] p-4 sm:p-6">
+      <div className="sticky top-14 z-10 border-b border-[#1f4a68] bg-[#071f33] p-4 sm:p-6">
         <p key={fato.ano} className="estreito entrada-pergunta text-[1.875rem] font-bold leading-[1.05]">{fato.texto}</p>
-        <p className={`mt-1 min-h-6 text-[0.9375rem] font-semibold ${retorno?.ok ? "text-[#4bd68c]" : "text-[#ff8d50]"}`} role="status">{retorno?.texto}</p>
+        <div className="mt-2 min-h-[4.25rem]"><Fala texto={retorno?.texto ?? "Em que ponto da linha isso aconteceu?"} pose={retorno ? (retorno.ok ? "comemora" : "triste") : "pensa"} tamanho={54} /></div>
       </div>
       <ol className="flex-1 px-4 py-2 sm:px-6">
         <Vaga pos={0} />

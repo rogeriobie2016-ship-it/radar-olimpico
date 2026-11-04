@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { Fala } from "@/components/Fala";
 import { Placar, type AoTerminar } from "./Molde";
 
 export const REACOES = [
@@ -38,7 +39,7 @@ function Formula({ f }: { f: string }) {
   );
 }
 
-const COR: Record<string, string> = { H: "#f3f3ef", O: "#ff8d50", N: "#7fb0ff", C: "#a5a79f", Na: "#fdc13f", K: "#c9a0ff", Cl: "#4bd68c", Fe: "#d97a4a", Al: "#47e0df" };
+const COR: Record<string, string> = { H: "#f4fbff", O: "#ff8d50", N: "#7fb0ff", C: "#a9c6d8", Na: "#fdc13f", K: "#c9a0ff", Cl: "#4bd68c", Fe: "#d97a4a", Al: "#47e0df" };
 
 export default function Balanco({ aoTerminar }: { aoTerminar: AoTerminar }) {
   const [n, setN] = useState(0);
@@ -102,21 +103,21 @@ export default function Balanco({ aoTerminar }: { aoTerminar: AoTerminar }) {
         <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
           {reacao.r.map((f, i) => (
             <div key={f} className="contents">
-              {i > 0 && <span className="text-2xl text-[#a5a79f]">+</span>}
+              {i > 0 && <span className="text-2xl text-[#a9c6d8]">+</span>}
               <Substancia f={f} i={i} />
             </div>
           ))}
-          <span className="px-1 text-2xl text-[#a5a79f]" aria-label="produz">→</span>
+          <span className="px-1 text-2xl text-[#a9c6d8]" aria-label="produz">→</span>
           {reacao.p.map((f, i) => (
             <div key={f} className="contents">
-              {i > 0 && <span className="text-2xl text-[#a5a79f]">+</span>}
+              {i > 0 && <span className="text-2xl text-[#a9c6d8]">+</span>}
               <Substancia f={f} i={nr + i} />
             </div>
           ))}
         </div>
 
         <div className="mt-auto flex flex-col gap-2" aria-live="polite">
-          <div className="grid grid-cols-[1fr_2.5rem_1fr] text-sm text-[#a5a79f]">
+          <div className="grid grid-cols-[1fr_2.5rem_1fr] text-sm text-[#a9c6d8]">
             <span>Reagentes</span>
             <span />
             <span className="text-right">Produtos</span>
@@ -128,12 +129,12 @@ export default function Balanco({ aoTerminar }: { aoTerminar: AoTerminar }) {
             const quadro = (q: number, sentido: string) => (
               <span className={`flex flex-wrap gap-[3px] ${sentido}`}>
                 {Array.from({ length: q }).map((_, k) => (
-                  <span key={k} className="size-2.5" style={{ background: COR[el] ?? "#f3f3ef" }} />
+                  <span key={k} className="size-2.5" style={{ background: COR[el] ?? "#f4fbff" }} />
                 ))}
               </span>
             );
             return (
-              <div key={el} className="grid grid-cols-[1fr_2.5rem_1fr] items-center gap-1 border-t border-[#33342f] py-1.5">
+              <div key={el} className="grid grid-cols-[1fr_2.5rem_1fr] items-center gap-1 border-t border-[#1f4a68] py-1.5">
                 <span className="flex items-center justify-end gap-2">
                   {quadro(a, "justify-end")}
                   <span className="num w-5 text-right font-semibold">{a}</span>
@@ -146,7 +147,7 @@ export default function Balanco({ aoTerminar }: { aoTerminar: AoTerminar }) {
               </div>
             );
           })}
-          <p className="min-h-6 text-[0.9375rem] font-semibold text-[#4bd68c]" role="status">{certo ? "Equilibrada." : ""}</p>
+          <Fala texto={certo ? "Equilibrada! Nada se perde." : "Os dois lados precisam ter os mesmos átomos."} pose={certo ? "comemora" : "tubo"} tamanho={54} />
         </div>
       </div>
     </>

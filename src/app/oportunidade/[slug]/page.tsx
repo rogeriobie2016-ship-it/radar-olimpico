@@ -4,7 +4,9 @@ import type { ReactNode } from "react";
 import { AcoesOportunidade } from "./AcoesOportunidade";
 import { ChecklistPerfil } from "./ChecklistPerfil";
 import Link from "@/components/L";
-import { Novidade } from "@/components/Sala";
+import { LogoOlimpiada } from "@/components/LogoOlimpiada";
+import { Mascote } from "@/components/Mascote";
+import { Novidade } from "@/components/Novidade";
 import { Seta } from "@/components/Seta";
 import { Status } from "@/components/Status";
 import { novidades, oportunidades, resumir } from "@/lib/dados";
@@ -44,7 +46,7 @@ function Linha({ rotulo, children }: { rotulo: string; children: ReactNode }) {
 function Bloco({ titulo, children }: { titulo: string; children: ReactNode }) {
   return (
     <section>
-      <h2 className="regua mb-3 pt-3 titulo-3 !text-[1.75rem]">{titulo}</h2>
+      <h2 className="regua mb-3 titulo-3 !text-[1.5rem] uppercase">{titulo}</h2>
       {children}
     </section>
   );
@@ -87,8 +89,10 @@ export default async function PaginaOportunidade({ params }: Props) {
               {ROTULO_TIPO[o.tipo]}, {ROTULO_NIVEL[o.nivel].toLowerCase()}
             </span>
           </div>
-          <h1 className={sigla ? "" : "!text-[clamp(2.25rem,8vw,4.25rem)]"}>{sigla ?? o.nome}</h1>
-          {sigla && <p className="estreito text-[1.75rem] font-semibold leading-[1.08]">{o.nome}</p>}
+          <div className="flex items-center gap-4">
+            <LogoOlimpiada id={o.id} nome={o.nome} sigla={o.sigla} className="size-28 sm:size-36" lazy={false} />
+            <h1 className="!text-[clamp(1.75rem,6.5vw,3.25rem)] !normal-case">{o.nome}</h1>
+          </div>
           {o.descricao && <p className="max-w-2xl">{o.descricao}</p>}
         </header>
 
@@ -218,6 +222,11 @@ export default async function PaginaOportunidade({ params }: Props) {
             </ul>
           </Bloco>
         )}
+
+        <div className="flex items-end gap-1">
+          <Mascote quem="menina" pose={o.formato === "projeto" ? "tubo" : "pensa"} className="w-20 shrink-0" />
+          <p className="balao mb-3 flex-1">Vê se combina com você. Se sim, salva e chama a turma.</p>
+        </div>
 
         <Bloco titulo="Tem o perfil?">
           <ChecklistPerfil itens={perfil(o)} />

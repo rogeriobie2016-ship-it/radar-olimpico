@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { Fala } from "@/components/Fala";
 import { Placar, type AoTerminar } from "./Molde";
 
 const G = 9.8;
@@ -54,13 +55,13 @@ export default function Lancamento({ aoTerminar }: { aoTerminar: AoTerminar }) {
       const Y = (m: number) => chao - m * esc;
 
       // Régua do solo, de 50 em 50 metros.
-      g.strokeStyle = "#4a4b45";
+      g.strokeStyle = "#2c5f82";
       g.lineWidth = 1;
       g.beginPath();
       g.moveTo(0, chao);
       g.lineTo(L, chao);
       g.stroke();
-      g.fillStyle = "#a5a79f";
+      g.fillStyle = "#a9c6d8";
       g.font = "11px system-ui";
       for (let m = 0; m <= MUNDO; m += 50) {
         g.fillRect(X(m), chao, 1, 6);
@@ -68,15 +69,15 @@ export default function Lancamento({ aoTerminar }: { aoTerminar: AoTerminar }) {
       }
 
       // Alvo: faixas de 20, 10, 5 e 2 metros.
-      [[20, "#3b2a16"], [10, "#6b4216"], [5, "#b5641f"], [2, "#f58a33"]].forEach(([r, cor]) => {
+      [[20, "#5a3312"], [10, "#8a4f16"], [5, "#c76f1e"], [2, "#f58a33"]].forEach(([r, cor]) => {
         g.fillStyle = cor as string;
         g.fillRect(X(alvo - (r as number)), chao - 3, (r as number) * 2 * esc, 6);
       });
-      g.fillStyle = "#f3f3ef";
+      g.fillStyle = "#f4fbff";
       g.fillRect(X(alvo) - 0.5, chao - 34, 1.5, 34);
 
       // Tiros anteriores, apagados.
-      g.strokeStyle = "#4a4b45";
+      g.strokeStyle = "#2c5f82";
       rastros.current.forEach((r) => {
         g.beginPath();
         r.forEach((p, i) => (i ? g.lineTo(X(p.x), Y(p.y)) : g.moveTo(X(p.x), Y(p.y))));
@@ -89,7 +90,7 @@ export default function Lancamento({ aoTerminar }: { aoTerminar: AoTerminar }) {
         g.beginPath();
         atual.current.forEach((p, i) => (i ? g.lineTo(X(p.x), Y(p.y)) : g.moveTo(X(p.x), Y(p.y))));
         g.stroke();
-        g.fillStyle = "#f3f3ef";
+        g.fillStyle = "#f4fbff";
         g.beginPath();
         g.arc(X(fogo.x), Y(fogo.y), 4, 0, 7);
         g.fill();
@@ -191,7 +192,7 @@ export default function Lancamento({ aoTerminar }: { aoTerminar: AoTerminar }) {
           <span className="num flex justify-between"><span>Velocidade</span><strong>{velocidade} m/s</strong></span>
           <input type="range" min={10} max={55} value={velocidade} onChange={(e) => setVelocidade(+e.target.value)} className="regua-jogo" disabled={voando} />
         </label>
-        <p className="min-h-11 text-[0.9375rem] text-[#a5a79f]" role="status">{msg}</p>
+        <Fala texto={msg} pose={voando ? "foguete" : "pensa"} tamanho={60} />
         <button type="button" onClick={lancar} disabled={voando || acabou} className="tecla tecla-acesa mt-auto min-h-14 text-lg">
           {voando ? "Em voo" : "Lançar"}
         </button>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Fala } from "@/components/Fala";
 import { Placar, type AoTerminar } from "./Molde";
 
 export type DadoEscada = { id: string; sigla: string | null; nome: string; nivel: string; area: string; custo: string | null; credenciaPara: string[] };
@@ -110,7 +111,7 @@ export default function EscadaJogo({ aoTerminar, dados }: { aoTerminar: AoTermin
       }
       if (barra.current) {
         barra.current.style.transform = `scaleX(${Math.max(0, e.tempo / e.max)})`;
-        barra.current.style.background = e.tempo < 2 ? "#ff8d50" : "#f3f3ef";
+        barra.current.style.background = e.tempo < 2 ? "#ff8d50" : "#f4fbff";
       }
       e.vista += (e.passo - e.vista) * Math.min(1, dt * 16);
       e.tremer *= 0.86;
@@ -144,11 +145,11 @@ export default function EscadaJogo({ aoTerminar, dados }: { aoTerminar: AoTermin
         const y = cy - i * alt;
         const patamar = i % POR_NIVEL === 0;
         g.globalAlpha = i < e.passo ? 0.35 : 1;
-        g.fillStyle = i === e.passo + 1 ? "#f3f3ef" : COR[nv];
+        g.fillStyle = i === e.passo + 1 ? "#f4fbff" : COR[nv];
         g.fillRect(x - larg / 2 + 1, y, larg - 2, patamar ? 12 : 8);
         if (patamar && i > 0 && i < totalDegraus) {
           g.globalAlpha = 1;
-          g.fillStyle = "#a5a79f";
+          g.fillStyle = "#a9c6d8";
           g.font = "600 12px system-ui";
           g.textAlign = "center";
           g.fillText(NIVEIS[nv], x, y + 28);
@@ -158,7 +159,7 @@ export default function EscadaJogo({ aoTerminar, dados }: { aoTerminar: AoTermin
         g.globalAlpha = 1;
       }
       g.globalAlpha = 1;
-      // Personagem: forma simples, sem rosto, na cor da marca.
+      // Personagem simples no desenho: o mascote narra nas perguntas.
       const px = cx + xVista * larg;
       const py = cy - e.vista * alt;
       const salto = Math.sin(frac * Math.PI) * 8;
@@ -233,21 +234,21 @@ export default function EscadaJogo({ aoTerminar, dados }: { aoTerminar: AoTermin
   return (
     <>
       <Placar esquerda={`Nível ${NIVEIS[nivelAtual]}, ${acertos} ${acertos === 1 ? "resposta certa" : "respostas certas"}`} direita={passo * 10 + acertos * 50} />
-      <div className="h-[4px] bg-[#33342f]">
-        <div ref={barra} className="h-full origin-left bg-[#f3f3ef]" />
+      <div className="h-[4px] bg-[#1f4a68]">
+        <div ref={barra} className="h-full origin-left bg-[#f4fbff]" />
       </div>
       <div className="relative flex-1">
         <canvas ref={canvas} aria-label="Escada. Use as setas ou os botões para subir." className="absolute inset-0 size-full min-h-[22rem]" />
         {questao && (
-          <div className="entrada-pergunta absolute inset-0 flex flex-col justify-end gap-3 bg-[#0f100e]/95 p-4 sm:p-6">
-            <p className="text-[0.9375rem] text-[#a5a79f]">Patamar alcançado. Acerte e recupere o tempo.</p>
+          <div className="entrada-pergunta absolute inset-0 flex flex-col justify-end gap-3 bg-[#071f33]/95 p-4 sm:p-6">
+            <Fala texto={resposta ? (resposta === questao.certa ? "Isso! Tempo de volta." : `Era ${questao.certa}.`) : "Patamar alcançado! Acerta e recupera o tempo."} pose={resposta ? (resposta === questao.certa ? "comemora" : "triste") : "aponta"} tamanho={60} />
             <p className="titulo text-[1.875rem]">{questao.p}</p>
-            <ul className="border-t border-[#33342f]">
+            <ul className="border-t border-[#1f4a68]">
               {questao.ops.map((o) => {
                 const certo = resposta && o === questao.certa;
                 const errado = resposta === o && o !== questao.certa;
                 return (
-                  <li key={o} className="border-b border-[#33342f]">
+                  <li key={o} className="border-b border-[#1f4a68]">
                     <button type="button" disabled={!!resposta} onClick={() => responder(o)} className={`min-h-12 w-full py-3 text-left font-semibold transition-colors ${certo ? "text-[#4bd68c]" : errado ? "text-[#ff8d50]" : "hover:text-marca"}`}>
                       {o}
                     </button>
@@ -258,11 +259,11 @@ export default function EscadaJogo({ aoTerminar, dados }: { aoTerminar: AoTermin
           </div>
         )}
       </div>
-      <div className="grid grid-cols-2 gap-px bg-[#33342f]">
-        <button type="button" onPointerDown={(e) => { e.preventDefault(); pisar(-1); }} disabled={!!questao} aria-label="Subir para a esquerda" className="grid min-h-24 touch-manipulation place-items-center bg-[#0f100e] text-lg font-semibold active:bg-marca active:text-[#111210] disabled:opacity-30">
+      <div className="grid grid-cols-2 gap-px bg-[#1f4a68]">
+        <button type="button" onPointerDown={(e) => { e.preventDefault(); pisar(-1); }} disabled={!!questao} aria-label="Subir para a esquerda" className="grid min-h-24 touch-manipulation place-items-center bg-[#071f33] text-lg font-semibold active:bg-marca active:text-[#111210] disabled:opacity-30">
           Esquerda
         </button>
-        <button type="button" onPointerDown={(e) => { e.preventDefault(); pisar(1); }} disabled={!!questao} aria-label="Subir para a direita" className="grid min-h-24 touch-manipulation place-items-center bg-[#0f100e] text-lg font-semibold active:bg-marca active:text-[#111210] disabled:opacity-30">
+        <button type="button" onPointerDown={(e) => { e.preventDefault(); pisar(1); }} disabled={!!questao} aria-label="Subir para a direita" className="grid min-h-24 touch-manipulation place-items-center bg-[#071f33] text-lg font-semibold active:bg-marca active:text-[#111210] disabled:opacity-30">
           Direita
         </button>
       </div>

@@ -27,7 +27,7 @@ export function RadarCliente({ itens }: { itens: Resumo[] }) {
     <div className="flex flex-col gap-4">
       <PainelFiltros itens={itens} filtros={filtros} setFiltros={setFiltros} alternar={alternar} limpar={limpar} total={resultado.length} />
 
-      <div className="regua flex items-center justify-between gap-3 pt-2">
+      <div className="flex items-center justify-between gap-3">
         <p className="num font-semibold" role="status">
           {resultado.length} {resultado.length === 1 ? "resultado" : "resultados"}
         </p>
@@ -48,7 +48,7 @@ export function RadarCliente({ itens }: { itens: Resumo[] }) {
           </button>
         </div>
       ) : (
-        <ul aria-label="Resultados" className="-mt-2 grid lg:grid-cols-2 lg:gap-x-10">
+        <ul aria-label="Resultados" className="grid lg:grid-cols-2 lg:gap-x-3">
           {resultado.slice(0, limite).map((item) => (
             <m.li key={item.id} initial={montado ? { opacity: 0, y: 8 } : false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.22, ease: [0.2, 0.8, 0.2, 1] }}>
               <LinhaOportunidade item={item} />

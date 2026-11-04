@@ -14,27 +14,27 @@ const lista = oportunidadesSchema.parse(JSON.parse(readFileSync(join(raiz, "data
 const destino = join(raiz, "public/og");
 mkdirSync(destino, { recursive: true });
 
-const fonte = (peso: number) => readFileSync(join(raiz, `node_modules/@fontsource/archivo/files/archivo-latin-${peso}-normal.woff`));
+const fonte = (peso: number) => readFileSync(join(raiz, `node_modules/@fontsource/montserrat/files/montserrat-latin-${peso}-normal.woff`));
 const fontes = [
-  { name: "Archivo", data: fonte(500), weight: 500 as const, style: "normal" as const },
-  { name: "Archivo", data: fonte(800), weight: 800 as const, style: "normal" as const },
+  { name: "Montserrat", data: fonte(600), weight: 600 as const, style: "normal" as const },
+  { name: "Montserrat", data: fonte(900), weight: 900 as const, style: "normal" as const },
 ];
 const logoJoc = `data:image/png;base64,${readFileSync(join(raiz, "public/logos/joc-laranja.png")).toString("base64")}`;
 
 function Cartao({ titulo, sobre, rodape, marca = "#f58a33" }: { titulo: string; sobre: string; rodape: string; marca?: string }) {
   const tam = titulo.length > 62 ? 56 : titulo.length > 34 ? 72 : titulo.length > 14 ? 96 : 150;
   return (
-    <div style={{ width: 1200, height: 630, display: "flex", background: "#0b0b0a", color: "#f3f3ef", fontFamily: "Archivo", padding: "56px 64px", flexDirection: "column", justifyContent: "space-between" }}>
+    <div style={{ width: 1200, height: 630, display: "flex", background: "#071a2e", color: "#f4fbff", fontFamily: "Montserrat", padding: "56px 64px", flexDirection: "column", justifyContent: "space-between" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-        <div style={{ display: "flex", fontSize: 30, fontWeight: 500, color: marca }}>{sobre}</div>
-        <div style={{ display: "flex", background: "#fff", padding: 10 }}>
+        <div style={{ display: "flex", fontSize: 30, fontWeight: 600, color: marca }}>{sobre}</div>
+        <div style={{ display: "flex", background: "#fff", padding: 10, borderRadius: 18 }}>
           <img src={logoJoc} width={190} height={118} alt="" />
         </div>
       </div>
-      <div style={{ display: "flex", fontSize: tam, fontWeight: 800, lineHeight: 1, letterSpacing: -2, maxWidth: 1040 }}>{titulo}</div>
-      <div style={{ display: "flex", justifyContent: "space-between", borderTop: "2px solid #f3f3ef", paddingTop: 20, fontSize: 28, fontWeight: 500 }}>
+      <div style={{ display: "flex", fontSize: tam, fontWeight: 900, lineHeight: 1, letterSpacing: -2, maxWidth: 1040 }}>{titulo}</div>
+      <div style={{ display: "flex", justifyContent: "space-between", borderTop: "3px solid #fdc13f", paddingTop: 20, fontSize: 28, fontWeight: 600 }}>
         <span>{rodape}</span>
-        <span style={{ fontWeight: 800 }}>Radar Olímpico</span>
+        <span style={{ fontWeight: 900 }}>Radar Olímpico</span>
       </div>
     </div>
   );

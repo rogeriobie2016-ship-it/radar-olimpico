@@ -2,8 +2,11 @@
 
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import Link from "@/components/L";
+import { Fala } from "@/components/Fala";
+import { Mascote, type Quem } from "@/components/Mascote";
 import { Seta } from "@/components/Seta";
 import { urlAbsoluta } from "@/lib/base";
+import { carimbar, confete, useGuia } from "@/lib/guia";
 import { linkWhatsApp } from "@/lib/ics";
 import type { Jogo } from "@/lib/jogos";
 
@@ -41,6 +44,8 @@ export function Molde({ jogo, nomeFicha, slugFicha, children }: { jogo: Jogo; no
         setRecorde(pontos);
       }
       setPlacar({ pontos, resumo, novoRecorde });
+      carimbar(jogo.slug === "escada" ? "jogo-escada" : jogo.slug);
+      if (novoRecorde) confete();
       setFase("fim");
     },
     [jogo.slug],
@@ -52,14 +57,23 @@ export function Molde({ jogo, nomeFicha, slugFicha, children }: { jogo: Jogo; no
   };
 
   const url = urlAbsoluta(`/jogos/${jogo.slug}/`);
+  const { quem, escolher } = useGuia();
 
   return (
-    <div className="palco -mx-4 flex min-h-[32rem] flex-col sm:mx-0">
+    <div className="palco flex min-h-[32rem] flex-col">
       {fase === "inicio" && (
         <div className="entrada-seq flex flex-1 flex-col justify-end gap-4 p-5 sm:p-8">
-          <p className="max-w-lg text-[1.0625rem]">{jogo.como}</p>
+          <p className="text-[0.9375rem] font-bold text-[#a9c6d8]">Quem vai narrar?</p>
+          <div className="flex gap-2">
+            {(["menina", "menino"] as Quem[]).map((q) => (
+              <button key={q} type="button" onClick={() => escolher(q)} aria-pressed={quem === q} aria-label={q === "menina" ? "Cientista da folha" : "Cientista do microscópio"} className={`rounded-2xl p-1.5 transition-all duration-200 ${quem === q ? "bg-turquesa/25 ring-2 ring-[#00c9c8]" : "opacity-60"}`}>
+                <Mascote quem={q} pose={quem === q ? "acena" : "parado"} className="w-20" />
+              </button>
+            ))}
+          </div>
+          <Fala texto={jogo.como} pose="aponta" />
           {recorde > 0 && <p className="num text-sm text-tinta-2">Seu recorde: {recorde.toLocaleString("pt-BR")}</p>}
-          <button type="button" onClick={jogar} className="btn btn-marca self-start text-lg">
+          <button type="button" onClick={jogar} className="btn btn-primario self-start text-lg">
             Jogar
             <Seta />
           </button>
@@ -70,16 +84,16 @@ export function Molde({ jogo, nomeFicha, slugFicha, children }: { jogo: Jogo; no
         <div className="entrada-seq flex flex-1 flex-col justify-end gap-4 p-5 sm:p-8">
           {placar.novoRecorde && <p className="text-[0.9375rem] font-semibold text-marca">Novo recorde</p>}
           <p className="estreito num text-[clamp(5rem,22vw,9rem)] font-bold leading-[0.85]">{placar.pontos.toLocaleString("pt-BR")}</p>
-          <p className="max-w-lg text-[1.0625rem]">{placar.resumo}</p>
+          <Fala texto={placar.resumo} pose={placar.pontos > 0 ? "comemora" : "triste"} />
           <div className="grid gap-2 sm:flex">
             <button type="button" onClick={jogar} className="btn btn-marca">
               Jogar de novo
             </button>
-            <Link href={`/oportunidade/${slugFicha}/`} className="btn border-[1.5px] border-[#f3f3ef] hover:bg-[#f3f3ef] hover:text-[#111210]">
+            <Link href={`/oportunidade/${slugFicha}/`} className="btn btn-secundario">
               Conhecer {nomeFicha}
               <Seta />
             </Link>
-            <a href={linkWhatsApp(`Fiz ${placar.pontos} pontos em ${jogo.titulo}, no Radar Olímpico. Tenta aí: ${url}`)} target="_blank" rel="noopener noreferrer" className="btn border-[1.5px] border-[#4a4b45] hover:border-[#f3f3ef]">
+            <a href={linkWhatsApp(`Fiz ${placar.pontos} pontos em ${jogo.titulo}, no Radar Olímpico. Tenta aí: ${url}`)} target="_blank" rel="noopener noreferrer" className="btn btn-secundario">
               Desafiar pelo WhatsApp
             </a>
           </div>
@@ -92,8 +106,8 @@ export function Molde({ jogo, nomeFicha, slugFicha, children }: { jogo: Jogo; no
 /** Faixa superior dos jogos: progresso e pontos. */
 export function Placar({ esquerda, direita }: { esquerda: ReactNode; direita: ReactNode }) {
   return (
-    <div className="flex items-baseline justify-between gap-4 border-b border-[#33342f] px-4 py-3 sm:px-6">
-      <span className="text-[0.9375rem] text-[#a5a79f]">{esquerda}</span>
+    <div className="flex items-baseline justify-between gap-4 border-b border-[#1f4a68] px-4 py-3 sm:px-6">
+      <span className="text-[0.9375rem] text-[#a9c6d8]">{esquerda}</span>
       <span className="estreito num text-[1.75rem] font-bold leading-none">{direita}</span>
     </div>
   );

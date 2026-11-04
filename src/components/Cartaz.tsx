@@ -8,14 +8,14 @@ function h(t: string, n = 1) {
 }
 
 const TEMAS: Record<string, { fundo: string; traco: string; texto: string }> = {
-  Matemática: { fundo: "#f58a33", traco: "#111210", texto: "#111210" },
-  "Ciências da Natureza": { fundo: "#07312f", traco: "#00c9c8", texto: "#f3f3ef" },
-  "Ciências Humanas e Sociais Aplicadas": { fundo: "#231610", traco: "#fdc13f", texto: "#f3f3ef" },
-  "Linguagens e Códigos": { fundo: "#ece9e1", traco: "#111210", texto: "#111210" },
-  "Tecnologia e Computação": { fundo: "#101114", traco: "#47e0df", texto: "#f3f3ef" },
-  "Meio Ambiente": { fundo: "#0e3a23", traco: "#7fd8a3", texto: "#f3f3ef" },
-  "Educação Financeira e Gestão": { fundo: "#fdc13f", traco: "#111210", texto: "#111210" },
-  Multidisciplinar: { fundo: "#23476b", traco: "#f3f3ef", texto: "#f3f3ef" },
+  Matemática: { fundo: "#f58a33", traco: "#3a1c05", texto: "#1c0f05" },
+  "Ciências da Natureza": { fundo: "#0a2a55", traco: "#00c9c8", texto: "#f4fbff" },
+  "Ciências Humanas e Sociais Aplicadas": { fundo: "#8a3f12", traco: "#fdc13f", texto: "#f4fbff" },
+  "Linguagens e Códigos": { fundo: "#fdc13f", traco: "#3a2a05", texto: "#1c0f05" },
+  "Tecnologia e Computação": { fundo: "#06393f", traco: "#3ee8e6", texto: "#f4fbff" },
+  "Meio Ambiente": { fundo: "#0d6b3c", traco: "#a5f0c5", texto: "#f4fbff" },
+  "Educação Financeira e Gestão": { fundo: "#f8a8c8", traco: "#6b1f45", texto: "#2b0a1b" },
+  Multidisciplinar: { fundo: "#00a3a3", traco: "#f4fbff", texto: "#04211f" },
 };
 
 export const temaDe = (area: string) => TEMAS[area] ?? TEMAS.Multidisciplinar;

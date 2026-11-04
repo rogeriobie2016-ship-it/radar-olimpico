@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { VistoAgora } from "./VistoAgora";
 import Link from "@/components/L";
-import { Novidade } from "@/components/Sala";
+import { LogoOlimpiada } from "@/components/LogoOlimpiada";
+import { Mascote } from "@/components/Mascote";
+import { Novidade } from "@/components/Novidade";
 import { Seta } from "@/components/Seta";
 import { novidades, oportunidades } from "@/lib/dados";
 import { dataExtenso } from "@/lib/rotulos";
@@ -22,23 +24,29 @@ export default function NovidadesPagina() {
   return (
     <div className="mx-auto flex max-w-3xl flex-col gap-6 px-4 pt-6">
       <VistoAgora data={itens[0]?.detectadoEm ?? null} />
-      <h1>Novidades</h1>
+      <div className="flex items-end justify-between gap-2">
+        <h1>Novidades</h1>
+        <Mascote quem="menino" pose="lupa" className="w-24 shrink-0" />
+      </div>
       <p className="text-[1.0625rem]">
         O Radar abre os sites oficiais todos os dias e compara com a visita anterior. Toda semana, uma pesquisa na web procura olimpíadas novas. Cada item traz o trecho e o link da fonte.
       </p>
       {verificadoEm && <p className="text-sm text-tinta-2">Última verificação: {dataExtenso(verificadoEm)}.</p>}
 
       {itens.length ? (
-        <ul className="regua">
+        <ul>
           {itens.map((n) => {
             const op = oportunidades.find((o) => o.id === n.oportunidadeId);
             return (
-              <li key={n.id} className="flex flex-col gap-2 border-b border-linha py-4">
+              <li key={n.id} className="linha-lista flex flex-col gap-2 py-4">
                 <div className="flex flex-wrap items-center gap-3">
                   <Novidade />
                   <span className="num text-sm text-tinta-2">{dataExtenso(n.detectadoEm)}</span>
                 </div>
-                <h2 className="text-[1.625rem] leading-[1.08]">{n.titulo}</h2>
+                <div className="flex items-center gap-3">
+                  {op && <LogoOlimpiada id={op.id} nome={op.nome} sigla={op.sigla} className="size-16" />}
+                  <h2 className="text-[1.375rem] leading-[1.08]">{n.titulo}</h2>
+                </div>
                 {n.trecho && <p className="text-[0.9375rem]">{n.trecho}</p>}
                 <p className="text-sm text-tinta-2">{ORIGEM[n.origem]}</p>
                 <div className="flex flex-wrap gap-x-5">

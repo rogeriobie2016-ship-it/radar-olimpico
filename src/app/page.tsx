@@ -1,62 +1,94 @@
 import { Numeros, QuadroPrazos } from "./InicioCliente";
 import { AvisoRadar } from "@/components/AvisoRadar";
+import { Expedicao, type Escondida } from "@/components/Expedicao";
 import Link from "@/components/L";
+import { Mascote } from "@/components/Mascote";
+import { FitaLogos, Mundos, type DadosMundo, type ItemCarta } from "@/components/Mundos";
 import { RadarEscopo, type Ponto } from "@/components/RadarEscopo";
-import { Sala, type FileiraDados, type ItemSala } from "@/components/Sala";
 import { Seta } from "@/components/Seta";
 import { asset } from "@/lib/base";
-import { cearaCientifico, meta, novidades, oportunidades, resumir, resumos } from "@/lib/dados";
+import { cearaCientifico, meta, oportunidades, resumir, resumos } from "@/lib/dados";
 import { REGRAS } from "@/lib/escada";
 import { JOGOS } from "@/lib/jogos";
+import { COM_LOGO } from "@/lib/logos";
 
-const CAMINHOS = [
-  { titulo: "Estudante", texto: "Monte a sua Escada Olímpica em poucas perguntas", href: "/escada/" },
-  { titulo: "Professor", texto: "Como orientar um projeto e registrar a participação", href: "/professores/" },
-  { titulo: "Escola", texto: "Prioridade, prazos e documentos do financiamento JOC", href: "/joc/" },
+// Onde cada logo fica escondido no universo, em porcentagem da cena.
+const ESCONDIDAS: [string, number, number][] = [
+  ["obmep", 18, 50],
+  ["oba", 80, 47],
+  ["obr", 50, 53],
+  ["onhb", 84, 61],
+  ["ocq", 16, 64],
+  ["onia", 50, 66],
+  ["febrace", 76, 72],
+  ["ceara-cientifico", 30, 72],
 ];
+
+const COR_JOGO = ["#f58a33", "#00c9c8", "#fdc13f", "#0a2a55", "#06393f", "#8a3f12", "#f8a8c8"];
+const TINTA_JOGO = ["#1c0f05", "#04211f", "#1c0f05", "#f4fbff", "#f4fbff", "#f4fbff", "#2b0a1b"];
 
 export default function Inicio() {
   const comData = resumos.filter((r) => r.fim || r.inicio);
   const pontos: Ponto[] = resumos.map((r) => ({ id: r.id, slug: r.slug, nome: r.nome, sigla: r.sigla, nivel: r.nivel, area: r.areas[0], inicio: r.inicio, fim: r.fim }));
   const ed = cearaCientifico.edicoes[0];
 
-  // Só itens com ficha completa viram cartaz. O texto curto vai junto para a prévia.
   const fichas = oportunidades.filter((o) => o.descricao);
-  const itens: ItemSala[] = fichas.map((o) => ({ ...resumir(o), resumo: o.descricao ? o.descricao.slice(0, 190).replace(/\s+\S*$/, "") + (o.descricao.length > 190 ? "..." : "") : null }));
+  const itens: ItemCarta[] = fichas.map((o) => ({ ...resumir(o), resumo: null }));
   const daArea = (a: string) => itens.filter((i) => i.areas.includes(a)).map((i) => i.id);
-  const comNovidade = novidades.itens.map((n) => n.oportunidadeId).filter((id, i, l): id is string => !!id && l.indexOf(id) === i && itens.some((x) => x.id === id));
-  const destaques = [...new Set([...comNovidade.slice(0, 2), "ceara-cientifico", "obmep", "onia", "obr"])].slice(0, 5);
+  const escondidas: Escondida[] = ESCONDIDAS.map(([id, x, y]) => {
+    const o = oportunidades.find((p) => p.id === id)!;
+    return { id, slug: o.slug, nome: o.nome, sigla: o.sigla, x, y, area: o.areas[0] };
+  });
+  const hoje = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Fortaleza" }).format(new Date());
+  const abertasAgora = comData.filter((r) => r.fim && r.fim >= hoje).length;
 
-  const fileiras: FileiraDados[] = [
-    { id: "novidades", titulo: "Novidades", ids: comNovidade },
-    { id: "abertas", titulo: "Inscrições abertas", dinamica: "abertas" },
-    { id: "comecar", titulo: "Para começar", ids: itens.filter((i) => REGRAS[i.id]?.aberta).map((i) => i.id) },
-    { id: "ceara", titulo: "Daqui do Ceará", ids: itens.filter((i) => i.nivel === "estadual" || i.nivel === "regional").map((i) => i.id) },
-    { id: "matematica", titulo: "Matemática", ids: daArea("Matemática") },
-    { id: "natureza", titulo: "Física, química, biologia e astronomia", ids: daArea("Ciências da Natureza") },
-    { id: "tecnologia", titulo: "Tecnologia e computação", ids: daArea("Tecnologia e Computação") },
-    { id: "humanas", titulo: "História, geografia e sociedade", ids: daArea("Ciências Humanas e Sociais Aplicadas") },
-    { id: "feiras", titulo: "Feiras e projetos", ids: itens.filter((i) => i.tipo === "feira" || i.tipo === "programa").map((i) => i.id) },
-    { id: "ufc", titulo: "Aceitas no edital de vagas olímpicas da UFC", ids: itens.filter((i) => i.vagaOlimpica).map((i) => i.id) },
+  const mundos: DadosMundo[] = [
+    { id: "comecar", titulo: "Comece aqui", frase: "Sem experiência? Estas são as melhores portas de entrada.", area: "Multidisciplinar", fundo: "#00a3a3", tinta: "#04211f", pose: "acena", quem: "guia", itens: itens.filter((i) => REGRAS[i.id]?.aberta).map((i) => i.id) },
+    { id: "espaco", titulo: "Espaço e natureza", frase: "Das estrelas às células. Física, química, biologia e astronomia.", area: "Ciências da Natureza", fundo: "#0a2a55", tinta: "#f4fbff", pose: "foguete", quem: "menino", itens: daArea("Ciências da Natureza") },
+    { id: "numeros", titulo: "Números", frase: "Lógica, padrões e desafios. Tem medalha esperando.", area: "Matemática", fundo: "#f58a33", tinta: "#1c0f05", pose: "pensa", quem: "menina", itens: daArea("Matemática") },
+    { id: "codigo", titulo: "Código e robôs", frase: "Programação, robótica e inteligência artificial.", area: "Tecnologia e Computação", fundo: "#06393f", tinta: "#f4fbff", pose: "aponta", quem: "menino", itens: daArea("Tecnologia e Computação") },
+    { id: "historia", titulo: "História e sociedade", frase: "Investigue fontes, mapas e as histórias do Ceará e do Brasil.", area: "Ciências Humanas e Sociais Aplicadas", fundo: "#8a3f12", tinta: "#f4fbff", pose: "lupa", quem: "menina", itens: daArea("Ciências Humanas e Sociais Aplicadas") },
+    { id: "palavras", titulo: "Palavras e línguas", frase: "Leitura, literatura, inglês e linguística.", area: "Linguagens e Códigos", fundo: "#fdc13f", tinta: "#1c0f05", pose: "acena", quem: "menino", itens: daArea("Linguagens e Códigos") },
+    { id: "planeta", titulo: "Planeta vivo", frase: "Oceano, clima e natureza. Projetos para mudar o seu território.", area: "Meio Ambiente", fundo: "#0d6b3c", tinta: "#f4fbff", pose: "folha", quem: "menina", itens: daArea("Meio Ambiente") },
+    { id: "dinheiro", titulo: "Dinheiro e futuro", frase: "Investimentos, empreendedorismo e gestão.", area: "Educação Financeira e Gestão", fundo: "#f8a8c8", tinta: "#2b0a1b", pose: "comemora", quem: "menino", itens: daArea("Educação Financeira e Gestão") },
+    { id: "feiras", titulo: "Feiras e projetos", frase: "Crie, apresente e viaje com a sua pesquisa.", area: "Multidisciplinar", fundo: "#23476b", tinta: "#f4fbff", pose: "tubo", quem: "menina", itens: itens.filter((i) => i.tipo === "feira" || i.tipo === "programa").map((i) => i.id) },
   ];
+
+  const fita = fichas.filter((o) => COM_LOGO.has(o.id) && (REGRAS[o.id]?.aberta || o.nivel === "estadual" || o.tipo === "feira")).slice(0, 20).map((o) => ({ id: o.id, nome: o.nome, slug: o.slug, sigla: o.sigla }));
 
   return (
     <>
-      <Sala itens={itens} destaques={destaques} fileiras={fileiras} />
+      <Expedicao escondidas={escondidas} abertas={abertasAgora} />
+      <FitaLogos itens={fita} />
+
+      {/* Escada Olímpica: o convite principal */}
+      <section className="relative overflow-hidden bg-marca text-[#1c0f05]">
+        <div className="mx-auto grid max-w-6xl items-end gap-2 px-4 pt-8 sm:grid-cols-[1fr_auto]">
+          <div className="flex flex-col items-start gap-3 pb-8">
+            <h2 className="titulo-1 !text-[clamp(2.4rem,10vw,5rem)]">Escada Olímpica</h2>
+            <p className="max-w-md text-lg font-bold leading-snug">Responda 14 perguntas e descubra as olimpíadas perfeitas para você e para a sua escola, degrau por degrau.</p>
+            <Link href="/escada/" className="btn bg-[#071a2e] text-white shadow-[0_5px_0_#000]">
+              Quero minha Escada
+              <Seta />
+            </Link>
+          </div>
+          <div aria-hidden="true" className="relative flex h-52 items-end gap-1 sm:h-72 sm:w-96">
+            {[28, 42, 56, 70, 86, 100].map((a, i) => (
+              <span key={a} className="azulejo subir-degrau flex-1" style={{ height: `${a}%`, background: ["#00c9c8", "#fdc13f", "#ffffff"][i % 3], animationDelay: `${i * 70}ms`, borderRadius: "12px 12px 0 0" }} />
+            ))}
+            <Mascote quem="menino" pose="acena" className="flutua absolute bottom-[34%] left-[6%] w-24 sm:w-32" />
+            <Mascote quem="menina" pose="comemora" className="absolute bottom-[86%] right-0 w-20 sm:w-28" />
+          </div>
+        </div>
+      </section>
+
+      <Mundos itens={itens} mundos={mundos} />
 
       <div className="mx-auto flex max-w-6xl flex-col gap-14 px-4 pt-12">
         <section className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,34rem)] lg:gap-14">
-          <div className="flex flex-col gap-6">
-            <div className="flex items-center gap-4">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={asset("/logos/joc-laranja.webp")} alt="Juventude Olímpica do Conhecimento" width={480} height={298} loading="lazy" className="h-auto w-28" />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={asset("/logos/seduc.webp")} alt="Governo do Estado do Ceará, Secretaria da Educação" width={400} height={132} loading="lazy" className="logo-seduc h-auto w-32" />
-            </div>
-            <h1>Radar Olímpico</h1>
-            <p className="max-w-xl text-[1.1875rem] leading-snug">
-              Olimpíadas do conhecimento, feiras e eventos científicos para estudantes da rede pública estadual do Ceará. Publicação da COPES, com os sites oficiais verificados todos os dias.
-            </p>
+          <div className="flex flex-col gap-5">
+            <h2 className="regua uppercase">O radar de verdade</h2>
+            <p className="max-w-xl">Cada ponto é uma oportunidade. O anel mostra o nível e o setor mostra a área. Toque e descubra.</p>
             <Numeros itens={comData} total={resumos.length} vagas={resumos.filter((r) => r.vagaOlimpica).length} />
             <AvisoRadar itens={comData} edicao={meta.ultimaEdicaoRadar} />
             <div className="hidden lg:block">
@@ -71,39 +103,36 @@ export default function Inicio() {
         </div>
 
         <section aria-labelledby="t-jogos">
-          <div className="regua flex items-baseline justify-between gap-4 pt-3">
-            <h2 id="t-jogos">Treine jogando</h2>
+          <div className="flex items-baseline justify-between gap-4">
+            <h2 id="t-jogos" className="regua uppercase">Treine jogando</h2>
             <Link href="/jogos/" className="link shrink-0 text-[0.9375rem]">
-              Todos os jogos
+              Todos
             </Link>
           </div>
-          <ul className="mt-4 grid border-t border-linha sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
-            {JOGOS.slice(0, 6).map((j) => (
-              <li key={j.slug}>
-                <Link href={`/jogos/${j.slug}/`} className="linha-lista flex h-full items-start justify-between gap-4 py-3.5">
-                  <span>
-                    <span className="estreito block text-[1.625rem] font-bold leading-none">{j.titulo}</span>
-                    <span className="mt-1.5 block text-sm text-tinta-2">{j.olimpiada}</span>
-                  </span>
-                  <Seta className="mt-1" />
+          <ul className="mt-4 grid grid-cols-2 gap-2.5 lg:grid-cols-4">
+            {JOGOS.map((j, i) => (
+              <li key={j.slug} className="grid">
+                <Link href={`/jogos/${j.slug}/`} className="azulejo flex min-h-36 flex-col justify-between gap-3 p-4 no-underline transition-transform duration-200 hover:-translate-y-1.5 hover:rotate-[-1deg]" style={{ background: COR_JOGO[i], color: TINTA_JOGO[i] }}>
+                  <span className="estreito text-[1.5rem] leading-none">{j.titulo}</span>
+                  <span className="text-[0.8125rem] font-bold leading-tight opacity-90">{j.olimpiada}</span>
                 </Link>
               </li>
             ))}
           </ul>
         </section>
 
-        <section className="-mx-4 bg-cc-fundo px-4 py-10 text-white lg:mx-0 lg:px-8">
+        <section className="-mx-4 overflow-hidden bg-cc-fundo px-4 py-10 text-white lg:mx-0 lg:rounded-3xl lg:px-8">
           <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-end">
             <div className="flex flex-col items-start gap-5">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={asset("/logos/ceara-cientifico.webp")} alt="Ceará Científico" width={640} height={337} loading="lazy" className="h-auto w-36 bg-white p-2" />
-              <h2>Do projeto na escola à etapa estadual</h2>
-              <Link href="/ceara-cientifico/" className="btn bg-white text-[#111210] hover:bg-cc-laranja">
+              <img src={asset("/logos/ceara-cientifico.webp")} alt="Ceará Científico" width={640} height={337} loading="lazy" className="h-auto w-40 rounded-xl bg-white p-2" />
+              <h2>Da pergunta na escola à etapa estadual</h2>
+              <Link href="/ceara-cientifico/" className="btn btn-marca">
                 Conhecer o Ceará Científico
                 <Seta />
               </Link>
             </div>
-            <dl className="grid grid-cols-2 gap-x-6 border-t border-white/40 pt-3">
+            <dl className="grid grid-cols-2 gap-x-6">
               {[
                 [ed.etapaEstadual.projetos, "projetos"],
                 [ed.etapaEstadual.escolas, "escolas"],
@@ -111,31 +140,29 @@ export default function Inicio() {
                 [ed.ano, "última edição"],
               ].map(([n, t]) => (
                 <div key={t} className="py-2">
-                  <dd className="estreito text-5xl font-bold leading-none">{n}</dd>
-                  <dt className="mt-1 text-sm text-cc-claro">{t}</dt>
+                  <dd className="estreito text-5xl font-black leading-none text-amarelo">{n}</dd>
+                  <dt className="mt-1 text-sm font-bold text-cc-claro">{t}</dt>
                 </div>
               ))}
             </dl>
           </div>
         </section>
 
-        <section aria-labelledby="t-caminhos">
-          <h2 id="t-caminhos" className="regua pt-3">
-            Por perfil
-          </h2>
-          <ul className="mt-4 border-t border-linha">
-            {CAMINHOS.map((c) => (
-              <li key={c.href}>
-                <Link href={c.href} className="linha-lista flex items-center justify-between gap-4 py-4">
-                  <span>
-                    <span className="estreito block text-[2.25rem] font-bold leading-none">{c.titulo}</span>
-                    <span className="mt-1.5 block text-[0.9375rem] text-tinta-2">{c.texto}</span>
-                  </span>
-                  <Seta tamanho={24} />
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <section aria-labelledby="t-caminhos" className="grid gap-2.5 sm:grid-cols-3">
+          <h2 id="t-caminhos" className="sr-only">Por perfil</h2>
+          {[
+            { t: "Para professores", x: "Como orientar um projeto e registrar a participação.", h: "/professores/", p: "acena" as const, q: "menina" as const },
+            { t: "Para a escola", x: "Simule a prioridade no JOC e calcule o prazo da viagem.", h: "/joc/", p: "foguete" as const, q: "menino" as const },
+            { t: "Meu passaporte", x: "Salve oportunidades e colecione carimbos de cientista.", h: "/minha-lista/", p: "comemora" as const, q: "menina" as const },
+          ].map((c) => (
+            <Link key={c.h} href={c.h} className="linha-lista !mb-0 flex items-end gap-2 !px-3 pt-3">
+              <span className="flex-1 pb-3">
+                <span className="estreito block text-[1.5rem] leading-none">{c.t}</span>
+                <span className="mt-1.5 block text-sm text-tinta-2">{c.x}</span>
+              </span>
+              <Mascote quem={c.q} pose={c.p} className="w-16 shrink-0" />
+            </Link>
+          ))}
         </section>
       </div>
     </>

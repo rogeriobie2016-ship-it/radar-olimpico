@@ -17,13 +17,13 @@ export function AcoesOportunidade({ item }: { item: Resumo }) {
     <div className="sem-print grid gap-2 sm:grid-cols-2">
       {item.link && (
         <a href={item.link} target="_blank" rel="noopener noreferrer" className="btn btn-primario sm:col-span-2">
-          Abrir o site oficial
+          Quero me inscrever
           <Seta direcao="externo" />
         </a>
       )}
       <Salvar id={item.id} nome={item.nome} completo />
       <a href={linkWhatsApp(texto)} target="_blank" rel="noopener noreferrer" className="btn btn-secundario">
-        Compartilhar no WhatsApp
+        Chamar a turma no WhatsApp
       </a>
       {eventos.length > 0 && (
         <button type="button" className="btn btn-secundario sm:col-span-2" onClick={() => baixarIcs(`${item.slug}.ics`, eventos)}>

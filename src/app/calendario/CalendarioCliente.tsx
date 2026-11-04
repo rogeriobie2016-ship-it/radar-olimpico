@@ -70,7 +70,7 @@ export function CalendarioCliente({ itens }: { itens: Resumo[] }) {
       {vista === "mes" ? (
         <>
           <section aria-label={`Calendário de ${nomeMes(mes)} de ${ano}`}>
-            <div className="regua flex items-center justify-between py-2">
+            <div className="flex items-center justify-between py-2">
               <button type="button" className="grid size-11 place-items-center" aria-label="Mês anterior" onClick={() => mudarMes(-1)}>
                 <Seta direcao="esquerda" />
               </button>
@@ -81,12 +81,12 @@ export function CalendarioCliente({ itens }: { itens: Resumo[] }) {
                 <Seta />
               </button>
             </div>
-            <div className="grid grid-cols-7 border-l border-t border-linha">
+            <div className="grid grid-cols-7 gap-1">
               {SEMANA.map((s) => (
-                <div key={s} className="border-b border-r border-linha py-1.5 text-center text-xs text-tinta-2">{s}</div>
+                <div key={s} className="py-1.5 text-center text-xs font-extrabold text-tinta-2">{s}</div>
               ))}
               {Array.from({ length: inicioSemana }).map((_, i) => (
-                <div key={`v-${i}`} className="border-b border-r border-linha" />
+                <div key={`v-${i}`} />
               ))}
               {Array.from({ length: totalDias }).map((_, i) => {
                 const d = `${prefixo}-${String(i + 1).padStart(2, "0")}`;
@@ -100,15 +100,15 @@ export function CalendarioCliente({ itens }: { itens: Resumo[] }) {
                     aria-pressed={dia === d}
                     aria-label={`${i + 1} de ${nomeMes(mes)}${n ? `, ${n} ${n === 1 ? "prazo" : "prazos"}` : ""}`}
                     onClick={() => setDia(dia === d ? null : d)}
-                    className={`num relative flex aspect-square min-h-11 flex-col items-start justify-between border-b border-r border-linha p-1.5 text-left text-sm transition-colors ${
-                      dia === d ? "bg-tinta text-fundo" : n ? "font-bold hover:bg-fundo-2" : "text-tinta-2"
-                    } ${ehHoje ? "underline decoration-2 underline-offset-2" : ""}`}
+                    className={`num relative flex aspect-square min-h-11 flex-col items-start justify-between rounded-xl p-1.5 text-left text-sm font-bold transition-all duration-200 ${
+                      dia === d ? "scale-105 bg-amarelo text-[#1c0f05]" : n ? "bg-marca text-[#1c0f05] hover:-translate-y-0.5" : "bg-fundo-2 text-tinta-2"
+                    } ${ehHoje ? "ring-2 ring-[var(--turquesa)]" : ""}`}
                   >
                     {i + 1}
                     {n > 0 && (
                       <span aria-hidden="true" className="flex gap-0.5">
                         {Array.from({ length: Math.min(n, 3) }).map((_, k) => (
-                          <span key={k} className="size-1.5 bg-marca" />
+                          <span key={k} className="size-1.5 rounded-full bg-[#071a2e]" />
                         ))}
                       </span>
                     )}
@@ -119,7 +119,7 @@ export function CalendarioCliente({ itens }: { itens: Resumo[] }) {
           </section>
 
           {mostrados.length ? (
-            <ul className="border-t border-linha">
+            <ul>
               {mostrados.map((e) => (
                 <LinhaEvento key={`${e.item.id}-${e.data}-${e.titulo}`} evento={e} hoje={hoje} />
               ))}
@@ -143,7 +143,7 @@ export function CalendarioCliente({ itens }: { itens: Resumo[] }) {
           )}
         </>
       ) : eventos.length ? (
-        <ul className="regua">
+        <ul>
           {eventos.map((e) => (
             <LinhaEvento key={`${e.item.id}-${e.data}-${e.titulo}`} evento={e} hoje={hoje} />
           ))}

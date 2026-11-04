@@ -29,7 +29,7 @@ export function PainelFiltros({ itens, filtros, setFiltros, alternar, limpar, to
         placeholder="Buscar por nome, sigla ou área"
         aria-label="Buscar por nome, sigla ou área"
         enterKeyHint="search"
-        className="campo estreito !text-[1.5rem] font-semibold"
+        className="campo estreito !text-[1.125rem]"
       />
       <div className="rolagem-x" role="group" aria-label="Filtros">
         <button type="button" className="opcao font-semibold" aria-pressed={n > 0} onClick={() => dialogo.current?.showModal()}>
@@ -50,7 +50,7 @@ export function PainelFiltros({ itens, filtros, setFiltros, alternar, limpar, to
         }}
       >
         <div className="sticky top-0 z-10 flex h-14 items-center justify-between border-b border-linha bg-fundo px-4">
-          <p className="estreito text-2xl font-bold">Filtros</p>
+          <p className="estreito text-2xl">Filtros</p>
           <button type="button" className="min-h-11 font-medium" onClick={() => dialogo.current?.close()}>
             Fechar
           </button>

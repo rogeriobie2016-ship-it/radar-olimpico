@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { Fala } from "@/components/Fala";
 import { Placar, type AoTerminar } from "./Molde";
 
 type Peca = { id: number; v: number };
@@ -133,12 +134,12 @@ export default function Alvo({ aoTerminar }: { aoTerminar: AoTerminar }) {
   return (
     <>
       <Placar esquerda={`Rodada ${rodada + 1} de ${RODADAS}`} direita={`${tempo}s`} />
-      <div className="h-[3px] bg-[#33342f]">
+      <div className="h-[3px] bg-[#1f4a68]">
         <div className="h-full bg-marca transition-[width] duration-1000 ease-linear" style={{ width: `${(tempo / TEMPO) * 100}%` }} />
       </div>
       <div className="flex flex-1 flex-col gap-5 p-4 sm:p-6">
         <div>
-          <p className="text-[0.9375rem] text-[#a5a79f]">Chegue a</p>
+          <p className="text-[0.9375rem] text-[#a9c6d8]">Chegue a</p>
           <p className={`estreito num text-[6rem] font-bold leading-[0.9] transition-colors ${acertou ? "text-[#4bd68c]" : ""}`} aria-live="polite">
             {dados.alvo}
           </p>
@@ -157,7 +158,7 @@ export default function Alvo({ aoTerminar }: { aoTerminar: AoTerminar }) {
             </button>
           ))}
         </div>
-        <p className="min-h-6 text-[0.9375rem] text-[#ff8d50]" role="status">{aviso}</p>
+        <div className="min-h-[4.75rem]"><Fala texto={acertou ? "Na mosca! Próximo alvo." : aviso || "Toca num número, numa operação e em outro número."} pose={acertou ? "comemora" : aviso ? "pensa" : "aponta"} tamanho={60} /></div>
         <div className="mt-auto grid grid-cols-2 gap-2">
           <button type="button" className="tecla" onClick={desfazer} disabled={!historico.length || acertou}>Desfazer</button>
           <button type="button" className="tecla" onClick={() => avancar(certas)} disabled={acertou}>Pular rodada</button>

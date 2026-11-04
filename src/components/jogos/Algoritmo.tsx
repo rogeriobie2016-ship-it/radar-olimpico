@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { Fala } from "@/components/Fala";
 import { Placar, type AoTerminar } from "./Molde";
 import { executar, NIVEIS, type Bloco } from "./niveisAlgoritmo";
 
@@ -78,12 +79,12 @@ export default function Algoritmo({ aoTerminar }: { aoTerminar: AoTerminar }) {
     <>
       <Placar esquerda={`Fase ${n + 1} de ${NIVEIS.length}, meta de ${nivel.limite} ${nivel.limite === 1 ? "bloco" : "blocos"}`} direita={pontos} />
       <div className="grid flex-1 gap-4 p-4 sm:grid-cols-[minmax(0,22rem)_1fr] sm:p-6">
-        <div className="relative mx-auto aspect-square w-full max-w-[22rem] border border-[#4a4b45]" role="img" aria-label={`Grade de ${nivel.tam} por ${nivel.tam}, com o robô e o destino`}>
+        <div className="relative mx-auto aspect-square w-full max-w-[22rem] border border-[#2c5f82]" role="img" aria-label={`Grade de ${nivel.tam} por ${nivel.tam}, com o robô e o destino`}>
           {Array.from({ length: nivel.tam * nivel.tam }).map((_, i) => {
             const x = i % nivel.tam;
             const y = Math.floor(i / nivel.tam);
             return (
-              <span key={i} className={`absolute border border-[#26271f] ${paredes.has(`${x},${y}`) ? "bg-[#4a4b45]" : ""}`} style={{ left: `${x * celula}%`, top: `${y * celula}%`, width: `${celula}%`, height: `${celula}%` }} />
+              <span key={i} className={`absolute border border-[#15395a] ${paredes.has(`${x},${y}`) ? "bg-[#2c5f82]" : ""}`} style={{ left: `${x * celula}%`, top: `${y * celula}%`, width: `${celula}%`, height: `${celula}%` }} />
             );
           })}
           <span className="absolute grid place-items-center bg-[#00c9c8]" style={{ left: `${nivel.ax * celula}%`, top: `${nivel.ay * celula}%`, width: `${celula}%`, height: `${celula}%` }} />
@@ -98,8 +99,8 @@ export default function Algoritmo({ aoTerminar }: { aoTerminar: AoTerminar }) {
         </div>
 
         <div className="flex flex-col gap-3">
-          <ol aria-label="Programa" className="flex min-h-14 flex-wrap content-start gap-1.5 border border-[#33342f] p-2">
-            {!programa.length && <li className="p-1.5 text-[0.9375rem] text-[#a5a79f]">Monte o programa com os comandos abaixo.</li>}
+          <ol aria-label="Programa" className="flex min-h-14 flex-wrap content-start gap-1.5 border border-[#1f4a68] p-2">
+            {!programa.length && <li className="p-1.5 text-[0.9375rem] text-[#a9c6d8]">Monte o programa com os comandos abaixo.</li>}
             {programa.map((b, i) => (
               <li key={i}>
                 <button type="button" onClick={() => repetir(i)} aria-label={`${NOME[b.c]}, ${b.n} ${b.n === 1 ? "vez" : "vezes"}. Toque para repetir.`} className="tecla !min-h-10 !px-2 !py-1 text-sm">
@@ -109,7 +110,7 @@ export default function Algoritmo({ aoTerminar }: { aoTerminar: AoTerminar }) {
               </li>
             ))}
           </ol>
-          <p className="text-sm text-[#a5a79f]">Toque num bloco do programa para repetir: 2x, 3x, 4x, 5x.</p>
+          <p className="text-sm text-[#a9c6d8]">Toque num bloco do programa para repetir: 2x, 3x, 4x, 5x.</p>
           <div className="grid grid-cols-3 gap-2">
             {(["E", "F", "D"] as const).map((c) => (
               <button key={c} type="button" className="tecla" onClick={() => adicionar(c)} disabled={rodando}>
@@ -125,7 +126,7 @@ export default function Algoritmo({ aoTerminar }: { aoTerminar: AoTerminar }) {
               Limpar
             </button>
           </div>
-          <p className="min-h-6 text-[0.9375rem]" role="status">{msg}</p>
+          <Fala texto={msg || "O robô faz só o que você mandar. Pensa antes de executar!"} pose={msg.startsWith("Chegou") || msg.startsWith("Solução") ? "comemora" : msg ? "pensa" : "aponta"} tamanho={60} />
           <button type="button" className="tecla tecla-acesa mt-auto min-h-14 text-lg" onClick={rodar} disabled={rodando || !programa.length}>
             {rodando ? "Executando" : "Executar"}
           </button>

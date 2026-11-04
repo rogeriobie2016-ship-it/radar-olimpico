@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 function Secao({ id, titulo, children }: { id?: string; titulo: string; children: ReactNode }) {
   return (
     <section id={id}>
-      <h2 className="regua mb-4 pt-3">{titulo}</h2>
+      <h2 className="regua mb-4 uppercase">{titulo}</h2>
       {children}
     </section>
   );
@@ -36,22 +36,22 @@ export default function PaginaJoc() {
     <div className="mx-auto flex max-w-6xl flex-col gap-14 px-4 pt-6">
       <header className="grid gap-6 lg:grid-cols-[1.5fr_1fr] lg:items-end lg:gap-10">
         <div className="flex flex-col gap-4">
-          <h1>Juventude Olímpica do Conhecimento</h1>
+          <h1 className="!text-[clamp(2.2rem,8vw,4.5rem)]">Juventude Olímpica do <span className="text-marca">Conhecimento</span></h1>
           <p className="max-w-2xl text-[1.1875rem] leading-snug">{joc.resumo}</p>
         </div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={asset("/logos/joc-laranja.webp")} alt="Logo da Juventude Olímpica do Conhecimento" width={480} height={298} className="h-auto w-48 lg:w-full" />
+        <img src={asset("/joc/logo.webp")} alt="Logo da Juventude Olímpica do Conhecimento" width={560} height={348} className="h-auto w-56 lg:w-full" />
       </header>
 
-      <dl className="regua grid grid-cols-3">
+      <dl className="grid grid-cols-3 gap-2">
         {[
           [joc.equipe.professores, "professor orientador"],
           [joc.equipe.estudantes, "estudantes, no máximo"],
           [joc.equipe.financiamentosPorAno, "pedidos por escola no ano"],
         ].map(([n, t], i) => (
-          <div key={t} className={`py-3 ${i ? "border-l border-linha pl-3" : ""}`}>
+          <div key={t} className="azulejo p-3" style={{ background: ["#f58a33", "#00c9c8", "#fdc13f"][i], color: "#10201f" }}>
             <dd className="estreito num text-6xl font-bold leading-none">{n}</dd>
-            <dt className="mt-1 text-[0.8125rem] leading-tight text-tinta-2 sm:text-[0.9375rem]">{t}</dt>
+            <dt className="mt-1 text-[0.8125rem] font-extrabold leading-tight sm:text-[0.9375rem]">{t}</dt>
           </div>
         ))}
       </dl>
@@ -85,10 +85,10 @@ export default function PaginaJoc() {
       </Secao>
 
       <Secao titulo="O caminho do processo">
-        <ol className="grid border-t-[3px] border-tinta md:grid-cols-4">
+        <ol className="grid gap-2 md:grid-cols-4">
           {joc.fluxo.map((f, i) => (
-            <li key={f.quem} className={`border-b border-linha py-3 md:border-b-0 md:pr-4 ${i ? "md:border-l md:pl-4" : ""}`}>
-              <span className="estreito num text-sm font-bold text-marca-forte">{i + 1}</span>
+            <li key={f.quem} className="azulejo p-3.5" style={{ background: ["#f58a33", "#fdc13f", "#00c9c8", "#f8a8c8"][i], color: "#10201f" }}>
+              <span className="estreito num text-sm">{i + 1}</span>
               <p className="estreito text-[1.75rem] font-bold leading-none">{f.quem}</p>
               <p className="mt-1.5 text-[0.9375rem]">{f.oQue}</p>
             </li>

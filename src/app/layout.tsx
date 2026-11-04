@@ -1,16 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { Archivo } from "next/font/google";
+import { Exo_2, Nunito } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
 import { MotionProvider } from "@/components/MotionProvider";
+import { GuiaFlutuante } from "@/components/GuiaFlutuante";
 import { Navegacao } from "@/components/Navegacao";
 import { RegistrarSW } from "@/components/RegistrarSW";
 import { Rodape } from "@/components/Rodape";
 import { BASE_PATH, SITE_URL, asset } from "@/lib/base";
 import { novidades } from "@/lib/dados";
 
-// Uma só família, com eixo de largura: condensada nos títulos, normal no texto.
-const fonte = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--fonte", display: "swap" });
+// Exo 2 traz o clima de ficção científica nos títulos. Nunito é redonda e amigável no texto.
+const titulo = Exo_2({ subsets: ["latin"], variable: "--fonte-titulo", display: "swap" });
+const texto = Nunito({ subsets: ["latin"], variable: "--fonte-texto", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${SITE_URL}${BASE_PATH}/`),
@@ -29,18 +31,17 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0f100e" },
+    { color: "#071a2e" },
   ],
   width: "device-width",
   initialScale: 1,
 };
 
-const scriptTema = `try{var t=localStorage.getItem('radar-tema');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme='light'}`;
+const scriptTema = `try{var t=localStorage.getItem('radar-tema');document.documentElement.dataset.theme=t||'dark'}catch(e){document.documentElement.dataset.theme='dark'}`;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt-BR" className={fonte.variable} suppressHydrationWarning>
+    <html lang="pt-BR" className={`${titulo.variable} ${texto.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: scriptTema }} />
       </head>
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <Navegacao ultimaNovidade={novidades.itens[0]?.detectadoEm ?? null} />
           <main id="conteudo">{children}</main>
           <Rodape />
+          <GuiaFlutuante />
           <RegistrarSW />
         </MotionProvider>
       </body>

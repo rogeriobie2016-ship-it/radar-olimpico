@@ -60,7 +60,7 @@ export default function CearaCientificoPagina() {
 
         <section className="grid gap-10 md:grid-cols-2" aria-label="Categorias e áreas">
           <div>
-            <h2 className="regua mb-3 pt-3">Categorias</h2>
+            <h2 className="regua mb-3 uppercase">Categorias</h2>
             <ul className="border-t border-linha">
               {cc.categorias.lista.map((c) => {
                 const [nome, texto] = c.split(": ");
@@ -74,7 +74,7 @@ export default function CearaCientificoPagina() {
             </ul>
           </div>
           <div>
-            <h2 className="regua mb-3 pt-3">Áreas de pesquisa</h2>
+            <h2 className="regua mb-3 uppercase">Áreas de pesquisa</h2>
             <ul className="border-t border-linha">
               {cc.areas.map((a) => (
                 <li key={a} className="border-b border-linha py-2.5 font-semibold">{a}</li>
@@ -87,7 +87,7 @@ export default function CearaCientificoPagina() {
         </section>
 
         <section aria-labelledby="como-chegar">
-          <h2 id="como-chegar" className="regua mb-3 pt-3">Como um projeto chega lá</h2>
+          <h2 id="como-chegar" className="regua mb-3 uppercase">Como um projeto chega lá</h2>
           <ol className="grid border-t border-linha md:grid-cols-2 md:gap-x-8">
             {cc.comoChegar.map((p, i) => (
               <li key={p.titulo} className="grid grid-cols-[2.25rem_1fr] border-b border-linha py-3">
@@ -102,7 +102,7 @@ export default function CearaCientificoPagina() {
         </section>
 
         <section aria-labelledby="galeria">
-          <h2 id="galeria" className="regua mb-4 pt-3">Projetos e ganhadores</h2>
+          <h2 id="galeria" className="regua mb-4 uppercase">Projetos e ganhadores</h2>
           <Galeria ganhadores={cc.ganhadores} areas={cc.areas} anos={cc.edicoes.map((x) => x.ano)} />
         </section>
 

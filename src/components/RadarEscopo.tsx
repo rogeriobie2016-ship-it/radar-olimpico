@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "./L";
+import { LogoOlimpiada } from "./LogoOlimpiada";
 import { Seta } from "./Seta";
 import { Status } from "./Status";
 import { ROTULO_NIVEL } from "@/lib/rotulos";
@@ -90,8 +91,8 @@ export function RadarEscopo({ pontos }: { pontos: Ponto[] }) {
 
   const estilo = (s: ReturnType<typeof calcularStatus>["tipo"]) => {
     if (s === "aberto" || s === "fecha") return { r: 12, fill: "var(--marca)" };
-    if (s === "encerrado") return { r: 7.5, fill: "var(--tinta)" };
-    return { r: 5.5, fill: "var(--tinta-2)" };
+    if (s === "encerrado") return { r: 8, fill: "var(--amarelo)" };
+    return { r: 6, fill: "var(--turquesa)" };
   };
 
   return (
@@ -110,7 +111,7 @@ export function RadarEscopo({ pontos }: { pontos: Ponto[] }) {
           className="quadro-radar relative block size-full"
         >
           {RAIOS.map((r, i) => (
-            <circle key={r} cx={C} cy={C} r={r} fill="none" stroke={i === 4 ? "var(--tinta)" : "var(--linha)"} strokeWidth={i === 4 ? 2 : 1.5} />
+            <circle key={r} cx={C} cy={C} r={r} fill="none" stroke={i === 4 ? "var(--turquesa)" : "var(--linha)"} strokeWidth={i === 4 ? 2 : 1.5} />
           ))}
           {AREAS.map((a, i) => {
             const rad = ((i * (360 / AREAS.length) - 90) * Math.PI) / 180;
@@ -135,25 +136,23 @@ export function RadarEscopo({ pontos }: { pontos: Ponto[] }) {
           })}
           {atual && (
             <g pointerEvents="none">
-              <line x1={C} y1={C} x2={atual.x} y2={atual.y} stroke="var(--marca-forte)" strokeWidth="2" />
-              <circle cx={atual.x} cy={atual.y} r="20" fill="none" stroke="var(--marca-forte)" strokeWidth="3" />
+              <line x1={C} y1={C} x2={atual.x} y2={atual.y} stroke="#fff" strokeWidth="2" />
+              <circle cx={atual.x} cy={atual.y} r="20" fill="none" stroke="#fff" strokeWidth="4" />
             </g>
           )}
         </svg>
       </div>
 
       {atual && (
-        <div aria-live="polite" className="regua flex min-h-[7.5rem] flex-col gap-1 pt-3">
+        <div aria-live="polite" className="flex min-h-[7.5rem] flex-col gap-2 rounded-2xl bg-fundo-2 p-3">
           <div className="flex items-baseline justify-between gap-3">
             <Status inicio={atual.inicio} fim={atual.fim} />
             <span className="text-sm text-tinta-2">{ROTULO_NIVEL[atual.nivel]}, {AREA_CURTA[atual.area] ?? atual.area}</span>
           </div>
-          <Link href={`/oportunidade/${atual.slug}/`} className="group flex items-start justify-between gap-4 no-underline">
-            <span className="estreito text-[1.75rem] font-bold leading-[1.05]">
-              {atual.sigla && atual.sigla.length <= 9 ? `${atual.sigla}, ` : ""}
-              <span className="font-medium">{atual.nome}</span>
-            </span>
-            <Seta tamanho={24} className="mt-1" />
+          <Link href={`/oportunidade/${atual.slug}/`} className="flex items-center gap-3 no-underline">
+            <LogoOlimpiada id={atual.id} nome={atual.nome} sigla={atual.sigla} className="size-16" />
+            <span className="estreito flex-1 text-[1.25rem] leading-[1.08]">{atual.nome}</span>
+            <Seta tamanho={24} />
           </Link>
         </div>
       )}
