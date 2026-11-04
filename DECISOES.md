@@ -191,3 +191,14 @@ Rota `/estudos/`, com Como estudar, Plano da semana, Foco, Baralhos, seis áreas
 - **Museu do Eclipse:** o Ibram informa acesso grátis e horário, mas o Mapa Cultural do Ceará ainda mostra aviso de reforma. O cartão avisa e traz o telefone. Vale a COPES confirmar.
 - **Visual:** só usa `--fundo`, `--fundo-2`, `--tinta`, `--tinta-2` e `--linha`, e nada das cores da marca, para funcionar no tema claro. As setas do `Carrossel` seguem brancas, porque são do componente existente.
 - **Links de fichas que estão quebrados ou antigos, não alterados:** a ficha da OBA aponta para `http://www.oba.org.br/site/`, que deu erro 404 (o site atual é `https://site.oba.org.br/`). A ficha da OBF aponta para o site de 2025.
+## Nave Celular (04/11/2026)
+
+Jogo em 3D (`src/components/jogos/celula/`): uma nave em miniatura visita as organelas de uma célula vegetal, cumpre uma missão curta em cada uma, responde a um desafio e termina dentro de uma crista da mitocôndria, seguindo os elétrons do NADH até o ATP.
+
+- **Conteúdo separado da tela:** textos, contas e regras ficam em `src/lib/estudo/celula.ts`, e `npm run testar:celula` refaz as contas (ΔE, ΔG, rendimento, pH, fótons, transcrição, anticódons, equação da respiração), joga a partida inteira e confere o mapa.
+- **Célula vegetal:** é o único tipo que tem mitocôndria, cloroplasto e parede. Por isso a bomba da missão da membrana é a de prótons, e não a de sódio e potássio.
+- **Fora de escala:** o jogo avisa isso na dica inicial. Os potenciais usados são os valores padrão em pH 7, arredondados, e o pH da matriz e do espaço intermembranas é um exemplo didático.
+- **Precisa de revisão pedagógica:** os 22 desafios foram escritos por mim, no estilo da OBB e da ONC. Não são questões oficiais dessas provas.
+- **Técnica de imagem:** composição em HalfFloat com MSAA 4x, bloom com limiar 1,0 (só brilha o que passa de 1), tone mapping Neutral (ACES lavava as cores saturadas), ambiente pintado por código e filtrado por PMREM com desfoque alto, e MeshPhysicalMaterial com ondulação no vértice e normal recalculada. A profundidade vem de borda acesa com miolo escuro, muito mais que de emissivo chapado.
+- **Queda de qualidade automática:** bloom, depois partículas, depois transmissão e MSAA, e só então a resolução, que nunca fica abaixo de 1x. `?qualidade=0` trava o nível, para conferir o visual em máquina lenta.
+- **Sem WebGL 2, ou se a placa de vídeo parar:** os mesmos desafios seguem em 2D, com a pontuação mantida.

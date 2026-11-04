@@ -58,6 +58,7 @@ export const CARIMBOS: Carimbo[] = [
   { id: "crononauta", titulo: "Fonte na mão", como: "Entregue um relatório em Crononauta", cor: "#7fd8ff" },
   { id: "lingua-galactica", titulo: "Tradutor galáctico", como: "Conclua uma lição de Língua Galáctica", cor: "#9cc4ff" },
   { id: "orbita-numerica", titulo: "Piloto de contas", como: "Jogue Órbita Numérica", cor: "#3ee8e6" },
+  { id: "nave-celular", titulo: "Piloto da célula", como: "Jogue Nave Celular", cor: "#4dff8a" },
   { id: "laboratorio", titulo: "Laboratório completo", como: "Use todos os equipamentos do Laboratório Vivo", cor: "#3ee8e6" },
 ];
 

@@ -75,6 +75,12 @@ export const JOGOS: Jogo[] = [
     como: "Arraste a nave ou use as setas e pegue a cápsula com a resposta certa. Desvie das erradas e dos asteroides. Errou? A conta aparece explicada, passo a passo.",
     oportunidades: ["obmep", "obmep-jr", "canguru", "mandacaru", "obrl", "ocm", "mcem", "omifce", "gepemac", "omu", "jacob-palis-jr", "tm2", "obom", "titas-da-matematica"], principal: "obmep",
   },
+  {
+    slug: "nave-celular", titulo: "Nave Celular", olimpiada: "OBB e ONC",
+    resumo: "Pilote uma nave em miniatura dentro de uma célula, de organela em organela, até o ATP.",
+    como: "Voe entre núcleo, ribossomos, retículo, cloroplasto e mitocôndria. Cumpra a missão de cada um, responda ao desafio e siga o trajeto da energia até o fim.",
+    oportunidades: ["obb", "obob", "tnbio", "oiab", "ibo", "onc", "oboc", "obc-ciencias", "tbc", "ciic", "obbiotec", "obbs", "obmed", "vitalis"], principal: "obb",
+  },
 ];
 
 export const jogosDe = (id: string) => JOGOS.filter((j) => j.oportunidades.includes(id));

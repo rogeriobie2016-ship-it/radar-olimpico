@@ -26,7 +26,7 @@ const ESCONDIDAS: [string, number, number][] = [
   ["ceara-cientifico", 30, 72],
 ];
 
-const COR_JOGO = ["#f58a33", "#00c9c8", "#fdc13f", "#0a2a55", "#06393f", "#8a3f12", "#f8a8c8", "#ffb24d", "#12254f", "#2b1a66"];
+const COR_JOGO = ["#f58a33", "#00c9c8", "#fdc13f", "#0a2a55", "#06393f", "#8a3f12", "#f8a8c8", "#ffb24d", "#12254f", "#2b1a66", "#0b5d3a"];
 
 export default function Inicio() {
   const comData = resumos.filter((r) => r.fim || r.inicio);
