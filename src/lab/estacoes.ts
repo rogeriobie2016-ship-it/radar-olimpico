@@ -88,7 +88,7 @@ export const ESTACOES: Estacao[] = [
     tinta: "#2e1404",
     convite: "Coloca estes fatos em ordem. Tem um que aconteceu antes aqui no Ceará.",
     concluido: "Isso! O Ceará aboliu a escravidão em 1884, quatro anos antes da Lei Áurea.",
-    olimpiadas: ["oche", "onhb", "obapo", "onfil", "oscear", "olp"],
+    olimpiadas: ["oche", "onhb", "obapo", "onfil", "oscear", "olimpiada-de-portugues"],
     jogo: { slug: "linha-do-tempo", nome: "Linha do Tempo" },
   },
   {

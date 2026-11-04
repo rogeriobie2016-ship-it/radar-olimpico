@@ -295,13 +295,13 @@
     },
     "descricao": null,
     "objetivo": null,
-    "observacoes": null,
+    "observacoes": "O catálogo aponta para o site do Congresso Interinstitucional de Iniciação Científica, que é um congresso, não uma olimpíada. Não encontramos concurso com este nome. Confirme na COPES antes de contar com este item.",
     "inscricoes": {
       "inicio": null,
       "fim": null
     },
     "provas": [],
-    "linkOficial": "https://www.ciic.cnptia.embrapa.br/",
+    "linkOficial": null,
     "comoParticipar": [
       "Veja regulamento, datas e inscrição no site oficial.",
       "Depois de participar, avise a escola para registrar no Portal Educação Científica."
@@ -324,7 +324,7 @@
       "provas",
       "publico"
     ],
-    "atualizadoEm": "2026-11-03"
+    "atualizadoEm": "2026-11-04"
   },
   {
     "id": "egmo",
@@ -902,13 +902,13 @@
     },
     "descricao": null,
     "objetivo": null,
-    "observacoes": null,
+    "observacoes": "Não encontramos competição com este nome. O link do catálogo leva à International Physics Olympiad, que tem ficha própria neste site. Confirme na COPES antes de contar com este item.",
     "inscricoes": {
       "inicio": null,
       "fim": null
     },
     "provas": [],
-    "linkOficial": "http://www.ipho-new.org/",
+    "linkOficial": null,
     "comoParticipar": [
       "Veja regulamento, datas e inscrição no site oficial.",
       "Depois de participar, avise a escola para registrar no Portal Educação Científica."
@@ -931,7 +931,7 @@
       "provas",
       "publico"
     ],
-    "atualizadoEm": "2026-11-03"
+    "atualizadoEm": "2026-11-04"
   },
   {
     "id": "icho",
@@ -1585,7 +1585,7 @@
       "fim": null
     },
     "provas": [],
-    "linkOficial": "https://noic.com.br/obo/fisica/",
+    "linkOficial": "https://noic.com.br/obo/fisica-experimental/",
     "comoParticipar": [
       "Veja regulamento, datas e inscrição no site oficial.",
       "Depois de participar, avise a escola para registrar no Portal Educação Científica."
@@ -1608,7 +1608,7 @@
       "provas",
       "publico"
     ],
-    "atualizadoEm": "2026-11-03"
+    "atualizadoEm": "2026-11-04"
   },
   {
     "id": "obadm",
@@ -2302,7 +2302,7 @@
       "fim": null
     },
     "provas": [],
-    "linkOficial": "https://www1.fisica.org.br/olimpiada/2025/",
+    "linkOficial": "https://www1.fisica.org.br/olimpiada/2026/",
     "comoParticipar": [
       "Veja regulamento, datas e inscrição no site oficial.",
       "Depois de participar, avise a escola para registrar no Portal Educação Científica."
@@ -2325,7 +2325,7 @@
       "provas",
       "publico"
     ],
-    "atualizadoEm": "2026-11-03"
+    "atualizadoEm": "2026-11-04"
   },
   {
     "id": "obfep",
@@ -2967,13 +2967,13 @@
     },
     "descricao": null,
     "objetivo": null,
-    "observacoes": null,
+    "observacoes": "O link do catálogo leva a uma notícia sem relação, e não confirmamos um programa com este nome. Para os anos iniciais, a OBMEP tem a Olimpíada Mirim, que tem ficha própria neste site. Confirme na COPES antes de contar com este item.",
     "inscricoes": {
       "inicio": null,
       "fim": null
     },
     "provas": [],
-    "linkOficial": "http://www.obmep.org.br/noticias.DO?id=786",
+    "linkOficial": null,
     "comoParticipar": [
       "Veja regulamento, datas e inscrição no site oficial.",
       "Depois de participar, avise a escola para registrar no Portal Educação Científica."
@@ -2996,7 +2996,7 @@
       "provas",
       "publico"
     ],
-    "atualizadoEm": "2026-11-03"
+    "atualizadoEm": "2026-11-04"
   },
   {
     "id": "obq",
@@ -5272,15 +5272,15 @@
       "tipo": null,
       "observacao": null
     },
-    "descricao": "Competição acadêmica nacional de Língua Portuguesa para alunos de escolas públicas e privadas, do 6º ao 9º ano do Ensino Fundamental e de todas as séries do Ensino Médio.",
+    "descricao": "Em 2026, a Olimpíada de Professores de Língua Portuguesa (8ª edição, do MEC com a UFPI) é voltada a professores do 6º ao 9º ano da rede pública. Estudantes não se inscrevem.",
     "objetivo": null,
-    "observacoes": null,
+    "observacoes": "O catálogo traz a OLP com o link da Olimpíada de Português, que é outra competição e tem ficha própria neste site. Confirme na UFC qual das duas vale para o ingresso por olimpíadas.",
     "inscricoes": {
       "inicio": null,
       "fim": null
     },
     "provas": [],
-    "linkOficial": "https://olimpiadadeportugues.org/",
+    "linkOficial": null,
     "comoParticipar": [
       "Veja regulamento, datas e inscrição no site oficial.",
       "Depois de participar, avise a escola para registrar no Portal Educação Científica."
@@ -5303,7 +5303,7 @@
       "provas",
       "publico"
     ],
-    "atualizadoEm": "2026-11-03"
+    "atualizadoEm": "2026-11-04"
   },
   {
     "id": "omaio",

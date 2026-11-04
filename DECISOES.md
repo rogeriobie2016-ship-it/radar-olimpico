@@ -208,3 +208,15 @@ Jogo em 3D (`src/components/jogos/celula/`): uma nave em miniatura visita as org
 - Com Estudos, o topo passou da largura em telas de 1280 e 1366 px. Ficam Laboratório, Radar, Escada Olímpica, Jogos e Estudos; o resto está no Menu, que agora aparece também no computador, e no rodapé.
 - A barra de vidro no tema claro subiu de 74% para 90% de opacidade: sobre um bloco escuro, o texto da barra inferior caía para contraste 3,59.
 - Merge por união em `globals.css` pode perder uma chave de fechamento quando dois blocos terminam no mesmo ponto. Depois de cada merge, rodar `npm run build`, não só `tsc`.
+
+## Itens do catálogo conferidos em 2026-11-04
+
+Os seis vêm da lista da UFC no Catálogo 2026 (p. 72 a 76). Nenhum foi apagado, porque a lista é a fonte da COPES. Onde o link não levava ao item, ele saiu, e a ficha avisa.
+
+- **OBF:** link atualizado para a página de 2026.
+- **OBOFE:** existe, é do NOIC. O link do catálogo não abria; agora aponta para `noic.com.br/obo/fisica-experimental/`.
+- **CIIC:** o link leva ao Congresso Interinstitucional de Iniciação Científica, que é um congresso. Não achamos concurso com este nome. Sem link, com aviso, e fora da Nave Celular.
+- **IBPhO:** não achamos competição com este nome. O link leva à IPhO, que já tem ficha. Sem link, com aviso.
+- **OBMEP Jr.:** o link leva a uma notícia sobre uma professora. Não confirmamos o programa; pode ser a Olimpíada Mirim, mas isso não foi afirmado. Sem link, com aviso, sem logo, fora da Escada e dos jogos de Matemática.
+- **OLP:** o catálogo usava o link e o texto da Olimpíada de Português (OP), que é outra competição, do Instituto Philotimia. Em 2026 a edição do MEC com a UFPI é só para professores. A ficha foi corrigida, o logo da OP saiu, e Arquivo Perdido passou a apontar para a OP.
+- **Pendente:** a COPES ou a UFC precisam dizer qual competição o edital aceita nos casos de CIIC, IBPhO, OBMEP Jr. e OLP. Ainda não foi visto o edital da UFC em si, só a lista do catálogo.

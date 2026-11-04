@@ -61,7 +61,6 @@ export const REGRAS: Record<string, Regra> = {
   gepemac: { dificuldade: 2 },
 
   obmep: { dificuldade: 2, aberta: true },
-  "obmep-jr": { dificuldade: 1 },
   obm: { convite: "Só por convite: 300 melhores da OBMEP, regionais apoiadas ou medalhistas", dificuldade: 3 },
   obq: { convite: "Acesso pelas seletivas estaduais, como a OCQ", dificuldade: 3 },
   obafog: { depende: "OBA", professorResponsavel: true, dificuldade: 2 },

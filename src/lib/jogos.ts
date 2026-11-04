@@ -25,7 +25,7 @@ export const JOGOS: Jogo[] = [
     slug: "alvo", titulo: "Alvo", olimpiada: "OBMEP e olimpíadas de Matemática",
     resumo: "Combine os números com as quatro operações até chegar ao valor exato.",
     como: "Toque num número, numa operação e em outro número. O resultado vira uma nova peça. São seis rodadas contra o relógio.",
-    oportunidades: ["obmep", "obmep-jr", "mcem", "omifce", "gepemac", "obm", "ocm", "mandacaru", "canguru", "omu", "obrl", "olimpiada-da-coruja"], principal: "obmep",
+    oportunidades: ["obmep", "mcem", "omifce", "gepemac", "obm", "ocm", "mandacaru", "canguru", "omu", "obrl", "olimpiada-da-coruja"], principal: "obmep",
   },
   {
     slug: "lancamento", titulo: "Lançamento", olimpiada: "OBA e OBAFOG",
@@ -52,10 +52,10 @@ export const JOGOS: Jogo[] = [
     oportunidades: ["ocq", "oqep", "quimeninas", "obq", "olimpiada-da-coruja", "tbc"], principal: "ocq",
   },
   {
-    slug: "arquivo-perdido", titulo: "Arquivo Perdido", olimpiada: "OLP, Olimpíada de Português e OBL",
+    slug: "arquivo-perdido", titulo: "Arquivo Perdido", olimpiada: "Olimpíada de Português e OBL",
     resumo: "Restaure as mensagens de uma estação em Titã. Só avança quem interpreta, e suas escolhas mudam o final.",
     como: "Leia cada mensagem danificada e descubra o que ela quer dizer. Quando errar, eu explico o motivo e você tenta de novo. Suas escolhas abrem caminhos e finais diferentes.",
-    oportunidades: ["olp", "olimpiada-de-portugues", "obl", "olimpiada-de-literatura"], principal: "olp",
+    oportunidades: ["olimpiada-de-portugues", "obl", "olimpiada-de-literatura"], principal: "olimpiada-de-portugues",
   },
   {
     slug: "crononauta", titulo: "Crononauta", olimpiada: "ONHB e OCHE",
@@ -73,13 +73,13 @@ export const JOGOS: Jogo[] = [
     slug: "orbita-numerica", titulo: "Órbita Numérica", olimpiada: "OBMEP, Canguru e raciocínio lógico",
     resumo: "Pilote uma nave em pixels, colete as respostas certas e enfrente um chefe no fim de cada fase.",
     como: "Arraste a nave ou use as setas e pegue a cápsula com a resposta certa. Desvie das erradas e dos asteroides. Errou? A conta aparece explicada, passo a passo.",
-    oportunidades: ["obmep", "obmep-jr", "canguru", "mandacaru", "obrl", "ocm", "mcem", "omifce", "gepemac", "omu", "jacob-palis-jr", "tm2", "obom", "titas-da-matematica"], principal: "obmep",
+    oportunidades: ["obmep", "canguru", "mandacaru", "obrl", "ocm", "mcem", "omifce", "gepemac", "omu", "jacob-palis-jr", "tm2", "obom", "titas-da-matematica"], principal: "obmep",
   },
   {
     slug: "nave-celular", titulo: "Nave Celular", olimpiada: "OBB e ONC",
     resumo: "Pilote uma nave em miniatura dentro de uma célula, de organela em organela, até o ATP.",
     como: "Voe entre núcleo, ribossomos, retículo, cloroplasto e mitocôndria. Cumpra a missão de cada um, responda ao desafio e siga o trajeto da energia até o fim.",
-    oportunidades: ["obb", "obob", "tnbio", "oiab", "ibo", "onc", "oboc", "obc-ciencias", "tbc", "ciic", "obbiotec", "obbs", "obmed", "vitalis"], principal: "obb",
+    oportunidades: ["obb", "obob", "tnbio", "oiab", "ibo", "onc", "oboc", "obc-ciencias", "tbc", "obbiotec", "obbs", "obmed", "vitalis"], principal: "obb",
   },
 ];
 
