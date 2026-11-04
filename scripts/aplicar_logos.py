@@ -34,7 +34,8 @@ ESCOLHA = {
 man = {r["id"]: r for r in json.load(open(BASE / "manifesto2.json", encoding="utf-8"))}
 fontes_p = RAIZ / "data" / "logos-fontes.json"
 fontes = json.load(open(fontes_p, encoding="utf-8")) if fontes_p.exists() else {}
-escuras = {"oimc"}
+# Logos com partes claras que a detecção automática não pega, conferidos a olho.
+escuras = {"oimc", "conrad-challenge", "olimpiada-itabirana", "stockholm-junior-water-prize"}
 faltou = []
 
 
