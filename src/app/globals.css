@@ -1140,6 +1140,8 @@ header.sticky, nav[aria-label="Atalhos"] { background: var(--vidro-forte) !impor
   .lg-resultado { padding-inline: 1.5rem; }
   .lg-resultado-botoes { grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); }
   .lg-exercicio { padding-top: 1rem; }
+}
+
 /* Órbita Numérica. Cores fixas: a tela de jogo é sempre escura, em qualquer tema. */
 .orbita-jogo { position: fixed; inset: 0; z-index: 60; display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto; padding-top: env(safe-area-inset-top); background: #050b1a; color: #f4fbff; overscroll-behavior: none; touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
 .orbita-lateral { display: contents; }
