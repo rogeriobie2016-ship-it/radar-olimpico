@@ -1324,3 +1324,33 @@ html.jogo-tela-cheia { overflow: hidden; }
 .plan-livros ul { display: flex; flex-direction: column; gap: 0.3rem; }
 .plan-livros a { display: block; padding: 0.45rem 0.7rem; border-radius: 10px; background: rgb(255 255 255 / 7%); color: inherit; line-height: 1.2; text-decoration: none; }
 .plan-livros a:hover { background: rgb(255 255 255 / 15%); }
+
+/* Catálogo de jogos: capas com o traço do Planeta Estante */
+.capa-destaque { position: relative; display: block; overflow: hidden; border-radius: 22px; color: #fff; text-decoration: none; box-shadow: 0 0 0 3px #1d1836, 0 7px 0 3px #1d1836; }
+.capa-destaque img { display: block; width: 100%; height: auto; }
+.capa-destaque-texto { position: absolute; inset: auto 0 0 0; display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem; padding: 3.5rem 1.1rem 1.1rem; background: linear-gradient(transparent, rgb(29 24 54 / 88%) 45%); }
+.capa-selo { padding: 0.15rem 0.65rem; border-radius: 999px; background: #ffd257; color: #1d1836; font-family: var(--font-display); font-size: 0.8125rem; font-weight: 800; }
+.capa-destaque-titulo { font-family: var(--font-display); font-size: clamp(2.25rem, 8vw, 4.25rem); font-weight: 800; line-height: 0.98; }
+.capa-destaque-frase { max-width: 34rem; font-size: clamp(1rem, 2vw, 1.125rem); font-weight: 700; line-height: 1.3; }
+.capa-botao { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 3rem; margin-top: 0.25rem; padding: 0.4rem 1.25rem; border-radius: 14px; background: #ffd257; color: #1d1836; font-family: var(--font-display); font-weight: 800; box-shadow: 0 4px 0 #b98a14; transition: translate 140ms var(--mola), box-shadow 140ms; }
+@media (hover: hover) { .capa-destaque:hover .capa-botao { translate: 0 -2px; box-shadow: 0 6px 0 #b98a14; } }
+@media (min-width: 768px) {
+  .capa-destaque-texto { inset: 0 auto 0 0; justify-content: center; width: 58%; padding: 2.25rem 5rem 2.25rem 2.25rem; background: linear-gradient(90deg, rgb(29 24 54 / 92%) 25%, rgb(29 24 54 / 62%) 62%, transparent); }
+}
+.capa-jogo { position: relative; display: block; overflow: hidden; aspect-ratio: 5 / 7; border-radius: 16px; background: #1d1836; color: #fff; text-decoration: none; box-shadow: 0 0 0 3px #1d1836, 0 5px 0 3px #1d1836; transition: translate 200ms var(--mola), rotate 200ms var(--mola), box-shadow 200ms; }
+.capa-jogo img { display: block; width: 100%; height: 100%; object-fit: cover; transition: scale 320ms var(--curva); }
+.capa-jogo-texto { position: absolute; inset: auto 0 0 0; display: flex; flex-direction: column; gap: 0.2rem; padding: 2.25rem 0.7rem 0.7rem; background: linear-gradient(transparent, rgb(29 24 54 / 92%) 48%); }
+.capa-jogo-estilo { font-size: 0.75rem; font-weight: 800; line-height: 1.15; color: #ffd257; }
+.capa-jogo-titulo { font-family: var(--font-display); font-size: clamp(1.125rem, 2.2vw, 1.4rem); font-weight: 800; line-height: 1.02; }
+.capa-jogo-resumo { display: none; font-size: 0.8125rem; font-weight: 600; line-height: 1.25; }
+@media (hover: hover) {
+  .capa-jogo:hover, .capa-jogo:focus-visible { translate: 0 -6px; rotate: -1.2deg; box-shadow: 0 0 0 3px #1d1836, 0 10px 0 3px #1d1836; }
+  .capa-jogo:hover img, .capa-jogo:focus-visible img { scale: 1.06; }
+  .capa-jogo:hover .capa-jogo-resumo, .capa-jogo:focus-visible .capa-jogo-resumo { display: block; }
+}
+.capa-fileira { width: clamp(9.75rem, 42vw, 13.25rem); padding-top: 0.5rem; padding-bottom: 0.9rem; }
+@media (prefers-reduced-motion: reduce) {
+  .capa-jogo, .capa-jogo img { transition: none; }
+  .capa-jogo:hover, .capa-jogo:focus-visible { rotate: 0deg; translate: 0 0; }
+  .capa-jogo:hover img, .capa-jogo:focus-visible img { scale: 1; }
+}

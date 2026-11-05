@@ -1,6 +1,6 @@
 // Confere todos os JSON de /data antes de publicar. Roda sozinho no deploy.
 // Em caso de erro, explica em português qual item e qual campo corrigir.
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { ZodType } from "zod";
 import { CAMPOS } from "../src/lib/campos";
@@ -88,6 +88,7 @@ try {
     if (n < 1 || n > 5) problemas.push(`a estante "${c.id}" tem ${n} vídeos, e cabem de 1 a 5`);
   }
   for (const x of vids) if (!CAMPOS.some((c) => c.id === x.campo)) problemas.push(`o vídeo "${x.id}" aponta para o campo "${x.campo}", que não existe`);
+  for (const j of [...JOGOS.map((x) => x.slug), "planeta-estante"]) if (!existsSync(join(process.cwd(), "public/capas", `${j}.webp`))) problemas.push(`falta a capa public/capas/${j}.webp (veja scripts/capas/gerar.mjs)`);
   for (const p of problemas) {
     erros++;
     console.error(`\n✗ src/lib/campos.ts: ${p}`);

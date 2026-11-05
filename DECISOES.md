@@ -239,3 +239,10 @@ Os seis vêm da lista da UFC no Catálogo 2026 (p. 72 a 76). Nenhum foi apagado,
 - O iframe do YouTube só carrega depois de tocar em assistir e usa `youtube-nocookie`: quem só anda pelo planeta não faz nenhum pedido ao YouTube. As capas são desenhadas por nós, sem miniaturas do YouTube.
 - Viagem à Lua abre na página do Wikimedia Commons: o arquivo tem mais de 2 GB, pesado demais para tocar direto no celular de escola.
 - Todo o conteúdo fica aberto desde o início. Carimbos e fitas douradas são só diversão; a lista sem 3D, na mesma página, traz os mesmos vídeos.
+
+## Catálogo de jogos com capas (2026-11-04)
+
+- `/jogos/` virou catálogo: destaque no topo, fileira com todos os jogos e uma fileira por campo. O título e o resumo de cada capa são texto de verdade na página, para leitor de tela e busca.
+- As capas são arte própria, desenhadas em 3D com o traço do Planeta Estante, em `scripts/capas/cenas.ts`. Para refazer: `node scripts/capas/gerar.mjs [slug]`. A capa e o destaque do Planeta Estante são fotos do próprio jogo.
+- `npm run validar` acusa jogo sem capa em `public/capas/`. Jogo novo precisa de uma cena em `cenas.ts`.
+- Não há fileira de "mais jogados": o site não mede uso, e seria dado inventado.

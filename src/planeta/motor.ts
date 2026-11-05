@@ -228,9 +228,22 @@ export class Planeta {
   }
 
   /** Usado pelos testes: coloca o boneco num ponto sem andar até lá. */
-  saltarPara(x: number, y: number, z: number) {
+  saltarPara(x: number, y: number, z: number, olharPara?: [number, number, number], girar = 0) {
     this.pos.set(x, y, z).normalize();
     this.intro = 0;
+    if (olharPara) {
+      const alvo = new THREE.Vector3(...olharPara);
+      this.frente.copy(alvo).sub(this.pos.clone().multiplyScalar(alvo.dot(this.pos))).normalize();
+      this.olhar.copy(this.frente);
+      this.guiaPos.copy(this.pos).add(this.frente.clone().cross(this.pos).multiplyScalar(2.4 / RAIO)).add(this.frente.clone().multiplyScalar(-1 / RAIO)).normalize();
+      this.frente.applyAxisAngle(this.pos, girar);
+    }
+    this.passo(0.05);
+    const a = this.alvoCamera();
+    this.camPos.copy(a.pos);
+    this.camOlha.copy(a.olha);
+    this.camCima.copy(a.cima);
+    this.casca.quaternion.copy(orientar(this.casca, this.pos.clone(), this.olhar));
   }
 
   /** Usado pelos testes: anda sem desenhar, para não depender da placa de vídeo. */
@@ -242,7 +255,7 @@ export class Planeta {
   }
 
   get situacao() {
-    return { pos: this.pos.toArray(), coletas: this.coletas.map((c) => ({ id: c.id, dir: c.dir.toArray() })), perto: this.perto, sitios: this.sitios.map((s) => ({ id: s.id, ponto: s.ponto.toArray(), fitas: s.fitas.length })), dpr: this.dpr, chamadas: this.renderer.info.render.calls, triangulos: this.renderer.info.render.triangles };
+    return { pos: this.pos.toArray(), coletas: this.coletas.map((c) => ({ id: c.id, dir: c.dir.toArray() })), perto: this.perto, sitios: this.sitios.map((s) => ({ id: s.id, ponto: s.ponto.toArray(), dir: s.dir.toArray(), fitas: s.fitas.length })), dpr: this.dpr, chamadas: this.renderer.info.render.calls, triangulos: this.renderer.info.render.triangles };
   }
 
   /** Puxa uma fita da prateleira. Os botões do painel usam o mesmo caminho do toque na fita. */
@@ -718,7 +731,7 @@ const EIXO_NUVEM = new THREE.Vector3(0.3, 1, 0.2).normalize();
 const SOL_REF = new THREE.Vector3(0.6, 0.35, 0.72).normalize();
 
 /** Os estudantes vêm do Laboratório; aqui ganham o mesmo traço do planeta. */
-function tingir(raiz: THREE.Object3D, m: ReturnType<typeof criarMateriais>) {
+export function tingir(raiz: THREE.Object3D, m: ReturnType<typeof criarMateriais>) {
   raiz.traverse((o) => {
     const malha = o as THREE.Mesh;
     if (!malha.isMesh) return;
