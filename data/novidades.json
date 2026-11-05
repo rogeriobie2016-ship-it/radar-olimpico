@@ -1,6 +1,42 @@
 {
-  "verificadoEm": "2026-11-04",
+  "verificadoEm": "2026-11-05",
   "itens": [
+    {
+      "id": "prep-estudar-fora-site-7d0b1f61120e",
+      "oportunidadeId": "prep-estudar-fora",
+      "tipo": "atualizacao",
+      "titulo": "Prep Program (Estudar Fora): site oficial atualizado",
+      "trecho": "Inscrições encerradas • Demonstre seu interesse na próxima turma .",
+      "url": "https://www.estudarfora.org.br/prep-program/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-05",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "obf-site-24c7c0043806",
+      "oportunidadeId": "obf",
+      "tipo": "atualizacao",
+      "titulo": "OBF: site oficial atualizado",
+      "trecho": "SOIF 2027 - Inscrições Abertas .",
+      "url": "https://www1.fisica.org.br/olimpiada/2026/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-05",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "obofe-site-6160b3c774fd",
+      "oportunidadeId": "obofe",
+      "tipo": "atualizacao",
+      "titulo": "OBOFE: site oficial atualizado",
+      "trecho": "A OBOFE terá realização online e inscrição gratuita, fazendo com que todos os estudantes que tenham interesse possam participar!.",
+      "url": "https://noic.com.br/obo/fisica-experimental/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-05",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "obmf-site-223c7e741c76",
       "oportunidadeId": "obmf",
