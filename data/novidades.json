@@ -1,6 +1,18 @@
 {
-  "verificadoEm": "2026-11-06",
+  "verificadoEm": "2026-11-07",
   "itens": [
+    {
+      "id": "obmed-site-a8638ad87237",
+      "oportunidadeId": "obmed",
+      "tipo": "atualizacao",
+      "titulo": "OBMED: site oficial atualizado",
+      "trecho": "A OBMED entrega a prova e o reconhecimento.",
+      "url": "https://olimpikei.com.br/olimpiadas/olimpiada-brasileira-de-medicina",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-07",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "prep-estudar-fora-site-7d0b1f61120e",
       "oportunidadeId": "prep-estudar-fora",
