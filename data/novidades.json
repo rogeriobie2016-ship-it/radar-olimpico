@@ -1,6 +1,90 @@
 {
-  "verificadoEm": "2026-11-07",
+  "verificadoEm": "2026-11-08",
   "itens": [
+    {
+      "id": "oboq-site-3bbf460081d9",
+      "oportunidadeId": "oboq",
+      "tipo": "atualizacao",
+      "titulo": "OBOQ: site oficial atualizado",
+      "trecho": "Gabarito da segunda fase .",
+      "url": "https://noic.com.br/obo/quimica/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-08",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "obom-site-3bbf460081d9",
+      "oportunidadeId": "obom",
+      "tipo": "atualizacao",
+      "titulo": "OBOM: site oficial atualizado",
+      "trecho": "Gabarito da segunda fase .",
+      "url": "https://noic.com.br/obo/matematica/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-08",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "obol-site-3bbf460081d9",
+      "oportunidadeId": "obol",
+      "tipo": "atualizacao",
+      "titulo": "OBOL: site oficial atualizado",
+      "trecho": "Gabarito da segunda fase .",
+      "url": "https://noic.com.br/obo/linguistica/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-08",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "oboi-site-26db9eb166e4",
+      "oportunidadeId": "oboi",
+      "tipo": "atualizacao",
+      "titulo": "OBOI: site oficial atualizado",
+      "trecho": "Exemplos de soluções da segunda fase .",
+      "url": "https://noic.com.br/obo/informatica/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-08",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "obof-site-3bbf460081d9",
+      "oportunidadeId": "obof",
+      "tipo": "atualizacao",
+      "titulo": "OBOF: site oficial atualizado",
+      "trecho": "Gabarito da segunda fase .",
+      "url": "https://noic.com.br/obo/fisica/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-08",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "obob-site-3bbf460081d9",
+      "oportunidadeId": "obob",
+      "tipo": "atualizacao",
+      "titulo": "OBOB: site oficial atualizado",
+      "trecho": "Gabarito da segunda fase .",
+      "url": "https://noic.com.br/obo/biologia/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-08",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "obofe-site-3bbf460081d9",
+      "oportunidadeId": "obofe",
+      "tipo": "atualizacao",
+      "titulo": "OBOFE: site oficial atualizado",
+      "trecho": "Gabarito da segunda fase .",
+      "url": "https://noic.com.br/obo/fisica-experimental/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-08",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "obmed-site-a8638ad87237",
       "oportunidadeId": "obmed",
