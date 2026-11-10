@@ -1,6 +1,42 @@
 {
-  "verificadoEm": "2026-11-09",
+  "verificadoEm": "2026-11-10",
   "itens": [
+    {
+      "id": "iypt-brasil-site-abc88eba0e63",
+      "oportunidadeId": "iypt-brasil",
+      "tipo": "atualizacao",
+      "titulo": "IYPT: site oficial atualizado",
+      "trecho": "Formulário de inscrições para a 1ª fase - disponível!",
+      "url": "https://www.iyptbrasil.com/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-10",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "olimpiada-de-literatura-site-c42a4a610e5d",
+      "oportunidadeId": "olimpiada-de-literatura",
+      "tipo": "atualizacao",
+      "titulo": "OL: site oficial atualizado",
+      "trecho": "Aplicação das provas das categorias Pensamento, Poesia e Pop",
+      "url": "https://www.olimpiadadeliteratura.com.br/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-10",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "obmep-site-78b4288352dd",
+      "oportunidadeId": "obmep",
+      "tipo": "atualizacao",
+      "titulo": "OBMEP: site oficial atualizado",
+      "trecho": "Segunda fase da 5ª Olimpíada Mirim OBMEP acontece nesta terça-feira (10).",
+      "url": "http://www.obmep.org.br/index.htm",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-10",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "oboq-site-3bbf460081d9",
       "oportunidadeId": "oboq",
