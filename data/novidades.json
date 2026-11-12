@@ -1,6 +1,18 @@
 {
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "itens": [
+    {
+      "id": "ocq-site-2d93cb348ae3",
+      "oportunidadeId": "ocq",
+      "tipo": "atualizacao",
+      "titulo": "OCQ: site oficial atualizado",
+      "trecho": "Divulgação do gabarito das prova da OCQ Fase II .",
+      "url": "https://ceara.obquimica.org/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-12",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "iypt-brasil-site-abc88eba0e63",
       "oportunidadeId": "iypt-brasil",

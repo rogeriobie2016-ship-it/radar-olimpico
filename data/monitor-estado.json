@@ -1,20 +1,20 @@
 {
  "apmo": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "apho": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "egoi": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "cf-obi": {
@@ -29,28 +29,28 @@
    "0ae536c29882",
    "5fecde1e85f2"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "egmo": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "ceara-cientifico": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "fenecit": {
   "frases": [
    "229375aff47f"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "ciic": {
@@ -63,38 +63,38 @@
  },
  "geoinformacao": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "eupho": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "febrace": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "futuras-cientistas": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "imo": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "icho": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "ibpho": {
@@ -105,20 +105,20 @@
  },
  "ioi": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "ipho": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "ibo": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "febic": {
@@ -138,26 +138,26 @@
    "46372555a261",
    "106ac3cd4b61"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "imcho": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "mcem": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "falhou"
  },
  "ioaa": {
   "frases": [],
   "visitas": 1,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "http 403"
  },
  "milset-brasil": {
@@ -169,8 +169,8 @@
    "9442ed93e4f9",
    "e1877fc56655"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "mocica": {
@@ -179,8 +179,8 @@
    "920b5b0f6bf2",
    "9fddc013d81b"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "vanda": {
@@ -198,14 +198,14 @@
    "7fd9c075e674",
    "2ddc612292d5"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oba": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obofe": {
@@ -216,8 +216,8 @@
    "3bbf460081d9",
    "13d1ab76a251"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obb": {
@@ -226,8 +226,8 @@
    "8a0551183d9d",
    "201ad2dc085d"
   ],
-  "visitas": 9,
-  "verificadoEm": "2026-11-11",
+  "visitas": 10,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obapo": {
@@ -240,8 +240,8 @@
    "7d3ef75e68f1",
    "0cad629ed504"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "o2-oceano": {
@@ -264,8 +264,8 @@
    "65c1d7417cb1",
    "65cf25911151"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obadm": {
@@ -276,8 +276,8 @@
    "15843e853c44",
    "c137386d985c"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obbs": {
@@ -297,32 +297,32 @@
    "5006100fd13a",
    "d2d46472c29c"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obafog": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obap": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obrac": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obe": {
   "frases": [],
-  "visitas": 7,
-  "verificadoEm": "2026-11-11",
+  "visitas": 8,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obgp": {
@@ -372,8 +372,8 @@
    "af9daa748603",
    "f6911e14f8be"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obi": {
@@ -386,8 +386,8 @@
    "1864e50514c4",
    "4d3214ba3323"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obecon": {
@@ -403,8 +403,8 @@
    "7213f9eb46d4",
    "a74ab2650ccb"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obf": {
@@ -450,8 +450,8 @@
    "879099a5c842",
    "561d04ab4613"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obfep": {
@@ -459,8 +459,8 @@
    "60c24d1cb38b",
    "a915c9d0d81a"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obli": {
@@ -511,8 +511,8 @@
    "af9daa748603",
    "f6911e14f8be"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obmf": {
@@ -598,8 +598,8 @@
    "e1a054de93f8",
    "24896096352a"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obl": {
@@ -609,8 +609,8 @@
    "fb21ec2b3c52",
    "6045c01a7b8a"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obg": {
@@ -636,8 +636,8 @@
    "38b4e920cccc",
    "46b5ba9eff4c"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obm": {
@@ -645,8 +645,8 @@
    "4bed11a6a568",
    "e8040dd504d0"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obinvest": {
@@ -658,8 +658,8 @@
    "03fa366f84a7",
    "cb16484bb990"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obef": {
@@ -688,8 +688,8 @@
    "2de2359739ad",
    "cd0cd78e0dab"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obr": {
@@ -697,8 +697,8 @@
    "7d44d0c08cc9",
    "47683028e078"
   ],
-  "visitas": 9,
-  "verificadoEm": "2026-11-11",
+  "visitas": 10,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obrl": {
@@ -726,8 +726,8 @@
    "676fa0ebaace",
    "05b7ea0432c0"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obq": {
@@ -769,8 +769,8 @@
    "ab70f302b613",
    "529043a184a5"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "canguru": {
@@ -782,8 +782,8 @@
    "4363f557c6fa",
    "9948c33a7346"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obt": {
@@ -799,8 +799,8 @@
    "c486f330ea5b",
    "dc56bc0509be"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obmep-jr": {
@@ -819,7 +819,7 @@
  "oci": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "falhou"
  },
  "obmep": {
@@ -830,14 +830,14 @@
    "f4c3414a5b53",
    "705d7bb58a22"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "ocm": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "ocf": {
@@ -846,8 +846,8 @@
    "19570d618da9",
    "e2d33f5e272c"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "ocef": {
@@ -860,12 +860,13 @@
    "875c222fca5e",
    "eba3370ee7d4"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "ocq": {
   "frases": [
+   "2d93cb348ae3",
    "c466b651bfe8",
    "7c462f82e6ca",
    "954a79e2b8ef",
@@ -873,20 +874,20 @@
    "7f13fa5eb7c2",
    "e1bfce87c347"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obsma": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oiab": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oiaq": {
@@ -901,40 +902,40 @@
    "b5e4c0049748",
    "cc412ef4a3ed"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oiaf": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oimc": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oii": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "olaa": {
   "frases": [],
   "visitas": 6,
-  "verificadoEm": "2026-11-11",
-  "situacao": "ok"
+  "verificadoEm": "2026-11-12",
+  "situacao": "http 429"
  },
  "oimsf": {
   "frases": [
    "22a5533d7f0f"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "onda": {
@@ -944,20 +945,20 @@
    "54c43d6763a1",
    "f4c65b3e8ad4"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "mandacaru": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "one": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "nao-html"
  },
  "onee": {
@@ -972,16 +973,16 @@
    "60e03a80fa6f",
    "0f9f07415810"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "onc": {
   "frases": [
    "7fd317e2edfa"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "onfil": {
@@ -992,8 +993,8 @@
    "fa80e6d97595",
    "b90f2dd5fee8"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "onad": {
@@ -1060,8 +1061,8 @@
    "94a86187ea07",
    "2c27078b4327"
   ],
-  "visitas": 9,
-  "verificadoEm": "2026-11-11",
+  "visitas": 10,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "onano": {
@@ -1073,8 +1074,8 @@
    "0f720b34112c",
    "bfe991a6114d"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "onia": {
@@ -1103,20 +1104,20 @@
    "d9e07aca516c",
    "9cc780957ffc"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "onsc": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "onhb-a": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "http 503"
  },
  "quimeninas": {
@@ -1174,14 +1175,14 @@
    "01d87018e206",
    "b12ecba0a45c"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "onhb": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "http 503"
  },
  "oche": {
@@ -1206,26 +1207,26 @@
    "327ee5ce7b20",
    "7a0207366edb"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "ia-aplicada": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "opm": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "falhou"
  },
  "omaio": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "http 404"
  },
  "gepemac": {
@@ -1234,8 +1235,8 @@
    "0336e90dcbcd",
    "eaafc383b9e3"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "olp": {
@@ -1259,31 +1260,31 @@
    "50428a1fe8e0",
    "236342eb67fd"
   ],
-  "visitas": 9,
-  "verificadoEm": "2026-11-11",
+  "visitas": 10,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "olimpiada-de-literatura": {
   "frases": [
    "1b237bd2e463",
    "c7aea8d308a4",
-   "326b662cc649",
    "49923b0b1fdb",
    "fcf91a06f227",
+   "326b662cc649",
    "c42a4a610e5d",
    "57b9f0066b1f",
    "ad5e0ca2f2e1"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "omerj": {
   "frases": [
    "806169ca3831"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "olimpiada-de-portugues": {
@@ -1291,8 +1292,8 @@
    "fc4b6ade4d79",
    "6617fbdf917a"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "omu": {
@@ -1303,8 +1304,8 @@
    "70cc4e95e569",
    "b46964201b6f"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "omifce": {
@@ -1327,20 +1328,20 @@
    "c7f76601ab60",
    "0128b156975a"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "omrn": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "falhou"
  },
  "oscear": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "olitef": {
@@ -1351,14 +1352,14 @@
    "93c1c586d458",
    "1baaee949e72"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "premio-criativos": {
   "frases": [],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oqep": {
@@ -1370,8 +1371,8 @@
    "1621b004309c",
    "6c8b9ce8e35b"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "tnbio": {
@@ -1421,8 +1422,8 @@
    "af9daa748603",
    "f6911e14f8be"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "tbc": {
@@ -1470,22 +1471,22 @@
    "af9daa748603",
    "f6911e14f8be"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "restaura-natureza": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "falhou"
  },
  "tm2": {
   "frases": [
    "471e2dae0bd8"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "tfm": {
@@ -1499,8 +1500,8 @@
    "f4fd4c416321",
    "4bb705ae3d8a"
   ],
-  "visitas": 10,
-  "verificadoEm": "2026-11-11",
+  "visitas": 11,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "ocerq": {
@@ -1513,14 +1514,14 @@
    "9da95c8795a0",
    "c87964bcbabe"
   ],
-  "visitas": 7,
-  "verificadoEm": "2026-11-11",
+  "visitas": 8,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oim": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "falhou"
  },
  "olimpiada-da-coruja": {
@@ -1580,8 +1581,8 @@
    "c8d83dfb134c",
    "60b60447a335"
   ],
-  "visitas": 9,
-  "verificadoEm": "2026-11-11",
+  "visitas": 10,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "dialogos-brazil-conference": {
@@ -1594,50 +1595,50 @@
    "b7c8af4c03ee",
    "8662d306a159"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "uwc-brasil": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "robots"
  },
  "yale-young-global-scholars": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "rise-for-the-world": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "rotary-youth-exchange": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "http 429"
  },
  "jovens-embaixadores": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "http 403"
  },
  "regeneron-isef": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "breakthrough-junior-challenge": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "afs-global-stem-academies": {
@@ -1659,64 +1660,64 @@
    "2405b8dbecdf",
    "63498e253287"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "diamond-challenge": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "earth-prize": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "conrad-challenge": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "technovation": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "http 403"
  },
  "nasa-space-apps": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "falhou"
  },
  "fao-concurso-cartazes": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "beamline-for-schools": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "nuca-unicef": {
   "frases": [
    "a21882f7dbe1"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "blue-planet-awareness": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "http 403"
  },
  "prep-estudar-fora": {
@@ -1740,26 +1741,26 @@
    "9243e68bb146",
    "d641e7903091"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "mext-graduacao": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "http 403"
  },
  "turkiye-burslari-graduacao": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "estudar-fora-ceara": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
+  "verificadoEm": "2026-11-12",
   "situacao": "http 403"
  },
  "stockholm-junior-water-prize": {
@@ -1767,8 +1768,8 @@
    "97fe8e0d4681",
    "89d5b75a4c0e"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obict": {
@@ -1819,14 +1820,14 @@
    "51961d26d235",
    "c66e85bf5f66"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "gks-graduacao": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obho": {
@@ -1839,8 +1840,8 @@
    "d3c3543ad71b",
    "da4a2dc67d7f"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "ona": {
@@ -1852,8 +1853,8 @@
    "45bb6bf8b47f",
    "a8cb2c922172"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obc-cidadania": {
@@ -1877,8 +1878,8 @@
    "16d967ce870a",
    "e549bc1a6048"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obs-sociologia": {
@@ -1896,8 +1897,8 @@
    "bf554d190154",
    "957b6b666a1c"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obn": {
@@ -1905,20 +1906,20 @@
    "2cc1d05c2a0e",
    "5538342900f1"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "olimpiada-de-ingles": {
   "frases": [
-   "a562fd58421a",
    "dd850dae6165",
+   "a562fd58421a",
    "2d64a479a89a",
    "54e1b333923f",
    "33de26f31cc0"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obqjr": {
@@ -1956,8 +1957,8 @@
    "c910e4273636",
    "de68fe9d577c"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obbiotec": {
@@ -1978,16 +1979,16 @@
    "60996c20f97d",
    "69ab5c812dd9"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "the-big-challenge": {
   "frases": [
    "87447429de29"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "concurso-cartas-upu": {
@@ -1997,8 +1998,8 @@
    "23dab823a26c",
    "64b71d6e505b"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "concurso-cartas": {
@@ -2008,8 +2009,8 @@
    "23dab823a26c",
    "64b71d6e505b"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "vitalis": {
@@ -2025,16 +2026,16 @@
    "ffde342993d0",
    "bc9c5290e209"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "olimpiada-de-sustentabilidade": {
   "frases": [
    "3a2d2ec40c9b"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "olimpiada-do-bem-publico": {
@@ -2059,8 +2060,8 @@
    "5d603b5b7785",
    "67627155d769"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obmed": {
@@ -2091,16 +2092,16 @@
    "197b657c49d6",
    "bf8c2e9eb605"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "cdr-cgu": {
   "frases": [
    "c96ee1608bdd"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "op-be-a-ba": {
@@ -2109,16 +2110,16 @@
    "fc4b6ade4d79",
    "6617fbdf917a"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oboart": {
   "frases": [
    "1c201810e48f"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "bebras": {
@@ -2140,8 +2141,8 @@
    "14f44e565d05",
    "1984024c9634"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obe-empreendedorismo": {
@@ -2164,14 +2165,14 @@
    "2209467767a7",
    "b212b3c8319f"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "jovem-senador": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "maratona-tech": {
@@ -2181,8 +2182,8 @@
    "514791e6b682",
    "32d9a1cbb853"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "tfc": {
@@ -2194,8 +2195,8 @@
    "b9de4094c292",
    "9e12abecb700"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obs-saber": {
@@ -2207,30 +2208,30 @@
    "66f2336450ec",
    "788a6f7a91f6"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "first-lego-league": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "ligmat": {
   "frases": [
    "c95a84ff8b6e"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "jacob-palis-jr": {
   "frases": [
    "8c7ac691c426"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "cbr": {
@@ -2238,8 +2239,8 @@
    "5cb51610d28a"
   ],
   "visitas": 8,
-  "verificadoEm": "2026-11-11",
-  "situacao": "ok"
+  "verificadoEm": "2026-11-12",
+  "situacao": "http 503"
  },
  "ong-globalizacao": {
   "frases": [
@@ -2264,8 +2265,8 @@
    "6a6e9996fd82",
    "3fec38fd81d4"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "ompd": {
@@ -2273,20 +2274,20 @@
    "35cc1a61252d",
    "522b36896dbc"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "tbr": {
   "frases": [],
   "visitas": 0,
-  "verificadoEm": "2026-11-11",
-  "situacao": "http 403"
+  "verificadoEm": "2026-11-12",
+  "situacao": "falhou"
  },
  "titas-da-matematica": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "iypt-brasil": {
@@ -2296,8 +2297,8 @@
    "4273c27367e2",
    "df2e11264745"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "olimpiada-itabirana": {
@@ -2311,8 +2312,8 @@
    "b95a3b7caded",
    "019e11e6a9d7"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "tjr": {
@@ -2320,8 +2321,8 @@
    "dbc927b88812",
    "c3f7f7bb7541"
   ],
-  "visitas": 7,
-  "verificadoEm": "2026-11-11",
+  "visitas": 8,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "tvq": {
@@ -2330,14 +2331,14 @@
    "5022ed9ae957",
    "47a12c6434cf"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "olimpiada-mirim": {
   "frases": [],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "camaleao-quimica": {
@@ -2348,8 +2349,8 @@
    "a9542fbf352c",
    "ff72a23dfeec"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obsat": {
@@ -2357,8 +2358,8 @@
    "2a200a0ca2a4",
    "1a1a21eaebff"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "onneq": {
@@ -2371,8 +2372,8 @@
    "da96f10a1704",
    "8dbb3b0060b1"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oboa": {
@@ -2381,8 +2382,8 @@
    "64804eb1dd3a",
    "f0b49eba9862"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obob": {
@@ -2392,8 +2393,8 @@
    "f0b49eba9862",
    "3bbf460081d9"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "mostratec": {
@@ -2403,8 +2404,8 @@
    "ab800569501f",
    "ca1414ace6ef"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oboc": {
@@ -2413,8 +2414,8 @@
    "64804eb1dd3a",
    "f0b49eba9862"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oboecon": {
@@ -2425,8 +2426,8 @@
    "300e80b8e1fc",
    "3669639fe870"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oboch": {
@@ -2435,8 +2436,8 @@
    "64804eb1dd3a",
    "f0b49eba9862"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obof": {
@@ -2446,8 +2447,8 @@
    "f0b49eba9862",
    "3bbf460081d9"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oboi": {
@@ -2458,8 +2459,8 @@
    "f0b49eba9862",
    "26db9eb166e4"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oboia": {
@@ -2468,8 +2469,8 @@
    "64804eb1dd3a",
    "309fad70d613"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obol": {
@@ -2481,8 +2482,8 @@
    "f0b49eba9862",
    "3bbf460081d9"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obom": {
@@ -2492,8 +2493,8 @@
    "f0b49eba9862",
    "3bbf460081d9"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obor": {
@@ -2505,8 +2506,8 @@
    "acd23b13ca69",
    "5e1477c83d13"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "oboq": {
@@ -2516,22 +2517,22 @@
    "f0b49eba9862",
    "3bbf460081d9"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obofog": {
   "frases": [
    "e7a421540991"
   ],
-  "visitas": 8,
-  "verificadoEm": "2026-11-11",
+  "visitas": 9,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  },
  "obc-ciencias": {
   "frases": [],
-  "visitas": 6,
-  "verificadoEm": "2026-11-11",
+  "visitas": 7,
+  "verificadoEm": "2026-11-12",
   "situacao": "ok"
  }
 }
