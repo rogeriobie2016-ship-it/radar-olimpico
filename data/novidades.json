@@ -1,6 +1,42 @@
 {
-  "verificadoEm": "2026-11-12",
+  "verificadoEm": "2026-11-13",
   "itens": [
+    {
+      "id": "oqep-site-dc0cfc1b44af",
+      "oportunidadeId": "oqep",
+      "tipo": "atualizacao",
+      "titulo": "OQEP: site oficial atualizado",
+      "trecho": "Acesse aqui a prova e o gabarito da Fase IV (Modalidade A)",
+      "url": "https://oqep.ifce.edu.br/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-13",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "olimpiada-da-coruja-site-182fe53b16b8",
+      "oportunidadeId": "olimpiada-da-coruja",
+      "tipo": "atualizacao",
+      "titulo": "Olimpíada da Coruja: site oficial atualizado",
+      "trecho": "Toque na sua cidade para ver o endereço da prova.",
+      "url": "https://mkt.estrategia.com/militares/olimpiada-da-coruja/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-13",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "geoinformacao-site-4d10004cda88",
+      "oportunidadeId": "geoinformacao",
+      "tipo": "atualizacao",
+      "titulo": "OBGeo: site oficial atualizado",
+      "trecho": "A inscrição é individual, vinculada à escola/instituição.",
+      "url": "https://olimpiadadegeoinformacao.com.br/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-13",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "ocq-site-2d93cb348ae3",
       "oportunidadeId": "ocq",
