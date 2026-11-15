@@ -1,6 +1,54 @@
 {
-  "verificadoEm": "2026-11-14",
+  "verificadoEm": "2026-11-15",
   "itens": [
+    {
+      "id": "obofog-site-63ee3579cd46",
+      "oportunidadeId": "obofog",
+      "tipo": "atualizacao",
+      "titulo": "OBOFog: site oficial atualizado",
+      "trecho": "Instruções segunda fase .",
+      "url": "https://noic.com.br/obo/foguetes/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-15",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "oboia-site-f0b49eba9862",
+      "oportunidadeId": "oboia",
+      "tipo": "atualizacao",
+      "titulo": "OBOIA: site oficial atualizado",
+      "trecho": "Lista de classificados da primeira fase .",
+      "url": "https://noic.com.br/obo/ia/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-15",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "olimpiada-de-literatura-site-c699d03ad77e",
+      "oportunidadeId": "olimpiada-de-literatura",
+      "tipo": "atualizacao",
+      "titulo": "OL: site oficial atualizado",
+      "trecho": "Acesse os gabaritos das provas",
+      "url": "https://www.olimpiadadeliteratura.com.br/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-15",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "milset-brasil-site-7f3afd307832",
+      "oportunidadeId": "milset-brasil",
+      "tipo": "atualizacao",
+      "titulo": "MILSET: site oficial atualizado",
+      "trecho": "Orientadores, coorientadores e acompanhantes que comparecerem ao evento também devem realizar sua inscrição individual e pagar a taxa correspondente",
+      "url": "https://www.milsetbrasil.com.br/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-15",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "olimpiada-da-coruja-site-20627b0323ae",
       "oportunidadeId": "olimpiada-da-coruja",
