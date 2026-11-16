@@ -1,6 +1,66 @@
 {
-  "verificadoEm": "2026-11-15",
+  "verificadoEm": "2026-11-16",
   "itens": [
+    {
+      "id": "tnbio-site-7d795fd9b061",
+      "oportunidadeId": "tnbio",
+      "tipo": "atualizacao",
+      "titulo": "TNBio: site oficial atualizado",
+      "trecho": "TNBio | Torneio Nacional de Biologia | Seleta Educação Pular para o conteúdo Inscrição individual Cadastro de professor Acessar o Portal",
+      "url": "https://www.seletaeducacao.com.br/tnbio",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-16",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "tbc-site-ea8e760bfd0e",
+      "oportunidadeId": "tbc",
+      "tipo": "atualizacao",
+      "titulo": "TBC: site oficial atualizado",
+      "trecho": "A inscrição é individual, pelo Portal Seleta.",
+      "url": "https://www.seletaeducacao.com.br/tbc",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-16",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "obmf-site-5b45b45b6d6e",
+      "oportunidadeId": "obmf",
+      "tipo": "atualizacao",
+      "titulo": "OBMF: site oficial atualizado",
+      "trecho": "OBMF | Olimpíada Brasileira de Matemática Financeira Pular para o conteúdo Inscrição individual Cadastro de professor Acessar o Portal",
+      "url": "https://www.seletaeducacao.com.br/obmf",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-16",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "obli-site-c4b8392ed6e5",
+      "oportunidadeId": "obli",
+      "tipo": "atualizacao",
+      "titulo": "OBLI: site oficial atualizado",
+      "trecho": "OBLI | Olimpíada Brasileira de Língua Inglesa Pular para o conteúdo Inscrição individual Cadastro de professor Acessar o Portal",
+      "url": "https://www.seletaeducacao.com.br/obli",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-16",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "obgp-site-b95fc8caf0f1",
+      "oportunidadeId": "obgp",
+      "tipo": "atualizacao",
+      "titulo": "OBGP: site oficial atualizado",
+      "trecho": "OBGP | Olimpíada Brasileira de GeoPolítica | Seleta Educação Pular para o conteúdo Inscrição individual Cadastro de professor Acessar o Portal",
+      "url": "https://www.seletaeducacao.com.br/obgp",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-16",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "obofog-site-63ee3579cd46",
       "oportunidadeId": "obofog",
