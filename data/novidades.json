@@ -1,6 +1,30 @@
 {
-  "verificadoEm": "2026-11-17",
+  "verificadoEm": "2026-11-18",
   "itens": [
+    {
+      "id": "olimpiada-de-sustentabilidade-site-05ade067143a",
+      "oportunidadeId": "olimpiada-de-sustentabilidade",
+      "tipo": "atualizacao",
+      "titulo": "Olimpíada de Sustentabilidade: site oficial atualizado",
+      "trecho": "Deixe seu e-mail e seja avisado(a) assim que as inscrições abrirem",
+      "url": "https://olimpiadasustentabilidade.org/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-18",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "canguru-site-088e45bbfac7",
+      "oportunidadeId": "canguru",
+      "tipo": "atualizacao",
+      "titulo": "Olimpíada Canguru de Matemática: site oficial atualizado",
+      "trecho": "inscrições canguru 2027. sua escola não precisa só participar",
+      "url": "https://www.cangurudematematicabrasil.com.br/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-18",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "tnbio-site-7d795fd9b061",
       "oportunidadeId": "tnbio",
