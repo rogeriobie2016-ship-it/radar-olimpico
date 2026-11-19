@@ -1,6 +1,30 @@
 {
-  "verificadoEm": "2026-11-18",
+  "verificadoEm": "2026-11-19",
   "itens": [
+    {
+      "id": "olitef-site-74a889eac997",
+      "oportunidadeId": "olitef",
+      "tipo": "atualizacao",
+      "titulo": "OLITEF: site oficial atualizado",
+      "trecho": "Inscrições gratuitas para escolas, professores e alunos",
+      "url": "https://www.olitef.com.br/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-19",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "olimpiada-de-literatura-site-221b3836b63c",
+      "oportunidadeId": "olimpiada-de-literatura",
+      "tipo": "atualizacao",
+      "titulo": "OL: site oficial atualizado",
+      "trecho": "Inscrições até 22 de janeiro de 2027 .",
+      "url": "https://www.olimpiadadeliteratura.com.br/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-19",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "olimpiada-de-sustentabilidade-site-05ade067143a",
       "oportunidadeId": "olimpiada-de-sustentabilidade",
