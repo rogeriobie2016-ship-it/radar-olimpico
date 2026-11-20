@@ -1,6 +1,78 @@
 {
-  "verificadoEm": "2026-11-19",
+  "verificadoEm": "2026-11-20",
   "itens": [
+    {
+      "id": "tnbio-prazo-2027-08-25",
+      "oportunidadeId": "tnbio",
+      "tipo": "prazo",
+      "titulo": "TNBio: inscrições até 25/08/2027",
+      "trecho": "Escolas fazem a inscrição num período único, de 23/11/2026 a 25/08/2027",
+      "url": "https://www.seletaeducacao.com.br/tnbio",
+      "prazoFim": "2027-08-25",
+      "detectadoEm": "2026-11-20",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "tbc-site-f8bf8c556bb4",
+      "oportunidadeId": "tbc",
+      "tipo": "atualizacao",
+      "titulo": "TBC: site oficial atualizado",
+      "trecho": "Inscrições, com valor por período na inscrição individual: 25/11/2025 a 26/08/2026",
+      "url": "https://www.seletaeducacao.com.br/tbc",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-20",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "obmf-prazo-2027-03-31",
+      "oportunidadeId": "obmf",
+      "tipo": "prazo",
+      "titulo": "OBMF: inscrições até 31/03/2027",
+      "trecho": "Escolas fazem a inscrição num período único, de 23/11/2026 a 31/03/2027",
+      "url": "https://www.seletaeducacao.com.br/obmf",
+      "prazoFim": "2027-03-31",
+      "detectadoEm": "2026-11-20",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "obli-prazo-2027-05-12",
+      "oportunidadeId": "obli",
+      "tipo": "prazo",
+      "titulo": "OBLI: inscrições até 12/05/2027",
+      "trecho": "Escolas fazem a inscrição num período único, de 23/11/2026 a 12/05/2027",
+      "url": "https://www.seletaeducacao.com.br/obli",
+      "prazoFim": "2027-05-12",
+      "detectadoEm": "2026-11-20",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "obgp-prazo-2027-03-10",
+      "oportunidadeId": "obgp",
+      "tipo": "prazo",
+      "titulo": "OBGP: inscrições até 10/03/2027",
+      "trecho": "Escolas fazem a inscrição num período único, de 23/11/2026 a 10/03/2027",
+      "url": "https://www.seletaeducacao.com.br/obgp",
+      "prazoFim": "2027-03-10",
+      "detectadoEm": "2026-11-20",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "obapo-site-b665b429078a",
+      "oportunidadeId": "obapo",
+      "tipo": "atualizacao",
+      "titulo": "OBAPO: site oficial atualizado",
+      "trecho": "O valor do lote fica garantido desde a inscrição",
+      "url": "https://olimpikei.com.br/obapo/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-20",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "olitef-site-74a889eac997",
       "oportunidadeId": "olitef",
