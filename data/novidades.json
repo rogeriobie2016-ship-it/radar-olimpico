@@ -1,6 +1,30 @@
 {
-  "verificadoEm": "2026-11-21",
+  "verificadoEm": "2026-11-22",
   "itens": [
+    {
+      "id": "oboc-site-3bbf460081d9",
+      "oportunidadeId": "oboc",
+      "tipo": "atualizacao",
+      "titulo": "OBOC: site oficial atualizado",
+      "trecho": "Gabarito da segunda fase .",
+      "url": "https://noic.com.br/obo/ciencias/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-22",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "vitalis-site-bc091647773f",
+      "oportunidadeId": "vitalis",
+      "tipo": "atualizacao",
+      "titulo": "Vitalis Olimpíada de Medicina: site oficial atualizado",
+      "trecho": "Fazer minha inscrição Participação gratuita",
+      "url": "https://olimpiadademedicina.org/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-22",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "tnbio-prazo-2027-08-25",
       "oportunidadeId": "tnbio",
