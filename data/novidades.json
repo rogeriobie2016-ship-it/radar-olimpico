@@ -1,6 +1,18 @@
 {
-  "verificadoEm": "2026-11-23",
+  "verificadoEm": "2026-11-24",
   "itens": [
+    {
+      "id": "olimpiada-da-coruja-site-0cf45b052f49",
+      "oportunidadeId": "olimpiada-da-coruja",
+      "tipo": "atualizacao",
+      "titulo": "Olimpíada da Coruja: site oficial atualizado",
+      "trecho": "A versão definitiva será divulgada até 30/11/2026 , conforme o edital",
+      "url": "https://mkt.estrategia.com/militares/olimpiada-da-coruja/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-24",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "oboc-site-3bbf460081d9",
       "oportunidadeId": "oboc",
