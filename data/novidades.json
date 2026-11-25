@@ -1,6 +1,30 @@
 {
-  "verificadoEm": "2026-11-24",
+  "verificadoEm": "2026-11-25",
   "itens": [
+    {
+      "id": "the-big-challenge-site-112f6f57fe9b",
+      "oportunidadeId": "the-big-challenge",
+      "tipo": "atualizacao",
+      "titulo": "The Big Challenge (Olimpíada Nacional de Inglês): site oficial atualizado",
+      "trecho": "Edição 2027 · Inscrições abertas Edição 2027 · 28 anos",
+      "url": "https://www.thebigchallenge.com/br",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-25",
+      "origem": "monitor",
+      "verificado": false
+    },
+    {
+      "id": "olimpiada-da-coruja-site-7106e7fcb462",
+      "oportunidadeId": "olimpiada-da-coruja",
+      "tipo": "atualizacao",
+      "titulo": "Olimpíada da Coruja: site oficial atualizado",
+      "trecho": "Resoluções das provas. por nível",
+      "url": "https://mkt.estrategia.com/militares/olimpiada-da-coruja/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-25",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "olimpiada-da-coruja-site-0cf45b052f49",
       "oportunidadeId": "olimpiada-da-coruja",
