@@ -1,6 +1,18 @@
 {
-  "verificadoEm": "2026-11-25",
+  "verificadoEm": "2026-11-26",
   "itens": [
+    {
+      "id": "oboa-site-3bbf460081d9",
+      "oportunidadeId": "oboa",
+      "tipo": "atualizacao",
+      "titulo": "OBOA: site oficial atualizado",
+      "trecho": "Gabarito da segunda fase .",
+      "url": "https://noic.com.br/obo/astronomia/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-26",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "the-big-challenge-site-112f6f57fe9b",
       "oportunidadeId": "the-big-challenge",
