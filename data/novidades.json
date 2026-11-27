@@ -1,6 +1,18 @@
 {
-  "verificadoEm": "2026-11-26",
+  "verificadoEm": "2026-11-27",
   "itens": [
+    {
+      "id": "olimpiada-de-sustentabilidade-site-d0618f8186c9",
+      "oportunidadeId": "olimpiada-de-sustentabilidade",
+      "tipo": "atualizacao",
+      "titulo": "Olimpíada de Sustentabilidade: site oficial atualizado",
+      "trecho": "15 DE FEVEREIRO · 2027 Abertura das Inscrições! .",
+      "url": "https://olimpiadasustentabilidade.org/",
+      "prazoFim": null,
+      "detectadoEm": "2026-11-27",
+      "origem": "monitor",
+      "verificado": false
+    },
     {
       "id": "oboa-site-3bbf460081d9",
       "oportunidadeId": "oboa",
